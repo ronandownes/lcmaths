@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="180" viewBox="0 0 500 180" font-family="Segoe UI, sans-serif">
+  <text x="80" y="20" text-anchor="middle" font-size="14" fill="#3b82f6" font-style="normal">SAS</text>
+  <polygon points="20,150 140,150 80,40" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M 70.4 51.5 A 15 15 0 0 0 89.6 51.5" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+  <line x1="45" y1="97" x2="53" y2="89" stroke="#ef4444" stroke-width="2"/>
+  <line x1="115" y1="89" x2="123" y2="97" stroke="#22c55e" stroke-width="2"/>
+  <text x="250" y="20" text-anchor="middle" font-size="14" fill="#ef4444" font-style="normal">ASA</text>
+  <polygon points="180,150 320,150 260,40" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M 195.0 150.0 A 15 15 0 0 0 188.6 137.7" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+  <path d="M 311.4 137.7 A 15 15 0 0 0 305.0 150.0" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+  <line x1="245" y1="155" x2="255" y2="155" stroke="#ef4444" stroke-width="2"/>
+  <text x="420" y="20" text-anchor="middle" font-size="14" fill="#22c55e" font-style="normal">SSS</text>
+  <polygon points="350,150 480,150 430,40" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="385" y1="97" x2="393" y2="89" stroke="#3b82f6" stroke-width="2"/>
+  <line x1="460" y1="89" x2="468" y2="97" stroke="#ef4444" stroke-width="2"/>
+  <line x1="410" y1="155" x2="420" y2="155" stroke="#22c55e" stroke-width="2"/>
+</svg>

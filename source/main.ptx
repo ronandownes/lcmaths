@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <docinfo>
+    <macros>
+      \newcommand{\R}{\mathbb{R}}
+      \newcommand{\N}{\mathbb{N}}
+      \newcommand{\Z}{\mathbb{Z}}
+      \newcommand{\Q}{\mathbb{Q}}
+    </macros>
+  </docinfo>
+
+  <book xml:id="lc-ol-maths">
+    <title>Leaving Certificate Mathematics</title>
+    <subtitle>Ordinary Level</subtitle>
+
+    <frontmatter xml:id="frontmatter">
+      <bibinfo>
+        <author>
+          <personname>Mr Downes</personname>
+          <institution>Mr Downes Maths</institution>
+        </author>
+        <date><today/></date>
+      </bibinfo>
+      <titlepage>
+        <titlepage-items/>
+      </titlepage>
+    </frontmatter>
+
+    <!-- ============================== -->
+    <!-- STRAND 1: STATISTICS & PROBABILITY -->
+    <!-- ============================== -->
+    <chapter xml:id="ch-stats-prob">
+      <title>Statistics and Probability</title>
+      <introduction>
+        <p>Strand 1 of the Leaving Certificate Ordinary Level syllabus.</p>
+      </introduction>
+
+      <section xml:id="sec-counting">
+        <title>Counting</title>
+        <p>Content coming soon.</p>
+      </section>
+
+      <section xml:id="sec-concepts-probability">
+        <title>Concepts of Probability</title>
+        <p>Content coming soon.</p>
+      </section>
+
+      <section xml:id="sec-outcomes-random">
+        <title>Outcomes of Random Processes</title>
+        <p>Content coming soon.</p>
+      </section>
+
+      <section xml:id="sec-statistical-reasoning">
+        <title>Statistical Reasoning</title>
+        <p>Content coming soon.</p>
+      </section>
+
+      <section xml:id="sec-collecting-data">
+        <title>Finding, Collecting and Organising Data</title>
+        <p>Content coming soon.</p>
+      </section>
+
+      <section xml:id="sec-representing-data">
+        <title>Representing Data Graphically and Numerically</title>
+        <p>Content coming soon.</p>
+      </section>
+
+      <section xml:id="sec-analysing-data">
+        <title>Analysing, Interpreting and Drawing Inferences from Data</title>
+        <p>Content coming soon.</p>
+      </section>
+    </chapter>
+
+    <!-- ============================== -->
+    <!-- STRAND 2: GEOMETRY & TRIGONOMETRY -->
+    <!-- ============================== -->
+    <chapter xml:id="ch-geo-trig">
+      <title>Geometry and Trigonometry</title>
+      <introduction>
+        <p>Strand 2 of the Leaving Certificate Ordinary Level syllabus.</p>
+      </introduction>
+
+      <xi:include href="geometry/synthetic-geometry.ptx"/>
+
+
+      <section xml:id="sec-coordinate-geometry">
+        <title>Co-ordinate Geometry</title>
+        <introduction>
+          <p>Co-ordinate geometry connects algebra and geometry. We use
+          coordinates to describe points, and equations to describe lines and
+          circles. The formulae on pages 17–19 of your log tables are your
+          toolkit — but understanding the <em>properties</em> and
+          <em>anatomy</em> of each formula is what makes them powerful.</p>
+        </introduction>
+
+        <xi:include href="geometry/line.ptx"/>
+
+        <xi:include href="geometry/circle.ptx"/>
+      </section>
+
+      <section xml:id="sec-trigonometry">
+        <title>Trigonometry</title>
+        <p>Content coming soon.</p>
+      </section>
+
+      <xi:include href="geometry/enlargements.ptx"/>
+
+    </chapter>
+
+    <!-- ============================== -->
+    <!-- STRAND 3: NUMBER -->
+    <!-- ============================== -->
+    <chapter xml:id="ch-number">
+      <title>Number</title>
+      <introduction>
+        <p>Strand 3 of the Leaving Certificate Ordinary Level syllabus.</p>
+      </introduction>
+
+      <xi:include href="number/number-systems.ptx"/>
+
+      <section xml:id="sec-indices">
+        <title>Indices</title>
+        <p>Content coming soon.</p>
+      </section>
+
+      <section xml:id="sec-arithmetic">
+        <title>Arithmetic</title>
+        <p>Content coming soon.</p>
+      </section>
+
+      <section xml:id="sec-length-area-volume">
+        <title>Length, Area and Volume</title>
+        <p>Content coming soon.</p>
+      </section>
+    </chapter>
+
+    <!-- ============================== -->
+    <!-- STRAND 4: ALGEBRA -->
+    <!-- ============================== -->
+    <chapter xml:id="ch-algebra">
+      <title>Algebra</title>
+      <introduction>
+        <p>Strand 4 of the Leaving Certificate Ordinary Level syllabus.</p>
+      </introduction>
+
+      <section xml:id="sec-expressions">
+        <title>Expressions</title>
+        <p>Content coming soon.</p>
+      </section>
+
+      <section xml:id="sec-solving-equations">
+        <title>Solving Equations</title>
+        <p>Content coming soon.</p>
+      </section>
+
+      <section xml:id="sec-inequalities">
+        <title>Inequalities</title>
+        <p>Content coming soon.</p>
+      </section>
+    </chapter>
+
+    <!-- ============================== -->
+    <!-- STRAND 5: FUNCTIONS -->
+    <!-- ============================== -->
+    <chapter xml:id="ch-functions">
+      <title>Functions</title>
+      <introduction>
+        <p>Strand 5 of the Leaving Certificate Ordinary Level syllabus.</p>
+      </introduction>
+
+      <section xml:id="sec-functions">
+        <title>Functions</title>
+        <p>Content coming soon.</p>
+      </section>
+
+      <section xml:id="sec-calculus">
+        <title>Calculus</title>
+        <p>Content coming soon.</p>
+      </section>
+    </chapter>
+
+    <backmatter xml:id="backmatter">
+      <colophon>
+        <p>Built with PreTeXt. Learning Made as Simple as Possible.</p>
+      </colophon>
+    </backmatter>
+
+  </book>
+</pretext>

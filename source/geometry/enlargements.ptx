@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:id="sec-enlargements" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Transformation Geometry: Enlargements</title>
+
+  <introduction>
+    <p>An <term>enlargement</term> is a transformation that changes the
+    size of a figure while keeping its shape. At LC OL, you need to
+    understand how enlargements affect lengths and areas, and be able
+    to solve problems involving them.</p>
+  </introduction>
+
+  <subsection xml:id="subsec-enlargement-definition">
+    <title>Centre of Enlargement and Scale Factor</title>
+
+    <p>An enlargement is defined by two things:</p>
+
+    <p>1. A fixed point called the <term>centre of enlargement</term>.</p>
+    <p>2. A number <m>k</m> called the <term>scale factor</term>,
+    where <m>k \in \mathbb{Q}</m> and <m>k > 0</m>.</p>
+
+    <p>To enlarge a point <m>P</m> about a centre <m>O</m> with scale
+    factor <m>k</m>: the image <m>P'</m> lies on the ray <m>[OP</m>
+    such that <m>|OP'| = k \times |OP|</m>.</p>
+
+    <p>Every point of the figure is transformed this way. Lines from the
+    centre through corresponding points of the object and image are
+    called <term>rays of enlargement</term>.</p>
+
+    <table xml:id="table-scale-factor">
+      <title>Effect of Scale Factor</title>
+      <tabular halign="center">
+        <row header="yes" bottom="medium">
+          <cell>Scale Factor</cell>
+          <cell>Effect</cell>
+          <cell>Example</cell>
+        </row>
+        <row>
+          <cell><m>k > 1</m></cell>
+          <cell>Image is <em>larger</em> than the object</cell>
+          <cell><m>k = 2</m>: every length is doubled</cell>
+        </row>
+        <row>
+          <cell><m>k = 1</m></cell>
+          <cell>Image is the <em>same size</em> (identity)</cell>
+          <cell>No change</cell>
+        </row>
+        <row bottom="minor">
+          <cell><m>0 \lt k \lt 1</m></cell>
+          <cell>Image is <em>smaller</em> than the object (reduction)</cell>
+          <cell><m>k = \frac{1}{3}</m>: every length is one-third</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>Note: when <m>0 \lt k \lt 1</m>, we still call it an
+    <q>enlargement</q> even though the image is smaller. Some texts
+    use the word <q>reduction</q> for this case.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-enlargement-lengths">
+    <title>Effect on Lengths</title>
+
+    <p>Under an enlargement with scale factor <m>k</m>, every length in
+    the image is <m>k</m> times the corresponding length in the
+    object:</p>
+    <me>\text{image length} = k \times \text{object length}</me>
+
+    <p>This applies to all lengths: sides, diagonals, perimeters,
+    heights, radii — everything.</p>
+
+    <p>Since the shape is preserved and only the size changes, the object
+    and its image are <term>similar figures</term>. All corresponding
+    angles are equal. All corresponding sides are in the ratio
+    <m>1 : k</m>.</p>
+
+    <example xml:id="ex-enlargement-length">
+      <title>Lengths Under Enlargement</title>
+      <statement>
+        <p>A triangle with sides 6, 8, 10 is enlarged with scale factor
+        <m>\frac{3}{2}</m>. Find the side lengths and perimeter of the
+        image.</p>
+      </statement>
+      <solution>
+        <p>Each side is multiplied by <m>\frac{3}{2}</m>:</p>
+        <p>Sides: <m>6 \times \frac{3}{2} = 9</m>,
+        <m>8 \times \frac{3}{2} = 12</m>,
+        <m>10 \times \frac{3}{2} = 15</m>.</p>
+        <p>Perimeter of object: <m>6 + 8 + 10 = 24</m>.</p>
+        <p>Perimeter of image: <m>9 + 12 + 15 = 36 = \frac{3}{2}
+        \times 24</m>.</p>
+        <p>The perimeter also scales by <m>k</m>.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-enlargement-area">
+    <title>Effect on Area</title>
+
+    <p>This is the key result for exam questions. Under an enlargement
+    with scale factor <m>k</m>:</p>
+    <me>\text{image area} = k^2 \times \text{object area}</me>
+
+    <p><em>Why <m>k^2</m>?</em> Area depends on <em>two</em> dimensions
+    (e.g. base <m>\times</m> height). Each dimension is multiplied by
+    <m>k</m>, so the area is multiplied by <m>k \times k = k^2</m>.</p>
+
+    <p>For example, if a rectangle has base <m>b</m> and height <m>h</m>,
+    its area is <m>bh</m>. After enlargement by factor <m>k</m>, the
+    base becomes <m>kb</m> and the height becomes <m>kh</m>, so the new
+    area is <m>(kb)(kh) = k^2 bh</m>.</p>
+
+    <p>This works for <em>any</em> shape — triangles, circles,
+    irregular figures — because any area can be built up from
+    triangles, and the argument applies to each one.</p>
+
+    <table xml:id="table-enlargement-summary">
+      <title>Summary: Effect of Scale Factor <m>k</m></title>
+      <tabular halign="center">
+        <row header="yes" bottom="medium">
+          <cell>Quantity</cell>
+          <cell>Multiplied by</cell>
+          <cell>Example (<m>k = 3</m>)</cell>
+        </row>
+        <row>
+          <cell>Lengths (sides, perimeter, height)</cell>
+          <cell><m>k</m></cell>
+          <cell><m>\times 3</m></cell>
+        </row>
+        <row>
+          <cell>Angles</cell>
+          <cell>1 (unchanged)</cell>
+          <cell>Same angles</cell>
+        </row>
+        <row bottom="minor">
+          <cell>Area</cell>
+          <cell><m>k^2</m></cell>
+          <cell><m>\times 9</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <example xml:id="ex-enlargement-area">
+      <title>Area Under Enlargement</title>
+      <statement>
+        <p>A triangle has area <m>20\text{ cm}^2</m>. It is enlarged
+        with scale factor <m>k = \frac{1}{2}</m>. Find the area of the
+        image.</p>
+      </statement>
+      <solution>
+        <p>Image area <m>= k^2 \times \text{object area}
+        = \left(\frac{1}{2}\right)^2 \times 20 = \frac{1}{4} \times 20
+        = 5\text{ cm}^2</m>.</p>
+        <p>Halving the lengths reduces the area to one quarter.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-enlargement-find-k">
+      <title>Finding the Scale Factor from Areas</title>
+      <statement>
+        <p>A shape has area <m>12\text{ cm}^2</m>. After enlargement, its
+        area is <m>108\text{ cm}^2</m>. Find the scale factor.</p>
+      </statement>
+      <solution>
+        <p><m>k^2 = \frac{108}{12} = 9</m>, so <m>k = 3</m>.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-enlargement-circle">
+      <title>Enlarging a Circle</title>
+      <statement>
+        <p>A circle with radius 4 cm is enlarged with scale factor
+        <m>\frac{5}{4}</m>. Find the radius and area of the image.</p>
+      </statement>
+      <solution>
+        <p>New radius <m>= \frac{5}{4} \times 4 = 5</m> cm.</p>
+        <p>Original area <m>= \pi(4)^2 = 16\pi</m>.</p>
+        <p>Image area <m>= \left(\frac{5}{4}\right)^2 \times 16\pi
+        = \frac{25}{16} \times 16\pi = 25\pi</m> cm<m>^2</m>.</p>
+        <p>Check: <m>\pi(5)^2 = 25\pi</m>. Correct.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-enlargement-problems">
+    <title>Problem-Solving Exercises</title>
+
+    <exercise xml:id="ex-enlarge-1">
+      <title>Side Lengths and Area</title>
+      <statement>
+        <p>A rectangle has dimensions <m>6 \times 10</m>. It is enlarged
+        with scale factor <m>\frac{2}{3}</m>. Find the dimensions,
+        perimeter, and area of the image.</p>
+      </statement>
+      <answer>
+        <p>Dimensions: <m>4 \times \frac{20}{3}</m>. Perimeter:
+        <m>\frac{64}{3}</m>. Area: <m>\frac{80}{3}</m>.</p>
+      </answer>
+      <solution>
+        <p>New dimensions: <m>6 \times \frac{2}{3} = 4</m> and
+        <m>10 \times \frac{2}{3} = \frac{20}{3}</m>.</p>
+        <p>Perimeter: <m>2\left(4 + \frac{20}{3}\right)
+        = 2 \times \frac{32}{3} = \frac{64}{3}</m>.</p>
+        <p>Area: <m>4 \times \frac{20}{3} = \frac{80}{3}</m>.</p>
+        <p>Check with <m>k^2</m>: original area <m>= 60</m>;
+        <m>\left(\frac{2}{3}\right)^2 \times 60 = \frac{4}{9} \times 60
+        = \frac{240}{9} = \frac{80}{3}</m>. Correct.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-enlarge-2">
+      <title>Finding Scale Factor from Lengths</title>
+      <statement>
+        <p>A triangle is enlarged about a centre <m>O</m>. The original
+        triangle has a side of length 5. The corresponding side in the
+        image has length 8. Find the scale factor and the ratio of the
+        areas.</p>
+      </statement>
+      <answer>
+        <p><m>k = \frac{8}{5}</m>. Area ratio <m>= \frac{64}{25}</m>.</p>
+      </answer>
+    </exercise>
+
+    <exercise xml:id="ex-enlarge-3">
+      <title>Working Backwards from Area</title>
+      <statement>
+        <p>A shape is enlarged and its area increases from
+        <m>50\text{ cm}^2</m> to <m>200\text{ cm}^2</m>. Find the scale
+        factor <m>k</m>. If a side of the original shape is 7 cm long,
+        find the corresponding side in the image.</p>
+      </statement>
+      <answer>
+        <p><m>k = 2</m>. Corresponding side <m>= 14</m> cm.</p>
+      </answer>
+      <solution>
+        <p><m>k^2 = \frac{200}{50} = 4</m>, so <m>k = 2</m>.</p>
+        <p>Image side <m>= 2 \times 7 = 14</m> cm.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-enlarge-4">
+      <title>Map Scales</title>
+      <statement>
+        <p>On a map with scale <m>1:50\,000</m>, a lake has area
+        <m>3.2\text{ cm}^2</m>. Find the actual area of the lake in
+        km<m>^2</m>.</p>
+      </statement>
+      <hint>
+        <p>The scale factor from map to real life is <m>k = 50\,000</m>.
+        Remember: <m>100\,000</m> cm <m>= 1</m> km.</p>
+      </hint>
+      <answer>
+        <p><m>0.8\text{ km}^2</m></p>
+      </answer>
+      <solution>
+        <p>Real area <m>= k^2 \times \text{map area} = (50\,000)^2
+        \times 3.2 = 2.5 \times 10^9 \times 3.2 = 8 \times 10^9
+        \text{ cm}^2</m>.</p>
+        <p>Convert: <m>1\text{ km} = 100\,000\text{ cm}</m>, so
+        <m>1\text{ km}^2 = 10^{10}\text{ cm}^2</m>.</p>
+        <p>Real area <m>= \frac{8 \times 10^9}{10^{10}} = 0.8
+        \text{ km}^2</m>.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-enlarge-5">
+      <title>Centre of Enlargement</title>
+      <statement>
+        <p>Triangle <m>ABC</m> has vertices <m>A(1, 1)</m>,
+        <m>B(3, 1)</m>, <m>C(1, 4)</m>. It is enlarged with centre
+        <m>O(0, 0)</m> and scale factor 2. Find the vertices of the
+        image and verify that the area has increased by a factor of 4.</p>
+      </statement>
+      <answer>
+        <p><m>A'(2, 2)</m>, <m>B'(6, 2)</m>, <m>C'(2, 8)</m>.</p>
+      </answer>
+      <solution>
+        <p>Each coordinate is multiplied by <m>k = 2</m>:</p>
+        <p><m>A'(2, 2)</m>, <m>B'(6, 2)</m>, <m>C'(2, 8)</m>.</p>
+        <p>Original area: <m>\frac{1}{2} \times 2 \times 3 = 3</m>.</p>
+        <p>Image area: <m>\frac{1}{2} \times 4 \times 6 = 12</m>.</p>
+        <p>Ratio: <m>\frac{12}{3} = 4 = 2^2 = k^2</m>. Confirmed.</p>
+      </solution>
+    </exercise>
+  </subsection>
+
+</section>

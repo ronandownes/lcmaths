@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="360" viewBox="0 0 500 360" font-family="Segoe UI, sans-serif">
+  <text x="60" y="25" text-anchor="middle" font-size="13" fill="#1a1a1a" font-style="normal">(a) Point</text>
+  <circle cx="60" cy="50" r="5" fill="#1a1a1a"/>
+  <text x="72" y="48" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">A</text>
+  <text x="250" y="25" text-anchor="middle" font-size="13" fill="#1a1a1a" font-style="normal">(b) Line AB</text>
+  <line x1="160" y1="55" x2="145" y2="58" stroke="#3b82f6" stroke-width="2"/>
+  <polygon points="145,58 153.3,52.4 154.8,60.0" fill="#3b82f6"/>
+  <line x1="155" y1="56" x2="345" y2="40" stroke="#3b82f6" stroke-width="2"/>
+  <line x1="340" y1="41" x2="355" y2="38" stroke="#3b82f6" stroke-width="2"/>
+  <polygon points="355,38 346.7,43.6 345.2,36.0" fill="#3b82f6"/>
+  <circle cx="200" cy="50" r="4" fill="#1a1a1a"/>
+  <text x="200" y="70" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">A</text>
+  <circle cx="300" cy="43" r="4" fill="#1a1a1a"/>
+  <text x="300" y="35" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">B</text>
+  <text x="100" y="120" text-anchor="middle" font-size="13" fill="#1a1a1a" font-style="normal">(c) Segment [AB]</text>
+  <line x1="50" y1="145" x2="220" y2="145" stroke="#ef4444" stroke-width="2.5"/>
+  <circle cx="50" cy="145" r="4" fill="#1a1a1a"/>
+  <circle cx="220" cy="145" r="4" fill="#1a1a1a"/>
+  <text x="50" y="165" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">A</text>
+  <text x="220" y="165" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">B</text>
+  <text x="370" y="120" text-anchor="middle" font-size="13" fill="#1a1a1a" font-style="normal">(d) Ray [AB</text>
+  <line x1="280" y1="145" x2="450" y2="145" stroke="#22c55e" stroke-width="2.5"/>
+  <line x1="440" y1="145" x2="460" y2="145" stroke="#22c55e" stroke-width="2"/>
+  <polygon points="460,145 450.8,148.9 450.8,141.1" fill="#22c55e"/>
+  <circle cx="280" cy="145" r="4" fill="#1a1a1a"/>
+  <circle cx="380" cy="145" r="4" fill="#1a1a1a"/>
+  <text x="280" y="165" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">A</text>
+  <text x="380" y="165" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">B</text>
+  <text x="150" y="220" text-anchor="middle" font-size="13" fill="#1a1a1a" font-style="normal">(e) Distance |AB|</text>
+  <line x1="50" y1="245" x2="280" y2="245" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="50" cy="245" r="4" fill="#1a1a1a"/>
+  <circle cx="280" cy="245" r="4" fill="#1a1a1a"/>
+  <text x="50" y="265" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">A</text>
+  <text x="280" y="265" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">B</text>
+  <text x="165" y="238" text-anchor="middle" font-size="13" fill="#00a6a0" font-style="italic">|AB|</text>
+  <line x1="50" y1="240" x2="50" y2="250" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="280" y1="240" x2="280" y2="250" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="150" y="300" text-anchor="middle" font-size="13" fill="#1a1a1a" font-style="normal">(f) Midpoint M of [AB]</text>
+  <line x1="50" y1="325" x2="280" y2="325" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="50" cy="325" r="4" fill="#1a1a1a"/>
+  <circle cx="280" cy="325" r="4" fill="#1a1a1a"/>
+  <circle cx="165" cy="325" r="5" fill="#00a6a0"/>
+  <text x="50" y="345" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">A</text>
+  <text x="280" y="345" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">B</text>
+  <text x="165" y="345" text-anchor="middle" font-size="14" fill="#00a6a0" font-style="italic">M</text>
+</svg>

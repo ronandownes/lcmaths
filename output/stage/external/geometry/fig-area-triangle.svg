@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="220" viewBox="0 0 300 220" font-family="Segoe UI, sans-serif">
+  <polygon points="40,180 260,180 180,40" fill="#3b82f620" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="180" y1="40" x2="180" y2="180" stroke="#ef4444" stroke-width="2" stroke-dasharray="5 3"/>
+  <polyline points="170,180 170,170 180,170" fill="none" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="150" y="198" text-anchor="middle" font-size="13" fill="#3b82f6" font-style="normal">base</text>
+  <text x="195" y="115" text-anchor="middle" font-size="12" fill="#ef4444" font-style="normal">height</text>
+  <text x="35" y="196" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">A</text>
+  <text x="265" y="196" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">B</text>
+  <text x="185" y="30" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">C</text>
+  <text x="150" y="215" text-anchor="middle" font-size="13" fill="#1a1a1a" font-style="normal">Area = ½ × base × height</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="140" viewBox="0 0 460 140" font-family="Segoe UI, sans-serif">
+  <text x="80" y="45" font-size="28" fill="#1a1a1a" font-style="italic">a</text>
+  <text x="105" y="45" font-size="28" fill="#666"> × 10</text>
+  <text x="228" y="30" font-size="18" fill="#1a1a1a" font-style="italic">n</text>
+  <line x1="87" y1="55" x2="87" y2="80" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="87" y="95" text-anchor="middle" font-size="12" fill="#ef4444">1 ≤ a &lt; 10</text>
+  <text x="87" y="110" text-anchor="middle" font-size="10" fill="#ef4444">one non-zero digit</text>
+  <text x="87" y="122" text-anchor="middle" font-size="10" fill="#ef4444">before the point</text>
+  <line x1="233" y1="35" x2="233" y2="80" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="233" y="95" text-anchor="middle" font-size="12" fill="#3b82f6">n ∈ ℤ</text>
+  <text x="233" y="110" text-anchor="middle" font-size="10" fill="#3b82f6">positive = big number</text>
+  <text x="233" y="122" text-anchor="middle" font-size="10" fill="#3b82f6">negative = small number</text>
+  <text x="340" y="40" font-size="12" fill="#1a1a1a">3,400 = 3.4 × 10³</text>
+  <text x="340" y="60" font-size="12" fill="#1a1a1a">0.005 = 5 × 10⁻³</text>
+  <text x="340" y="80" font-size="12" fill="#1a1a1a">72,000 = 7.2 × 10⁴</text>
+  <text x="340" y="100" font-size="12" fill="#1a1a1a">0.041 = 4.1 × 10⁻²</text>
+</svg>

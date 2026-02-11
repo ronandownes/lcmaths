@@ -1,0 +1,5 @@
+<string>:103:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element table there
+<string>:103:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element sidebyside, got table
+<string>:103:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element proof, got table
+<string>:174:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element text there
+<string>:174:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element description failed to validate content

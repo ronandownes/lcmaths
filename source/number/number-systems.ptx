@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:id="sec-number-systems" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Number Systems</title>
+
+  <introduction>
+    <p>Mathematics uses different types of numbers for different
+    purposes. In this section, we meet the four main number sets,
+    understand how they are related, and learn to work fluently with
+    each one. We also cover the essential skills: prime factorisation,
+    order of operations, and scientific notation.</p>
+  </introduction>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 1. THE NUMBER SETS                                     -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-number-sets">
+    <title>The Number Sets: <m>\mathbb{N}</m>, <m>\mathbb{Z}</m>,
+    <m>\mathbb{Q}</m>, <m>\mathbb{R}</m></title>
+
+    <p>Each number set is contained inside the next, like nested
+    boxes.</p>
+
+    <figure xml:id="fig-number-sets">
+      <caption>The four number sets, each containing the previous.</caption>
+      <image source="number/fig-number-sets.svg" width="85%">
+        <description>Nested rectangles showing N inside Z inside Q
+        inside R, with examples of each type.</description>
+      </image>
+    </figure>
+
+    <definition xml:id="def-natural-numbers">
+      <title>Natural Numbers <m>\mathbb{N}</m></title>
+      <statement>
+        <p>The <term>natural numbers</term> are the counting numbers:
+        <m>\mathbb{N} = \{0, 1, 2, 3, 4, \ldots\}</m>. They go on
+        forever — there is no largest natural number.</p>
+      </statement>
+    </definition>
+
+    <p>With natural numbers alone, we can add and multiply freely.
+    But we cannot subtract freely — <m>3 - 7</m> has no answer in
+    <m>\mathbb{N}</m>. This motivates our next set.</p>
+
+    <definition xml:id="def-integers">
+      <title>Integers <m>\mathbb{Z}</m></title>
+      <statement>
+        <p>The <term>integers</term> include all natural numbers and
+        their negatives:
+        <m>\mathbb{Z} = \{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\}</m>.
+        The letter <m>\mathbb{Z}</m> comes from the German word
+        <em>Zahlen</em> (numbers).</p>
+      </statement>
+    </definition>
+
+    <p>Now subtraction always works. But division doesn't —
+    <m>5 \div 3</m> is not an integer.</p>
+
+    <definition xml:id="def-rational-numbers">
+      <title>Rational Numbers <m>\mathbb{Q}</m></title>
+      <statement>
+        <p>The <term>rational numbers</term> are all numbers that
+        can be written as a fraction
+        <m>\frac{a}{b}</m> where <m>a, b \in \mathbb{Z}</m> and
+        <m>b \neq 0</m>.</p>
+      </statement>
+    </definition>
+
+    <p>Every integer is rational (just put it over 1:
+    <m>5 = \frac{5}{1}</m>). Every terminating decimal is rational
+    (<m>0.75 = \frac{3}{4}</m>). Every repeating decimal is rational
+    (<m>0.\overline{3} = \frac{1}{3}</m>).</p>
+
+    <p>But there are numbers that are <em>not</em> rational.</p>
+
+    <definition xml:id="def-irrational-numbers">
+      <title>Irrational Numbers</title>
+      <statement>
+        <p>An <term>irrational number</term> is a real number that
+        <em>cannot</em> be written as a fraction of integers. Its
+        decimal expansion goes on forever without ever repeating.</p>
+      </statement>
+    </definition>
+
+    <p>The most famous irrational numbers are <m>\sqrt{2}</m>,
+    <m>\pi</m>, and <m>e</m>. The ancient Greeks were shocked to
+    discover that <m>\sqrt{2}</m> cannot be expressed as a fraction —
+    it broke their assumption that all quantities were ratios of
+    whole numbers.</p>
+
+    <definition xml:id="def-real-numbers">
+      <title>Real Numbers <m>\mathbb{R}</m></title>
+      <statement>
+        <p>The <term>real numbers</term> are all the rational and
+        irrational numbers together. They fill the entire number line
+        with no gaps:
+        <m>\mathbb{R} = \mathbb{Q} \cup \{\text{irrationals}\}</m>.</p>
+      </statement>
+    </definition>
+
+    <p>The key relationship:
+    <m>\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q}
+    \subset \mathbb{R}</m>. Every natural number is an integer, every
+    integer is rational, every rational number is real. But not the
+    other way around.</p>
+
+    <p>Since <m>\mathbb{R}</m> contains numbers that are <em>not</em>
+    in <m>\mathbb{Q}</m> (the irrationals), we write
+    <m>\mathbb{R} \neq \mathbb{Q}</m>.</p>
+
+    <figure xml:id="fig-number-line">
+      <caption>Different types of number on the number line.</caption>
+      <image source="number/fig-number-line.svg" width="90%">
+        <description>A number line showing integers, rationals like
+        one half and negative three halves, and irrationals like
+        root two.</description>
+      </image>
+    </figure>
+
+    <example xml:id="ex-classify-numbers">
+      <title>Classifying Numbers</title>
+      <statement>
+        <p>Classify each number into its smallest number set:
+        <m>7</m>, <m>-3</m>, <m>\frac{2}{5}</m>, <m>\sqrt{9}</m>,
+        <m>\sqrt{7}</m>, <m>\pi</m>, <m>0.\overline{142857}</m>,
+        <m>-\frac{11}{4}</m>.</p>
+      </statement>
+      <solution>
+        <p><m>7 \in \mathbb{N}</m> (natural number).</p>
+        <p><m>-3 \in \mathbb{Z}</m> (integer, not natural).</p>
+        <p><m>\frac{2}{5} \in \mathbb{Q}</m> (rational, not
+        integer).</p>
+        <p><m>\sqrt{9} = 3 \in \mathbb{N}</m> (it simplifies to a
+        natural number).</p>
+        <p><m>\sqrt{7} \in \mathbb{R} \setminus \mathbb{Q}</m>
+        (irrational — 7 is not a perfect square).</p>
+        <p><m>\pi \in \mathbb{R} \setminus \mathbb{Q}</m>
+        (irrational).</p>
+        <p><m>0.\overline{142857} = \frac{1}{7} \in \mathbb{Q}</m>
+        (repeating decimal, so rational).</p>
+        <p><m>-\frac{11}{4} \in \mathbb{Q}</m> (rational, not
+        integer).</p>
+      </solution>
+    </example>
+
+    <exercise xml:id="ex-classify-practice">
+      <title>Number Classification Practice</title>
+      <statement>
+        <p>1. Classify: <m>0</m>, <m>-\sqrt{16}</m>,
+        <m>\sqrt{10}</m>, <m>3.14</m>, <m>\frac{22}{7}</m>,
+        <m>0.101001000100001\ldots</m></p>
+        <p>2. True or false? (a) Every integer is rational.
+        (b) Every rational number is an integer.
+        (c) <m>\sqrt{25}</m> is irrational.
+        (d) <m>\pi</m> is rational because <m>\frac{22}{7}</m>
+        is close to it.</p>
+        <p>3. Give an example of a number that is: (a) in
+        <m>\mathbb{Z}</m> but not <m>\mathbb{N}</m>,
+        (b) in <m>\mathbb{Q}</m> but not <m>\mathbb{Z}</m>,
+        (c) in <m>\mathbb{R}</m> but not <m>\mathbb{Q}</m>.</p>
+      </statement>
+      <answer>
+        <p>1. <m>0 \in \mathbb{N}</m>;
+        <m>-\sqrt{16} = -4 \in \mathbb{Z}</m>;
+        <m>\sqrt{10}</m> irrational;
+        <m>3.14 = \frac{314}{100} \in \mathbb{Q}</m>;
+        <m>\frac{22}{7} \in \mathbb{Q}</m>;
+        <m>0.101001\ldots</m> irrational (non-repeating).</p>
+        <p>2. (a) True. (b) False. (c) False (<m>\sqrt{25} = 5</m>).
+        (d) False (<m>22/7</m> is rational but <m>\pi</m> is
+        not).</p>
+        <p>3. (a) <m>-1</m>. (b) <m>\frac{1}{2}</m>.
+        (c) <m>\sqrt{2}</m>.</p>
+      </answer>
+    </exercise>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 2. RATIONAL vs IRRATIONAL — DECIMAL CONNECTION         -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-rational-irrational">
+    <title>Rational and Irrational: The Decimal Test</title>
+
+    <p>How do you know whether a number is rational or irrational?
+    The decimal expansion tells you everything.</p>
+
+    <figure xml:id="fig-decimal-patterns">
+      <caption>Rational decimals terminate or repeat. Irrational
+      decimals do neither.</caption>
+      <image source="number/fig-decimal-patterns.svg" width="80%">
+        <description>A table comparing rational decimals (terminating
+        or repeating) with irrational decimals (non-terminating,
+        non-repeating).</description>
+      </image>
+    </figure>
+
+    <p>The rule is simple:</p>
+    <p>A decimal that <em>terminates</em> (stops) or <em>repeats</em>
+    (a block of digits recurs forever) is <em>rational</em>.</p>
+    <p>A decimal that goes on forever <em>without any repeating
+    pattern</em> is <em>irrational</em>.</p>
+
+    <example xml:id="ex-repeating-to-fraction">
+      <title>Converting a Repeating Decimal to a Fraction</title>
+      <statement>
+        <p>Show that <m>0.\overline{36} = \frac{4}{11}</m>.</p>
+      </statement>
+      <solution>
+        <p>Let <m>x = 0.363636\ldots</m></p>
+        <p>Then <m>100x = 36.363636\ldots</m></p>
+        <p>Subtract: <m>100x - x = 36</m>, so <m>99x = 36</m>,
+        giving <m>x = \frac{36}{99} = \frac{4}{11}</m>.</p>
+      </solution>
+    </example>
+
+    <paragraphs xml:id="par-working-with-irrationals">
+      <title>Working with Irrational Numbers</title>
+
+      <p>You can do arithmetic with irrational numbers using the
+      surd rules from algebra. For now, the key facts are:</p>
+
+      <p><m>\sqrt{a} \times \sqrt{b} = \sqrt{ab}</m> and
+      <m>\frac{\sqrt{a}}{\sqrt{b}} = \sqrt{\frac{a}{b}}</m>.</p>
+
+      <p>Adding irrationals does not simplify in general:
+      <m>\sqrt{2} + \sqrt{3}</m> cannot be written as a single
+      surd.</p>
+
+      <p>Sometimes an expression that <em>looks</em> irrational is
+      actually rational: <m>\sqrt{2} \times \sqrt{8}
+      = \sqrt{16} = 4</m>.</p>
+    </paragraphs>
+
+    <example xml:id="ex-simplify-surds">
+      <title>Simplifying Surds</title>
+      <statement>
+        <p>Simplify: (a) <m>\sqrt{50}</m> (b) <m>\sqrt{12} + \sqrt{27}</m>
+        (c) <m>\sqrt{3} \times \sqrt{12}</m></p>
+      </statement>
+      <solution>
+        <p>(a) <m>\sqrt{50} = \sqrt{25 \times 2} = 5\sqrt{2}</m>.</p>
+        <p>(b) <m>\sqrt{12} = 2\sqrt{3}</m> and
+        <m>\sqrt{27} = 3\sqrt{3}</m>, so the sum is
+        <m>5\sqrt{3}</m>.</p>
+        <p>(c) <m>\sqrt{3} \times \sqrt{12} = \sqrt{36} = 6</m>.</p>
+      </solution>
+    </example>
+
+    <exercise xml:id="ex-rational-irrational-practice">
+      <title>Practice</title>
+      <statement>
+        <p>1. Convert to a fraction: (a) <m>0.\overline{7}</m>
+        (b) <m>0.\overline{45}</m> (c) <m>0.8\overline{3}</m></p>
+        <p>2. Simplify: (a) <m>\sqrt{72}</m>
+        (b) <m>\sqrt{20} + \sqrt{45}</m>
+        (c) <m>(\sqrt{5})^2</m></p>
+        <p>3. Is <m>\sqrt{2} + \sqrt{2}</m> rational or irrational?
+        What about <m>\sqrt{2} \times \sqrt{2}</m>?</p>
+      </statement>
+      <answer>
+        <p>1. (a) <m>\frac{7}{9}</m>. (b) <m>\frac{5}{11}</m>.
+        (c) <m>\frac{5}{6}</m>.</p>
+        <p>2. (a) <m>6\sqrt{2}</m>. (b) <m>5\sqrt{5}</m>.
+        (c) <m>5</m>.</p>
+        <p>3. <m>\sqrt{2} + \sqrt{2} = 2\sqrt{2}</m>, irrational.
+        <m>\sqrt{2} \times \sqrt{2} = 2</m>, rational.</p>
+      </answer>
+    </exercise>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 3. OPERATIONS IN THE NUMBER SETS                       -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-operations">
+    <title>Operations: <m>+</m>, <m>-</m>, <m>\times</m>,
+    <m>\div</m> Across the Number Sets</title>
+
+    <p>Some sets are <term>closed</term> under certain operations —
+    the result always stays in the set. Others are not.</p>
+
+    <table xml:id="table-closure">
+      <title>Closure of Operations</title>
+      <tabular halign="center">
+        <row header="yes" bottom="medium">
+          <cell>Set</cell>
+          <cell><m>+</m></cell>
+          <cell><m>-</m></cell>
+          <cell><m>\times</m></cell>
+          <cell><m>\div</m></cell>
+        </row>
+        <row>
+          <cell><m>\mathbb{N}</m></cell>
+          <cell>Closed</cell>
+          <cell>Not closed</cell>
+          <cell>Closed</cell>
+          <cell>Not closed</cell>
+        </row>
+        <row>
+          <cell><m>\mathbb{Z}</m></cell>
+          <cell>Closed</cell>
+          <cell>Closed</cell>
+          <cell>Closed</cell>
+          <cell>Not closed</cell>
+        </row>
+        <row>
+          <cell><m>\mathbb{Q}</m></cell>
+          <cell>Closed</cell>
+          <cell>Closed</cell>
+          <cell>Closed</cell>
+          <cell>Closed*</cell>
+        </row>
+        <row bottom="minor">
+          <cell><m>\mathbb{R}</m></cell>
+          <cell>Closed</cell>
+          <cell>Closed</cell>
+          <cell>Closed</cell>
+          <cell>Closed*</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>*Division by zero is never allowed in any set.</p>
+
+    <p><q>Not closed</q> means you can find examples where the
+    operation takes you <em>outside</em> the set. For instance,
+    <m>3 - 7 = -4</m> takes you out of <m>\mathbb{N}</m> into
+    <m>\mathbb{Z}</m>. And <m>5 \div 3</m> takes you out of
+    <m>\mathbb{Z}</m> into <m>\mathbb{Q}</m>.</p>
+
+    <p>This is essentially <em>why</em> each larger set was invented
+    — to make more operations possible.</p>
+
+    <example xml:id="ex-closure">
+      <title>Closure Examples</title>
+      <statement>
+        <p>For each operation, state which set the result belongs to
+        and whether it remains in the starting set:
+        (a) <m>4 + 9</m> in <m>\mathbb{N}</m>.
+        (b) <m>4 - 9</m> in <m>\mathbb{N}</m>.
+        (c) <m>\frac{7}{3} + \frac{5}{6}</m> in <m>\mathbb{Q}</m>.
+        (d) <m>\sqrt{2} \times \sqrt{3}</m> in <m>\mathbb{R}</m>.</p>
+      </statement>
+      <solution>
+        <p>(a) <m>13 \in \mathbb{N}</m>. Stays in.</p>
+        <p>(b) <m>-5 \in \mathbb{Z}</m>. Leaves
+        <m>\mathbb{N}</m>.</p>
+        <p>(c) <m>\frac{19}{6} \in \mathbb{Q}</m>. Stays in.</p>
+        <p>(d) <m>\sqrt{6} \in \mathbb{R} \setminus \mathbb{Q}</m>.
+        Stays in <m>\mathbb{R}</m> (but is irrational).</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 4. FACTORS, MULTIPLES, AND PRIMES                      -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-factors-primes">
+    <title>Factors, Multiples, and Primes</title>
+
+    <definition xml:id="def-factor-multiple">
+      <title>Factor and Multiple</title>
+      <statement>
+        <p>If <m>a \times b = c</m> (where <m>a, b, c \in
+        \mathbb{N}</m>), then <m>a</m> and <m>b</m> are
+        <term>factors</term> of <m>c</m>, and <m>c</m> is a
+        <term>multiple</term> of both <m>a</m> and <m>b</m>.</p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-prime">
+      <title>Prime Number</title>
+      <statement>
+        <p>A <term>prime number</term> is a natural number greater
+        than 1 whose only factors are 1 and itself. The first few
+        primes are 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, ...</p>
+        <p>Note: 1 is <em>not</em> prime. And 2 is the only even
+        prime.</p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-composite">
+      <title>Composite Number</title>
+      <statement>
+        <p>A <term>composite number</term> is a natural number
+        greater than 1 that is <em>not</em> prime (i.e. it has
+        factors other than 1 and itself).</p>
+      </statement>
+    </definition>
+
+    <paragraphs xml:id="par-prime-factorisation">
+      <title>Prime Factorisation</title>
+
+      <p>Every natural number greater than 1 can be written as a
+      product of prime numbers in exactly one way (ignoring order).
+      This is the <term>Fundamental Theorem of Arithmetic</term>.</p>
+
+      <p>A <term>factor tree</term> is a handy way to find the prime
+      factorisation. Start with the number, split it into any two
+      factors, then keep splitting until every leaf is prime.</p>
+    </paragraphs>
+
+    <figure xml:id="fig-factor-tree">
+      <caption>Factor tree for 360.</caption>
+      <image source="number/fig-factor-tree.svg" width="50%">
+        <description>A factor tree breaking 360 down into its prime
+        factors: 2 cubed times 3 squared times 5.</description>
+      </image>
+    </figure>
+
+    <example xml:id="ex-prime-factorise">
+      <title>Prime Factorisation</title>
+      <statement>
+        <p>Express in prime factor form:
+        (a) 180 (b) 504 (c) 2025</p>
+      </statement>
+      <solution>
+        <p>(a) <m>180 = 2^2 \times 3^2 \times 5</m>.</p>
+        <p>(b) <m>504 = 2^3 \times 3^2 \times 7</m>.</p>
+        <p>(c) <m>2025 = 3^4 \times 5^2 = 81 \times 25</m>.</p>
+      </solution>
+    </example>
+
+    <paragraphs xml:id="par-hcf-lcm">
+      <title>HCF and LCM</title>
+
+      <p>The <term>Highest Common Factor (HCF)</term> of two numbers
+      is the largest number that divides both. Take the
+      <em>lowest</em> power of each <em>common</em> prime.</p>
+
+      <p>The <term>Lowest Common Multiple (LCM)</term> is the
+      smallest number that both divide into. Take the
+      <em>highest</em> power of each prime that appears in
+      <em>either</em> factorisation.</p>
+    </paragraphs>
+
+    <example xml:id="ex-hcf-lcm">
+      <title>HCF and LCM Using Prime Factors</title>
+      <statement>
+        <p>Find the HCF and LCM of 180 and 504.</p>
+      </statement>
+      <solution>
+        <p><m>180 = 2^2 \times 3^2 \times 5</m>.</p>
+        <p><m>504 = 2^3 \times 3^2 \times 7</m>.</p>
+        <p>HCF: common primes at lowest powers =
+        <m>2^2 \times 3^2 = 36</m>.</p>
+        <p>LCM: all primes at highest powers =
+        <m>2^3 \times 3^2 \times 5 \times 7 = 2520</m>.</p>
+        <p>Check: <m>\text{HCF} \times \text{LCM} = 36 \times 2520
+        = 90720 = 180 \times 504</m>. ✓</p>
+      </solution>
+    </example>
+
+    <exercise xml:id="ex-factors-practice">
+      <title>Practice</title>
+      <statement>
+        <p>1. Express in prime factor form: (a) 240 (b) 1764</p>
+        <p>2. Find the HCF and LCM of 240 and 360.</p>
+        <p>3. Two gear wheels have 36 and 48 teeth. After how many
+        revolutions of the smaller wheel do both wheels return to
+        their starting position?</p>
+      </statement>
+      <answer>
+        <p>1. (a) <m>2^4 \times 3 \times 5</m>.
+        (b) <m>2^2 \times 3^2 \times 7^2</m>.</p>
+        <p>2. HCF = 120, LCM = 720.</p>
+        <p>3. LCM(36, 48) = 144. Smaller wheel:
+        <m>144 \div 36 = 4</m> revolutions.</p>
+      </answer>
+    </exercise>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 5. ORDER OF OPERATIONS                                 -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-order-of-operations">
+    <title>Order of Operations (BIMDAS)</title>
+
+    <p>When a calculation has multiple operations, the order matters.
+    We follow a universal convention.</p>
+
+    <figure xml:id="fig-bimdas">
+      <caption>BIMDAS: the order of operations.</caption>
+      <image source="number/fig-bimdas.svg" width="75%">
+        <description>Six boxes spelling BIMDAS: Brackets, Indices,
+        Multiply, Divide, Add, Subtract, with priority arrow from
+        highest to lowest.</description>
+      </image>
+    </figure>
+
+    <p><term>B</term>rackets first. Then <term>I</term>ndices
+    (powers and roots). Then <term>M</term>ultiply and
+    <term>D</term>ivide (left to right — they have equal priority).
+    Finally <term>A</term>dd and <term>S</term>ubtract (left to
+    right — equal priority).</p>
+
+    <example xml:id="ex-bimdas-1">
+      <title>BIMDAS in Action</title>
+      <statement>
+        <p>Evaluate: <m>3 + 4 \times 2^2 - (5 - 1)</m></p>
+      </statement>
+      <solution>
+        <p><m>= 3 + 4 \times 2^2 - 4</m> (brackets first)</p>
+        <p><m>= 3 + 4 \times 4 - 4</m> (indices)</p>
+        <p><m>= 3 + 16 - 4</m> (multiply)</p>
+        <p><m>= 15</m> (add, then subtract, left to right)</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-bimdas-2">
+      <title>Nested Brackets</title>
+      <statement>
+        <p>Evaluate: <m>2 \times [3 + (8 \div 2)^2]</m></p>
+      </statement>
+      <solution>
+        <p><m>= 2 \times [3 + 4^2]</m> (inner brackets)</p>
+        <p><m>= 2 \times [3 + 16]</m> (index)</p>
+        <p><m>= 2 \times 19</m> (outer bracket)</p>
+        <p><m>= 38</m></p>
+      </solution>
+    </example>
+
+    <exercise xml:id="ex-bimdas-practice">
+      <title>Practice</title>
+      <statement>
+        <p>Evaluate each expression:</p>
+        <p>1. <m>20 - 3 \times 4 + 2</m></p>
+        <p>2. <m>(20 - 3) \times (4 + 2)</m></p>
+        <p>3. <m>5^2 - 3^2 + 1</m></p>
+        <p>4. <m>\frac{8 + 4 \times 3}{2^2 + 1}</m></p>
+        <p>5. <m>(-2)^3 + 3 \times (-4)</m></p>
+      </statement>
+      <answer>
+        <p>1. <m>10</m>. 2. <m>102</m>. 3. <m>17</m>.
+        4. <m>4</m>. 5. <m>-20</m>.</p>
+      </answer>
+    </exercise>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 6. DECIMALS AND FRACTIONS                              -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-decimals-fractions">
+    <title>Decimals and Fractions: Two Sides of the Same Coin</title>
+
+    <p>Every decimal is a fraction in disguise. Understanding this
+    connection deepens your number sense and is essential for
+    estimation.</p>
+
+    <p>A decimal like <m>0.375</m> is shorthand for
+    <m>\frac{375}{1000}</m>. The denominator is always a power of 10,
+    which is why we call it a <em>base-10</em> system.</p>
+
+    <table xml:id="table-place-value">
+      <title>Place Value</title>
+      <tabular halign="center">
+        <row header="yes" bottom="medium">
+          <cell>Position</cell>
+          <cell>Hundreds</cell>
+          <cell>Tens</cell>
+          <cell>Units</cell>
+          <cell>.</cell>
+          <cell>Tenths</cell>
+          <cell>Hundredths</cell>
+          <cell>Thousandths</cell>
+        </row>
+        <row>
+          <cell>Value</cell>
+          <cell><m>10^2</m></cell>
+          <cell><m>10^1</m></cell>
+          <cell><m>10^0</m></cell>
+          <cell></cell>
+          <cell><m>10^{-1}</m></cell>
+          <cell><m>10^{-2}</m></cell>
+          <cell><m>10^{-3}</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell>Fraction</cell>
+          <cell>100</cell>
+          <cell>10</cell>
+          <cell>1</cell>
+          <cell></cell>
+          <cell><m>\frac{1}{10}</m></cell>
+          <cell><m>\frac{1}{100}</m></cell>
+          <cell><m>\frac{1}{1000}</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <example xml:id="ex-decimal-fraction">
+      <title>Converting Between Decimals and Fractions</title>
+      <statement>
+        <p>Convert: (a) <m>0.6</m> to a fraction. (b)
+        <m>\frac{7}{8}</m> to a decimal. (c) <m>2.35</m> to a
+        fraction.</p>
+      </statement>
+      <solution>
+        <p>(a) <m>0.6 = \frac{6}{10} = \frac{3}{5}</m>.</p>
+        <p>(b) <m>7 \div 8 = 0.875</m>.</p>
+        <p>(c) <m>2.35 = 2\frac{35}{100} = 2\frac{7}{20}
+        = \frac{47}{20}</m>.</p>
+      </solution>
+    </example>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 7. SCIENTIFIC NOTATION                                 -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-scientific-notation">
+    <title>Scientific Notation</title>
+
+    <p>Very large and very small numbers are awkward to write in full.
+    Scientific notation expresses any positive number in the form
+    <m>a \times 10^n</m>, where <m>1 \leq a \lt 10</m> and
+    <m>n \in \mathbb{Z}</m>.</p>
+
+    <figure xml:id="fig-sci-notation">
+      <caption>The anatomy of scientific notation.</caption>
+      <image source="number/fig-scientific-notation.svg" width="80%">
+        <description>Diagram showing a times 10 to the n, with
+        annotations: a has one non-zero digit before the decimal
+        point, n is an integer indicating magnitude.</description>
+      </image>
+    </figure>
+
+    <p>The exponent <m>n</m> tells you how many places to move the
+    decimal point. Positive <m>n</m>: move right (big number).
+    Negative <m>n</m>: move left (small number).</p>
+
+    <example xml:id="ex-to-scientific">
+      <title>Converting to Scientific Notation</title>
+      <statement>
+        <p>Write in scientific notation:
+        (a) 56,000 (b) 0.00042 (c) 7,200,000 (d) 0.091</p>
+      </statement>
+      <solution>
+        <p>(a) <m>5.6 \times 10^4</m>.</p>
+        <p>(b) <m>4.2 \times 10^{-4}</m>.</p>
+        <p>(c) <m>7.2 \times 10^6</m>.</p>
+        <p>(d) <m>9.1 \times 10^{-2}</m>.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-sci-arithmetic">
+      <title>Arithmetic in Scientific Notation</title>
+      <statement>
+        <p>Calculate: (a) <m>(3 \times 10^4) \times (2 \times 10^3)</m>
+        (b) <m>\frac{8 \times 10^7}{4 \times 10^2}</m></p>
+      </statement>
+      <solution>
+        <p>(a) <m>3 \times 2 = 6</m> and
+        <m>10^4 \times 10^3 = 10^7</m>. Answer:
+        <m>6 \times 10^7</m>.</p>
+        <p>(b) <m>\frac{8}{4} = 2</m> and
+        <m>10^{7-2} = 10^5</m>. Answer:
+        <m>2 \times 10^5</m>.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-sci-add">
+      <title>Adding in Scientific Notation</title>
+      <statement>
+        <p>Calculate: <m>(3.2 \times 10^5) + (4.7 \times 10^4)</m></p>
+      </statement>
+      <solution>
+        <p>Make the powers the same first:
+        <m>4.7 \times 10^4 = 0.47 \times 10^5</m>.</p>
+        <p><m>3.2 \times 10^5 + 0.47 \times 10^5
+        = 3.67 \times 10^5</m>.</p>
+      </solution>
+    </example>
+
+    <exercise xml:id="ex-sci-practice">
+      <title>Practice</title>
+      <statement>
+        <p>1. Write in scientific notation: (a) 340,000
+        (b) 0.0062 (c) 98,700,000</p>
+        <p>2. Write as an ordinary number: (a) <m>4.5 \times 10^3</m>
+        (b) <m>7.1 \times 10^{-5}</m></p>
+        <p>3. Calculate, giving your answer in scientific notation:
+        (a) <m>(5 \times 10^3) \times (6 \times 10^5)</m>
+        (b) <m>\frac{9.6 \times 10^8}{1.2 \times 10^3}</m>
+        (c) <m>(2.5 \times 10^4) + (3.0 \times 10^3)</m></p>
+        <p>4. The distance from the Earth to the Sun is approximately
+        <m>1.5 \times 10^8</m> km. Light travels at approximately
+        <m>3 \times 10^5</m> km per second. How long does it take
+        light to reach us from the Sun?</p>
+      </statement>
+      <answer>
+        <p>1. (a) <m>3.4 \times 10^5</m>. (b) <m>6.2 \times 10^{-3}</m>.
+        (c) <m>9.87 \times 10^7</m>.</p>
+        <p>2. (a) 4500. (b) 0.000071.</p>
+        <p>3. (a) <m>3 \times 10^9</m>. (b) <m>8 \times 10^5</m>.
+        (c) <m>2.8 \times 10^4</m>.</p>
+        <p>4. <m>\frac{1.5 \times 10^8}{3 \times 10^5}
+        = 5 \times 10^2 = 500</m> seconds ≈ 8 min 20 sec.</p>
+      </answer>
+    </exercise>
+  </subsection>
+
+</section>

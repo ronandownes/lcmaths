@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="220" viewBox="0 0 480 220" font-family="Segoe UI, sans-serif">
+  <rect x="10" y="10" width="460" height="200" rx="10" fill="white" stroke="#ddd" stroke-width="1"/>
+  <rect x="10" y="10" width="460" height="35" rx="10" fill="#f0f0f0"/>
+  <rect x="10" y="35" width="460" height="10" fill="#f0f0f0"/>
+  <text x="130" y="33" text-anchor="middle" font-size="13" font-weight="bold" fill="#3b82f6">Rational (ℚ)</text>
+  <text x="370" y="33" text-anchor="middle" font-size="13" font-weight="bold" fill="#ef4444">Irrational (ℝ \ ℚ)</text>
+  <line x1="240" y1="10" x2="240" y2="210" stroke="#ddd" stroke-width="1"/>
+  <text x="30" y="65" font-size="13" fill="#1a1a1a">½ = 0.5</text>
+  <text x="175" y="65" font-size="10" fill="#3b82f6" font-style="italic">terminates</text>
+  <text x="30" y="93" font-size="13" fill="#1a1a1a">⅓ = 0.333...</text>
+  <text x="175" y="93" font-size="10" fill="#3b82f6" font-style="italic">repeats</text>
+  <text x="30" y="121" font-size="13" fill="#1a1a1a">⅞ = 0.875</text>
+  <text x="175" y="121" font-size="10" fill="#3b82f6" font-style="italic">terminates</text>
+  <text x="30" y="149" font-size="13" fill="#1a1a1a">1/11 = 0.0909...</text>
+  <text x="175" y="149" font-size="10" fill="#3b82f6" font-style="italic">repeats</text>
+  <text x="30" y="177" font-size="13" fill="#1a1a1a">¼ = 0.25</text>
+  <text x="175" y="177" font-size="10" fill="#3b82f6" font-style="italic">terminates</text>
+  <text x="255" y="65" font-size="13" fill="#1a1a1a">√2 = 1.41421356...</text>
+  <text x="420" y="65" font-size="10" fill="#ef4444" font-style="italic">never repeats</text>
+  <text x="255" y="93" font-size="13" fill="#1a1a1a">π = 3.14159265...</text>
+  <text x="420" y="93" font-size="10" fill="#ef4444" font-style="italic">never repeats</text>
+  <text x="255" y="121" font-size="13" fill="#1a1a1a">e = 2.71828182...</text>
+  <text x="420" y="121" font-size="10" fill="#ef4444" font-style="italic">never repeats</text>
+  <text x="255" y="149" font-size="13" fill="#1a1a1a">√3 = 1.73205080...</text>
+  <text x="420" y="149" font-size="10" fill="#ef4444" font-style="italic">never repeats</text>
+  <text x="255" y="177" font-size="13" fill="#1a1a1a">√5 = 2.23606797...</text>
+  <text x="420" y="177" font-size="10" fill="#ef4444" font-style="italic">never repeats</text>
+</svg>

@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="utf-8"?>
+<subsection xml:id="subsec-the-circle" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Circle</title>
+
+  <introduction>
+    <p>The circle is one of the most examined topics at Ordinary Level.
+    Every year, Paper 2 asks you to do some combination of:
+    <em>write down</em> the centre and radius, <em>write</em> the
+    equation, <em>find</em> the radius, <em>investigate</em> if a
+    point is on/inside/outside, <em>construct</em> a circle on a
+    diagram, and <em>work out</em> the centre from geometric clues.
+    This section trains each skill separately, then combines them in
+    exam-style problems.</p>
+
+    <p>Every worked solution follows <em>Pólya's four-step method</em>:</p>
+
+    <p><alert>Step 1 — Understand:</alert> State the problem in your own
+    words. Identify the unknowns, the given information, and which
+    formulas or facts are relevant.</p>
+
+    <p><alert>Step 2 — Plan:</alert> Choose a strategy — draw a diagram,
+    write an equation, work backwards, use substitution, look for a
+    pattern.</p>
+
+    <p><alert>Step 3 — Execute:</alert> Carry out the plan step by step,
+    showing all working.</p>
+
+    <p><alert>Step 4 — Review:</alert> Check your answer is correct and
+    reasonable. Does it make sense on the diagram? Can you verify it a
+    different way?</p>
+  </introduction>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- THE EQUATION                                           -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <paragraphs xml:id="par-circle-equation">
+    <title>The Equation of a Circle</title>
+
+    <p>A circle is the set of all points at a fixed distance
+    <m>r</m> (the <term>radius</term>) from a fixed point
+    <m>(h, k)</m> (the <term>centre</term>).</p>
+
+    <p>Using the distance formula, a point <m>(x, y)</m> lies on the
+    circle exactly when:</p>
+
+    <p><me>(x - h)^2 + (y - k)^2 = r^2</me></p>
+
+    <p>This is <em>the</em> equation you need. It is not in the log
+    tables, but it comes directly from the distance formula (p. 18)
+    applied to the centre and any point on the circle.</p>
+  </paragraphs>
+
+  <figure xml:id="fig-circle-general-cg">
+    <caption>The circle with centre <m>(h, k)</m> and radius
+    <m>r</m>.</caption>
+    <image source="geometry/fig-circle-general.svg" width="70%">
+      <description>A circle on a coordinate grid showing centre
+      (h,k), radius r, and a general point (x,y) on the circle with
+      the right triangle formed by (x-h) and (y-k).</description>
+    </image>
+  </figure>
+
+  <paragraphs xml:id="par-circle-origin-case">
+    <title>Special Case: Centre at the Origin</title>
+
+    <p>When the centre is <m>(0, 0)</m>, the equation simplifies to:</p>
+
+    <p><me>x^2 + y^2 = r^2</me></p>
+  </paragraphs>
+
+  <figure xml:id="fig-circle-origin-cg">
+    <caption>The circle <m>x^2 + y^2 = 9</m>: centre
+    <m>(0,0)</m>, radius 3.</caption>
+    <image source="geometry/fig-circle-origin.svg" width="55%">
+      <description>A circle centred at the origin with radius 3 on
+      a coordinate grid.</description>
+    </image>
+  </figure>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SKILL 1: WRITE DOWN centre and radius FROM equation    -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <paragraphs xml:id="par-skill-read-equation">
+    <title>Skill 1: "Write down the centre and radius"</title>
+
+    <p>When the equation is in the form
+    <m>(x - h)^2 + (y - k)^2 = r^2</m>, you read off:</p>
+
+    <p>Centre = <m>(h, k)</m>. Be careful with signs — a <m>+</m>
+    inside the bracket means the coordinate is <em>negative</em>.</p>
+
+    <p>Radius = <m>\sqrt{r^2}</m>. The number on the right is
+    <m>r^2</m>, not <m>r</m>.</p>
+  </paragraphs>
+
+  <example xml:id="ex-lc2023-q2a-i">
+    <title>LC 2023 Paper 2 OL — Q2(a)(i)</title>
+    <statement>
+      <p><m>s</m> is the circle <m>x^2 + y^2 = 25</m>.
+      Write down the centre and radius of the circle <m>s</m>.</p>
+    </statement>
+    <solution>
+      <p><alert>Step 1 — Understand:</alert>
+      We are given an equation in the form <m>x^2 + y^2 = 25</m>.
+      We need the centre and the radius.</p>
+
+      <p><alert>Step 2 — Plan:</alert>
+      <em>Appreciate</em> that <m>x^2 + y^2</m> is the same as
+      <m>(x - 0)^2 + (y - 0)^2</m>. Compare with the general form
+      <m>(x - h)^2 + (y - k)^2 = r^2</m>.</p>
+
+      <p><alert>Step 3 — Execute:</alert>
+      <m>h = 0</m>, <m>k = 0</m>, so Centre = <m>(0, 0)</m>.</p>
+      <p><em>Appreciate</em> that <m>r^2 = 25</m>, so
+      <m>r = \sqrt{25} = 5</m>.</p>
+      <p>Radius = <m>5</m>.</p>
+
+      <p><alert>Step 4 — Review:</alert>
+      A circle centred at the origin with radius 5 — this matches the
+      simple form <m>x^2 + y^2 = 25</m>. ✓</p>
+    </solution>
+  </example>
+
+  <example xml:id="ex-lc2024-q4a-i">
+    <title>LC 2024 Paper 2 OL — Q4(a)(i)</title>
+    <statement>
+      <p>The circle <m>k</m> has equation
+      <m>(x - 5)^2 + (y + 3)^2 = 25</m>. Write down the centre
+      and radius of <m>k</m>.</p>
+    </statement>
+    <solution>
+      <p><alert>Step 1 — Understand:</alert>
+      The circle formula is given. <em>Identify</em> the values of
+      <m>h</m>, <m>k</m>, and <m>r</m>.</p>
+
+      <p><alert>Step 2 — Plan:</alert>
+      <em>Work backwards</em> — compare with
+      <m>(x - h)^2 + (y - k)^2 = r^2</m> and read off the values.
+      Be careful: <m>(y + 3)</m> means <m>(y - (-3))</m>.</p>
+
+      <p><alert>Step 3 — Execute:</alert>
+      <m>h = 5</m>, and <m>(y + 3)^2 = (y - (-3))^2</m> so
+      <m>k = -3</m>.</p>
+      <p>Centre = <m>(5, -3)</m>.</p>
+      <p><m>r^2 = 25</m>, so <m>r = 5</m>.</p>
+
+      <p><alert>Step 4 — Review:</alert>
+      The centre has a negative <m>y</m>-coordinate because of the
+      <m>+</m> sign inside the bracket — a common trap. ✓</p>
+    </solution>
+  </example>
+
+  <example xml:id="ex-read-circle-eq-2">
+    <title>Reading the Origin Form</title>
+    <statement>
+      <p>Write down the centre and radius of: (a)
+      <m>x^2 + y^2 = 9</m> (b)
+      <m>x^2 + y^2 = 1</m> (c)
+      <m>(x - 6)^2 + (y - 2)^2 = 4</m>.</p>
+    </statement>
+    <solution>
+      <p>(a) Centre <m>(0, 0)</m>, radius <m>3</m>.</p>
+      <p>(b) Centre <m>(0, 0)</m>, radius <m>1</m>.</p>
+      <p>(c) Centre <m>(6, 2)</m>, radius <m>2</m>.</p>
+    </solution>
+  </example>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SKILL 2: WRITE the equation given centre and radius    -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <paragraphs xml:id="par-skill-write-equation">
+    <title>Skill 2: "Write down the equation"</title>
+
+    <p>Given the centre <m>(h, k)</m> and radius <m>r</m>,
+    substitute into the formula. Remember to <em>square</em> the
+    radius on the right-hand side.</p>
+  </paragraphs>
+
+  <example xml:id="ex-lc2024-q3a-i">
+    <title>LC 2024 Paper 2 OL — Q3(a)(i)</title>
+    <statement>
+      <p>A circle <m>c</m> has centre <m>(3, -1)</m> and radius 2.
+      Write down the equation of <m>c</m>.</p>
+    </statement>
+    <solution>
+      <p><alert>Step 1 — Understand:</alert>
+      <em>Identify</em> the values: <m>h = 3</m>, <m>k = -1</m>,
+      <m>r = 2</m>. We need the equation of the circle.</p>
+
+      <p><alert>Step 2 — Plan:</alert>
+      Use the equation of a circle centred on <m>(h, k)</m> with
+      radius <m>r</m>: substitute into
+      <m>(x - h)^2 + (y - k)^2 = r^2</m>.</p>
+
+      <p><alert>Step 3 — Execute:</alert>
+      <m>(x - 3)^2 + (y - (-1))^2 = 2^2</m></p>
+      <p><m>(x - 3)^2 + (y + 1)^2 = 4</m></p>
+
+      <p><alert>Step 4 — Review:</alert>
+      Reading back: centre <m>(3, -1)</m> ✓, radius
+      <m>\sqrt{4} = 2</m> ✓.</p>
+    </solution>
+  </example>
+
+  <exercise xml:id="ex-write-equations-practice">
+    <title>Practice: Writing Equations</title>
+    <statement>
+      <p>Write the equation of each circle:</p>
+      <p>1. Centre <m>(0, 0)</m>, radius 6.</p>
+      <p>2. Centre <m>(2, -5)</m>, radius 3.</p>
+      <p>3. Centre <m>(-1, 4)</m>, radius <m>\sqrt{10}</m>.</p>
+      <p>4. Centre <m>(0, 3)</m>, radius 4.</p>
+    </statement>
+    <answer>
+      <p>1. <m>x^2 + y^2 = 36</m></p>
+      <p>2. <m>(x-2)^2 + (y+5)^2 = 9</m></p>
+      <p>3. <m>(x+1)^2 + (y-4)^2 = 10</m></p>
+      <p>4. <m>x^2 + (y-3)^2 = 16</m></p>
+    </answer>
+  </exercise>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SKILL 3: SHOW a point is on the circle                 -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <paragraphs xml:id="par-skill-show-point">
+    <title>Skill 3: "Show that the point is on the circle"</title>
+
+    <p>When the exam says <em>"show that"</em>, it means
+    <em>prove</em>. You prove a point is on the circle by
+    <em>illustrating</em> that substitution of the point
+    <m>(x, y)</m> into the equation gives a <em>true number
+    statement</em>.</p>
+  </paragraphs>
+
+  <example xml:id="ex-lc2023-q2a-ii">
+    <title>LC 2023 Paper 2 OL — Q2(a)(ii)</title>
+    <statement>
+      <p><m>s</m> is the circle <m>x^2 + y^2 = 25</m>.
+      Show that the point <m>(3, -4)</m> is on the circle
+      <m>s</m>.</p>
+    </statement>
+    <solution>
+      <p><alert>Step 1 — Understand:</alert>
+      "Show that" means <em>prove</em>. We must
+      <em>illustrate</em> that substituting the point into the
+      equation gives a true statement.</p>
+
+      <p><alert>Step 2 — Plan:</alert>
+      Substitute <m>x = 3</m> and <m>y = -4</m> into the
+      left-hand side of <m>x^2 + y^2 = 25</m> and check
+      that it equals 25.</p>
+
+      <p><alert>Step 3 — Execute:</alert>
+      <m>x^2 + y^2 = (3)^2 + (-4)^2 = 9 + 16 = 25</m> ✓</p>
+      <p>Since <m>25 = 25</m> is a true statement, the point
+      <m>(3, -4)</m> is on the circle.</p>
+
+      <p><alert>Step 4 — Review:</alert>
+      Notice <m>3^2 + 4^2 = 5^2</m> — this is a
+      <em>Pythagorean triple</em> (3, 4, 5), which confirms our
+      answer. ✓</p>
+    </solution>
+  </example>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SKILL 4: FIND other points on the circle               -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <paragraphs xml:id="par-skill-find-points">
+    <title>Skill 4: "Write down the coordinates of other points
+    on the circle"</title>
+
+    <p>Once you know the centre and radius, you can find other
+    integer points. The easiest method: <em>translate</em>
+    <m>\pm r</m> along the <m>x</m>-axis or <m>\pm r</m> along
+    the <m>y</m>-axis from the centre. These four points are
+    always on the circle.</p>
+
+    <p>Common Pythagorean triples are also useful for finding extra
+    points: <m>(3, 4, 5)</m>, <m>(5, 12, 13)</m>,
+    <m>(6, 8, 10)</m>, <m>(7, 24, 25)</m>.</p>
+  </paragraphs>
+
+  <example xml:id="ex-lc2023-q2a-iii">
+    <title>LC 2023 Paper 2 OL — Q2(a)(iii)</title>
+    <statement>
+      <p><m>s</m> is the circle <m>x^2 + y^2 = 25</m>.
+      Write down the co-ordinates of two other points that are
+      also on the circle <m>s</m>.</p>
+    </statement>
+    <solution>
+      <p><alert>Step 1 — Understand:</alert>
+      The circle has centre <m>(0, 0)</m> and radius 5. We need
+      two points (other than <m>(3, -4)</m>) whose coordinates
+      satisfy <m>x^2 + y^2 = 25</m>.</p>
+
+      <p><alert>Step 2 — Plan:</alert>
+      The easiest method is to <em>translate</em> <m>\pm 5</m>
+      along the <m>x</m>-axis from the centre <m>(0, 0)</m>.
+      Since <m>3^2 + 4^2 = 5^2</m> is a Pythagorean triple,
+      we can also use points like <m>(5, 0)</m>, <m>(-5, 0)</m>,
+      <m>(0, 5)</m>, <m>(0, -5)</m>.</p>
+
+      <p><alert>Step 3 — Execute:</alert>
+      <m>(5, 0)</m> and <m>(-5, 0)</m>.</p>
+      <p>Check: <m>5^2 + 0^2 = 25</m> ✓ and
+      <m>(-5)^2 + 0^2 = 25</m> ✓.</p>
+      <p>Also allowed: <m>(0, 5)</m> and <m>(0, -5)</m>.</p>
+
+      <p><alert>Step 4 — Review:</alert>
+      Moving 5 units along an axis from the origin always
+      lands on the circle — this is the simplest approach. ✓</p>
+    </solution>
+  </example>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SKILL 5: INVESTIGATE — on, inside, or outside?         -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <paragraphs xml:id="par-skill-investigate">
+    <title>Skill 5: "Investigate if a point is on, inside, or
+    outside"</title>
+
+    <p>Substitute the point into the <em>left-hand side</em> of the
+    equation and compare with <m>r^2</m>:</p>
+
+    <p><em>Recall</em> <m>(x - h)^2 + (y - k)^2</m> compared
+    with <m>r^2</m>:</p>
+    <p>Result <m>> r^2</m>: the point is <em>outside</em>.</p>
+    <p>Result <m>&lt; r^2</m>: the point is <em>inside</em>.</p>
+    <p>Result <m>= r^2</m>: the point is <em>on</em> the circle.</p>
+  </paragraphs>
+
+  <figure xml:id="fig-point-position-cg">
+    <caption>The algebraic test for a point's position relative to
+    a circle.</caption>
+    <image source="geometry/fig-point-position.svg" width="60%">
+      <description>A circle with three points marked: one on the
+      circle (green), one inside (blue), one outside (red), with the
+      substitution test shown below.</description>
+    </image>
+  </figure>
+
+  <example xml:id="ex-lc2024-q4a-ii">
+    <title>LC 2024 Paper 2 OL — Q4(a)(ii)</title>
+    <statement>
+      <p>The circle <m>k</m> has equation
+      <m>(x - 5)^2 + (y + 3)^2 = 25</m>.
+      Use algebra to investigate if the point <m>(9, 2)</m> is on,
+      inside, or outside <m>k</m>.</p>
+    </statement>
+    <solution>
+      <p><alert>Step 1 — Understand:</alert>
+      We have the circle equation and a point. We need to
+      determine the point's position relative to the circle.</p>
+
+      <p><alert>Step 2 — Plan:</alert>
+      <em>Recall</em> the test: substitute the point into the
+      LHS of the equation and compare the result with
+      <m>r^2 = 25</m>.</p>
+
+      <p><alert>Step 3 — Execute:</alert>
+      Substitute <m>(9, 2)</m>:</p>
+      <p><m>(9 - 5)^2 + (2 + 3)^2 = 4^2 + 5^2 = 16 + 25
+      = 41</m></p>
+      <p>Compare: <m>41 > 25</m>.</p>
+      <p>Since the result is <em>greater than</em> <m>r^2</m>,
+      the point <m>(9, 2)</m> is <em>outside</em> the circle.</p>
+
+      <p><alert>Step 4 — Review:</alert>
+      The point is further from the centre than the radius,
+      so "outside" makes sense. ✓</p>
+    </solution>
+  </example>
+
+  <exercise xml:id="ex-investigate-practice">
+    <title>Practice: On, Inside, or Outside?</title>
+    <statement>
+      <p>The circle <m>c</m> has equation
+      <m>(x - 2)^2 + (y + 1)^2 = 20</m>.</p>
+      <p>Investigate each point:</p>
+      <p>1. <m>(6, 1)</m></p>
+      <p>2. <m>(3, 2)</m></p>
+      <p>3. <m>(0, 3)</m></p>
+      <p>4. <m>(5, -3)</m></p>
+    </statement>
+    <answer>
+      <p>1. <m>(6-2)^2 + (1+1)^2 = 16 + 4 = 20 = r^2</m> → ON.</p>
+      <p>2. <m>(3-2)^2 + (2+1)^2 = 1 + 9 = 10 &lt; 20</m> → INSIDE.</p>
+      <p>3. <m>(0-2)^2 + (3+1)^2 = 4 + 16 = 20 = r^2</m> → ON.</p>
+      <p>4. <m>(5-2)^2 + (-3+1)^2 = 9 + 4 = 13 &lt; 20</m> → INSIDE.</p>
+    </answer>
+  </exercise>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SKILL 6: FIND the radius using distance formula        -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <paragraphs xml:id="par-skill-find-radius">
+    <title>Skill 6: "Find the radius"</title>
+
+    <p>If you know the centre and a point on the circle, the radius
+    is the distance between them. Use the distance formula
+    (log tables p. 18):</p>
+
+    <p><me>r = |AB| = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}</me></p>
+  </paragraphs>
+
+  <example xml:id="ex-find-radius">
+    <title>Finding the Radius from Centre and Point</title>
+    <statement>
+      <p>The circle <m>k</m> has centre <m>(-1, 3)</m>. The
+      point <m>(2, 7)</m> is on the circle. Find the radius.</p>
+    </statement>
+    <solution>
+      <p><alert>Step 1 — Understand:</alert>
+      We know the centre and a point on the circle.
+      The radius is the distance from centre to any point on the
+      circle.</p>
+
+      <p><alert>Step 2 — Plan:</alert>
+      Use the distance formula.</p>
+
+      <p><alert>Step 3 — Execute:</alert>
+      <m>r = \sqrt{(2 - (-1))^2 + (7 - 3)^2}
+      = \sqrt{3^2 + 4^2}
+      = \sqrt{9 + 16}
+      = \sqrt{25}
+      = 5</m></p>
+
+      <p><alert>Step 4 — Review:</alert>
+      We see the Pythagorean triple <m>(3, 4, 5)</m> again — this
+      is a very common pattern in LC questions. ✓</p>
+    </solution>
+  </example>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SKILL 7: MATCHING circles to a diagram                 -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <paragraphs xml:id="par-skill-matching">
+    <title>Skill 7: Matching Circles to Equations</title>
+
+    <p>The 2025 paper showed three circles on a diagram and asked
+    you to match each to its equation. The strategy:</p>
+
+    <p>Step 1: Read the centre from the equation. If the equation is
+    <m>x^2 + y^2 = r^2</m>, the centre is <m>(0,0)</m>.</p>
+    <p>Step 2: Read the radius (<m>\sqrt{r^2}</m>).</p>
+    <p>Step 3: Check the diagram — which circle has that centre and
+    roughly that size?</p>
+  </paragraphs>
+
+  <example xml:id="ex-matching-circles">
+    <title>LC 2025 Q3(a) Style</title>
+    <statement>
+      <p>Three circles <m>p</m>, <m>q</m>, <m>r</m> are shown on
+      a diagram. From the diagram: <m>p</m> is a small circle at the
+      origin, <m>q</m> is a larger circle at the origin, and
+      <m>r</m> is a small circle centred near <m>(6, 2)</m>.
+      Match each to its equation:</p>
+      <p>(A) <m>x^2 + y^2 = 9</m></p>
+      <p>(B) <m>(x-6)^2 + (y-2)^2 = 4</m></p>
+      <p>(C) <m>x^2 + y^2 = 1</m></p>
+    </statement>
+    <solution>
+      <p>(A) Centre <m>(0,0)</m>, radius 3 — the larger circle at
+      the origin → <m>q</m>.</p>
+      <p>(B) Centre <m>(6,2)</m>, radius 2 — off-centre →
+      <m>r</m>.</p>
+      <p>(C) Centre <m>(0,0)</m>, radius 1 — the small one at
+      the origin → <m>p</m>.</p>
+    </solution>
+  </example>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SKILL 8: CENTRAL SYMMETRY of a circle                  -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <paragraphs xml:id="par-skill-central-symmetry">
+    <title>Skill 8: "Central symmetry through a point"</title>
+
+    <p><em>Recall</em>: central symmetry through a point <m>O</m>
+    means <m>O</m> is the <em>midpoint</em> between each point and
+    its image. If the centre of circle <m>c</m> is <m>(h, k)</m>
+    and the symmetry is through <m>(0, 0)</m>, then the image
+    circle <m>s</m> has centre <m>(-h, -k)</m> and the same
+    radius.</p>
+  </paragraphs>
+
+  <example xml:id="ex-lc2024-q3a-ii">
+    <title>LC 2024 Paper 2 OL — Q3(a)(ii)</title>
+    <statement>
+      <p>A circle <m>c</m> has centre <m>(3, -1)</m> and radius 2.
+      Circle <m>s</m> is the image of circle <m>c</m> by central
+      symmetry through the point <m>O(0, 0)</m>.
+      Work out the centre and the radius of circle <m>s</m>.</p>
+    </statement>
+    <solution>
+      <p><alert>Step 1 — Understand:</alert>
+      <em>Classify</em> this as an instruction about
+      transformations. Central symmetry through <m>O(0,0)</m>
+      means <m>(0,0)</m> is the midpoint between each original
+      point and its image.</p>
+
+      <p><alert>Step 2 — Plan:</alert>
+      <em>Recall</em> that central symmetry in <m>(0, 0)</m>
+      maps <m>(h, k)</m> to <m>(-h, -k)</m>. The radius
+      does not change under symmetry.</p>
+
+      <p><alert>Step 3 — Execute:</alert>
+      Centre of <m>c</m> is <m>(3, -1)</m>.
+      Image centre: <m>(-3, -(-1)) = (-3, 1)</m>.</p>
+      <p>Centre of <m>s</m> = <m>(-3, 1)</m>. Radius of
+      <m>s</m> = 2.</p>
+
+      <p><alert>Step 4 — Review:</alert>
+      Check: midpoint of <m>(3, -1)</m> and <m>(-3, 1)</m> is
+      <m>\left(\frac{3 + (-3)}{2}, \frac{-1 + 1}{2}\right) =
+      (0, 0)</m> ✓. Radius unchanged ✓.</p>
+    </solution>
+  </example>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SKILL 9: CONSTRUCT a circle on a diagram               -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <paragraphs xml:id="par-skill-construct">
+    <title>Skill 9: "Construct this circle on the co-ordinate
+    diagram"</title>
+
+    <p>To draw a circle on the co-ordinate diagram:</p>
+    <p>1. Plot the centre.</p>
+    <p>2. Use the <em>run step</em> to mark a point <m>r</m>
+    units to the left/right of the centre (along the
+    <m>x</m>-direction).</p>
+    <p>3. Use the <em>rise step</em> to mark a point <m>r</m>
+    units above/below the centre (along the
+    <m>y</m>-direction).</p>
+    <p>4. Place your compass point on the centre and draw through
+    these points. In the exam, use a compass — freehand circles
+    lose marks.</p>
+  </paragraphs>
+
+  <example xml:id="ex-lc2024-q4b">
+    <title>LC 2024 Paper 2 OL — Q4(b)</title>
+    <statement>
+      <p>A different circle has centre <m>(4, -1)</m> and radius 3.
+      Construct this circle on the co-ordinate diagram.</p>
+    </statement>
+    <solution>
+      <p><alert>Step 1 — Understand:</alert>
+      We need to draw a circle with centre <m>(4, -1)</m> and
+      radius 3 on the grid.</p>
+
+      <p><alert>Step 2 — Plan:</alert>
+      Place the compass point on the centre <m>(4, -1)</m>.
+      Count 3 units straight over (or back) for a horizontal
+      guide point, and 3 units up (or down) for a vertical
+      guide point.</p>
+
+      <p><alert>Step 3 — Execute:</alert>
+      Mark the centre <m>(4, -1)</m>.</p>
+      <p>Right: <m>(4 + 3, -1) = (7, -1)</m>.</p>
+      <p>Left: <m>(4 - 3, -1) = (1, -1)</m>.</p>
+      <p>Up: <m>(4, -1 + 3) = (4, 2)</m>.</p>
+      <p>Down: <m>(4, -1 - 3) = (4, -4)</m>.</p>
+      <p>Set compass to radius 3 and draw through these four
+      points.</p>
+
+      <p><alert>Step 4 — Review:</alert>
+      All four guide points should sit exactly on the circle.
+      Check each is 3 units from the centre. ✓</p>
+    </solution>
+  </example>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SKILL 10: WORK OUT centre from geometric clues         -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <paragraphs xml:id="par-skill-work-out">
+    <title>Skill 10: "Work out the radius and centre" from
+    Geometric Clues</title>
+
+    <p>The hardest circle questions give you geometric information
+    (tangent to an axis, lowest/highest point, passes through a
+    point) and ask you to deduce the centre and radius. Draw a
+    picture and use these key facts:</p>
+
+    <p>If the circle is <em>tangent to the x-axis</em>, the radius
+    equals <m>|k|</m> (the absolute value of the y-coordinate of
+    the centre).</p>
+    <p>If the circle is <em>tangent to the y-axis</em>, the radius
+    equals <m>|h|</m> (the absolute value of the x-coordinate of
+    the centre).</p>
+    <p>The <em>lowest point</em> is directly below the centre:
+    <m>(h, k - r)</m>.</p>
+    <p>The <em>highest point</em> is directly above:
+    <m>(h, k + r)</m>.</p>
+  </paragraphs>
+
+  <figure xml:id="fig-tangent-y-axis-cg">
+    <caption>A circle tangent to the y-axis: the radius equals the
+    x-coordinate of the centre.</caption>
+    <image source="geometry/fig-tangent-y-axis.svg" width="55%">
+      <description>A circle tangent to the y-axis, showing the
+      radius equal to the horizontal distance from centre to
+      axis, and the lowest point directly below the
+      centre.</description>
+    </image>
+  </figure>
+
+  <example xml:id="ex-lc2024-q4c">
+    <title>LC 2024 Paper 2 OL — Q4(c)</title>
+    <statement>
+      <p>The point <m>(2, 1)</m> is the lowest point on a circle
+      <m>s</m> with centre <m>c</m>. The y-axis is a tangent to the
+      circle. Work out the radius and centre of <m>s</m>.</p>
+    </statement>
+    <solution>
+      <p><alert>Step 1 — Understand:</alert>
+      <em>Examine what we know.</em> We have two geometric clues:
+      <m>(2, 1)</m> is the lowest point, and the y-axis is tangent.
+      We need both the radius and the centre.</p>
+
+      <p><alert>Step 2 — Plan:</alert>
+      <em>Investigate and explore until you recognise</em> the
+      connections. <em>Analyse</em> what <m>(2, 1)</m> is telling
+      us — use <em>visual thinking</em>:</p>
+      <p>Since <m>(2, 1)</m> is the lowest point, the centre is
+      directly above it: <m>c = (2, 1 + r)</m>.</p>
+      <p>Since the y-axis is tangent, the radius equals the
+      <m>x</m>-coordinate of the centre. The centre has
+      <m>x</m>-coordinate 2, so <m>r = 2</m>.</p>
+
+      <p><alert>Step 3 — Execute:</alert>
+      <m>r = 2</m>.</p>
+      <p>Centre = <m>(2, 1 + 2) = (2, 3)</m>.</p>
+
+      <p><alert>Step 4 — Review:</alert>
+      Check tangent to y-axis: distance from <m>(2, 3)</m> to the
+      y-axis is 2 = <m>r</m> ✓.
+      Lowest point: <m>(2, 3 - 2) = (2, 1)</m> ✓.</p>
+    </solution>
+  </example>
+
+  <exercise xml:id="ex-work-out-practice">
+    <title>Practice: Geometric Clues</title>
+    <statement>
+      <p>1. A circle has centre <m>(5, k)</m> and is tangent to the
+      x-axis. The radius is 3. Find <m>k</m> (two possible
+      answers).</p>
+      <p>2. The highest point on a circle is <m>(4, 9)</m> and the
+      circle is tangent to the x-axis. Find the centre and
+      radius.</p>
+      <p>3. A circle is tangent to both axes and has radius 4. The
+      centre is in the first quadrant. Write down its equation.</p>
+    </statement>
+    <answer>
+      <p>1. <m>k = 3</m> or <m>k = -3</m>.</p>
+      <p>2. Tangent to x-axis means <m>r = k</m>. Highest point is
+      <m>(h, k+r) = (4, 9)</m>, so <m>h = 4</m> and
+      <m>k + r = 9</m>. Since <m>r = k</m>: <m>2k = 9</m>,
+      <m>k = 4.5</m>, <m>r = 4.5</m>. Centre
+      <m>(4, 4.5)</m>.</p>
+      <p>3. Centre = <m>(4, 4)</m>.
+      Equation: <m>(x-4)^2 + (y-4)^2 = 16</m>.</p>
+    </answer>
+  </exercise>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SKILL 11: INTERSECTION of line and circle              -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <paragraphs xml:id="par-skill-intersection">
+    <title>Skill 11: "Find the points of intersection" of a line
+    and a circle</title>
+
+    <p><em>Identify</em> the system: one equation is
+    <em>linear</em> (the line) and one is <em>non-linear</em>
+    (the circle). This is critical:</p>
+
+    <p><alert>Elimination NEVER works for a linear–non-linear
+    system.</alert> Elimination only works for two linear equations.
+    You must use <em>substitution</em> (or plotting for
+    intersection points).</p>
+
+    <p>The method: rearrange the linear equation to make <m>y</m>
+    (or <m>x</m>) the subject, then substitute into the circle
+    equation.</p>
+  </paragraphs>
+
+  <example xml:id="ex-lc2023-q2b">
+    <title>LC 2023 Paper 2 OL — Q2(b)</title>
+    <statement>
+      <p>Find the points of intersection between a circle <m>k</m>,
+      and the line <m>l</m>, where:</p>
+      <p><m>l</m>: <m>5x - y - 13 = 0</m></p>
+      <p><m>k</m>: <m>x^2 + y^2 = 13</m></p>
+    </statement>
+    <solution>
+      <p><alert>Step 1 — Understand:</alert>
+      <em>Identify</em> <m>l</m> as a <em>linear</em> equation
+      and <m>k</m> as a <em>non-linear</em> equation. We need the
+      points where the line crosses the circle.</p>
+
+      <p><alert>Step 2 — Plan:</alert>
+      <em>Appreciate</em> that substitution (or plotting) is
+      required — elimination does not work for a
+      linear–non-linear system. Rearrange the line for <m>y</m>
+      and substitute into the circle.</p>
+
+      <p><alert>Step 3 — Execute:</alert>
+      From <m>l</m>: <m>y = 5x - 13</m>.</p>
+      <p>Substitute into <m>k</m>:</p>
+      <p><m>x^2 + (5x - 13)^2 = 13</m></p>
+      <p><m>x^2 + 25x^2 - 130x + 169 = 13</m></p>
+      <p><m>26x^2 - 130x + 156 = 0</m></p>
+      <p>Divide through by 26:</p>
+      <p><m>x^2 - 5x + 6 = 0</m></p>
+      <p><m>(x - 2)(x - 3) = 0</m></p>
+      <p><m>x = 2</m> or <m>x = 3</m>.</p>
+      <p>When <m>x = 2</m>: <m>y = 5(2) - 13 = -3</m>.
+      Point: <m>(2, -3)</m>.</p>
+      <p>When <m>x = 3</m>: <m>y = 5(3) - 13 = 2</m>.
+      Point: <m>(3, 2)</m>.</p>
+
+      <p><alert>Step 4 — Review:</alert>
+      Check <m>(2, -3)</m> on the circle:
+      <m>2^2 + (-3)^2 = 4 + 9 = 13</m> ✓.</p>
+      <p>Check <m>(2, -3)</m> on the line:
+      <m>5(2) - (-3) - 13 = 10 + 3 - 13 = 0</m> ✓.</p>
+      <p>Check <m>(3, 2)</m> on the circle:
+      <m>3^2 + 2^2 = 9 + 4 = 13</m> ✓.</p>
+      <p>Check <m>(3, 2)</m> on the line:
+      <m>5(3) - 2 - 13 = 15 - 2 - 13 = 0</m> ✓.</p>
+    </solution>
+  </example>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SKILL 12: TANGENT LINE to a circle                     -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <paragraphs xml:id="par-skill-tangent-line">
+    <title>Skill 12: "Find the slope of the tangent line"</title>
+
+    <p>The tangent to a circle at any point is
+    <em>perpendicular</em> to the radius at that point. The
+    method is:</p>
+    <p>1. Find the slope of the radius <m>m_R</m> (from centre to
+    the point of tangency).</p>
+    <p>2. Calculate the slope of the tangent: <m>m_T = -\frac{1}{m_R}</m>
+    (negative reciprocal, since perpendicular lines have slopes
+    whose product is <m>-1</m>).</p>
+    <p>3. Use the point and slope in the point-slope formula:
+    <m>y - y_1 = m(x - x_1)</m>.</p>
+  </paragraphs>
+
+  <example xml:id="ex-lc2024-q3b">
+    <title>LC 2024 Paper 2 OL — Q3(b)</title>
+    <statement>
+      <p>The circle <m>k</m> has centre <m>A(4, -2)</m>.
+      The point <m>B(7, 2)</m> is also on the circle and is the
+      point of contact for the tangent line <m>l</m>.
+      Find the slope of <m>[AB]</m>, and hence, work out the slope
+      of the tangent line <m>l</m>.</p>
+    </statement>
+    <solution>
+      <p><alert>Step 1 — Understand:</alert>
+      <em>Appreciate</em> that the point of tangency <m>B(7,2)</m>
+      is on the tangent line, and the centre <m>A(4, -2)</m> is
+      <em>not</em> on the tangent. The radius <m>[AB]</m> is
+      perpendicular to the tangent at <m>B</m>.</p>
+
+      <p><alert>Step 2 — Plan:</alert>
+      <em>Explain the method</em>: find the slope of the radius
+      first (<m>m_R</m>), then calculate the slope of the tangent
+      (<m>m_T</m>) using the perpendicular relationship. Finally,
+      use point <m>B</m> and slope <m>m_T</m> in the point-slope
+      formula.</p>
+
+      <p><alert>Step 3 — Execute:</alert>
+      Slope of <m>[AB]</m>:</p>
+      <p><m>m_R = \frac{2 - (-2)}{7 - 4} = \frac{4}{3}</m></p>
+      <p>Slope of tangent (perpendicular to radius):</p>
+      <p><m>m_T = -\frac{1}{m_R} = -\frac{1}{\frac{4}{3}}
+      = -\frac{3}{4}</m></p>
+      <p>Equation of tangent using <m>B(7, 2)</m>:</p>
+      <p><m>y - 2 = -\frac{3}{4}(x - 7)</m></p>
+      <p><m>4(y - 2) = -3(x - 7)</m></p>
+      <p><m>4y - 8 = -3x + 21</m></p>
+      <p><m>3x + 4y - 29 = 0</m></p>
+
+      <p><alert>Step 4 — Review:</alert>
+      Check the product of slopes:
+      <m>m_R \times m_T = \frac{4}{3} \times \left(-\frac{3}{4}\right)
+      = -1</m> ✓ (perpendicular).</p>
+      <p>Check <m>B(7, 2)</m> on the tangent:
+      <m>3(7) + 4(2) - 29 = 21 + 8 - 29 = 0</m> ✓.</p>
+    </solution>
+  </example>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- DESMOS INTERACTIVE                                     -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <paragraphs xml:id="par-circle-desmos">
+    <title>Interactive: Explore the Circle Equation</title>
+
+    <p>Use this Desmos applet to explore how the equation changes
+    as you drag the centre and adjust the radius. Notice how the
+    equation updates in real time.</p>
+
+    <p><url href="https://www.desmos.com/calculator/8ukluym345"
+    visual="Open in Desmos: Circle Equation Explorer"/></p>
+
+    <p>Try these challenges in Desmos:</p>
+    <p>1. Set the centre to <m>(3, -1)</m> and radius to 2. Check
+    that the equation matches the LC 2024 Q3(a)(i)
+    example above.</p>
+    <p>2. Set the centre to <m>(0, 0)</m>. Change the radius.
+    What happens to the equation?</p>
+    <p>3. Make a circle tangent to the y-axis. What do you notice
+    about the radius and the x-coordinate of the centre?</p>
+  </paragraphs>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- EXAM-STYLE MIXED PROBLEMS                              -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <paragraphs xml:id="par-circle-mixed-intro">
+    <title>Exam-Style Mixed Problems</title>
+
+    <p>These problems combine multiple skills, just like the real
+    exam. Attempt each one fully before checking the answer.
+    Use Pólya's four steps on every question.</p>
+  </paragraphs>
+
+  <exercise xml:id="ex-circle-mixed-1">
+    <title>Mixed Problem 1</title>
+    <statement>
+      <p>A circle has centre <m>(1, -2)</m> and passes through
+      the point <m>(4, 2)</m>.</p>
+      <p>(a) Find the radius.</p>
+      <p>(b) Write the equation of the circle.</p>
+      <p>(c) Investigate whether <m>(6, -2)</m> is on, inside, or
+      outside the circle.</p>
+    </statement>
+    <answer>
+      <p>(a) <m>r = \sqrt{(4-1)^2+(2-(-2))^2} = \sqrt{9+16}
+      = 5</m>.</p>
+      <p>(b) <m>(x-1)^2 + (y+2)^2 = 25</m>.</p>
+      <p>(c) <m>(6-1)^2 + (-2+2)^2 = 25 = r^2</m> → ON the
+      circle.</p>
+    </answer>
+  </exercise>
+
+  <exercise xml:id="ex-circle-mixed-2">
+    <title>Mixed Problem 2</title>
+    <statement>
+      <p>The circle <m>k</m> has equation
+      <m>(x + 2)^2 + (y - 5)^2 = 36</m>.</p>
+      <p>(a) Write down the centre and radius.</p>
+      <p>(b) Write down the coordinates of the highest and lowest
+      points on <m>k</m>.</p>
+      <p>(c) Is the point <m>(1, 1)</m> inside or outside
+      <m>k</m>?</p>
+    </statement>
+    <answer>
+      <p>(a) Centre <m>(-2, 5)</m>, radius 6.</p>
+      <p>(b) Highest: <m>(-2, 5+6) = (-2, 11)</m>. Lowest:
+      <m>(-2, 5-6) = (-2, -1)</m>.</p>
+      <p>(c) <m>(1+2)^2 + (1-5)^2 = 9+16 = 25 &lt; 36</m> →
+      INSIDE.</p>
+    </answer>
+  </exercise>
+
+  <exercise xml:id="ex-circle-mixed-3">
+    <title>Mixed Problem 3</title>
+    <statement>
+      <p>A circle has its centre on the positive x-axis and is
+      tangent to both the x-axis and the line <m>y = 8</m>.</p>
+      <p>(a) Find the radius and the y-coordinate of the centre.</p>
+      <p>(b) The point <m>(-3, 4)</m> is on the circle. Find the
+      x-coordinate of the centre and write the equation.</p>
+    </statement>
+    <hint>
+      <p>(a) If tangent to <m>y = 0</m> and <m>y = 8</m>, the
+      centre must be halfway between them.</p>
+    </hint>
+    <answer>
+      <p>(a) Centre is midway between <m>y = 0</m> and
+      <m>y = 8</m>, so <m>k = 4</m> and <m>r = 4</m>.</p>
+      <p>(b) Centre is <m>(h, 4)</m>. Substitute
+      <m>(-3, 4)</m>: <m>(-3 - h)^2 + (4 - 4)^2 = 16</m>,
+      so <m>(-3 - h)^2 = 16</m>, giving <m>-3 - h = \pm 4</m>.
+      Since centre is on the positive x-axis: <m>h = 1</m>.
+      Equation: <m>(x - 1)^2 + (y - 4)^2 = 16</m>.</p>
+    </answer>
+  </exercise>
+
+  <exercise xml:id="ex-circle-mixed-4">
+    <title>Mixed Problem 4</title>
+    <statement>
+      <p>The circle <m>c</m> has centre <m>(3, 4)</m> and
+      passes through the origin <m>(0, 0)</m>.</p>
+      <p>(a) Find the radius.</p>
+      <p>(b) Write the equation of <m>c</m>.</p>
+      <p>(c) Write down the coordinates of the point on <m>c</m>
+      that is furthest from the origin.</p>
+    </statement>
+    <hint>
+      <p>(c) The furthest point from the origin is on the far side
+      of the circle from <m>(0, 0)</m>, along the line through the
+      origin and the centre.</p>
+    </hint>
+    <answer>
+      <p>(a) <m>r = \sqrt{(3-0)^2 + (4-0)^2} = \sqrt{9+16}
+      = 5</m>.</p>
+      <p>(b) <m>(x-3)^2 + (y-4)^2 = 25</m>.</p>
+      <p>(c) Furthest point is diametrically opposite the origin
+      through the centre: <m>(6, 8)</m>.</p>
+    </answer>
+  </exercise>
+
+  <exercise xml:id="ex-circle-mixed-5">
+    <title>Mixed Problem 5 (Challenge)</title>
+    <statement>
+      <p>A circle passes through the points <m>A(0, 0)</m>,
+      <m>B(6, 0)</m>, and <m>C(0, 8)</m>.</p>
+      <p>(a) Find the midpoint of <m>[BC]</m>.</p>
+      <p>(b) Show that the centre of the circle is the midpoint
+      of <m>[BC]</m>.</p>
+      <p>(c) Find the radius and write the equation of the
+      circle.</p>
+    </statement>
+    <hint>
+      <p>What type of triangle is <m>ABC</m>? What theorem tells
+      you about the circumscribed circle of a right-angled
+      triangle?</p>
+    </hint>
+    <answer>
+      <p>(a) Midpoint of <m>BC</m> = <m>(3, 4)</m>.</p>
+      <p>(b) Triangle <m>ABC</m> is right-angled at <m>A</m>
+      (check: <m>|AB|^2 + |AC|^2 = 36 + 64 = 100 = |BC|^2</m>).
+      For a right-angled triangle, the circumcentre is the
+      midpoint of the hypotenuse.</p>
+      <p>(c) <m>r = \frac{|BC|}{2} = 5</m>. Centre
+      <m>(3, 4)</m>. Equation:
+      <m>(x-3)^2 + (y-4)^2 = 25</m>.</p>
+    </answer>
+  </exercise>
+
+  <exercise xml:id="ex-circle-mixed-6">
+    <title>Mixed Problem 6 (Challenge)</title>
+    <statement>
+      <p>Two circles have equations
+      <m>x^2 + y^2 = 25</m> and
+      <m>(x - 7)^2 + y^2 = 9</m>.</p>
+      <p>(a) Write down the centre and radius of each circle.</p>
+      <p>(b) Find the distance between the centres.</p>
+      <p>(c) Do the circles overlap, touch, or are they
+      separate? Explain your reasoning.</p>
+    </statement>
+    <answer>
+      <p>(a) Circle 1: centre <m>(0,0)</m>, <m>r_1 = 5</m>.
+      Circle 2: centre <m>(7,0)</m>, <m>r_2 = 3</m>.</p>
+      <p>(b) Distance = 7.</p>
+      <p>(c) <m>r_1 + r_2 = 5 + 3 = 8 > 7</m>, so the circles
+      overlap (two intersection points). If the distance equalled
+      <m>r_1 + r_2</m> they would touch externally.</p>
+    </answer>
+  </exercise>
+
+</subsection>

@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:id="sec-synthetic-geometry" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Synthetic Geometry</title>
+
+  <introduction>
+    <p>Geometry is one of the oldest branches of mathematics — the
+    ancient Greeks built it up from a handful of basic ideas into an
+    extraordinary logical structure. In this section, we follow that
+    same path. We start with a few terms so basic they cannot be
+    defined, state a few truths so fundamental they cannot be proved,
+    and then build everything else from there.</p>
+
+    <p>At Leaving Certificate Ordinary Level, you are expected to
+    <em>solve problems</em> using the theory. No proofs are examinable.
+    But understanding the logical structure — what follows from what —
+    is what makes the difference between memorising and truly knowing
+    geometry.</p>
+  </introduction>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 1. THE LANGUAGE OF GEOMETRY                            -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-language-of-geometry">
+    <title>The Language of Geometry</title>
+
+    <paragraphs xml:id="par-undefined-terms">
+      <title>Undefined Terms</title>
+
+      <p>Every system of knowledge has to start somewhere. In
+      mathematics, we begin with ideas so primitive, so fundamental,
+      that we cannot define them using simpler ideas — because there
+      <em>are</em> no simpler ideas. These are our
+      <term>undefined terms</term>.</p>
+
+      <p>Here are the ones you need right now. We will introduce more
+      as we need them.</p>
+
+      <table xml:id="table-undefined-terms">
+        <title>Our Starting Undefined Terms</title>
+        <tabular halign="left">
+          <row header="yes" bottom="medium">
+            <cell>Term</cell>
+            <cell>What we mean (informally)</cell>
+          </row>
+          <row>
+            <cell><term>Point</term></cell>
+            <cell>A location. It has no size, no width, no length —
+            just position. We label points with capital letters:
+            <m>A</m>, <m>B</m>, <m>C</m>.</cell>
+          </row>
+          <row>
+            <cell><term>Line</term></cell>
+            <cell>A straight path that extends forever in both
+            directions. It has no thickness. A line through points
+            <m>A</m> and <m>B</m> is written <m>AB</m>.</cell>
+          </row>
+          <row>
+            <cell><term>Plane</term></cell>
+            <cell>A flat surface that extends forever in all
+            directions. All our geometry takes place in one fixed
+            plane.</cell>
+          </row>
+          <row bottom="minor">
+            <cell><term>Real number</term></cell>
+            <cell>The numbers on the number line. We use them to
+            measure distances and angles.</cell>
+          </row>
+        </tabular>
+      </table>
+
+      <p>Notice: we described these terms, but we did not <em>define</em>
+      them. You will not be asked for a definition of <q>point</q> in an
+      exam — it is one of our starting points (no pun intended). You
+      can think of a point as a dot on a page, but really even a dot
+      has size. A mathematical point is an idealisation: pure location,
+      nothing more.</p>
+
+      <p>As we go further, we will meet more undefined terms —
+      <term>angle</term>, <term>degree</term>, <term>length</term>,
+      <term>set</term> — introduced on a need-to-know basis.</p>
+    </paragraphs>
+
+    <paragraphs xml:id="par-defined-terms">
+      <title>Defined Terms</title>
+
+      <p>Once we have our undefined terms, we can start building.
+      A <term>defined term</term> is a new concept described precisely
+      using terms we already have. For example, once we know what
+      <q>point</q> and <q>line</q> mean, we can define what a
+      <q>segment</q> is.</p>
+
+      <p>We will introduce defined terms as we need them throughout this
+      section. The important ones include: <em>segment, ray, midpoint,
+      triangle, angle, parallel lines, perpendicular lines,
+      parallelogram, circle, tangent, chord</em>, and many more.</p>
+    </paragraphs>
+
+    <paragraphs xml:id="par-axioms-and-theorems">
+      <title>Axioms, Theorems, and the Rest</title>
+
+      <p>Here is the hierarchy of mathematical truth:</p>
+
+      <table xml:id="table-logic-hierarchy">
+        <title>The Logical Hierarchy</title>
+        <tabular halign="left">
+          <row header="yes" bottom="medium">
+            <cell>Term</cell>
+            <cell>What it means</cell>
+          </row>
+          <row>
+            <cell><term>Axiom</term></cell>
+            <cell>A statement we accept as true without proof. Our
+            starting assumptions — the rules of the game.</cell>
+          </row>
+          <row>
+            <cell><term>Theorem</term></cell>
+            <cell>A statement we <em>prove</em> is true, using axioms
+            and previously-proven theorems.</cell>
+          </row>
+          <row>
+            <cell><term>Proof</term></cell>
+            <cell>A logical argument that shows a theorem must be
+            true.</cell>
+          </row>
+          <row>
+            <cell><term>Corollary</term></cell>
+            <cell>A result that follows quickly and directly from a
+            theorem.</cell>
+          </row>
+          <row>
+            <cell><term>Converse</term></cell>
+            <cell>The reverse of a theorem: swap the <q>if</q> and
+            the <q>then</q>.</cell>
+          </row>
+          <row bottom="minor">
+            <cell><term>Implies</term></cell>
+            <cell>If the first statement is true, then the second
+            <em>must</em> be true.</cell>
+          </row>
+        </tabular>
+      </table>
+
+      <p>A word of caution about converses. Just because a theorem is
+      true does <em>not</em> mean its converse is true. For example:
+      <q>Every square is a rectangle</q> is true, but <q>every
+      rectangle is a square</q> is false. Always check whether a
+      converse actually holds before using it.</p>
+    </paragraphs>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 2. BUILDING BLOCKS: POINTS, LINES, SEGMENTS, RAYS     -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-building-blocks">
+    <title>The Building Blocks</title>
+
+    <p>From our undefined terms, we immediately get our first
+    definitions and our first axiom.</p>
+
+    <axiom xml:id="axiom-1">
+      <title>Axiom 1 — Two Points</title>
+      <statement>
+        <p>There is exactly one line through any two given points.</p>
+      </statement>
+    </axiom>
+
+    <p>This is beautifully simple. Pick any two points — there is
+    exactly one line through them. Not zero, not two. Exactly one.
+    We write <m>AB</m> for the line through <m>A</m> and <m>B</m>.</p>
+
+    <figure xml:id="fig-building-blocks">
+      <caption>Points, lines, segments, rays, distance, and midpoint.</caption>
+      <image source="geometry/fig-point-line-ray-segment.svg" width="85%">
+        <description>Diagrams showing a point, a line extending in
+        both directions, a segment with two endpoints, a ray with one
+        endpoint, distance notation, and a midpoint.</description>
+      </image>
+    </figure>
+
+    <definition xml:id="def-segment">
+      <title>Segment</title>
+      <statement>
+        <p>The <term>line segment</term> <m>[AB]</m> is the part of
+        line <m>AB</m> between <m>A</m> and <m>B</m>, including both
+        endpoints.</p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-ray">
+      <title>Ray</title>
+      <statement>
+        <p>The <term>ray</term> <m>[AB</m> starts at <m>A</m> and
+        passes through <m>B</m>, extending forever beyond <m>B</m>.
+        The point <m>A</m> is the endpoint of the ray.</p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-collinear">
+      <title>Collinear Points</title>
+      <statement>
+        <p>Three or more points are <term>collinear</term> if they
+        all lie on a single line.</p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-triangle">
+      <title>Triangle</title>
+      <statement>
+        <p>If <m>A</m>, <m>B</m>, <m>C</m> are three non-collinear
+        points, the <term>triangle</term> <m>\triangle ABC</m> is
+        the figure enclosed by the segments <m>[AB]</m>, <m>[BC]</m>,
+        and <m>[CA]</m>. The segments are its <term>sides</term> and
+        the points are its <term>vertices</term>.</p>
+      </statement>
+    </definition>
+
+    <paragraphs xml:id="par-distance-synth">
+      <title>Distance</title>
+
+      <p>We write <m>|AB|</m> for the <term>distance</term> between
+      points <m>A</m> and <m>B</m>. This is also the
+      <term>length</term> of segment <m>[AB]</m>.</p>
+
+      <axiom xml:id="axiom-2">
+        <title>Axiom 2 — Ruler</title>
+        <statement>
+          <p>Distance has these properties:</p>
+          <p>1. <m>|AB| \geq 0</m> (distance is never negative).</p>
+          <p>2. <m>|AB| = |BA|</m> (same distance either way).</p>
+          <p>3. If <m>C</m> lies on <m>AB</m> between <m>A</m> and
+          <m>B</m>, then <m>|AB| = |AC| + |CB|</m>.</p>
+          <p>4. Given any ray from <m>A</m> and any number
+          <m>k \geq 0</m>, there is exactly one point on the ray at
+          distance <m>k</m> from <m>A</m>.</p>
+        </statement>
+      </axiom>
+
+      <p>Property 3 is the one you use constantly: if a point is
+      between two others, the distances add up. Property 4 says you
+      can always <q>mark off</q> a distance — essential for
+      constructions.</p>
+    </paragraphs>
+
+    <definition xml:id="def-midpoint">
+      <title>Midpoint</title>
+      <statement>
+        <p>The <term>midpoint</term> <m>M</m> of segment <m>[AB]</m>
+        is the point on the segment with
+        <m>|AM| = |MB| = \frac{|AB|}{2}</m>.</p>
+      </statement>
+    </definition>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 3. ANGLES                                              -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-angles">
+    <title>Angles</title>
+
+    <p><term>Angle</term> is another undefined term. An angle has a
+    <term>vertex</term> (a point), two <term>arms</term> (rays from
+    the vertex), and an <term>inside</term>. We write <m>\angle BAC</m>
+    for the angle at vertex <m>A</m> with arms <m>[AB</m> and
+    <m>[AC</m>, and <m>|\angle BAC|</m> for the number of degrees in
+    the angle.</p>
+
+    <figure xml:id="fig-angle-types">
+      <caption>The five types of angle, and supplementary angles.</caption>
+      <image source="geometry/fig-angle-types.svg" width="85%">
+        <description>Diagrams showing acute, right, obtuse, straight,
+        and reflex angles, plus supplementary angles that add to 180
+        degrees.</description>
+      </image>
+    </figure>
+
+    <table xml:id="table-angle-types">
+      <title>Types of Angle</title>
+      <tabular halign="left">
+        <row header="yes" bottom="medium">
+          <cell>Type</cell>
+          <cell>Degrees</cell>
+        </row>
+        <row><cell>Null angle</cell><cell><m>0°</m></cell></row>
+        <row><cell>Acute angle</cell><cell>Between <m>0°</m> and <m>90°</m></cell></row>
+        <row><cell>Right angle</cell><cell>Exactly <m>90°</m></cell></row>
+        <row><cell>Obtuse angle</cell><cell>Between <m>90°</m> and <m>180°</m></cell></row>
+        <row><cell>Straight angle</cell><cell>Exactly <m>180°</m></cell></row>
+        <row><cell>Reflex angle</cell><cell>Between <m>180°</m> and <m>360°</m></cell></row>
+        <row bottom="minor"><cell>Full angle</cell><cell><m>360°</m></cell></row>
+      </tabular>
+    </table>
+
+    <axiom xml:id="axiom-3">
+      <title>Axiom 3 — Protractor</title>
+      <statement>
+        <p>Every angle has a degree measure between <m>0°</m> and
+        <m>360°</m>. A straight angle is <m>180°</m>. Angles can be
+        added: if ray <m>[AD</m> is inside <m>\angle BAC</m>, then
+        <m>|\angle BAC| = |\angle BAD| + |\angle DAC|</m>.</p>
+      </statement>
+    </axiom>
+
+    <definition xml:id="def-supplementary">
+      <title>Supplementary Angles</title>
+      <statement>
+        <p>Two angles are <term>supplementary</term> if they add to
+        <m>180°</m>.</p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-perpendicular">
+      <title>Perpendicular Lines</title>
+      <statement>
+        <p>Two lines are <term>perpendicular</term> if they meet at
+        a right angle (<m>90°</m>). We write
+        <m>AB \perp CD</m>.</p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-angle-bisector">
+      <title>Angle Bisector</title>
+      <statement>
+        <p>The ray <m>[AD</m> is the <term>bisector</term> of
+        <m>\angle BAC</m> if
+        <m>|\angle BAD| = |\angle DAC| = \frac{|\angle BAC|}{2}</m>.</p>
+      </statement>
+    </definition>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 4. CONGRUENT TRIANGLES                                 -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-congruence">
+    <title>Congruent Triangles</title>
+
+    <p>Two triangles are <term>congruent</term> if all six
+    measurements match: three sides and three angles. But you do not
+    need all six — three carefully chosen measurements are enough.</p>
+
+    <figure xml:id="fig-congruence">
+      <caption>The three congruence conditions: SAS, ASA, SSS.</caption>
+      <image source="geometry/fig-congruence.svg" width="85%">
+        <description>Three triangles showing the SAS, ASA, and SSS
+        congruence conditions with matching sides and angles
+        marked.</description>
+      </image>
+    </figure>
+
+    <axiom xml:id="axiom-4">
+      <title>Axiom 4 — SAS, ASA, SSS</title>
+      <statement>
+        <p>Two triangles are congruent if:</p>
+        <p><em>SAS:</em> Two sides and the included angle are equal,
+        or</p>
+        <p><em>ASA:</em> Two angles and the included side are equal,
+        or</p>
+        <p><em>SSS:</em> All three sides are equal.</p>
+      </statement>
+    </axiom>
+
+    <p>These are not theorems — they are axioms. We accept them as
+    true. Everything about congruent triangles flows from here.</p>
+
+    <definition xml:id="def-isosceles">
+      <title>Types of Triangle (by sides)</title>
+      <statement>
+        <p>A triangle is <term>isosceles</term> if two sides are
+        equal, <term>equilateral</term> if all three sides are equal,
+        and <term>scalene</term> if no two sides are equal.</p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-right-triangle">
+      <title>Right-Angled Triangle</title>
+      <statement>
+        <p>A triangle is <term>right-angled</term> if one angle is
+        <m>90°</m>. The side opposite the right angle is the
+        <term>hypotenuse</term>.</p>
+      </statement>
+    </definition>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 5. PARALLEL LINES                                      -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-parallel-lines">
+    <title>Parallel Lines</title>
+
+    <definition xml:id="def-parallel">
+      <title>Parallel Lines</title>
+      <statement>
+        <p>Two lines are <term>parallel</term> if they never meet
+        (or are the same line). We write <m>l \parallel m</m>.</p>
+      </statement>
+    </definition>
+
+    <axiom xml:id="axiom-5">
+      <title>Axiom 5 — Parallels</title>
+      <statement>
+        <p>Given any line <m>l</m> and a point <m>P</m> not on it,
+        there is exactly one line through <m>P</m> parallel to
+        <m>l</m>.</p>
+      </statement>
+    </axiom>
+
+    <p>This is the last of our five axioms. Everything in geometry is
+    built from Axioms 1–5 plus the definitions above.</p>
+
+    <definition xml:id="def-transversal">
+      <title>Transversal, Alternate Angles, Corresponding Angles</title>
+      <statement>
+        <p>A <term>transversal</term> is a line that crosses two
+        other lines. Where it crosses, it creates
+        <term>alternate angles</term> (on opposite sides, between the
+        lines) and <term>corresponding angles</term> (on the same
+        side, one at each crossing).</p>
+      </statement>
+    </definition>
+
+    <figure xml:id="fig-alternate-angles">
+      <caption>Alternate angles formed by a transversal cutting
+      parallel lines.</caption>
+      <image source="geometry/fig-alternate-angles.svg" width="60%">
+        <description>Two parallel lines cut by a transversal, with
+        alternate angles marked as equal.</description>
+      </image>
+    </figure>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 6. THE JUNIOR CYCLE THEOREMS (Review)                  -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-jc-theorems-review">
+    <title>The Junior Cycle Theorems (Assumed Knowledge)</title>
+
+    <p>These results were proved at Junior Cycle. At LC OL, they are
+    assumed — you use them freely. We state each one with its diagram
+    so you have a complete reference.</p>
+
+    <theorem xml:id="thm-1-review">
+      <title>Theorem 1 — Vertically Opposite Angles</title>
+      <statement>
+        <p>Vertically opposite angles are equal in measure.</p>
+      </statement>
+    </theorem>
+
+    <figure xml:id="fig-vert-opp">
+      <caption>Vertically opposite angles are equal.</caption>
+      <image source="geometry/fig-vertically-opposite.svg" width="55%">
+        <description>Two lines crossing, with two pairs of
+        vertically opposite angles marked in matching colours.</description>
+      </image>
+    </figure>
+
+    <theorem xml:id="thm-2-review">
+      <title>Theorem 2 — Isosceles Triangles</title>
+      <statement>
+        <p>(1) In an isosceles triangle, the angles opposite the
+        equal sides are equal.</p>
+        <p>(2) Conversely, if two angles of a triangle are equal,
+        the triangle is isosceles.</p>
+      </statement>
+    </theorem>
+
+    <figure xml:id="fig-isosceles-thm">
+      <caption>Equal sides imply equal base angles.</caption>
+      <image source="geometry/fig-isosceles.svg" width="40%">
+        <description>An isosceles triangle with two sides marked equal
+        and the base angles marked equal.</description>
+      </image>
+    </figure>
+
+    <theorem xml:id="thm-3-review">
+      <title>Theorem 3 — Alternate Angles</title>
+      <statement>
+        <p>If a transversal makes equal alternate angles on two lines,
+        then the lines are parallel. Conversely, if two lines are
+        parallel, any transversal makes equal alternate angles.</p>
+      </statement>
+    </theorem>
+
+    <theorem xml:id="thm-4-review">
+      <title>Theorem 4 — Angle Sum in a Triangle</title>
+      <statement>
+        <p>The three angles in any triangle add to <m>180°</m>.</p>
+      </statement>
+    </theorem>
+
+    <figure xml:id="fig-angle-sum-thm">
+      <caption>The angles in a triangle sum to 180°.</caption>
+      <image source="geometry/fig-angle-sum.svg" width="60%">
+        <description>A triangle with its three angles labelled alpha,
+        beta, gamma, and the equation alpha plus beta plus gamma equals
+        180 degrees.</description>
+      </image>
+    </figure>
+
+    <theorem xml:id="thm-5-review">
+      <title>Theorem 5 — Corresponding Angles</title>
+      <statement>
+        <p>Two lines are parallel if and only if, for any transversal,
+        corresponding angles are equal.</p>
+      </statement>
+    </theorem>
+
+    <theorem xml:id="thm-6-review">
+      <title>Theorem 6 — Exterior Angle</title>
+      <statement>
+        <p>Each exterior angle of a triangle equals the sum of the
+        two interior opposite angles.</p>
+      </statement>
+    </theorem>
+
+    <figure xml:id="fig-ext-angle-thm">
+      <caption>The exterior angle theorem.</caption>
+      <image source="geometry/fig-exterior-angle.svg" width="65%">
+        <description>A triangle with one side extended, showing the
+        exterior angle equals the sum of the two non-adjacent interior
+        angles.</description>
+      </image>
+    </figure>
+
+    <theorem xml:id="thm-9-review">
+      <title>Theorem 9 — Parallelograms</title>
+      <statement>
+        <p>In a parallelogram, opposite sides are equal and opposite
+        angles are equal.</p>
+      </statement>
+    </theorem>
+
+    <theorem xml:id="thm-10-review">
+      <title>Theorem 10 — Diagonals of a Parallelogram</title>
+      <statement>
+        <p>The diagonals of a parallelogram bisect each other.</p>
+      </statement>
+    </theorem>
+
+    <figure xml:id="fig-parallelogram-thm">
+      <caption>Parallelogram: opposite sides equal, diagonals bisect
+      each other.</caption>
+      <image source="geometry/fig-parallelogram.svg" width="60%">
+        <description>A parallelogram with opposite sides marked equal,
+        diagonals drawn, and their intersection point marked.</description>
+      </image>
+    </figure>
+
+    <theorem xml:id="thm-14-review">
+      <title>Theorem 14 — Pythagoras</title>
+      <statement>
+        <p>In a right-angled triangle, the square of the hypotenuse
+        equals the sum of the squares of the other two sides:
+        <m>a^2 + b^2 = c^2</m>.</p>
+      </statement>
+    </theorem>
+
+    <theorem xml:id="thm-15-review">
+      <title>Theorem 15 — Converse of Pythagoras</title>
+      <statement>
+        <p>If <m>a^2 + b^2 = c^2</m> for the sides of a triangle,
+        then the angle opposite side <m>c</m> is a right angle.</p>
+      </statement>
+    </theorem>
+
+    <figure xml:id="fig-pythagoras-thm">
+      <caption>Pythagoras: <m>a^2 + b^2 = c^2</m>.</caption>
+      <image source="geometry/fig-pythagoras.svg" width="50%">
+        <description>A right-angled triangle with the right angle
+        marked, sides labelled a, b, c, and the formula.</description>
+      </image>
+    </figure>
+
+    <corollary xml:id="cor-3-review">
+      <title>Corollary 3 — Angle in a Semicircle</title>
+      <statement>
+        <p>An angle standing on a diameter is a right angle.</p>
+      </statement>
+    </corollary>
+
+    <corollary xml:id="cor-4-review">
+      <title>Corollary 4</title>
+      <statement>
+        <p>If the angle standing on a chord at a point of the circle
+        is <m>90°</m>, then the chord is a diameter.</p>
+      </statement>
+    </corollary>
+
+    <figure xml:id="fig-semicircle-thm">
+      <caption>The angle in a semicircle is 90°.</caption>
+      <image source="geometry/fig-semicircle.svg" width="50%">
+        <description>A circle with a diameter and a point on the
+        circumference forming a right angle.</description>
+      </image>
+    </figure>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 7. LC OL: TRIANGLE INEQUALITIES (Theorems 7, 8)       -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-triangle-inequalities">
+    <title>Sides and Angles in a Triangle (Theorems 7 and 8)</title>
+
+    <p>Now we reach new territory for LC OL. These two theorems
+    connect the <em>sizes</em> of sides and angles within a single
+    triangle.</p>
+
+    <theorem xml:id="thm-7">
+      <title>Theorem 7 — Bigger Side, Bigger Angle</title>
+      <statement>
+        <p>(1) In <m>\triangle ABC</m>, if <m>|AC| \gt |AB|</m>,
+        then <m>|\angle ABC| \gt |\angle ACB|</m>.</p>
+        <p>In words: the angle opposite the longer side is the
+        larger angle.</p>
+        <p>(2) Conversely, the side opposite the larger angle is
+        the longer side.</p>
+      </statement>
+    </theorem>
+
+    <figure xml:id="fig-thm7">
+      <caption>The bigger the side, the bigger the opposite angle.</caption>
+      <image source="geometry/fig-theorem7.svg" width="55%">
+        <description>A triangle with sides of different lengths, the
+        largest angle opposite the longest side.</description>
+      </image>
+    </figure>
+
+    <p><em>Proof idea:</em> Place a point <m>D</m> on <m>[AC]</m>
+    with <m>|AD| = |AB|</m>. Then <m>\triangle ABD</m> is isosceles,
+    and combining the Exterior Angle Theorem with the Isosceles
+    Triangle Theorem gives
+    <m>|\angle ACB| \lt |\angle ABC|</m>.</p>
+
+    <p>Think of it physically: a longer side needs to <q>push</q>
+    the opposite angle wider to make room.</p>
+
+    <theorem xml:id="thm-8">
+      <title>Theorem 8 — Triangle Inequality</title>
+      <statement>
+        <p>Any two sides of a triangle are together greater than the
+        third: <m>|AB| + |BC| \gt |AC|</m>.</p>
+      </statement>
+    </theorem>
+
+    <figure xml:id="fig-thm8">
+      <caption>The shortest distance between two points is a straight
+      line.</caption>
+      <image source="geometry/fig-triangle-inequality.svg" width="60%">
+        <description>A triangle showing the direct path from A to B is
+        shorter than the detour via C.</description>
+      </image>
+    </figure>
+
+    <p>This is the geometric way of saying: the shortest path between
+    two points is a straight line. Any detour via a third point makes
+    the journey longer.</p>
+
+    <example xml:id="ex-thm7-ordering">
+      <title>Ordering Angles Using Theorem 7</title>
+      <statement>
+        <p>In <m>\triangle PQR</m>, <m>|PQ| = 5</m>, <m>|QR| = 8</m>,
+        <m>|PR| = 6</m>. List the angles from smallest to largest.</p>
+      </statement>
+      <solution>
+        <p>Sides: <m>|PQ| = 5 \lt |PR| = 6 \lt |QR| = 8</m>.</p>
+        <p>Angles (opposite): <m>|\angle R| \lt |\angle Q| \lt |\angle P|</m>.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-thm8-check">
+      <title>Can a Triangle Have These Sides?</title>
+      <statement>
+        <p>(a) 4, 6, 9 (b) 2, 3, 6 (c) 5, 5, 10</p>
+      </statement>
+      <solution>
+        <p>(a) <m>4 + 6 = 10 \gt 9</m>. Yes.</p>
+        <p>(b) <m>2 + 3 = 5 \lt 6</m>. No.</p>
+        <p>(c) <m>5 + 5 = 10</m>, not strictly greater. No.</p>
+      </solution>
+    </example>
+
+    <exercise xml:id="ex-tri-ineq-practice">
+      <title>Practice</title>
+      <statement>
+        <p>1. In <m>\triangle ABC</m>, <m>|AB| = 10</m>,
+        <m>|BC| = 7</m>, <m>|AC| = 12</m>. Which angle is
+        largest?</p>
+        <p>2. Two sides of a triangle are 5 and 11. Find the range
+        of the third side.</p>
+        <p>3. Can a triangle have sides 7, 8, 14?</p>
+      </statement>
+      <answer>
+        <p>1. <m>\angle B</m> (opposite <m>|AC| = 12</m>).</p>
+        <p>2. <m>6 \lt x \lt 16</m>.</p>
+        <p>3. Yes: <m>7 + 8 = 15 \gt 14</m>.</p>
+      </answer>
+    </exercise>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 8. LC OL: RATIO AND SIMILARITY (Theorems 11, 12, 13)  -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-ratio-similarity">
+    <title>Ratio and Similarity (Theorems 11, 12, 13)</title>
+
+    <p>These three theorems are the foundation for similar triangles.</p>
+
+    <theorem xml:id="thm-11">
+      <title>Theorem 11 — Three Parallel Lines</title>
+      <statement>
+        <p>If three parallel lines cut off equal segments on one
+        transversal, then they cut off equal segments on any other
+        transversal.</p>
+      </statement>
+    </theorem>
+
+    <figure xml:id="fig-thm11">
+      <caption>Equal spacing on one transversal gives equal spacing
+      on any other.</caption>
+      <image source="geometry/fig-three-parallel.svg" width="60%">
+        <description>Three parallel lines cut by two transversals,
+        with equal segments marked on both.</description>
+      </image>
+    </figure>
+
+    <p>Think of ruled paper: equally spaced horizontal lines. Any line
+    drawn across the page crosses them at equal intervals, regardless
+    of angle.</p>
+
+    <theorem xml:id="thm-12">
+      <title>Theorem 12 — Line Parallel to Base</title>
+      <statement>
+        <p>In <m>\triangle ABC</m>, if a line parallel to <m>BC</m>
+        cuts <m>[AB]</m> in the ratio <m>s:t</m>, then it also cuts
+        <m>[AC]</m> in the ratio <m>s:t</m>.</p>
+      </statement>
+    </theorem>
+
+    <figure xml:id="fig-thm12">
+      <caption>A line parallel to the base divides both sides in the
+      same ratio.</caption>
+      <image source="geometry/fig-theorem12.svg" width="55%">
+        <description>A triangle with line DE parallel to BC cutting
+        sides AB and AC in the ratio s to t.</description>
+      </image>
+    </figure>
+
+    <theorem xml:id="thm-13">
+      <title>Theorem 13 — Similar Triangles</title>
+      <statement>
+        <p>If two triangles are similar (all angles equal), their
+        sides are proportional:
+        <me>\frac{|AB|}{|A'B'|} = \frac{|BC|}{|B'C'|}
+        = \frac{|CA|}{|C'A'|}</me></p>
+      </statement>
+    </theorem>
+
+    <figure xml:id="fig-thm13">
+      <caption>Similar triangles: same shape, proportional sides.</caption>
+      <image source="geometry/fig-similar-triangles.svg" width="70%">
+        <description>Two triangles of different sizes with matching
+        angles and a scale factor arrow.</description>
+      </image>
+    </figure>
+
+    <example xml:id="ex-thm12-ratio">
+      <title>Using Theorem 12</title>
+      <statement>
+        <p><m>DE \parallel BC</m> in <m>\triangle ABC</m>.
+        <m>|AD| = 3</m>, <m>|DB| = 5</m>, <m>|AE| = 4.5</m>.
+        Find <m>|EC|</m>.</p>
+      </statement>
+      <solution>
+        <p><m>\frac{3}{5} = \frac{4.5}{|EC|}</m>, so
+        <m>|EC| = 7.5</m>.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-thm13-scale">
+      <title>Similar Triangles</title>
+      <statement>
+        <p>Two similar triangles have sides 6, 8, 10 and the shortest
+        side of the second is 9. Find the other sides.</p>
+      </statement>
+      <solution>
+        <p>Scale factor <m>k = 9/6 = 1.5</m>. Sides: 9, 12, 15.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-shadows">
+      <title>Shadows</title>
+      <statement>
+        <p>A 2 m pole casts a 3 m shadow. A building casts an 18 m
+        shadow. Find the building height.</p>
+      </statement>
+      <solution>
+        <p><m>\frac{h}{2} = \frac{18}{3} = 6</m>, so
+        <m>h = 12</m> m.</p>
+      </solution>
+    </example>
+
+    <exercise xml:id="ex-ratio-practice">
+      <title>Practice</title>
+      <statement>
+        <p>1. <m>ST \parallel QR</m> in <m>\triangle PQR</m>.
+        <m>|PS| = 4</m>, <m>|SQ| = 6</m>, <m>|PR| = 15</m>.
+        Find <m>|PT|</m>.</p>
+        <p>2. Two similar triangles have areas <m>4:9</m>. A side
+        of the smaller is 10. Find the corresponding side of the
+        larger.</p>
+        <p>3. A flagpole casts an 8 m shadow. A 1.7 m person nearby
+        casts a 2 m shadow. Find the flagpole height.</p>
+      </statement>
+      <answer>
+        <p>1. <m>|PT| = 6</m>.</p>
+        <p>2. Side ratio <m>= 2:3</m>, so larger side <m>= 15</m>.</p>
+        <p>3. <m>h = 1.7 \times 4 = 6.8</m> m.</p>
+      </answer>
+    </exercise>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 9. LC OL: AREA (Theorems 16, 17, 18)                  -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-area-theory">
+    <title>Area (Theorems 16, 17, 18)</title>
+
+    <definition xml:id="def-base-height">
+      <title>Base, Apex, Height</title>
+      <statement>
+        <p>Choose one side of a triangle as the <term>base</term>.
+        The opposite vertex is the <term>apex</term>. The perpendicular
+        distance from the apex to the line containing the base is the
+        <term>height</term> (or <term>altitude</term>).</p>
+      </statement>
+    </definition>
+
+    <theorem xml:id="thm-16">
+      <title>Theorem 16 — Base × Height Is Constant</title>
+      <statement>
+        <p>For a triangle, base × height does not depend on which
+        side is chosen as the base.</p>
+      </statement>
+    </theorem>
+
+    <figure xml:id="fig-area-tri">
+      <caption>Area of a triangle = ½ × base × height.</caption>
+      <image source="geometry/fig-area-triangle.svg" width="55%">
+        <description>A triangle with base and height marked.</description>
+      </image>
+    </figure>
+
+    <theorem xml:id="thm-17">
+      <title>Theorem 17 — Diagonal Bisects Area</title>
+      <statement>
+        <p>A diagonal of a parallelogram bisects its area.</p>
+      </statement>
+    </theorem>
+
+    <theorem xml:id="thm-18">
+      <title>Theorem 18 — Area of a Parallelogram</title>
+      <statement>
+        <p>Area of a parallelogram = base × height.</p>
+      </statement>
+    </theorem>
+
+    <figure xml:id="fig-area-pgrm">
+      <caption>Area of a parallelogram. The diagonal splits it into
+      two equal triangles.</caption>
+      <image source="geometry/fig-area-parallelogram.svg" width="60%">
+        <description>A parallelogram with base and height marked and
+        a diagonal drawn.</description>
+      </image>
+    </figure>
+
+    <example xml:id="ex-area-two-altitudes">
+      <title>Two Altitudes</title>
+      <statement>
+        <p><m>|BC| = 10</m> with height 6. <m>|AC| = 12</m>. Find
+        the height from <m>B</m> to <m>[AC]</m>.</p>
+      </statement>
+      <solution>
+        <p>Theorem 16: <m>10 \times 6 = 12 \times h</m>, so
+        <m>h = 5</m>.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-area-pgram">
+      <title>Parallelogram</title>
+      <statement>
+        <p><m>ABCD</m> has <m>|AB| = 14</m>, height 8. Find the area
+        of <m>\triangle ABD</m>.</p>
+      </statement>
+      <solution>
+        <p>Parallelogram area = <m>112</m>. By Theorem 17:
+        <m>\triangle ABD = 56</m>.</p>
+      </solution>
+    </example>
+
+    <exercise xml:id="ex-area-practice">
+      <title>Practice</title>
+      <statement>
+        <p>1. Triangle: base 15, height 8. Find area.</p>
+        <p>2. Area of triangle is 42, base is 12. Find height.</p>
+        <p>3. Parallelogram sides 20 and 13, height 12 on the side 20.
+        Find area and the other height.</p>
+      </statement>
+      <answer>
+        <p>1. 60. 2. 7. 3. Area = 240;
+        <m>h_2 = 240/13 \approx 18.5</m>.</p>
+      </answer>
+    </exercise>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 10. LC OL: CIRCLES (Theorems 20, 21, Corollary 6)     -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-circles-lc">
+    <title>Circles: Tangents and Chords (Theorems 20, 21, Corollary 6)</title>
+
+    <definition xml:id="def-circle-terms">
+      <title>Circle Terminology</title>
+      <statement>
+        <p>A <term>circle</term> is the set of all points at a fixed
+        distance (the <term>radius</term>) from a fixed point (the
+        <term>centre</term>). A <term>chord</term> is a segment
+        joining two points on the circle. A <term>diameter</term> is
+        a chord through the centre. A <term>tangent</term> is a line
+        that touches the circle at exactly one point — the
+        <term>point of contact</term>.</p>
+      </statement>
+    </definition>
+
+    <theorem xml:id="thm-20">
+      <title>Theorem 20 — Tangent ⊥ Radius</title>
+      <statement>
+        <p>(1) A tangent is perpendicular to the radius at the point
+        of contact.</p>
+        <p>(2) Conversely, a line perpendicular to the radius at a
+        point on the circle is a tangent.</p>
+      </statement>
+    </theorem>
+
+    <figure xml:id="fig-tangent-thm">
+      <caption>Tangent ⊥ radius at the point of contact.</caption>
+      <image source="geometry/fig-tangent.svg" width="55%">
+        <description>A circle with a tangent at P and radius OP,
+        right angle marked.</description>
+      </image>
+    </figure>
+
+    <p><alert>Key habit:</alert> Whenever you see a tangent, draw the
+    radius to the point of contact and mark the right angle. This
+    unlocks Pythagoras.</p>
+
+    <theorem xml:id="thm-21">
+      <title>Theorem 21 — Perpendicular from Centre Bisects Chord</title>
+      <statement>
+        <p>(1) The perpendicular from the centre to a chord bisects
+        the chord.</p>
+        <p>(2) The perpendicular bisector of a chord passes through
+        the centre.</p>
+      </statement>
+    </theorem>
+
+    <figure xml:id="fig-chord-thm">
+      <caption>Perpendicular from centre bisects the chord.</caption>
+      <image source="geometry/fig-chord.svg" width="50%">
+        <description>A circle with chord AB and perpendicular from
+        centre O to midpoint M.</description>
+      </image>
+    </figure>
+
+    <corollary xml:id="cor-6">
+      <title>Corollary 6 — Common Tangent</title>
+      <statement>
+        <p>If two circles share a common tangent at one point, the
+        two centres and that point are collinear.</p>
+      </statement>
+    </corollary>
+
+    <figure xml:id="fig-cor6">
+      <caption>Common tangent: centres and contact point are
+      collinear.</caption>
+      <image source="geometry/fig-common-tangent.svg" width="65%">
+        <description>Two circles with a common tangent, centres and
+        contact point on the same line.</description>
+      </image>
+    </figure>
+
+    <example xml:id="ex-tangent-pythag">
+      <title>Tangent Length</title>
+      <statement>
+        <p>Radius 5, <m>|OT| = 13</m>. Find tangent length
+        <m>|PT|</m>.</p>
+      </statement>
+      <solution>
+        <p><m>|PT|^2 = 169 - 25 = 144</m>. <m>|PT| = 12</m>.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-chord-dist">
+      <title>Chord Distance</title>
+      <statement>
+        <p>Chord length 24, radius 13. Find distance from centre to
+        chord.</p>
+      </statement>
+      <solution>
+        <p>Half-chord = 12. <m>d = \sqrt{169 - 144} = 5</m>.</p>
+      </solution>
+    </example>
+
+    <exercise xml:id="ex-circles-practice">
+      <title>Practice</title>
+      <statement>
+        <p>1. Radius 6, <m>|OT| = 10</m>. Find tangent length.</p>
+        <p>2. Radius 10, distance to chord = 6. Find chord length.</p>
+        <p>3. Two parallel chords (lengths 12, 16) in a circle of
+        radius 10. Find the distance between them (two cases).</p>
+      </statement>
+      <answer>
+        <p>1. 8. 2. 16. 3. Same side: 2. Opposite: 14.</p>
+      </answer>
+    </exercise>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 11. CONSTRUCTIONS 16–21                                -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-constructions-lc">
+    <title>Constructions 16–21</title>
+
+    <p>JC constructions (1, 2, 4, 5, 6, 8–15) are assumed and may
+    be examined. You must also know these six.</p>
+
+    <paragraphs xml:id="con-16">
+      <title>Construction 16: Circumcentre and Circumcircle</title>
+      <p><em>Goal:</em> Circle through all three vertices.</p>
+      <p><em>Method:</em> Perpendicular bisector of two sides — they
+      meet at the <term>circumcentre</term>. Compass from circumcentre
+      to any vertex draws the circle.</p>
+      <p><em>Justification:</em> Theorem 21(2) — perpendicular bisector
+      of a chord passes through the centre.</p>
+    </paragraphs>
+
+    <paragraphs xml:id="con-17">
+      <title>Construction 17: Incentre and Incircle</title>
+      <p><em>Goal:</em> Circle inside the triangle tangent to all
+      sides.</p>
+      <p><em>Method:</em> Bisect two angles — they meet at the
+      <term>incentre</term>. Drop perpendicular to any side for the
+      <term>inradius</term>.</p>
+      <p><em>Justification:</em> A point on an angle bisector is
+      equidistant from both arms.</p>
+    </paragraphs>
+
+    <paragraphs xml:id="con-18">
+      <title>Construction 18: Angle of 60° (No Protractor)</title>
+      <p><em>Method:</em> Arc from <m>A</m> cuts ray at <m>C</m>.
+      Same radius arc from <m>C</m> cuts first arc at <m>D</m>.
+      <m>|\angle DAC| = 60°</m>.</p>
+      <p><em>Justification:</em> <m>\triangle ACD</m> is
+      equilateral.</p>
+    </paragraphs>
+
+    <paragraphs xml:id="con-19">
+      <title>Construction 19: Tangent at a Point on a Circle</title>
+      <p><em>Method:</em> Draw radius <m>OP</m>. Construct
+      perpendicular to <m>OP</m> at <m>P</m>.</p>
+      <p><em>Justification:</em> Theorem 20.</p>
+    </paragraphs>
+
+    <paragraphs xml:id="con-20">
+      <title>Construction 20: Parallelogram</title>
+      <p><em>Method:</em> Draw <m>[AB]</m>. Angle at <m>A</m>, mark
+      <m>D</m>. Lines from <m>D</m> parallel to <m>AB</m>, from
+      <m>B</m> parallel to <m>AD</m>, meet at <m>C</m>.</p>
+      <p><em>Justification:</em> Definition of parallelogram.</p>
+    </paragraphs>
+
+    <paragraphs xml:id="con-21">
+      <title>Construction 21: Centroid</title>
+      <p><em>Method:</em> Midpoint of each side. Median from each
+      vertex to opposite midpoint. They meet at the
+      <term>centroid</term> (ratio <m>2:1</m> from vertex).</p>
+    </paragraphs>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 12. QUADRILATERAL FAMILY                               -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-quadrilaterals">
+    <title>Quadrilaterals</title>
+
+    <definition xml:id="def-quad-types">
+      <title>Quadrilateral Types</title>
+      <statement>
+        <p>A <term>quadrilateral</term> has four sides.
+        A <term>parallelogram</term>: both pairs of opposite sides
+        parallel. A <term>rectangle</term>: parallelogram with all
+        right angles. A <term>rhombus</term>: parallelogram with all
+        sides equal. A <term>square</term>: both a rectangle and a
+        rhombus.</p>
+      </statement>
+    </definition>
+
+    <p>Every square is a rectangle is a parallelogram. But not every
+    rectangle is a square.</p>
+  </subsection>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 13. MIXED EXAM-STYLE PROBLEMS                          -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <subsection xml:id="subsec-mixed-problems">
+    <title>Mixed Exam-Style Problems</title>
+
+    <exercise xml:id="ex-mix-1">
+      <title>Tangent and Chord</title>
+      <statement>
+        <p>Circle with centre <m>O</m>, radius 10. Chord <m>[AB]</m>
+        has length 16. Tangent at <m>A</m> meets line <m>OB</m>
+        extended at <m>T</m>. Find <m>|OT|</m>.</p>
+      </statement>
+      <hint><p>Theorem 21 first, then Theorem 20 + Pythagoras.</p></hint>
+      <answer><p><m>50/3</m></p></answer>
+      <solution>
+        <p>Half-chord = 8. Distance from centre to chord:
+        <m>d = 6</m>. Using similar right triangles:
+        <m>|OT| = 100/6 = 50/3</m>.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-mix-2">
+      <title>Similar Triangles and Area</title>
+      <statement>
+        <p><m>DE \parallel BC</m>, <m>|AD| = 4</m>,
+        <m>|AB| = 10</m>. Area of <m>\triangle ADE = 24</m>. Find
+        area of <m>\triangle ABC</m>.</p>
+      </statement>
+      <answer><p>150</p></answer>
+      <solution>
+        <p><m>k = 10/4 = 5/2</m>. Area scales by <m>k^2 = 25/4</m>.
+        Area = <m>24 \times 25/4 = 150</m>.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-mix-3">
+      <title>Circumcentre</title>
+      <statement>
+        <p><m>A(0,0)</m>, <m>B(6,0)</m>, <m>C(0,8)</m>. Show it is
+        right-angled. Find the circumcentre and circumradius.</p>
+      </statement>
+      <answer><p>Right angle at <m>A</m>. Circumcentre <m>(3,4)</m>,
+      radius 5.</p></answer>
+      <solution>
+        <p><m>36 + 64 = 100</m> (Theorem 15). <m>[BC]</m> is a
+        diameter (Corollary 4). Midpoint = <m>(3,4)</m>, radius
+        <m>= 5</m>.</p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="ex-mix-4">
+      <title>Triangle Inequality with Algebra</title>
+      <statement>
+        <p>Sides <m>x</m>, <m>x+3</m>, <m>2x-1</m>. Find the range
+        of <m>x</m>.</p>
+      </statement>
+      <answer><p><m>x \gt 2</m> (with all sides positive, i.e.
+      <m>x \gt 1/2</m>, combined: <m>x \gt 2</m>)</p></answer>
+    </exercise>
+
+    <exercise xml:id="ex-mix-5">
+      <title>Parallel Chords</title>
+      <statement>
+        <p>Parallel chords of lengths 12 and 16 in a circle of radius
+        10. Distance between them?</p>
+      </statement>
+      <answer><p>Same side: 2. Opposite: 14.</p></answer>
+    </exercise>
+
+    <exercise xml:id="ex-mix-6">
+      <title>Construction Description</title>
+      <statement>
+        <p>Describe how to construct the circumcircle of a triangle.
+        State the theorem that justifies your method.</p>
+      </statement>
+      <answer>
+        <p>Construct perpendicular bisectors of two sides; they meet
+        at the circumcentre. Draw circle from circumcentre through
+        any vertex. Justified by Theorem 21(2).</p>
+      </answer>
+    </exercise>
+  </subsection>
+
+</section>
