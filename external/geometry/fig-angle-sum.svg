@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="230" viewBox="0 0 350 230" font-family="Segoe UI, sans-serif">
+  <polygon points="80,180 280,180 180,50" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="80" y1="50" x2="320" y2="50" stroke="#00a6a0" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <path d="M 100.0 180.0 A 20 20 0 0 0 92.3 164.2" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <path d="M 267.7 164.2 A 20 20 0 0 0 260.0 180.0" fill="none" stroke="#22c55e" stroke-width="2"/>
+  <path d="M 168.9 64.2 A 18 18 0 0 0 191.1 64.2" fill="none" stroke="#ef4444" stroke-width="2"/>
+  <text x="72" y="198" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">A</text>
+  <text x="288" y="198" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">B</text>
+  <text x="180" y="38" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">C</text>
+  <text x="110" y="170" text-anchor="middle" font-size="13" fill="#3b82f6" font-style="italic">α</text>
+  <text x="250" y="170" text-anchor="middle" font-size="13" fill="#22c55e" font-style="italic">β</text>
+  <text x="180" y="80" text-anchor="middle" font-size="13" fill="#ef4444" font-style="italic">γ</text>
+  <text x="175" y="220" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="normal">α + β + γ = 180°</text>
+</svg>

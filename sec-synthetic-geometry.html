@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Synthetic Geometry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Leaving Certificate Mathematics">
+<meta property="book:author" content="Mr Downes">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.13';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.0d5f811896ddeac1.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.e2abc79debce15fd.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="lc-ol-maths.html"><span class="title">Leaving Certificate Mathematics</span> <span class="subtitle">Ordinary Level</span></a></h1>
+<p class="byline">Mr Downes</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch-geo-trig.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-geo-trig.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-coordinate-geometry.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-stats-prob.html" class="internal"><span class="codenumber">1</span> <span class="title">Statistics and Probability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-counting.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Counting</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-concepts-probability.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Concepts of Probability</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-outcomes-random.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Outcomes of Random Processes</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-statistical-reasoning.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Statistical Reasoning</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-collecting-data.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Finding, Collecting and Organising Data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-representing-data.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Representing Data Graphically and Numerically</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-analysing-data.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Analysing, Interpreting and Drawing Inferences from Data</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-geo-trig.html" class="internal"><span class="codenumber">2</span> <span class="title">Geometry and Trigonometry</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-synthetic-geometry.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Synthetic Geometry</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-language-of-geometry" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The Language of Geometry</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-building-blocks" class="internal"><span class="codenumber">2.1.2</span> <span class="title">The Building Blocks</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-angles" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Angles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-congruence" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Congruent Triangles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-parallel-lines" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Parallel Lines</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-jc-theorems-review" class="internal"><span class="codenumber">2.1.6</span> <span class="title">The Junior Cycle Theorems (Assumed Knowledge)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-triangle-inequalities" class="internal"><span class="codenumber">2.1.7</span> <span class="title">Sides and Angles in a Triangle (Theorems 7 and 8)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-ratio-similarity" class="internal"><span class="codenumber">2.1.8</span> <span class="title">Ratio and Similarity (Theorems 11, 12, 13)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-area-theory" class="internal"><span class="codenumber">2.1.9</span> <span class="title">Area (Theorems 16, 17, 18)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-circles-lc" class="internal"><span class="codenumber">2.1.10</span> <span class="title">Circles: Tangents and Chords (Theorems 20, 21, Corollary 6)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-constructions-lc" class="internal"><span class="codenumber">2.1.11</span> <span class="title">Constructions 16–21</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-quadrilaterals" class="internal"><span class="codenumber">2.1.12</span> <span class="title">Quadrilaterals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-mixed-problems" class="internal"><span class="codenumber">2.1.13</span> <span class="title">Mixed Exam-Style Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-coordinate-geometry.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Co-ordinate Geometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-coordinate-geometry.html#subsec-the-line" class="internal"><span class="codenumber">2.2.1</span> <span class="title">The Line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-coordinate-geometry.html#subsec-the-circle" class="internal"><span class="codenumber">2.2.2</span> <span class="title">The Circle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-trigonometry.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Trigonometry</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-enlargements.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Transformation Geometry: Enlargements</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-enlargements.html#subsec-enlargement-definition" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Centre of Enlargement and Scale Factor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-enlargements.html#subsec-enlargement-lengths" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Effect on Lengths</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-enlargements.html#subsec-enlargement-area" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Effect on Area</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-enlargements.html#subsec-enlargement-problems" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Problem-Solving Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-number.html" class="internal"><span class="codenumber">3</span> <span class="title">Number</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-number-systems.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-number-systems.html#subsec-number-sets" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Number Sets: <span class="process-math">\(\mathbb{N}\text{,}\)</span> <span class="process-math">\(\mathbb{Z}\text{,}\)</span> <span class="process-math">\(\mathbb{Q}\text{,}\)</span> <span class="process-math">\(\mathbb{R}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-number-systems.html#subsec-rational-irrational" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Rational and Irrational: The Decimal Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-number-systems.html#subsec-operations" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Operations: <span class="process-math">\(+\text{,}\)</span> <span class="process-math">\(-\text{,}\)</span> <span class="process-math">\(\times\text{,}\)</span> <span class="process-math">\(\div\)</span> Across the Number Sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-number-systems.html#subsec-factors-primes" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Factors, Multiples, and Primes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-number-systems.html#subsec-order-of-operations" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Order of Operations (BIMDAS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-number-systems.html#subsec-decimals-fractions" class="internal"><span class="codenumber">3.1.6</span> <span class="title">Decimals and Fractions: Two Sides of the Same Coin</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-number-systems.html#subsec-scientific-notation" class="internal"><span class="codenumber">3.1.7</span> <span class="title">Scientific Notation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-indices.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Indices</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-arithmetic.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Arithmetic</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-length-area-volume.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Length, Area and Volume</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-algebra.html" class="internal"><span class="codenumber">4</span> <span class="title">Algebra</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-expressions.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Expressions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-solving-equations.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Solving Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inequalities.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Inequalities</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-functions.html" class="internal"><span class="codenumber">5</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-functions.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-calculus.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Calculus</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-synthetic-geometry"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Synthetic Geometry</span>
+</h2>
+<section class="introduction" id="sec-synthetic-geometry-2"><div class="para" id="sec-synthetic-geometry-2-1">Geometry is one of the oldest branches of mathematics — the ancient Greeks built it up from a handful of basic ideas into an extraordinary logical structure. In this section, we follow that same path. We start with a few terms so basic they cannot be defined, state a few truths so fundamental they cannot be proved, and then build everything else from there.<div class="autopermalink" data-description="Paragraph"><a href="#sec-synthetic-geometry-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-synthetic-geometry-2-2">At Leaving Certificate Ordinary Level, you are expected to <em class="emphasis">solve problems</em> using the theory. No proofs are examinable. But understanding the logical structure — what follows from what — is what makes the difference between memorising and truly knowing geometry.<div class="autopermalink" data-description="Paragraph"><a href="#sec-synthetic-geometry-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsec-language-of-geometry"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Language of Geometry</span>
+</h3>
+<section class="paragraphs" id="par-undefined-terms"><h4 class="heading"><span class="title">Undefined Terms.</span></h4>
+<div class="para" id="par-undefined-terms-2">Every system of knowledge has to start somewhere. In mathematics, we begin with ideas so primitive, so fundamental, that we cannot define them using simpler ideas — because there <em class="emphasis">are</em> no simpler ideas. These are our <dfn class="terminology">undefined terms</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#par-undefined-terms-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="par-undefined-terms-3">Here are the ones you need right now. We will introduce more as we need them.<div class="autopermalink" data-description="Paragraph"><a href="#par-undefined-terms-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="table-undefined-terms"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Our Starting Undefined Terms<div class="autopermalink" data-description="Table 2.1.1: Our Starting Undefined Terms"><a href="#table-undefined-terms" title="Copy heading and permalink for Table 2.1.1: Our Starting Undefined Terms" aria-label="Copy heading and permalink for Table 2.1.1: Our Starting Undefined Terms">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b2 r0 l0 t0 lines">Term</th>
+<th scope="col" class="l m b2 r0 l0 t0 lines">What we mean (informally)</th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><dfn class="terminology">Point</dfn></td>
+<td class="l m b0 r0 l0 t0 lines">A location. It has no size, no width, no length — just position. We label points with capital letters: <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(C\text{.}\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><dfn class="terminology">Line</dfn></td>
+<td class="l m b0 r0 l0 t0 lines">A straight path that extends forever in both directions. It has no thickness. A line through points <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> is written <span class="process-math">\(AB\text{.}\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><dfn class="terminology">Plane</dfn></td>
+<td class="l m b0 r0 l0 t0 lines">A flat surface that extends forever in all directions. All our geometry takes place in one fixed plane.</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><dfn class="terminology">Real number</dfn></td>
+<td class="l m b1 r0 l0 t0 lines">The numbers on the number line. We use them to measure distances and angles.</td>
+</tr>
+</table></div></figure><div class="para" id="par-undefined-terms-5">Notice: we described these terms, but we did not <em class="emphasis">define</em> them. You will not be asked for a definition of “point” in an exam — it is one of our starting points (no pun intended). You can think of a point as a dot on a page, but really even a dot has size. A mathematical point is an idealisation: pure location, nothing more.<div class="autopermalink" data-description="Paragraph"><a href="#par-undefined-terms-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="par-undefined-terms-6">As we go further, we will meet more undefined terms — <dfn class="terminology">angle</dfn>, <dfn class="terminology">degree</dfn>, <dfn class="terminology">length</dfn>, <dfn class="terminology">set</dfn> — introduced on a need-to-know basis.<div class="autopermalink" data-description="Paragraph"><a href="#par-undefined-terms-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Undefined Terms"><a href="#par-undefined-terms" title="Copy heading and permalink for Paragraphs: Undefined Terms" aria-label="Copy heading and permalink for Paragraphs: Undefined Terms">🔗</a></div></section><section class="paragraphs" id="par-defined-terms"><h4 class="heading"><span class="title">Defined Terms.</span></h4>
+<div class="para" id="par-defined-terms-2">Once we have our undefined terms, we can start building. A <dfn class="terminology">defined term</dfn> is a new concept described precisely using terms we already have. For example, once we know what “point” and “line” mean, we can define what a “segment” is.<div class="autopermalink" data-description="Paragraph"><a href="#par-defined-terms-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="par-defined-terms-3">We will introduce defined terms as we need them throughout this section. The important ones include: <em class="emphasis">segment, ray, midpoint, triangle, angle, parallel lines, perpendicular lines, parallelogram, circle, tangent, chord</em>, and many more.<div class="autopermalink" data-description="Paragraph"><a href="#par-defined-terms-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Defined Terms"><a href="#par-defined-terms" title="Copy heading and permalink for Paragraphs: Defined Terms" aria-label="Copy heading and permalink for Paragraphs: Defined Terms">🔗</a></div></section><section class="paragraphs" id="par-axioms-and-theorems"><h4 class="heading"><span class="title">Axioms, Theorems, and the Rest.</span></h4>
+<div class="para" id="par-axioms-and-theorems-2">Here is the hierarchy of mathematical truth:<div class="autopermalink" data-description="Paragraph"><a href="#par-axioms-and-theorems-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="table-logic-hierarchy"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The Logical Hierarchy<div class="autopermalink" data-description="Table 2.1.2: The Logical Hierarchy"><a href="#table-logic-hierarchy" title="Copy heading and permalink for Table 2.1.2: The Logical Hierarchy" aria-label="Copy heading and permalink for Table 2.1.2: The Logical Hierarchy">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b2 r0 l0 t0 lines">Term</th>
+<th scope="col" class="l m b2 r0 l0 t0 lines">What it means</th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><dfn class="terminology">Axiom</dfn></td>
+<td class="l m b0 r0 l0 t0 lines">A statement we accept as true without proof. Our starting assumptions — the rules of the game.</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><dfn class="terminology">Theorem</dfn></td>
+<td class="l m b0 r0 l0 t0 lines">A statement we <em class="emphasis">prove</em> is true, using axioms and previously-proven theorems.</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><dfn class="terminology">Proof</dfn></td>
+<td class="l m b0 r0 l0 t0 lines">A logical argument that shows a theorem must be true.</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><dfn class="terminology">Corollary</dfn></td>
+<td class="l m b0 r0 l0 t0 lines">A result that follows quickly and directly from a theorem.</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><dfn class="terminology">Converse</dfn></td>
+<td class="l m b0 r0 l0 t0 lines">The reverse of a theorem: swap the “if” and the “then”.</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><dfn class="terminology">Implies</dfn></td>
+<td class="l m b1 r0 l0 t0 lines">If the first statement is true, then the second <em class="emphasis">must</em> be true.</td>
+</tr>
+</table></div></figure><div class="para" id="par-axioms-and-theorems-4">A word of caution about converses. Just because a theorem is true does <em class="emphasis">not</em> mean its converse is true. For example: “Every square is a rectangle” is true, but “every rectangle is a square” is false. Always check whether a converse actually holds before using it.<div class="autopermalink" data-description="Paragraph"><a href="#par-axioms-and-theorems-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Axioms, Theorems, and the Rest"><a href="#par-axioms-and-theorems" title="Copy heading and permalink for Paragraphs: Axioms, Theorems, and the Rest" aria-label="Copy heading and permalink for Paragraphs: Axioms, Theorems, and the Rest">🔗</a></div></section><div class="autopermalink" data-description="Subsection 2.1.1: The Language of Geometry"><a href="#subsec-language-of-geometry" title="Copy heading and permalink for Subsection 2.1.1: The Language of Geometry" aria-label="Copy heading and permalink for Subsection 2.1.1: The Language of Geometry">🔗</a></div></section><section class="subsection" id="subsec-building-blocks"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Building Blocks</span>
+</h3>
+<div class="para" id="subsec-building-blocks-2">From our undefined terms, we immediately get our first definitions and our first axiom.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-building-blocks-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="axiom theorem-like" id="axiom-1"><h4 class="heading">
+<span class="type">Axiom</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Axiom 1 — Two Points.</span>
+</h4>
+<div class="para" id="axiom-1-2-1">There is exactly one line through any two given points.<div class="autopermalink" data-description="Paragraph"><a href="#axiom-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Axiom 2.1.3: Axiom 1 — Two Points"><a href="#axiom-1" title="Copy heading and permalink for Axiom 2.1.3: Axiom 1 — Two Points" aria-label="Copy heading and permalink for Axiom 2.1.3: Axiom 1 — Two Points">🔗</a></div></article><div class="para" id="subsec-building-blocks-4">This is beautifully simple. Pick any two points — there is exactly one line through them. Not zero, not two. Exactly one. We write <span class="process-math">\(AB\)</span> for the line through <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-building-blocks-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-building-blocks"><div class="image-box" style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;"><img src="external/geometry/fig-point-line-ray-segment.svg" class="contained" alt="Diagrams showing a point, a line extending in both directions, a segment with two endpoints, a ray with one endpoint, distance notation, and a midpoint."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Points, lines, segments, rays, distance, and midpoint.<div class="autopermalink" data-description="Figure 2.1.4"><a href="#fig-building-blocks" title="Copy heading and permalink for Figure 2.1.4" aria-label="Copy heading and permalink for Figure 2.1.4">🔗</a></div></figcaption></figure><article class="definition definition-like" id="def-segment"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Segment.</span>
+</h4>
+<div class="para" id="def-segment-2-1">The <dfn class="terminology">line segment</dfn> <span class="process-math">\([AB]\)</span> is the part of line <span class="process-math">\(AB\)</span> between <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> including both endpoints.<div class="autopermalink" data-description="Paragraph"><a href="#def-segment-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.5: Segment"><a href="#def-segment" title="Copy heading and permalink for Definition 2.1.5: Segment" aria-label="Copy heading and permalink for Definition 2.1.5: Segment">🔗</a></div></article><article class="definition definition-like" id="def-ray"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Ray.</span>
+</h4>
+<div class="para" id="def-ray-2-1">The <dfn class="terminology">ray</dfn> <span class="process-math">\([AB\)</span> starts at <span class="process-math">\(A\)</span> and passes through <span class="process-math">\(B\text{,}\)</span> extending forever beyond <span class="process-math">\(B\text{.}\)</span> The point <span class="process-math">\(A\)</span> is the endpoint of the ray.<div class="autopermalink" data-description="Paragraph"><a href="#def-ray-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.6: Ray"><a href="#def-ray" title="Copy heading and permalink for Definition 2.1.6: Ray" aria-label="Copy heading and permalink for Definition 2.1.6: Ray">🔗</a></div></article><article class="definition definition-like" id="def-collinear"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Collinear Points.</span>
+</h4>
+<div class="para" id="def-collinear-2-1">Three or more points are <dfn class="terminology">collinear</dfn> if they all lie on a single line.<div class="autopermalink" data-description="Paragraph"><a href="#def-collinear-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.7: Collinear Points"><a href="#def-collinear" title="Copy heading and permalink for Definition 2.1.7: Collinear Points" aria-label="Copy heading and permalink for Definition 2.1.7: Collinear Points">🔗</a></div></article><article class="definition definition-like" id="def-triangle"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Triangle.</span>
+</h4>
+<div class="para" id="def-triangle-2-1">If <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(C\)</span> are three non-collinear points, the <dfn class="terminology">triangle</dfn> <span class="process-math">\(\triangle ABC\)</span> is the figure enclosed by the segments <span class="process-math">\([AB]\text{,}\)</span> <span class="process-math">\([BC]\text{,}\)</span> and <span class="process-math">\([CA]\text{.}\)</span> The segments are its <dfn class="terminology">sides</dfn> and the points are its <dfn class="terminology">vertices</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#def-triangle-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.8: Triangle"><a href="#def-triangle" title="Copy heading and permalink for Definition 2.1.8: Triangle" aria-label="Copy heading and permalink for Definition 2.1.8: Triangle">🔗</a></div></article><section class="paragraphs" id="par-distance-synth"><h4 class="heading"><span class="title">Distance.</span></h4>
+<div class="para" id="par-distance-synth-2">We write <span class="process-math">\(|AB|\)</span> for the <dfn class="terminology">distance</dfn> between points <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{.}\)</span> This is also the <dfn class="terminology">length</dfn> of segment <span class="process-math">\([AB]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#par-distance-synth-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="axiom theorem-like" id="axiom-2"><h5 class="heading">
+<span class="type">Axiom</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Axiom 2 — Ruler.</span>
+</h5>
+<div class="para" id="axiom-2-2-1">Distance has these properties:<div class="autopermalink" data-description="Paragraph"><a href="#axiom-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="axiom-2-2-2">1. <span class="process-math">\(|AB| \geq 0\)</span> (distance is never negative).<div class="autopermalink" data-description="Paragraph"><a href="#axiom-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="axiom-2-2-3">2. <span class="process-math">\(|AB| = |BA|\)</span> (same distance either way).<div class="autopermalink" data-description="Paragraph"><a href="#axiom-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="axiom-2-2-4">3. If <span class="process-math">\(C\)</span> lies on <span class="process-math">\(AB\)</span> between <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> then <span class="process-math">\(|AB| = |AC| + |CB|\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#axiom-2-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="axiom-2-2-5">4. Given any ray from <span class="process-math">\(A\)</span> and any number <span class="process-math">\(k \geq 0\text{,}\)</span> there is exactly one point on the ray at distance <span class="process-math">\(k\)</span> from <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#axiom-2-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Axiom 2.1.9: Axiom 2 — Ruler"><a href="#axiom-2" title="Copy heading and permalink for Axiom 2.1.9: Axiom 2 — Ruler" aria-label="Copy heading and permalink for Axiom 2.1.9: Axiom 2 — Ruler">🔗</a></div></article><div class="para" id="par-distance-synth-4">Property 3 is the one you use constantly: if a point is between two others, the distances add up. Property 4 says you can always “mark off” a distance — essential for constructions.<div class="autopermalink" data-description="Paragraph"><a href="#par-distance-synth-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Distance"><a href="#par-distance-synth" title="Copy heading and permalink for Paragraphs: Distance" aria-label="Copy heading and permalink for Paragraphs: Distance">🔗</a></div></section><article class="definition definition-like" id="def-midpoint"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Midpoint.</span>
+</h4>
+<div class="para" id="def-midpoint-2-1">The <dfn class="terminology">midpoint</dfn> <span class="process-math">\(M\)</span> of segment <span class="process-math">\([AB]\)</span> is the point on the segment with <span class="process-math">\(|AM| = |MB| = \frac{|AB|}{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-midpoint-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.10: Midpoint"><a href="#def-midpoint" title="Copy heading and permalink for Definition 2.1.10: Midpoint" aria-label="Copy heading and permalink for Definition 2.1.10: Midpoint">🔗</a></div></article><div class="autopermalink" data-description="Subsection 2.1.2: The Building Blocks"><a href="#subsec-building-blocks" title="Copy heading and permalink for Subsection 2.1.2: The Building Blocks" aria-label="Copy heading and permalink for Subsection 2.1.2: The Building Blocks">🔗</a></div></section><section class="subsection" id="subsec-angles"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Angles</span>
+</h3>
+<div class="para" id="subsec-angles-2">
+<dfn class="terminology">Angle</dfn> is another undefined term. An angle has a <dfn class="terminology">vertex</dfn> (a point), two <dfn class="terminology">arms</dfn> (rays from the vertex), and an <dfn class="terminology">inside</dfn>. We write <span class="process-math">\(\angle BAC\)</span> for the angle at vertex <span class="process-math">\(A\)</span> with arms <span class="process-math">\([AB\)</span> and <span class="process-math">\([AC\text{,}\)</span> and <span class="process-math">\(|\angle BAC|\)</span> for the number of degrees in the angle.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-angles-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-angle-types"><div class="image-box" style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;"><img src="external/geometry/fig-angle-types.svg" class="contained" alt="Diagrams showing acute, right, obtuse, straight, and reflex angles, plus supplementary angles that add to 180 degrees."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The five types of angle, and supplementary angles.<div class="autopermalink" data-description="Figure 2.1.11"><a href="#fig-angle-types" title="Copy heading and permalink for Figure 2.1.11" aria-label="Copy heading and permalink for Figure 2.1.11">🔗</a></div></figcaption></figure><figure class="table table-like" id="table-angle-types"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Types of Angle<div class="autopermalink" data-description="Table 2.1.12: Types of Angle"><a href="#table-angle-types" title="Copy heading and permalink for Table 2.1.12: Types of Angle" aria-label="Copy heading and permalink for Table 2.1.12: Types of Angle">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b2 r0 l0 t0 lines">Type</th>
+<th scope="col" class="l m b2 r0 l0 t0 lines">Degrees</th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Null angle</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0°\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Acute angle</td>
+<td class="l m b0 r0 l0 t0 lines">Between <span class="process-math">\(0°\)</span> and <span class="process-math">\(90°\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Right angle</td>
+<td class="l m b0 r0 l0 t0 lines">Exactly <span class="process-math">\(90°\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Obtuse angle</td>
+<td class="l m b0 r0 l0 t0 lines">Between <span class="process-math">\(90°\)</span> and <span class="process-math">\(180°\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Straight angle</td>
+<td class="l m b0 r0 l0 t0 lines">Exactly <span class="process-math">\(180°\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Reflex angle</td>
+<td class="l m b0 r0 l0 t0 lines">Between <span class="process-math">\(180°\)</span> and <span class="process-math">\(360°\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">Full angle</td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(360°\)</span></td>
+</tr>
+</table></div></figure><article class="axiom theorem-like" id="axiom-3"><h4 class="heading">
+<span class="type">Axiom</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Axiom 3 — Protractor.</span>
+</h4>
+<div class="para" id="axiom-3-2-1">Every angle has a degree measure between <span class="process-math">\(0°\)</span> and <span class="process-math">\(360°\text{.}\)</span> A straight angle is <span class="process-math">\(180°\text{.}\)</span> Angles can be added: if ray <span class="process-math">\([AD\)</span> is inside <span class="process-math">\(\angle BAC\text{,}\)</span> then <span class="process-math">\(|\angle BAC| = |\angle BAD| + |\angle DAC|\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#axiom-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Axiom 2.1.13: Axiom 3 — Protractor"><a href="#axiom-3" title="Copy heading and permalink for Axiom 2.1.13: Axiom 3 — Protractor" aria-label="Copy heading and permalink for Axiom 2.1.13: Axiom 3 — Protractor">🔗</a></div></article><article class="definition definition-like" id="def-supplementary"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Supplementary Angles.</span>
+</h4>
+<div class="para" id="def-supplementary-2-1">Two angles are <dfn class="terminology">supplementary</dfn> if they add to <span class="process-math">\(180°\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-supplementary-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.14: Supplementary Angles"><a href="#def-supplementary" title="Copy heading and permalink for Definition 2.1.14: Supplementary Angles" aria-label="Copy heading and permalink for Definition 2.1.14: Supplementary Angles">🔗</a></div></article><article class="definition definition-like" id="def-perpendicular"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Perpendicular Lines.</span>
+</h4>
+<div class="para" id="def-perpendicular-2-1">Two lines are <dfn class="terminology">perpendicular</dfn> if they meet at a right angle (<span class="process-math">\(90°\)</span>). We write <span class="process-math">\(AB \perp CD\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-perpendicular-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.15: Perpendicular Lines"><a href="#def-perpendicular" title="Copy heading and permalink for Definition 2.1.15: Perpendicular Lines" aria-label="Copy heading and permalink for Definition 2.1.15: Perpendicular Lines">🔗</a></div></article><article class="definition definition-like" id="def-angle-bisector"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Angle Bisector.</span>
+</h4>
+<div class="para" id="def-angle-bisector-2-1">The ray <span class="process-math">\([AD\)</span> is the <dfn class="terminology">bisector</dfn> of <span class="process-math">\(\angle BAC\)</span> if <span class="process-math">\(|\angle BAD| = |\angle DAC| = \frac{|\angle BAC|}{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-angle-bisector-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.16: Angle Bisector"><a href="#def-angle-bisector" title="Copy heading and permalink for Definition 2.1.16: Angle Bisector" aria-label="Copy heading and permalink for Definition 2.1.16: Angle Bisector">🔗</a></div></article><div class="autopermalink" data-description="Subsection 2.1.3: Angles"><a href="#subsec-angles" title="Copy heading and permalink for Subsection 2.1.3: Angles" aria-label="Copy heading and permalink for Subsection 2.1.3: Angles">🔗</a></div></section><section class="subsection" id="subsec-congruence"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Congruent Triangles</span>
+</h3>
+<div class="para" id="subsec-congruence-2">Two triangles are <dfn class="terminology">congruent</dfn> if all six measurements match: three sides and three angles. But you do not need all six — three carefully chosen measurements are enough.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-congruence-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-congruence"><div class="image-box" style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;"><img src="external/geometry/fig-congruence.svg" class="contained" alt="Three triangles showing the SAS, ASA, and SSS congruence conditions with matching sides and angles marked."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The three congruence conditions: SAS, ASA, SSS.<div class="autopermalink" data-description="Figure 2.1.17"><a href="#fig-congruence" title="Copy heading and permalink for Figure 2.1.17" aria-label="Copy heading and permalink for Figure 2.1.17">🔗</a></div></figcaption></figure><article class="axiom theorem-like" id="axiom-4"><h4 class="heading">
+<span class="type">Axiom</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Axiom 4 — SAS, ASA, SSS.</span>
+</h4>
+<div class="para" id="axiom-4-2-1">Two triangles are congruent if:<div class="autopermalink" data-description="Paragraph"><a href="#axiom-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="axiom-4-2-2">
+<em class="emphasis">SAS:</em> Two sides and the included angle are equal, or<div class="autopermalink" data-description="Paragraph"><a href="#axiom-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="axiom-4-2-3">
+<em class="emphasis">ASA:</em> Two angles and the included side are equal, or<div class="autopermalink" data-description="Paragraph"><a href="#axiom-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="axiom-4-2-4">
+<em class="emphasis">SSS:</em> All three sides are equal.<div class="autopermalink" data-description="Paragraph"><a href="#axiom-4-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Axiom 2.1.18: Axiom 4 — SAS, ASA, SSS"><a href="#axiom-4" title="Copy heading and permalink for Axiom 2.1.18: Axiom 4 — SAS, ASA, SSS" aria-label="Copy heading and permalink for Axiom 2.1.18: Axiom 4 — SAS, ASA, SSS">🔗</a></div></article><div class="para" id="subsec-congruence-5">These are not theorems — they are axioms. We accept them as true. Everything about congruent triangles flows from here.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-congruence-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-isosceles"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Types of Triangle (by sides).</span>
+</h4>
+<div class="para" id="def-isosceles-2-1">A triangle is <dfn class="terminology">isosceles</dfn> if two sides are equal, <dfn class="terminology">equilateral</dfn> if all three sides are equal, and <dfn class="terminology">scalene</dfn> if no two sides are equal.<div class="autopermalink" data-description="Paragraph"><a href="#def-isosceles-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.19: Types of Triangle (by sides)"><a href="#def-isosceles" title="Copy heading and permalink for Definition 2.1.19: Types of Triangle (by sides)" aria-label="Copy heading and permalink for Definition 2.1.19: Types of Triangle (by sides)">🔗</a></div></article><article class="definition definition-like" id="def-right-triangle"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Right-Angled Triangle.</span>
+</h4>
+<div class="para" id="def-right-triangle-2-1">A triangle is <dfn class="terminology">right-angled</dfn> if one angle is <span class="process-math">\(90°\text{.}\)</span> The side opposite the right angle is the <dfn class="terminology">hypotenuse</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#def-right-triangle-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.20: Right-Angled Triangle"><a href="#def-right-triangle" title="Copy heading and permalink for Definition 2.1.20: Right-Angled Triangle" aria-label="Copy heading and permalink for Definition 2.1.20: Right-Angled Triangle">🔗</a></div></article><div class="autopermalink" data-description="Subsection 2.1.4: Congruent Triangles"><a href="#subsec-congruence" title="Copy heading and permalink for Subsection 2.1.4: Congruent Triangles" aria-label="Copy heading and permalink for Subsection 2.1.4: Congruent Triangles">🔗</a></div></section><section class="subsection" id="subsec-parallel-lines"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Parallel Lines</span>
+</h3>
+<article class="definition definition-like" id="def-parallel"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Parallel Lines.</span>
+</h4>
+<div class="para" id="def-parallel-2-1">Two lines are <dfn class="terminology">parallel</dfn> if they never meet (or are the same line). We write <span class="process-math">\(l \parallel m\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-parallel-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.21: Parallel Lines"><a href="#def-parallel" title="Copy heading and permalink for Definition 2.1.21: Parallel Lines" aria-label="Copy heading and permalink for Definition 2.1.21: Parallel Lines">🔗</a></div></article><article class="axiom theorem-like" id="axiom-5"><h4 class="heading">
+<span class="type">Axiom</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Axiom 5 — Parallels.</span>
+</h4>
+<div class="para" id="axiom-5-2-1">Given any line <span class="process-math">\(l\)</span> and a point <span class="process-math">\(P\)</span> not on it, there is exactly one line through <span class="process-math">\(P\)</span> parallel to <span class="process-math">\(l\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#axiom-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Axiom 2.1.22: Axiom 5 — Parallels"><a href="#axiom-5" title="Copy heading and permalink for Axiom 2.1.22: Axiom 5 — Parallels" aria-label="Copy heading and permalink for Axiom 2.1.22: Axiom 5 — Parallels">🔗</a></div></article><div class="para" id="subsec-parallel-lines-4">This is the last of our five axioms. Everything in geometry is built from Axioms 1–5 plus the definitions above.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-parallel-lines-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-transversal"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Transversal, Alternate Angles, Corresponding Angles.</span>
+</h4>
+<div class="para" id="def-transversal-2-1">A <dfn class="terminology">transversal</dfn> is a line that crosses two other lines. Where it crosses, it creates <dfn class="terminology">alternate angles</dfn> (on opposite sides, between the lines) and <dfn class="terminology">corresponding angles</dfn> (on the same side, one at each crossing).<div class="autopermalink" data-description="Paragraph"><a href="#def-transversal-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.23: Transversal, Alternate Angles, Corresponding Angles"><a href="#def-transversal" title="Copy heading and permalink for Definition 2.1.23: Transversal, Alternate Angles, Corresponding Angles" aria-label="Copy heading and permalink for Definition 2.1.23: Transversal, Alternate Angles, Corresponding Angles">🔗</a></div></article><figure class="figure figure-like" id="fig-alternate-angles"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/geometry/fig-alternate-angles.svg" class="contained" alt="Two parallel lines cut by a transversal, with alternate angles marked as equal."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.24<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Alternate angles formed by a transversal cutting parallel lines.<div class="autopermalink" data-description="Figure 2.1.24"><a href="#fig-alternate-angles" title="Copy heading and permalink for Figure 2.1.24" aria-label="Copy heading and permalink for Figure 2.1.24">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Subsection 2.1.5: Parallel Lines"><a href="#subsec-parallel-lines" title="Copy heading and permalink for Subsection 2.1.5: Parallel Lines" aria-label="Copy heading and permalink for Subsection 2.1.5: Parallel Lines">🔗</a></div></section><section class="subsection" id="subsec-jc-theorems-review"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Junior Cycle Theorems (Assumed Knowledge)</span>
+</h3>
+<div class="para" id="subsec-jc-theorems-review-2">These results were proved at Junior Cycle. At LC OL, they are assumed — you use them freely. We state each one with its diagram so you have a complete reference.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-jc-theorems-review-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm-1-review"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.25</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 1 — Vertically Opposite Angles.</span>
+</h4>
+<div class="para" id="thm-1-review-2-1">Vertically opposite angles are equal in measure.<div class="autopermalink" data-description="Paragraph"><a href="#thm-1-review-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.25: Theorem 1 — Vertically Opposite Angles"><a href="#thm-1-review" title="Copy heading and permalink for Theorem 2.1.25: Theorem 1 — Vertically Opposite Angles" aria-label="Copy heading and permalink for Theorem 2.1.25: Theorem 1 — Vertically Opposite Angles">🔗</a></div></article><figure class="figure figure-like" id="fig-vert-opp"><div class="image-box" style="width: 55%; margin-left: 22.5%; margin-right: 22.5%;"><img src="external/geometry/fig-vertically-opposite.svg" class="contained" alt="Two lines crossing, with two pairs of vertically opposite angles marked in matching colours."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.26<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Vertically opposite angles are equal.<div class="autopermalink" data-description="Figure 2.1.26"><a href="#fig-vert-opp" title="Copy heading and permalink for Figure 2.1.26" aria-label="Copy heading and permalink for Figure 2.1.26">🔗</a></div></figcaption></figure><article class="theorem theorem-like" id="thm-2-review"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.27</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 2 — Isosceles Triangles.</span>
+</h4>
+<div class="para" id="thm-2-review-2-1">(1) In an isosceles triangle, the angles opposite the equal sides are equal.<div class="autopermalink" data-description="Paragraph"><a href="#thm-2-review-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="thm-2-review-2-2">(2) Conversely, if two angles of a triangle are equal, the triangle is isosceles.<div class="autopermalink" data-description="Paragraph"><a href="#thm-2-review-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.27: Theorem 2 — Isosceles Triangles"><a href="#thm-2-review" title="Copy heading and permalink for Theorem 2.1.27: Theorem 2 — Isosceles Triangles" aria-label="Copy heading and permalink for Theorem 2.1.27: Theorem 2 — Isosceles Triangles">🔗</a></div></article><figure class="figure figure-like" id="fig-isosceles-thm"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/geometry/fig-isosceles.svg" class="contained" alt="An isosceles triangle with two sides marked equal and the base angles marked equal."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.28<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Equal sides imply equal base angles.<div class="autopermalink" data-description="Figure 2.1.28"><a href="#fig-isosceles-thm" title="Copy heading and permalink for Figure 2.1.28" aria-label="Copy heading and permalink for Figure 2.1.28">🔗</a></div></figcaption></figure><article class="theorem theorem-like" id="thm-3-review"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.29</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 3 — Alternate Angles.</span>
+</h4>
+<div class="para" id="thm-3-review-2-1">If a transversal makes equal alternate angles on two lines, then the lines are parallel. Conversely, if two lines are parallel, any transversal makes equal alternate angles.<div class="autopermalink" data-description="Paragraph"><a href="#thm-3-review-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.29: Theorem 3 — Alternate Angles"><a href="#thm-3-review" title="Copy heading and permalink for Theorem 2.1.29: Theorem 3 — Alternate Angles" aria-label="Copy heading and permalink for Theorem 2.1.29: Theorem 3 — Alternate Angles">🔗</a></div></article><article class="theorem theorem-like" id="thm-4-review"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.30</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 4 — Angle Sum in a Triangle.</span>
+</h4>
+<div class="para" id="thm-4-review-2-1">The three angles in any triangle add to <span class="process-math">\(180°\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-4-review-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.30: Theorem 4 — Angle Sum in a Triangle"><a href="#thm-4-review" title="Copy heading and permalink for Theorem 2.1.30: Theorem 4 — Angle Sum in a Triangle" aria-label="Copy heading and permalink for Theorem 2.1.30: Theorem 4 — Angle Sum in a Triangle">🔗</a></div></article><figure class="figure figure-like" id="fig-angle-sum-thm"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/geometry/fig-angle-sum.svg" class="contained" alt="A triangle with its three angles labelled alpha, beta, gamma, and the equation alpha plus beta plus gamma equals 180 degrees."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.31<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The angles in a triangle sum to 180°.<div class="autopermalink" data-description="Figure 2.1.31"><a href="#fig-angle-sum-thm" title="Copy heading and permalink for Figure 2.1.31" aria-label="Copy heading and permalink for Figure 2.1.31">🔗</a></div></figcaption></figure><article class="theorem theorem-like" id="thm-5-review"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.32</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 5 — Corresponding Angles.</span>
+</h4>
+<div class="para" id="thm-5-review-2-1">Two lines are parallel if and only if, for any transversal, corresponding angles are equal.<div class="autopermalink" data-description="Paragraph"><a href="#thm-5-review-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.32: Theorem 5 — Corresponding Angles"><a href="#thm-5-review" title="Copy heading and permalink for Theorem 2.1.32: Theorem 5 — Corresponding Angles" aria-label="Copy heading and permalink for Theorem 2.1.32: Theorem 5 — Corresponding Angles">🔗</a></div></article><article class="theorem theorem-like" id="thm-6-review"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.33</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 6 — Exterior Angle.</span>
+</h4>
+<div class="para" id="thm-6-review-2-1">Each exterior angle of a triangle equals the sum of the two interior opposite angles.<div class="autopermalink" data-description="Paragraph"><a href="#thm-6-review-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.33: Theorem 6 — Exterior Angle"><a href="#thm-6-review" title="Copy heading and permalink for Theorem 2.1.33: Theorem 6 — Exterior Angle" aria-label="Copy heading and permalink for Theorem 2.1.33: Theorem 6 — Exterior Angle">🔗</a></div></article><figure class="figure figure-like" id="fig-ext-angle-thm"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="external/geometry/fig-exterior-angle.svg" class="contained" alt="A triangle with one side extended, showing the exterior angle equals the sum of the two non-adjacent interior angles."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.34<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The exterior angle theorem.<div class="autopermalink" data-description="Figure 2.1.34"><a href="#fig-ext-angle-thm" title="Copy heading and permalink for Figure 2.1.34" aria-label="Copy heading and permalink for Figure 2.1.34">🔗</a></div></figcaption></figure><article class="theorem theorem-like" id="thm-9-review"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.35</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 9 — Parallelograms.</span>
+</h4>
+<div class="para" id="thm-9-review-2-1">In a parallelogram, opposite sides are equal and opposite angles are equal.<div class="autopermalink" data-description="Paragraph"><a href="#thm-9-review-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.35: Theorem 9 — Parallelograms"><a href="#thm-9-review" title="Copy heading and permalink for Theorem 2.1.35: Theorem 9 — Parallelograms" aria-label="Copy heading and permalink for Theorem 2.1.35: Theorem 9 — Parallelograms">🔗</a></div></article><article class="theorem theorem-like" id="thm-10-review"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.36</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 10 — Diagonals of a Parallelogram.</span>
+</h4>
+<div class="para" id="thm-10-review-2-1">The diagonals of a parallelogram bisect each other.<div class="autopermalink" data-description="Paragraph"><a href="#thm-10-review-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.36: Theorem 10 — Diagonals of a Parallelogram"><a href="#thm-10-review" title="Copy heading and permalink for Theorem 2.1.36: Theorem 10 — Diagonals of a Parallelogram" aria-label="Copy heading and permalink for Theorem 2.1.36: Theorem 10 — Diagonals of a Parallelogram">🔗</a></div></article><figure class="figure figure-like" id="fig-parallelogram-thm"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/geometry/fig-parallelogram.svg" class="contained" alt="A parallelogram with opposite sides marked equal, diagonals drawn, and their intersection point marked."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.37<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Parallelogram: opposite sides equal, diagonals bisect each other.<div class="autopermalink" data-description="Figure 2.1.37"><a href="#fig-parallelogram-thm" title="Copy heading and permalink for Figure 2.1.37" aria-label="Copy heading and permalink for Figure 2.1.37">🔗</a></div></figcaption></figure><article class="theorem theorem-like" id="thm-14-review"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.38</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 14 — Pythagoras.</span>
+</h4>
+<div class="para" id="thm-14-review-2-1">In a right-angled triangle, the square of the hypotenuse equals the sum of the squares of the other two sides: <span class="process-math">\(a^2 + b^2 = c^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-14-review-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.38: Theorem 14 — Pythagoras"><a href="#thm-14-review" title="Copy heading and permalink for Theorem 2.1.38: Theorem 14 — Pythagoras" aria-label="Copy heading and permalink for Theorem 2.1.38: Theorem 14 — Pythagoras">🔗</a></div></article><article class="theorem theorem-like" id="thm-15-review"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.39</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 15 — Converse of Pythagoras.</span>
+</h4>
+<div class="para" id="thm-15-review-2-1">If <span class="process-math">\(a^2 + b^2 = c^2\)</span> for the sides of a triangle, then the angle opposite side <span class="process-math">\(c\)</span> is a right angle.<div class="autopermalink" data-description="Paragraph"><a href="#thm-15-review-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.39: Theorem 15 — Converse of Pythagoras"><a href="#thm-15-review" title="Copy heading and permalink for Theorem 2.1.39: Theorem 15 — Converse of Pythagoras" aria-label="Copy heading and permalink for Theorem 2.1.39: Theorem 15 — Converse of Pythagoras">🔗</a></div></article><figure class="figure figure-like" id="fig-pythagoras-thm"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/geometry/fig-pythagoras.svg" class="contained" alt="A right-angled triangle with the right angle marked, sides labelled a, b, c, and the formula."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.40<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Pythagoras: <span class="process-math">\(a^2 + b^2 = c^2\text{.}\)</span><div class="autopermalink" data-description="Figure 2.1.40"><a href="#fig-pythagoras-thm" title="Copy heading and permalink for Figure 2.1.40" aria-label="Copy heading and permalink for Figure 2.1.40">🔗</a></div></figcaption></figure><article class="corollary theorem-like" id="cor-3-review"><h4 class="heading">
+<span class="type">Corollary</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.41</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Corollary 3 — Angle in a Semicircle.</span>
+</h4>
+<div class="para" id="cor-3-review-2-1">An angle standing on a diameter is a right angle.<div class="autopermalink" data-description="Paragraph"><a href="#cor-3-review-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Corollary 2.1.41: Corollary 3 — Angle in a Semicircle"><a href="#cor-3-review" title="Copy heading and permalink for Corollary 2.1.41: Corollary 3 — Angle in a Semicircle" aria-label="Copy heading and permalink for Corollary 2.1.41: Corollary 3 — Angle in a Semicircle">🔗</a></div></article><article class="corollary theorem-like" id="cor-4-review"><h4 class="heading">
+<span class="type">Corollary</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.42</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Corollary 4.</span>
+</h4>
+<div class="para" id="cor-4-review-2-1">If the angle standing on a chord at a point of the circle is <span class="process-math">\(90°\text{,}\)</span> then the chord is a diameter.<div class="autopermalink" data-description="Paragraph"><a href="#cor-4-review-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Corollary 2.1.42: Corollary 4"><a href="#cor-4-review" title="Copy heading and permalink for Corollary 2.1.42: Corollary 4" aria-label="Copy heading and permalink for Corollary 2.1.42: Corollary 4">🔗</a></div></article><figure class="figure figure-like" id="fig-semicircle-thm"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/geometry/fig-semicircle.svg" class="contained" alt="A circle with a diameter and a point on the circumference forming a right angle."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.43<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The angle in a semicircle is 90°.<div class="autopermalink" data-description="Figure 2.1.43"><a href="#fig-semicircle-thm" title="Copy heading and permalink for Figure 2.1.43" aria-label="Copy heading and permalink for Figure 2.1.43">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Subsection 2.1.6: The Junior Cycle Theorems (Assumed Knowledge)"><a href="#subsec-jc-theorems-review" title="Copy heading and permalink for Subsection 2.1.6: The Junior Cycle Theorems (Assumed Knowledge)" aria-label="Copy heading and permalink for Subsection 2.1.6: The Junior Cycle Theorems (Assumed Knowledge)">🔗</a></div></section><section class="subsection" id="subsec-triangle-inequalities"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sides and Angles in a Triangle (Theorems 7 and 8)</span>
+</h3>
+<div class="para" id="subsec-triangle-inequalities-2">Now we reach new territory for LC OL. These two theorems connect the <em class="emphasis">sizes</em> of sides and angles within a single triangle.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-triangle-inequalities-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm-7"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.44</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 7 — Bigger Side, Bigger Angle.</span>
+</h4>
+<div class="para" id="thm-7-2-1">(1) In <span class="process-math">\(\triangle ABC\text{,}\)</span> if <span class="process-math">\(|AC| \gt |AB|\text{,}\)</span> then <span class="process-math">\(|\angle ABC| \gt |\angle ACB|\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="thm-7-2-2">In words: the angle opposite the longer side is the larger angle.<div class="autopermalink" data-description="Paragraph"><a href="#thm-7-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="thm-7-2-3">(2) Conversely, the side opposite the larger angle is the longer side.<div class="autopermalink" data-description="Paragraph"><a href="#thm-7-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.44: Theorem 7 — Bigger Side, Bigger Angle"><a href="#thm-7" title="Copy heading and permalink for Theorem 2.1.44: Theorem 7 — Bigger Side, Bigger Angle" aria-label="Copy heading and permalink for Theorem 2.1.44: Theorem 7 — Bigger Side, Bigger Angle">🔗</a></div></article><figure class="figure figure-like" id="fig-thm7"><div class="image-box" style="width: 55%; margin-left: 22.5%; margin-right: 22.5%;"><img src="external/geometry/fig-theorem7.svg" class="contained" alt="A triangle with sides of different lengths, the largest angle opposite the longest side."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.45<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The bigger the side, the bigger the opposite angle.<div class="autopermalink" data-description="Figure 2.1.45"><a href="#fig-thm7" title="Copy heading and permalink for Figure 2.1.45" aria-label="Copy heading and permalink for Figure 2.1.45">🔗</a></div></figcaption></figure><div class="para" id="subsec-triangle-inequalities-5">
+<em class="emphasis">Proof idea:</em> Place a point <span class="process-math">\(D\)</span> on <span class="process-math">\([AC]\)</span> with <span class="process-math">\(|AD| = |AB|\text{.}\)</span> Then <span class="process-math">\(\triangle ABD\)</span> is isosceles, and combining the Exterior Angle Theorem with the Isosceles Triangle Theorem gives <span class="process-math">\(|\angle ACB| \lt |\angle ABC|\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-triangle-inequalities-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-triangle-inequalities-6">Think of it physically: a longer side needs to “push” the opposite angle wider to make room.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-triangle-inequalities-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm-8"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.46</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 8 — Triangle Inequality.</span>
+</h4>
+<div class="para" id="thm-8-2-1">Any two sides of a triangle are together greater than the third: <span class="process-math">\(|AB| + |BC| \gt |AC|\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.46: Theorem 8 — Triangle Inequality"><a href="#thm-8" title="Copy heading and permalink for Theorem 2.1.46: Theorem 8 — Triangle Inequality" aria-label="Copy heading and permalink for Theorem 2.1.46: Theorem 8 — Triangle Inequality">🔗</a></div></article><figure class="figure figure-like" id="fig-thm8"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/geometry/fig-triangle-inequality.svg" class="contained" alt="A triangle showing the direct path from A to B is shorter than the detour via C."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.47<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The shortest distance between two points is a straight line.<div class="autopermalink" data-description="Figure 2.1.47"><a href="#fig-thm8" title="Copy heading and permalink for Figure 2.1.47" aria-label="Copy heading and permalink for Figure 2.1.47">🔗</a></div></figcaption></figure><div class="para" id="subsec-triangle-inequalities-9">This is the geometric way of saying: the shortest path between two points is a straight line. Any detour via a third point makes the journey longer.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-triangle-inequalities-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="ex-thm7-ordering"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.48</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Ordering Angles Using Theorem 7.</span>
+</h4>
+<div class="para" id="ex-thm7-ordering-2-1">In <span class="process-math">\(\triangle PQR\text{,}\)</span> <span class="process-math">\(|PQ| = 5\text{,}\)</span> <span class="process-math">\(|QR| = 8\text{,}\)</span> <span class="process-math">\(|PR| = 6\text{.}\)</span> List the angles from smallest to largest.<div class="autopermalink" data-description="Paragraph"><a href="#ex-thm7-ordering-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-thm7-ordering-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-thm7-ordering-3-1">Sides: <span class="process-math">\(|PQ| = 5 \lt |PR| = 6 \lt |QR| = 8\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-thm7-ordering-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-thm7-ordering-3-2">Angles (opposite): <span class="process-math">\(|\angle R| \lt |\angle Q| \lt |\angle P|\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-thm7-ordering-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1.48.1"><a href="#ex-thm7-ordering-3" title="Copy heading and permalink for Solution 2.1.48.1" aria-label="Copy heading and permalink for Solution 2.1.48.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.1.48: Ordering Angles Using Theorem 7"><a href="#ex-thm7-ordering" title="Copy heading and permalink for Example 2.1.48: Ordering Angles Using Theorem 7" aria-label="Copy heading and permalink for Example 2.1.48: Ordering Angles Using Theorem 7">🔗</a></div></article><article class="example example-like" id="ex-thm8-check"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.49</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Can a Triangle Have These Sides?</span>
+</h4>
+<div class="para" id="ex-thm8-check-2-1">(a) 4, 6, 9 (b) 2, 3, 6 (c) 5, 5, 10<div class="autopermalink" data-description="Paragraph"><a href="#ex-thm8-check-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-thm8-check-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-thm8-check-3-1">(a) <span class="process-math">\(4 + 6 = 10 \gt 9\text{.}\)</span> Yes.<div class="autopermalink" data-description="Paragraph"><a href="#ex-thm8-check-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-thm8-check-3-2">(b) <span class="process-math">\(2 + 3 = 5 \lt 6\text{.}\)</span> No.<div class="autopermalink" data-description="Paragraph"><a href="#ex-thm8-check-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-thm8-check-3-3">(c) <span class="process-math">\(5 + 5 = 10\text{,}\)</span> not strictly greater. No.<div class="autopermalink" data-description="Paragraph"><a href="#ex-thm8-check-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1.49.1"><a href="#ex-thm8-check-3" title="Copy heading and permalink for Solution 2.1.49.1" aria-label="Copy heading and permalink for Solution 2.1.49.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.1.49: Can a Triangle Have These Sides?"><a href="#ex-thm8-check" title="Copy heading and permalink for Example 2.1.49: Can a Triangle Have These Sides?" aria-label="Copy heading and permalink for Example 2.1.49: Can a Triangle Have These Sides?">🔗</a></div></article><details id="ex-tri-ineq-practice" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.50</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-tri-ineq-practice-2-1">1. In <span class="process-math">\(\triangle ABC\text{,}\)</span> <span class="process-math">\(|AB| = 10\text{,}\)</span> <span class="process-math">\(|BC| = 7\text{,}\)</span> <span class="process-math">\(|AC| = 12\text{.}\)</span> Which angle is largest?<div class="autopermalink" data-description="Paragraph"><a href="#ex-tri-ineq-practice-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ex-tri-ineq-practice-2-2">2. Two sides of a triangle are 5 and 11. Find the range of the third side.<div class="autopermalink" data-description="Paragraph"><a href="#ex-tri-ineq-practice-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ex-tri-ineq-practice-2-3">3. Can a triangle have sides 7, 8, 14?<div class="autopermalink" data-description="Paragraph"><a href="#ex-tri-ineq-practice-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-tri-ineq-practice-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="ex-tri-ineq-practice-3-1">1. <span class="process-math">\(\angle B\)</span> (opposite <span class="process-math">\(|AC| = 12\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#ex-tri-ineq-practice-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-tri-ineq-practice-3-2">2. <span class="process-math">\(6 \lt x \lt 16\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-tri-ineq-practice-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-tri-ineq-practice-3-3">3. Yes: <span class="process-math">\(7 + 8 = 15 \gt 14\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-tri-ineq-practice-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.1.50.1"><a href="#ex-tri-ineq-practice-3" title="Copy heading and permalink for Answer 2.1.50.1" aria-label="Copy heading and permalink for Answer 2.1.50.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Checkpoint 2.1.50: Practice"><a href="#ex-tri-ineq-practice" title="Copy heading and permalink for Checkpoint 2.1.50: Practice" aria-label="Copy heading and permalink for Checkpoint 2.1.50: Practice">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.1.7: Sides and Angles in a Triangle (Theorems 7 and 8)"><a href="#subsec-triangle-inequalities" title="Copy heading and permalink for Subsection 2.1.7: Sides and Angles in a Triangle (Theorems 7 and 8)" aria-label="Copy heading and permalink for Subsection 2.1.7: Sides and Angles in a Triangle (Theorems 7 and 8)">🔗</a></div></section><section class="subsection" id="subsec-ratio-similarity"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.8</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Ratio and Similarity (Theorems 11, 12, 13)</span>
+</h3>
+<div class="para" id="subsec-ratio-similarity-2">These three theorems are the foundation for similar triangles.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ratio-similarity-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm-11"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.51</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 11 — Three Parallel Lines.</span>
+</h4>
+<div class="para" id="thm-11-2-1">If three parallel lines cut off equal segments on one transversal, then they cut off equal segments on any other transversal.<div class="autopermalink" data-description="Paragraph"><a href="#thm-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.51: Theorem 11 — Three Parallel Lines"><a href="#thm-11" title="Copy heading and permalink for Theorem 2.1.51: Theorem 11 — Three Parallel Lines" aria-label="Copy heading and permalink for Theorem 2.1.51: Theorem 11 — Three Parallel Lines">🔗</a></div></article><figure class="figure figure-like" id="fig-thm11"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/geometry/fig-three-parallel.svg" class="contained" alt="Three parallel lines cut by two transversals, with equal segments marked on both."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.52<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Equal spacing on one transversal gives equal spacing on any other.<div class="autopermalink" data-description="Figure 2.1.52"><a href="#fig-thm11" title="Copy heading and permalink for Figure 2.1.52" aria-label="Copy heading and permalink for Figure 2.1.52">🔗</a></div></figcaption></figure><div class="para" id="subsec-ratio-similarity-5">Think of ruled paper: equally spaced horizontal lines. Any line drawn across the page crosses them at equal intervals, regardless of angle.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ratio-similarity-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm-12"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.53</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 12 — Line Parallel to Base.</span>
+</h4>
+<div class="para" id="thm-12-2-1">In <span class="process-math">\(\triangle ABC\text{,}\)</span> if a line parallel to <span class="process-math">\(BC\)</span> cuts <span class="process-math">\([AB]\)</span> in the ratio <span class="process-math">\(s:t\text{,}\)</span> then it also cuts <span class="process-math">\([AC]\)</span> in the ratio <span class="process-math">\(s:t\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-12-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.53: Theorem 12 — Line Parallel to Base"><a href="#thm-12" title="Copy heading and permalink for Theorem 2.1.53: Theorem 12 — Line Parallel to Base" aria-label="Copy heading and permalink for Theorem 2.1.53: Theorem 12 — Line Parallel to Base">🔗</a></div></article><figure class="figure figure-like" id="fig-thm12"><div class="image-box" style="width: 55%; margin-left: 22.5%; margin-right: 22.5%;"><img src="external/geometry/fig-theorem12.svg" class="contained" alt="A triangle with line DE parallel to BC cutting sides AB and AC in the ratio s to t."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.54<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A line parallel to the base divides both sides in the same ratio.<div class="autopermalink" data-description="Figure 2.1.54"><a href="#fig-thm12" title="Copy heading and permalink for Figure 2.1.54" aria-label="Copy heading and permalink for Figure 2.1.54">🔗</a></div></figcaption></figure><article class="theorem theorem-like" id="thm-13"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.55</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 13 — Similar Triangles.</span>
+</h4>
+<div class="para logical" id="thm-13-2-1">
+<div class="para">If two triangles are similar (all angles equal), their sides are proportional:</div>
+<div class="displaymath process-math" id="thm-13-2-1-1">
+\begin{equation*}
+\frac{|AB|}{|A'B'|} = \frac{|BC|}{|B'C'|}
+= \frac{|CA|}{|C'A'|}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-13-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.55: Theorem 13 — Similar Triangles"><a href="#thm-13" title="Copy heading and permalink for Theorem 2.1.55: Theorem 13 — Similar Triangles" aria-label="Copy heading and permalink for Theorem 2.1.55: Theorem 13 — Similar Triangles">🔗</a></div></article><figure class="figure figure-like" id="fig-thm13"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/geometry/fig-similar-triangles.svg" class="contained" alt="Two triangles of different sizes with matching angles and a scale factor arrow."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.56<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Similar triangles: same shape, proportional sides.<div class="autopermalink" data-description="Figure 2.1.56"><a href="#fig-thm13" title="Copy heading and permalink for Figure 2.1.56" aria-label="Copy heading and permalink for Figure 2.1.56">🔗</a></div></figcaption></figure><article class="example example-like" id="ex-thm12-ratio"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.57</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using Theorem 12.</span>
+</h4>
+<div class="para" id="ex-thm12-ratio-2-1">
+<span class="process-math">\(DE \parallel BC\)</span> in <span class="process-math">\(\triangle ABC\text{.}\)</span> <span class="process-math">\(|AD| = 3\text{,}\)</span> <span class="process-math">\(|DB| = 5\text{,}\)</span> <span class="process-math">\(|AE| = 4.5\text{.}\)</span> Find <span class="process-math">\(|EC|\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-thm12-ratio-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-thm12-ratio-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-thm12-ratio-3-1">
+<span class="process-math">\(\frac{3}{5} = \frac{4.5}{|EC|}\text{,}\)</span> so <span class="process-math">\(|EC| = 7.5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-thm12-ratio-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1.57.1"><a href="#ex-thm12-ratio-3" title="Copy heading and permalink for Solution 2.1.57.1" aria-label="Copy heading and permalink for Solution 2.1.57.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.1.57: Using Theorem 12"><a href="#ex-thm12-ratio" title="Copy heading and permalink for Example 2.1.57: Using Theorem 12" aria-label="Copy heading and permalink for Example 2.1.57: Using Theorem 12">🔗</a></div></article><article class="example example-like" id="ex-thm13-scale"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.58</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Similar Triangles.</span>
+</h4>
+<div class="para" id="ex-thm13-scale-2-1">Two similar triangles have sides 6, 8, 10 and the shortest side of the second is 9. Find the other sides.<div class="autopermalink" data-description="Paragraph"><a href="#ex-thm13-scale-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-thm13-scale-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-thm13-scale-3-1">Scale factor <span class="process-math">\(k = 9/6 = 1.5\text{.}\)</span> Sides: 9, 12, 15.<div class="autopermalink" data-description="Paragraph"><a href="#ex-thm13-scale-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1.58.1"><a href="#ex-thm13-scale-3" title="Copy heading and permalink for Solution 2.1.58.1" aria-label="Copy heading and permalink for Solution 2.1.58.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.1.58: Similar Triangles"><a href="#ex-thm13-scale" title="Copy heading and permalink for Example 2.1.58: Similar Triangles" aria-label="Copy heading and permalink for Example 2.1.58: Similar Triangles">🔗</a></div></article><article class="example example-like" id="ex-shadows"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.59</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Shadows.</span>
+</h4>
+<div class="para" id="ex-shadows-2-1">A 2 m pole casts a 3 m shadow. A building casts an 18 m shadow. Find the building height.<div class="autopermalink" data-description="Paragraph"><a href="#ex-shadows-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-shadows-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-shadows-3-1">
+<span class="process-math">\(\frac{h}{2} = \frac{18}{3} = 6\text{,}\)</span> so <span class="process-math">\(h = 12\)</span> m.<div class="autopermalink" data-description="Paragraph"><a href="#ex-shadows-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1.59.1"><a href="#ex-shadows-3" title="Copy heading and permalink for Solution 2.1.59.1" aria-label="Copy heading and permalink for Solution 2.1.59.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.1.59: Shadows"><a href="#ex-shadows" title="Copy heading and permalink for Example 2.1.59: Shadows" aria-label="Copy heading and permalink for Example 2.1.59: Shadows">🔗</a></div></article><details id="ex-ratio-practice" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.60</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-ratio-practice-2-1">1. <span class="process-math">\(ST \parallel QR\)</span> in <span class="process-math">\(\triangle PQR\text{.}\)</span> <span class="process-math">\(|PS| = 4\text{,}\)</span> <span class="process-math">\(|SQ| = 6\text{,}\)</span> <span class="process-math">\(|PR| = 15\text{.}\)</span> Find <span class="process-math">\(|PT|\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ratio-practice-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ex-ratio-practice-2-2">2. Two similar triangles have areas <span class="process-math">\(4:9\text{.}\)</span> A side of the smaller is 10. Find the corresponding side of the larger.<div class="autopermalink" data-description="Paragraph"><a href="#ex-ratio-practice-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ex-ratio-practice-2-3">3. A flagpole casts an 8 m shadow. A 1.7 m person nearby casts a 2 m shadow. Find the flagpole height.<div class="autopermalink" data-description="Paragraph"><a href="#ex-ratio-practice-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-ratio-practice-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="ex-ratio-practice-3-1">1. <span class="process-math">\(|PT| = 6\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ratio-practice-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-ratio-practice-3-2">2. Side ratio <span class="process-math">\(= 2:3\text{,}\)</span> so larger side <span class="process-math">\(= 15\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ratio-practice-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-ratio-practice-3-3">3. <span class="process-math">\(h = 1.7 \times 4 = 6.8\)</span> m.<div class="autopermalink" data-description="Paragraph"><a href="#ex-ratio-practice-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.1.60.1"><a href="#ex-ratio-practice-3" title="Copy heading and permalink for Answer 2.1.60.1" aria-label="Copy heading and permalink for Answer 2.1.60.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Checkpoint 2.1.60: Practice"><a href="#ex-ratio-practice" title="Copy heading and permalink for Checkpoint 2.1.60: Practice" aria-label="Copy heading and permalink for Checkpoint 2.1.60: Practice">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.1.8: Ratio and Similarity (Theorems 11, 12, 13)"><a href="#subsec-ratio-similarity" title="Copy heading and permalink for Subsection 2.1.8: Ratio and Similarity (Theorems 11, 12, 13)" aria-label="Copy heading and permalink for Subsection 2.1.8: Ratio and Similarity (Theorems 11, 12, 13)">🔗</a></div></section><section class="subsection" id="subsec-area-theory"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.9</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Area (Theorems 16, 17, 18)</span>
+</h3>
+<article class="definition definition-like" id="def-base-height"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.61</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Base, Apex, Height.</span>
+</h4>
+<div class="para" id="def-base-height-2-1">Choose one side of a triangle as the <dfn class="terminology">base</dfn>. The opposite vertex is the <dfn class="terminology">apex</dfn>. The perpendicular distance from the apex to the line containing the base is the <dfn class="terminology">height</dfn> (or <dfn class="terminology">altitude</dfn>).<div class="autopermalink" data-description="Paragraph"><a href="#def-base-height-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.61: Base, Apex, Height"><a href="#def-base-height" title="Copy heading and permalink for Definition 2.1.61: Base, Apex, Height" aria-label="Copy heading and permalink for Definition 2.1.61: Base, Apex, Height">🔗</a></div></article><article class="theorem theorem-like" id="thm-16"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.62</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 16 — Base × Height Is Constant.</span>
+</h4>
+<div class="para" id="thm-16-2-1">For a triangle, base × height does not depend on which side is chosen as the base.<div class="autopermalink" data-description="Paragraph"><a href="#thm-16-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.62: Theorem 16 — Base × Height Is Constant"><a href="#thm-16" title="Copy heading and permalink for Theorem 2.1.62: Theorem 16 — Base × Height Is Constant" aria-label="Copy heading and permalink for Theorem 2.1.62: Theorem 16 — Base × Height Is Constant">🔗</a></div></article><figure class="figure figure-like" id="fig-area-tri"><div class="image-box" style="width: 55%; margin-left: 22.5%; margin-right: 22.5%;"><img src="external/geometry/fig-area-triangle.svg" class="contained" alt="A triangle with base and height marked."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.63<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Area of a triangle = ½ × base × height.<div class="autopermalink" data-description="Figure 2.1.63"><a href="#fig-area-tri" title="Copy heading and permalink for Figure 2.1.63" aria-label="Copy heading and permalink for Figure 2.1.63">🔗</a></div></figcaption></figure><article class="theorem theorem-like" id="thm-17"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.64</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 17 — Diagonal Bisects Area.</span>
+</h4>
+<div class="para" id="thm-17-2-1">A diagonal of a parallelogram bisects its area.<div class="autopermalink" data-description="Paragraph"><a href="#thm-17-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.64: Theorem 17 — Diagonal Bisects Area"><a href="#thm-17" title="Copy heading and permalink for Theorem 2.1.64: Theorem 17 — Diagonal Bisects Area" aria-label="Copy heading and permalink for Theorem 2.1.64: Theorem 17 — Diagonal Bisects Area">🔗</a></div></article><article class="theorem theorem-like" id="thm-18"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.65</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 18 — Area of a Parallelogram.</span>
+</h4>
+<div class="para" id="thm-18-2-1">Area of a parallelogram = base × height.<div class="autopermalink" data-description="Paragraph"><a href="#thm-18-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.65: Theorem 18 — Area of a Parallelogram"><a href="#thm-18" title="Copy heading and permalink for Theorem 2.1.65: Theorem 18 — Area of a Parallelogram" aria-label="Copy heading and permalink for Theorem 2.1.65: Theorem 18 — Area of a Parallelogram">🔗</a></div></article><figure class="figure figure-like" id="fig-area-pgrm"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/geometry/fig-area-parallelogram.svg" class="contained" alt="A parallelogram with base and height marked and a diagonal drawn."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.66<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Area of a parallelogram. The diagonal splits it into two equal triangles.<div class="autopermalink" data-description="Figure 2.1.66"><a href="#fig-area-pgrm" title="Copy heading and permalink for Figure 2.1.66" aria-label="Copy heading and permalink for Figure 2.1.66">🔗</a></div></figcaption></figure><article class="example example-like" id="ex-area-two-altitudes"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.67</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Two Altitudes.</span>
+</h4>
+<div class="para" id="ex-area-two-altitudes-2-1">
+<span class="process-math">\(|BC| = 10\)</span> with height 6. <span class="process-math">\(|AC| = 12\text{.}\)</span> Find the height from <span class="process-math">\(B\)</span> to <span class="process-math">\([AC]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-area-two-altitudes-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-area-two-altitudes-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-area-two-altitudes-3-1">Theorem 16: <span class="process-math">\(10 \times 6 = 12 \times h\text{,}\)</span> so <span class="process-math">\(h = 5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-area-two-altitudes-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1.67.1"><a href="#ex-area-two-altitudes-3" title="Copy heading and permalink for Solution 2.1.67.1" aria-label="Copy heading and permalink for Solution 2.1.67.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.1.67: Two Altitudes"><a href="#ex-area-two-altitudes" title="Copy heading and permalink for Example 2.1.67: Two Altitudes" aria-label="Copy heading and permalink for Example 2.1.67: Two Altitudes">🔗</a></div></article><article class="example example-like" id="ex-area-pgram"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.68</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Parallelogram.</span>
+</h4>
+<div class="para" id="ex-area-pgram-2-1">
+<span class="process-math">\(ABCD\)</span> has <span class="process-math">\(|AB| = 14\text{,}\)</span> height 8. Find the area of <span class="process-math">\(\triangle ABD\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-area-pgram-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-area-pgram-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-area-pgram-3-1">Parallelogram area = <span class="process-math">\(112\text{.}\)</span> By Theorem 17: <span class="process-math">\(\triangle ABD = 56\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-area-pgram-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1.68.1"><a href="#ex-area-pgram-3" title="Copy heading and permalink for Solution 2.1.68.1" aria-label="Copy heading and permalink for Solution 2.1.68.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.1.68: Parallelogram"><a href="#ex-area-pgram" title="Copy heading and permalink for Example 2.1.68: Parallelogram" aria-label="Copy heading and permalink for Example 2.1.68: Parallelogram">🔗</a></div></article><details id="ex-area-practice" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.69</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-area-practice-2-1">1. Triangle: base 15, height 8. Find area.<div class="autopermalink" data-description="Paragraph"><a href="#ex-area-practice-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ex-area-practice-2-2">2. Area of triangle is 42, base is 12. Find height.<div class="autopermalink" data-description="Paragraph"><a href="#ex-area-practice-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ex-area-practice-2-3">3. Parallelogram sides 20 and 13, height 12 on the side 20. Find area and the other height.<div class="autopermalink" data-description="Paragraph"><a href="#ex-area-practice-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-area-practice-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="ex-area-practice-3-1">1. 60. 2. 7. 3. Area = 240; <span class="process-math">\(h_2 = 240/13 \approx 18.5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-area-practice-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.1.69.1"><a href="#ex-area-practice-3" title="Copy heading and permalink for Answer 2.1.69.1" aria-label="Copy heading and permalink for Answer 2.1.69.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Checkpoint 2.1.69: Practice"><a href="#ex-area-practice" title="Copy heading and permalink for Checkpoint 2.1.69: Practice" aria-label="Copy heading and permalink for Checkpoint 2.1.69: Practice">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.1.9: Area (Theorems 16, 17, 18)"><a href="#subsec-area-theory" title="Copy heading and permalink for Subsection 2.1.9: Area (Theorems 16, 17, 18)" aria-label="Copy heading and permalink for Subsection 2.1.9: Area (Theorems 16, 17, 18)">🔗</a></div></section><section class="subsection" id="subsec-circles-lc"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.10</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Circles: Tangents and Chords (Theorems 20, 21, Corollary 6)</span>
+</h3>
+<article class="definition definition-like" id="def-circle-terms"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.70</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Circle Terminology.</span>
+</h4>
+<div class="para" id="def-circle-terms-2-1">A <dfn class="terminology">circle</dfn> is the set of all points at a fixed distance (the <dfn class="terminology">radius</dfn>) from a fixed point (the <dfn class="terminology">centre</dfn>). A <dfn class="terminology">chord</dfn> is a segment joining two points on the circle. A <dfn class="terminology">diameter</dfn> is a chord through the centre. A <dfn class="terminology">tangent</dfn> is a line that touches the circle at exactly one point — the <dfn class="terminology">point of contact</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#def-circle-terms-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.70: Circle Terminology"><a href="#def-circle-terms" title="Copy heading and permalink for Definition 2.1.70: Circle Terminology" aria-label="Copy heading and permalink for Definition 2.1.70: Circle Terminology">🔗</a></div></article><article class="theorem theorem-like" id="thm-20"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.71</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 20 — Tangent ⊥ Radius.</span>
+</h4>
+<div class="para" id="thm-20-2-1">(1) A tangent is perpendicular to the radius at the point of contact.<div class="autopermalink" data-description="Paragraph"><a href="#thm-20-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="thm-20-2-2">(2) Conversely, a line perpendicular to the radius at a point on the circle is a tangent.<div class="autopermalink" data-description="Paragraph"><a href="#thm-20-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.71: Theorem 20 — Tangent ⊥ Radius"><a href="#thm-20" title="Copy heading and permalink for Theorem 2.1.71: Theorem 20 — Tangent ⊥ Radius" aria-label="Copy heading and permalink for Theorem 2.1.71: Theorem 20 — Tangent ⊥ Radius">🔗</a></div></article><figure class="figure figure-like" id="fig-tangent-thm"><div class="image-box" style="width: 55%; margin-left: 22.5%; margin-right: 22.5%;"><img src="external/geometry/fig-tangent.svg" class="contained" alt="A circle with a tangent at P and radius OP, right angle marked."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.72<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Tangent ⊥ radius at the point of contact.<div class="autopermalink" data-description="Figure 2.1.72"><a href="#fig-tangent-thm" title="Copy heading and permalink for Figure 2.1.72" aria-label="Copy heading and permalink for Figure 2.1.72">🔗</a></div></figcaption></figure><div class="para" id="subsec-circles-lc-5">
+<em class="alert">Key habit:</em> Whenever you see a tangent, draw the radius to the point of contact and mark the right angle. This unlocks Pythagoras.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-circles-lc-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm-21"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.73</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 21 — Perpendicular from Centre Bisects Chord.</span>
+</h4>
+<div class="para" id="thm-21-2-1">(1) The perpendicular from the centre to a chord bisects the chord.<div class="autopermalink" data-description="Paragraph"><a href="#thm-21-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="thm-21-2-2">(2) The perpendicular bisector of a chord passes through the centre.<div class="autopermalink" data-description="Paragraph"><a href="#thm-21-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.1.73: Theorem 21 — Perpendicular from Centre Bisects Chord"><a href="#thm-21" title="Copy heading and permalink for Theorem 2.1.73: Theorem 21 — Perpendicular from Centre Bisects Chord" aria-label="Copy heading and permalink for Theorem 2.1.73: Theorem 21 — Perpendicular from Centre Bisects Chord">🔗</a></div></article><figure class="figure figure-like" id="fig-chord-thm"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/geometry/fig-chord.svg" class="contained" alt="A circle with chord AB and perpendicular from centre O to midpoint M."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.74<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Perpendicular from centre bisects the chord.<div class="autopermalink" data-description="Figure 2.1.74"><a href="#fig-chord-thm" title="Copy heading and permalink for Figure 2.1.74" aria-label="Copy heading and permalink for Figure 2.1.74">🔗</a></div></figcaption></figure><article class="corollary theorem-like" id="cor-6"><h4 class="heading">
+<span class="type">Corollary</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.75</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Corollary 6 — Common Tangent.</span>
+</h4>
+<div class="para" id="cor-6-2-1">If two circles share a common tangent at one point, the two centres and that point are collinear.<div class="autopermalink" data-description="Paragraph"><a href="#cor-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Corollary 2.1.75: Corollary 6 — Common Tangent"><a href="#cor-6" title="Copy heading and permalink for Corollary 2.1.75: Corollary 6 — Common Tangent" aria-label="Copy heading and permalink for Corollary 2.1.75: Corollary 6 — Common Tangent">🔗</a></div></article><figure class="figure figure-like" id="fig-cor6"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="external/geometry/fig-common-tangent.svg" class="contained" alt="Two circles with a common tangent, centres and contact point on the same line."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.76<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Common tangent: centres and contact point are collinear.<div class="autopermalink" data-description="Figure 2.1.76"><a href="#fig-cor6" title="Copy heading and permalink for Figure 2.1.76" aria-label="Copy heading and permalink for Figure 2.1.76">🔗</a></div></figcaption></figure><article class="example example-like" id="ex-tangent-pythag"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.77</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Tangent Length.</span>
+</h4>
+<div class="para" id="ex-tangent-pythag-2-1">Radius 5, <span class="process-math">\(|OT| = 13\text{.}\)</span> Find tangent length <span class="process-math">\(|PT|\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-tangent-pythag-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-tangent-pythag-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-tangent-pythag-3-1">
+<span class="process-math">\(|PT|^2 = 169 - 25 = 144\text{.}\)</span> <span class="process-math">\(|PT| = 12\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-tangent-pythag-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1.77.1"><a href="#ex-tangent-pythag-3" title="Copy heading and permalink for Solution 2.1.77.1" aria-label="Copy heading and permalink for Solution 2.1.77.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.1.77: Tangent Length"><a href="#ex-tangent-pythag" title="Copy heading and permalink for Example 2.1.77: Tangent Length" aria-label="Copy heading and permalink for Example 2.1.77: Tangent Length">🔗</a></div></article><article class="example example-like" id="ex-chord-dist"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.78</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Chord Distance.</span>
+</h4>
+<div class="para" id="ex-chord-dist-2-1">Chord length 24, radius 13. Find distance from centre to chord.<div class="autopermalink" data-description="Paragraph"><a href="#ex-chord-dist-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-chord-dist-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-chord-dist-3-1">Half-chord = 12. <span class="process-math">\(d = \sqrt{169 - 144} = 5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-chord-dist-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1.78.1"><a href="#ex-chord-dist-3" title="Copy heading and permalink for Solution 2.1.78.1" aria-label="Copy heading and permalink for Solution 2.1.78.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.1.78: Chord Distance"><a href="#ex-chord-dist" title="Copy heading and permalink for Example 2.1.78: Chord Distance" aria-label="Copy heading and permalink for Example 2.1.78: Chord Distance">🔗</a></div></article><details id="ex-circles-practice" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.79</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-circles-practice-2-1">1. Radius 6, <span class="process-math">\(|OT| = 10\text{.}\)</span> Find tangent length.<div class="autopermalink" data-description="Paragraph"><a href="#ex-circles-practice-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ex-circles-practice-2-2">2. Radius 10, distance to chord = 6. Find chord length.<div class="autopermalink" data-description="Paragraph"><a href="#ex-circles-practice-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ex-circles-practice-2-3">3. Two parallel chords (lengths 12, 16) in a circle of radius 10. Find the distance between them (two cases).<div class="autopermalink" data-description="Paragraph"><a href="#ex-circles-practice-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-circles-practice-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="ex-circles-practice-3-1">1. 8. 2. 16. 3. Same side: 2. Opposite: 14.<div class="autopermalink" data-description="Paragraph"><a href="#ex-circles-practice-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.1.79.1"><a href="#ex-circles-practice-3" title="Copy heading and permalink for Answer 2.1.79.1" aria-label="Copy heading and permalink for Answer 2.1.79.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Checkpoint 2.1.79: Practice"><a href="#ex-circles-practice" title="Copy heading and permalink for Checkpoint 2.1.79: Practice" aria-label="Copy heading and permalink for Checkpoint 2.1.79: Practice">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.1.10: Circles: Tangents and Chords (Theorems 20, 21, Corollary 6)"><a href="#subsec-circles-lc" title="Copy heading and permalink for Subsection 2.1.10: Circles: Tangents and Chords (Theorems 20, 21, Corollary 6)" aria-label="Copy heading and permalink for Subsection 2.1.10: Circles: Tangents and Chords (Theorems 20, 21, Corollary 6)">🔗</a></div></section><section class="subsection" id="subsec-constructions-lc"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.11</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Constructions 16–21</span>
+</h3>
+<div class="para" id="subsec-constructions-lc-2">JC constructions (1, 2, 4, 5, 6, 8–15) are assumed and may be examined. You must also know these six.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-constructions-lc-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="paragraphs" id="con-16"><h4 class="heading"><span class="title">Construction 16: Circumcentre and Circumcircle.</span></h4>
+<div class="para" id="con-16-2">
+<em class="emphasis">Goal:</em> Circle through all three vertices.<div class="autopermalink" data-description="Paragraph"><a href="#con-16-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="con-16-3">
+<em class="emphasis">Method:</em> Perpendicular bisector of two sides — they meet at the <dfn class="terminology">circumcentre</dfn>. Compass from circumcentre to any vertex draws the circle.<div class="autopermalink" data-description="Paragraph"><a href="#con-16-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="con-16-4">
+<em class="emphasis">Justification:</em> Theorem 21(2) — perpendicular bisector of a chord passes through the centre.<div class="autopermalink" data-description="Paragraph"><a href="#con-16-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Construction 16: Circumcentre and Circumcircle"><a href="#con-16" title="Copy heading and permalink for Paragraphs: Construction 16: Circumcentre and Circumcircle" aria-label="Copy heading and permalink for Paragraphs: Construction 16: Circumcentre and Circumcircle">🔗</a></div></section><section class="paragraphs" id="con-17"><h4 class="heading"><span class="title">Construction 17: Incentre and Incircle.</span></h4>
+<div class="para" id="con-17-2">
+<em class="emphasis">Goal:</em> Circle inside the triangle tangent to all sides.<div class="autopermalink" data-description="Paragraph"><a href="#con-17-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="con-17-3">
+<em class="emphasis">Method:</em> Bisect two angles — they meet at the <dfn class="terminology">incentre</dfn>. Drop perpendicular to any side for the <dfn class="terminology">inradius</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#con-17-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="con-17-4">
+<em class="emphasis">Justification:</em> A point on an angle bisector is equidistant from both arms.<div class="autopermalink" data-description="Paragraph"><a href="#con-17-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Construction 17: Incentre and Incircle"><a href="#con-17" title="Copy heading and permalink for Paragraphs: Construction 17: Incentre and Incircle" aria-label="Copy heading and permalink for Paragraphs: Construction 17: Incentre and Incircle">🔗</a></div></section><section class="paragraphs" id="con-18"><h4 class="heading"><span class="title">Construction 18: Angle of 60° (No Protractor).</span></h4>
+<div class="para" id="con-18-2">
+<em class="emphasis">Method:</em> Arc from <span class="process-math">\(A\)</span> cuts ray at <span class="process-math">\(C\text{.}\)</span> Same radius arc from <span class="process-math">\(C\)</span> cuts first arc at <span class="process-math">\(D\text{.}\)</span> <span class="process-math">\(|\angle DAC| = 60°\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#con-18-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="con-18-3">
+<em class="emphasis">Justification:</em> <span class="process-math">\(\triangle ACD\)</span> is equilateral.<div class="autopermalink" data-description="Paragraph"><a href="#con-18-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Construction 18: Angle of 60° (No Protractor)"><a href="#con-18" title="Copy heading and permalink for Paragraphs: Construction 18: Angle of 60° (No Protractor)" aria-label="Copy heading and permalink for Paragraphs: Construction 18: Angle of 60° (No Protractor)">🔗</a></div></section><section class="paragraphs" id="con-19"><h4 class="heading"><span class="title">Construction 19: Tangent at a Point on a Circle.</span></h4>
+<div class="para" id="con-19-2">
+<em class="emphasis">Method:</em> Draw radius <span class="process-math">\(OP\text{.}\)</span> Construct perpendicular to <span class="process-math">\(OP\)</span> at <span class="process-math">\(P\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#con-19-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="con-19-3">
+<em class="emphasis">Justification:</em> Theorem 20.<div class="autopermalink" data-description="Paragraph"><a href="#con-19-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Construction 19: Tangent at a Point on a Circle"><a href="#con-19" title="Copy heading and permalink for Paragraphs: Construction 19: Tangent at a Point on a Circle" aria-label="Copy heading and permalink for Paragraphs: Construction 19: Tangent at a Point on a Circle">🔗</a></div></section><section class="paragraphs" id="con-20"><h4 class="heading"><span class="title">Construction 20: Parallelogram.</span></h4>
+<div class="para" id="con-20-2">
+<em class="emphasis">Method:</em> Draw <span class="process-math">\([AB]\text{.}\)</span> Angle at <span class="process-math">\(A\text{,}\)</span> mark <span class="process-math">\(D\text{.}\)</span> Lines from <span class="process-math">\(D\)</span> parallel to <span class="process-math">\(AB\text{,}\)</span> from <span class="process-math">\(B\)</span> parallel to <span class="process-math">\(AD\text{,}\)</span> meet at <span class="process-math">\(C\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#con-20-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="con-20-3">
+<em class="emphasis">Justification:</em> Definition of parallelogram.<div class="autopermalink" data-description="Paragraph"><a href="#con-20-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Construction 20: Parallelogram"><a href="#con-20" title="Copy heading and permalink for Paragraphs: Construction 20: Parallelogram" aria-label="Copy heading and permalink for Paragraphs: Construction 20: Parallelogram">🔗</a></div></section><section class="paragraphs" id="con-21"><h4 class="heading"><span class="title">Construction 21: Centroid.</span></h4>
+<div class="para" id="con-21-2">
+<em class="emphasis">Method:</em> Midpoint of each side. Median from each vertex to opposite midpoint. They meet at the <dfn class="terminology">centroid</dfn> (ratio <span class="process-math">\(2:1\)</span> from vertex).<div class="autopermalink" data-description="Paragraph"><a href="#con-21-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Construction 21: Centroid"><a href="#con-21" title="Copy heading and permalink for Paragraphs: Construction 21: Centroid" aria-label="Copy heading and permalink for Paragraphs: Construction 21: Centroid">🔗</a></div></section><div class="autopermalink" data-description="Subsection 2.1.11: Constructions 16–21"><a href="#subsec-constructions-lc" title="Copy heading and permalink for Subsection 2.1.11: Constructions 16–21" aria-label="Copy heading and permalink for Subsection 2.1.11: Constructions 16–21">🔗</a></div></section><section class="subsection" id="subsec-quadrilaterals"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.12</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Quadrilaterals</span>
+</h3>
+<article class="definition definition-like" id="def-quad-types"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.80</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Quadrilateral Types.</span>
+</h4>
+<div class="para" id="def-quad-types-2-1">A <dfn class="terminology">quadrilateral</dfn> has four sides. A <dfn class="terminology">parallelogram</dfn>: both pairs of opposite sides parallel. A <dfn class="terminology">rectangle</dfn>: parallelogram with all right angles. A <dfn class="terminology">rhombus</dfn>: parallelogram with all sides equal. A <dfn class="terminology">square</dfn>: both a rectangle and a rhombus.<div class="autopermalink" data-description="Paragraph"><a href="#def-quad-types-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.80: Quadrilateral Types"><a href="#def-quad-types" title="Copy heading and permalink for Definition 2.1.80: Quadrilateral Types" aria-label="Copy heading and permalink for Definition 2.1.80: Quadrilateral Types">🔗</a></div></article><div class="para" id="subsec-quadrilaterals-3">Every square is a rectangle is a parallelogram. But not every rectangle is a square.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-quadrilaterals-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.1.12: Quadrilaterals"><a href="#subsec-quadrilaterals" title="Copy heading and permalink for Subsection 2.1.12: Quadrilaterals" aria-label="Copy heading and permalink for Subsection 2.1.12: Quadrilaterals">🔗</a></div></section><section class="subsection" id="subsec-mixed-problems"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.13</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Mixed Exam-Style Problems</span>
+</h3>
+<details id="ex-mix-1" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.81</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Tangent and Chord.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-mix-1-2-1">Circle with centre <span class="process-math">\(O\text{,}\)</span> radius 10. Chord <span class="process-math">\([AB]\)</span> has length 16. Tangent at <span class="process-math">\(A\)</span> meets line <span class="process-math">\(OB\)</span> extended at <span class="process-math">\(T\text{.}\)</span> Find <span class="process-math">\(|OT|\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-mix-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-mix-1-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="ex-mix-1-3-1">Theorem 21 first, then Theorem 20 + Pythagoras.<div class="autopermalink" data-description="Paragraph"><a href="#ex-mix-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 2.1.81.1"><a href="#ex-mix-1-3" title="Copy heading and permalink for Hint 2.1.81.1" aria-label="Copy heading and permalink for Hint 2.1.81.1">🔗</a></div>
+</div></details><details id="ex-mix-1-4" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="ex-mix-1-4-1">
+<span class="process-math">\(50/3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-mix-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.1.81.1"><a href="#ex-mix-1-4" title="Copy heading and permalink for Answer 2.1.81.1" aria-label="Copy heading and permalink for Answer 2.1.81.1">🔗</a></div>
+</div></details><details id="ex-mix-1-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-mix-1-5-1">Half-chord = 8. Distance from centre to chord: <span class="process-math">\(d = 6\text{.}\)</span> Using similar right triangles: <span class="process-math">\(|OT| = 100/6 = 50/3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-mix-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1.81.1"><a href="#ex-mix-1-5" title="Copy heading and permalink for Solution 2.1.81.1" aria-label="Copy heading and permalink for Solution 2.1.81.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 2.1.81: Tangent and Chord"><a href="#ex-mix-1" title="Copy heading and permalink for Checkpoint 2.1.81: Tangent and Chord" aria-label="Copy heading and permalink for Checkpoint 2.1.81: Tangent and Chord">🔗</a></div></article></details><details id="ex-mix-2" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.82</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Similar Triangles and Area.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-mix-2-2-1">
+<span class="process-math">\(DE \parallel BC\text{,}\)</span> <span class="process-math">\(|AD| = 4\text{,}\)</span> <span class="process-math">\(|AB| = 10\text{.}\)</span> Area of <span class="process-math">\(\triangle ADE = 24\text{.}\)</span> Find area of <span class="process-math">\(\triangle ABC\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-mix-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-mix-2-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="ex-mix-2-3-1">150<div class="autopermalink" data-description="Paragraph"><a href="#ex-mix-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.1.82.1"><a href="#ex-mix-2-3" title="Copy heading and permalink for Answer 2.1.82.1" aria-label="Copy heading and permalink for Answer 2.1.82.1">🔗</a></div>
+</div></details><details id="ex-mix-2-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-mix-2-4-1">
+<span class="process-math">\(k = 10/4 = 5/2\text{.}\)</span> Area scales by <span class="process-math">\(k^2 = 25/4\text{.}\)</span> Area = <span class="process-math">\(24 \times 25/4 = 150\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-mix-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1.82.1"><a href="#ex-mix-2-4" title="Copy heading and permalink for Solution 2.1.82.1" aria-label="Copy heading and permalink for Solution 2.1.82.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 2.1.82: Similar Triangles and Area"><a href="#ex-mix-2" title="Copy heading and permalink for Checkpoint 2.1.82: Similar Triangles and Area" aria-label="Copy heading and permalink for Checkpoint 2.1.82: Similar Triangles and Area">🔗</a></div></article></details><details id="ex-mix-3" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.83</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Circumcentre.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-mix-3-2-1">
+<span class="process-math">\(A(0,0)\text{,}\)</span> <span class="process-math">\(B(6,0)\text{,}\)</span> <span class="process-math">\(C(0,8)\text{.}\)</span> Show it is right-angled. Find the circumcentre and circumradius.<div class="autopermalink" data-description="Paragraph"><a href="#ex-mix-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-mix-3-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="ex-mix-3-3-1">Right angle at <span class="process-math">\(A\text{.}\)</span> Circumcentre <span class="process-math">\((3,4)\text{,}\)</span> radius 5.<div class="autopermalink" data-description="Paragraph"><a href="#ex-mix-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.1.83.1"><a href="#ex-mix-3-3" title="Copy heading and permalink for Answer 2.1.83.1" aria-label="Copy heading and permalink for Answer 2.1.83.1">🔗</a></div>
+</div></details><details id="ex-mix-3-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-mix-3-4-1">
+<span class="process-math">\(36 + 64 = 100\)</span> (Theorem 15). <span class="process-math">\([BC]\)</span> is a diameter (Corollary 4). Midpoint = <span class="process-math">\((3,4)\text{,}\)</span> radius <span class="process-math">\(= 5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-mix-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1.83.1"><a href="#ex-mix-3-4" title="Copy heading and permalink for Solution 2.1.83.1" aria-label="Copy heading and permalink for Solution 2.1.83.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 2.1.83: Circumcentre"><a href="#ex-mix-3" title="Copy heading and permalink for Checkpoint 2.1.83: Circumcentre" aria-label="Copy heading and permalink for Checkpoint 2.1.83: Circumcentre">🔗</a></div></article></details><details id="ex-mix-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.84</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Triangle Inequality with Algebra.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-mix-4-2-1">Sides <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(x+3\text{,}\)</span> <span class="process-math">\(2x-1\text{.}\)</span> Find the range of <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-mix-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-mix-4-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="ex-mix-4-3-1">
+<span class="process-math">\(x \gt 2\)</span> (with all sides positive, i.e. <span class="process-math">\(x \gt 1/2\text{,}\)</span> combined: <span class="process-math">\(x \gt 2\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#ex-mix-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.1.84.1"><a href="#ex-mix-4-3" title="Copy heading and permalink for Answer 2.1.84.1" aria-label="Copy heading and permalink for Answer 2.1.84.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Checkpoint 2.1.84: Triangle Inequality with Algebra"><a href="#ex-mix-4" title="Copy heading and permalink for Checkpoint 2.1.84: Triangle Inequality with Algebra" aria-label="Copy heading and permalink for Checkpoint 2.1.84: Triangle Inequality with Algebra">🔗</a></div></article></details><details id="ex-mix-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.85</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Parallel Chords.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-mix-5-2-1">Parallel chords of lengths 12 and 16 in a circle of radius 10. Distance between them?<div class="autopermalink" data-description="Paragraph"><a href="#ex-mix-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-mix-5-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="ex-mix-5-3-1">Same side: 2. Opposite: 14.<div class="autopermalink" data-description="Paragraph"><a href="#ex-mix-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.1.85.1"><a href="#ex-mix-5-3" title="Copy heading and permalink for Answer 2.1.85.1" aria-label="Copy heading and permalink for Answer 2.1.85.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Checkpoint 2.1.85: Parallel Chords"><a href="#ex-mix-5" title="Copy heading and permalink for Checkpoint 2.1.85: Parallel Chords" aria-label="Copy heading and permalink for Checkpoint 2.1.85: Parallel Chords">🔗</a></div></article></details><details id="ex-mix-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1.86</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Construction Description.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-mix-6-2-1">Describe how to construct the circumcircle of a triangle. State the theorem that justifies your method.<div class="autopermalink" data-description="Paragraph"><a href="#ex-mix-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-mix-6-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="ex-mix-6-3-1">Construct perpendicular bisectors of two sides; they meet at the circumcentre. Draw circle from circumcentre through any vertex. Justified by Theorem 21(2).<div class="autopermalink" data-description="Paragraph"><a href="#ex-mix-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.1.86.1"><a href="#ex-mix-6-3" title="Copy heading and permalink for Answer 2.1.86.1" aria-label="Copy heading and permalink for Answer 2.1.86.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Checkpoint 2.1.86: Construction Description"><a href="#ex-mix-6" title="Copy heading and permalink for Checkpoint 2.1.86: Construction Description" aria-label="Copy heading and permalink for Checkpoint 2.1.86: Construction Description">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.1.13: Mixed Exam-Style Problems"><a href="#subsec-mixed-problems" title="Copy heading and permalink for Subsection 2.1.13: Mixed Exam-Style Problems" aria-label="Copy heading and permalink for Subsection 2.1.13: Mixed Exam-Style Problems">🔗</a></div></section><div class="autopermalink" data-description="Section 2.1: Synthetic Geometry"><a href="#sec-synthetic-geometry" title="Copy heading and permalink for Section 2.1: Synthetic Geometry" aria-label="Copy heading and permalink for Section 2.1: Synthetic Geometry">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="ch-geo-trig.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-coordinate-geometry.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="220" viewBox="0 0 240 220" font-family="Segoe UI, sans-serif">
+  <polygon points="120,30 40,190 200,190" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="76.0" y1="105.0" x2="84.0" y2="115.0" stroke="#3b82f6" stroke-width="2"/>
+  <line x1="156.0" y1="105.0" x2="164.0" y2="115.0" stroke="#3b82f6" stroke-width="2"/>
+  <path d="M 62.0 190.0 A 22 22 0 0 0 49.8 209.7" fill="none" stroke="#ef4444" stroke-width="2"/>
+  <path d="M 190.2 209.7 A 22 22 0 1 0 178.0 190.0" fill="none" stroke="#ef4444" stroke-width="2"/>
+  <text x="120" y="22" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">A</text>
+  <text x="28" y="195" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">B</text>
+  <text x="212" y="195" text-anchor="middle" font-size="14" fill="#1a1a1a" font-style="italic">C</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250" font-family="Segoe UI, sans-serif">
+  <circle cx="150" cy="25" r="18" fill="#f5f5f5" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="150" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">360</text>
+  <line x1="150" y1="43" x2="80" y2="57" stroke="#ccc" stroke-width="1.5"/>
+  <line x1="150" y1="43" x2="220" y2="57" stroke="#ccc" stroke-width="1.5"/>
+  <circle cx="80" cy="75" r="18" fill="#ef444420" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="80" y="80" text-anchor="middle" font-size="13" font-weight="bold" fill="#ef4444">2</text>
+  <circle cx="220" cy="75" r="18" fill="#f5f5f5" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="220" y="80" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">180</text>
+  <line x1="220" y1="93" x2="170" y2="112" stroke="#ccc" stroke-width="1.5"/>
+  <line x1="220" y1="93" x2="270" y2="112" stroke="#ccc" stroke-width="1.5"/>
+  <circle cx="170" cy="130" r="18" fill="#ef444420" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="170" y="135" text-anchor="middle" font-size="13" font-weight="bold" fill="#ef4444">2</text>
+  <circle cx="270" cy="130" r="18" fill="#f5f5f5" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="270" y="135" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">90</text>
+  <line x1="270" y1="148" x2="230" y2="162" stroke="#ccc" stroke-width="1.5"/>
+  <line x1="270" y1="148" x2="270" y2="162" stroke="#ccc" stroke-width="1.5"/>
+  <circle cx="230" cy="180" r="18" fill="#ef444420" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="230" y="185" text-anchor="middle" font-size="13" font-weight="bold" fill="#ef4444">2</text>
+  <circle cx="270" cy="180" r="18" fill="#f5f5f5" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="270" y="185" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">45</text>
+  <line x1="270" y1="198" x2="240" y2="212" stroke="#ccc" stroke-width="1.5"/>
+  <line x1="270" y1="198" x2="270" y2="212" stroke="#ccc" stroke-width="1.5"/>
+  <circle cx="240" cy="230" r="18" fill="#f5f5f5" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="240" y="235" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">9</text>
+  <circle cx="270" cy="230" r="18" fill="#ef444420" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="270" y="235" text-anchor="middle" font-size="13" font-weight="bold" fill="#ef4444">5</text>
+  <text x="20" y="240" font-size="12" fill="#1a1a1a">360 = 2³ × 3² × 5</text>
+  <text x="20" y="200" font-size="10" fill="#ef4444">● = prime</text>
+</svg>
