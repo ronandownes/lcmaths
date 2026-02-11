@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<subsection xml:id="subsec-the-line" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Line</title>
+
+          <introduction>
+            <p>Before we begin co-ordinate geometry, we review some essential notation
+            and ideas from Junior Cycle. Everything in this section builds on what you
+            already know — we are simply making it more precise and more powerful.</p>
+          </introduction>
+
+          <paragraphs xml:id="par-notation-review">
+            <title>Notation Review (Log Tables p. 17)</title>
+
+            <p>In co-ordinate geometry, we work with points, lines, and segments.
+            The notation matters — it tells us exactly what we mean.</p>
+
+            <table xml:id="table-geo-notation">
+              <title>Geometry Notation</title>
+              <tabular halign="center">
+                <row header="yes" bottom="medium">
+                  <cell>Symbol</cell>
+                  <cell>Meaning</cell>
+                </row>
+                <row>
+                  <cell><m>PQ</m></cell>
+                  <cell>The <em>line</em> through <m>P</m> and <m>Q</m></cell>
+                </row>
+                <row>
+                  <cell><m>[PQ]</m></cell>
+                  <cell>The <em>line segment</em> from <m>P</m> to <m>Q</m></cell>
+                </row>
+                <row>
+                  <cell><m>|PQ|</m></cell>
+                  <cell>The <em>distance</em> from <m>P</m> to <m>Q</m></cell>
+                </row>
+                <row bottom="minor">
+                  <cell><m>\overrightarrow{AB}</m></cell>
+                  <cell>The <em>vector</em> from <m>A</m> to <m>B</m></cell>
+                </row>
+              </tabular>
+            </table>
+
+            <p>Notice the difference: <m>PQ</m> extends forever in both directions,
+            <m>[PQ]</m> has endpoints, and <m>|PQ|</m> is a number — a length.
+            Get comfortable reading and writing these. They appear constantly in
+            exam questions and marking schemes.</p>
+          </paragraphs>
+
+          <paragraphs xml:id="par-what-is-a-line">
+            <title>What Is a Line?</title>
+
+            <p>A line is a <em>set of points</em>. Every point <m>(x, y)</m> on the line
+            satisfies the equation of that line. We call <m>(x, y)</m> a
+            <term>variable point</term> — it can be any point on the line.</p>
+
+            <p>By contrast, <m>(x_1, y_1)</m> is a <term>fixed point</term> — a known,
+            specific point on the line. Think of it as an anchor or reference point.
+            Much of co-ordinate geometry is about the relationship between a fixed
+            point and a variable point on the same line.</p>
+          </paragraphs>
+
+          <paragraphs xml:id="par-slope">
+            <title>Slope (Log Tables p. 18)</title>
+
+            <p>Given two points <m>P(x_1, y_1)</m> and <m>Q(x_2, y_2)</m>, the
+            <term>slope of line <m>PQ</m></term> is:</p>
+            <me>m = \frac{y_2 - y_1}{x_2 - x_1}</me>
+
+            <p>Read this aloud: <q>the slope of line <m>PQ</m></q> — not just
+            <q>the slope of <m>P</m> and <m>Q</m></q>. The slope belongs to the
+            <em>line</em>, not to the points.</p>
+          </paragraphs>
+
+          <paragraphs xml:id="par-slope-anatomy">
+            <title>Anatomy of the Slope Formula</title>
+
+            <p>Let us decompose the formula. The numerator <m>y_2 - y_1</m> is the
+            <term>rise</term> — the vertical change. The denominator <m>x_2 - x_1</m>
+            is the <term>run</term> — the horizontal change. So slope is:</p>
+            <me>m = \frac{\text{rise}}{\text{run}} = \frac{\text{vertical change}}{\text{horizontal change}}</me>
+
+            <p>Every line segment can be decomposed into a horizontal and a vertical
+            component — a <term>supporting triangle</term>. The slope measures
+            how these two components compare.</p>
+
+            <p>This is a <em>relative comparison</em>. The subtraction means we
+            don't care where the points are in absolute terms — only their position
+            <em>relative to each other</em>. A line through <m>(1, 2)</m> and
+            <m>(3, 6)</m> has the same slope as a line through <m>(101, 102)</m>
+            and <m>(103, 106)</m>.</p>
+          </paragraphs>
+
+          <paragraphs xml:id="par-slope-properties">
+            <title>Properties of Slope</title>
+
+            <p><em>Is the slope formula commutative?</em> Yes. It does not matter
+            which point you call <m>P</m> and which you call <m>Q</m>. If you
+            swap them, both the numerator and denominator change sign, and
+            <m>\frac{-(y_2-y_1)}{-(x_2-x_1)} = \frac{y_2-y_1}{x_2-x_1}</m>.</p>
+
+            <p>However, <em>good practice</em> is to let the second point be the one
+            further to the right. This way the run <m>(x_2 - x_1)</m> is positive,
+            and the sign of the slope comes entirely from the rise. This makes it
+            easier to see whether the line is increasing or decreasing:</p>
+
+            <table xml:id="table-slope-sign">
+              <title>Slope and Direction</title>
+              <tabular halign="center">
+                <row header="yes" bottom="medium">
+                  <cell>Rise</cell>
+                  <cell>Run</cell>
+                  <cell>Slope</cell>
+                  <cell>Line</cell>
+                </row>
+                <row>
+                  <cell>Positive</cell>
+                  <cell>Positive</cell>
+                  <cell>Positive</cell>
+                  <cell>Increasing (goes uphill left to right)</cell>
+                </row>
+                <row>
+                  <cell>Negative</cell>
+                  <cell>Positive</cell>
+                  <cell>Negative</cell>
+                  <cell>Decreasing (goes downhill left to right)</cell>
+                </row>
+                <row>
+                  <cell>Zero</cell>
+                  <cell>Positive</cell>
+                  <cell>Zero</cell>
+                  <cell>Horizontal</cell>
+                </row>
+                <row bottom="minor">
+                  <cell>Any</cell>
+                  <cell>Zero</cell>
+                  <cell>Undefined</cell>
+                  <cell>Vertical</cell>
+                </row>
+              </tabular>
+            </table>
+          </paragraphs>
+
+          <paragraphs xml:id="par-slope-jc-connections">
+            <title>Connections to Junior Cycle</title>
+
+            <p>The slope formula connects to several ideas from the Number strand
+            (JC spec N.1):</p>
+
+            <p><em>Decomposition:</em> We decompose the change between two points
+            into a vertical part (rise) and a horizontal part (run). This is the same
+            idea as decomposing numbers or operations into simpler parts.</p>
+
+            <p><em>Commutativity:</em> We saw that the slope formula is commutative
+            with respect to swapping points. This connects directly to the
+            commutative property of multiplication and division of signed numbers
+            (JC spec N.1b).</p>
+
+            <p><em>Relative comparison:</em> Slope is a ratio. It uses subtraction
+            to compare positions relatively, not absolutely (JC spec N.3a). The
+            actual coordinates don't matter — only the <em>differences</em> do.</p>
+          </paragraphs>
+
+          <example xml:id="ex-slope-calc">
+            <title>Calculating Slope</title>
+            <statement>
+              <p>Find the slope of line <m>PQ</m> where <m>P(1, 3)</m> and
+              <m>Q(4, 9)</m>.</p>
+            </statement>
+            <solution>
+              <p>With <m>Q</m> on the right (<m>x_2 = 4 > x_1 = 1</m>):</p>
+              <md>
+                <mrow>m &amp;= \frac{y_2 - y_1}{x_2 - x_1}</mrow>
+                <mrow> &amp;= \frac{9 - 3}{4 - 1}</mrow>
+                <mrow> &amp;= \frac{6}{3} = 2</mrow>
+              </md>
+              <p>The rise is <m>6</m> (positive — going up), the run is <m>3</m>
+              (positive — going right). The line is increasing.</p>
+            </solution>
+          </example>
+
+          <paragraphs xml:id="par-distance">
+            <title>Distance (Log Tables p. 18)</title>
+
+            <p>The distance from <m>P</m> to <m>Q</m> is:</p>
+            <me>|PQ| = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}</me>
+
+            <p>Read this as: <q>the square root of the sum of two squares</q>.
+            The two squares are the rise squared and the run squared. This is
+            Pythagoras applied to the supporting triangle.</p>
+
+            <p><em>Is this formula commutative?</em> Yes — and for a stronger
+            reason than slope. Subtraction is not commutative:
+            <m>3 - 7 \neq 7 - 3</m>. But <em>squaring removes the sign</em>:
+            <m>(3-7)^2 = (-4)^2 = 16 = (4)^2 = (7-3)^2</m>. So it genuinely
+            does not matter which point comes first in the distance formula.</p>
+          </paragraphs>
+
+          <example xml:id="ex-distance-calc">
+            <title>Calculating Distance</title>
+            <statement>
+              <p>Find <m>|PQ|</m> where <m>P(1, 3)</m> and <m>Q(4, 9)</m>.</p>
+            </statement>
+            <solution>
+              <md>
+                <mrow>|PQ| &amp;= \sqrt{(4-1)^2 + (9-3)^2}</mrow>
+                <mrow> &amp;= \sqrt{9 + 36}</mrow>
+                <mrow> &amp;= \sqrt{45} = 3\sqrt{5}</mrow>
+              </md>
+            </solution>
+          </example>
+
+          <paragraphs xml:id="par-midpoint">
+            <title>Midpoint (Log Tables p. 18)</title>
+
+            <p>The midpoint of <m>[PQ]</m> is:</p>
+            <me>\left(\frac{x_1 + x_2}{2},\; \frac{y_1 + y_2}{2}\right)</me>
+
+            <p>This is the <term>mean</term> of the <m>x</m>-coordinates and
+            the mean of the <m>y</m>-coordinates. The same idea of
+            <q>average</q> that you know from the Statistics strand.</p>
+
+            <p>Notice the crucial difference from slope and distance: midpoint
+            uses <em>addition</em>, not subtraction. This is an <em>absolute</em>
+            comparison — where the midpoint is depends on where the actual
+            points are, not just on their relative position. Move both points
+            10 units to the right and the midpoint moves too.</p>
+          </paragraphs>
+
+          <paragraphs xml:id="par-three-formulas-compared">
+            <title>Slope, Distance, Midpoint — Compared</title>
+
+            <table xml:id="table-formulas-compared">
+              <title>Comparing the Three Key Formulae</title>
+              <tabular halign="center">
+                <row header="yes" bottom="medium">
+                  <cell>Formula</cell>
+                  <cell>Operation</cell>
+                  <cell>Comparison Type</cell>
+                  <cell>Commutative?</cell>
+                </row>
+                <row>
+                  <cell>Slope</cell>
+                  <cell>Subtraction (ratio)</cell>
+                  <cell>Relative</cell>
+                  <cell>Yes (sign cancels)</cell>
+                </row>
+                <row>
+                  <cell>Distance</cell>
+                  <cell>Subtraction (squared)</cell>
+                  <cell>Relative</cell>
+                  <cell>Yes (squaring removes sign)</cell>
+                </row>
+                <row bottom="minor">
+                  <cell>Midpoint</cell>
+                  <cell>Addition (mean)</cell>
+                  <cell>Absolute</cell>
+                  <cell>Yes (addition is commutative)</cell>
+                </row>
+              </tabular>
+            </table>
+          </paragraphs>
+
+          <paragraphs xml:id="par-equation-of-line">
+            <title>Equation of a Line (Log Tables p. 18)</title>
+
+            <p>Now we connect slope to the equation of a line. Start with the slope
+            formula, but replace the second point <m>(x_2, y_2)</m> with the
+            variable point <m>(x, y)</m>:</p>
+            <me>m = \frac{y - y_1}{x - x_1}</me>
+
+            <p>Multiply both sides by <m>(x - x_1)</m> and we get:</p>
+            <me>y - y_1 = m(x - x_1)</me>
+
+            <p>This is the <term>point-slope formula</term>. It is not named on the
+            log tables, but it is the first equation given under <q>equation of
+            <m>PQ</m></q>. It says: if you know <em>one fixed point</em> and the
+            <em>slope</em>, you can write the equation of the line.</p>
+
+            <p>The second equation on the log tables is:</p>
+            <me>y = mx + c</me>
+
+            <p>This is the <term>slope-intercept formula</term> (or better:
+            <em>intercept-slope</em>, because that is the order you see it).
+            Here <m>c</m> is the <m>y</m>-intercept — where the line crosses the
+            <m>y</m>-axis. You get this form by expanding the point-slope formula
+            and collecting terms.</p>
+          </paragraphs>
+
+          <example xml:id="ex-equation-of-line">
+            <title>Finding the Equation of a Line</title>
+            <statement>
+              <p>Find the equation of the line through <m>(2, 5)</m> with slope
+              <m>3</m>.</p>
+            </statement>
+            <solution>
+              <p>Using the point-slope formula with <m>(x_1, y_1) = (2, 5)</m>
+              and <m>m = 3</m>:</p>
+              <md>
+                <mrow>y - 5 &amp;= 3(x - 2)</mrow>
+                <mrow>y - 5 &amp;= 3x - 6</mrow>
+                <mrow>y &amp;= 3x - 1</mrow>
+              </md>
+              <p>In slope-intercept form: <m>y = 3x - 1</m>, so the
+              <m>y</m>-intercept is <m>c = -1</m>.</p>
+            </solution>
+          </example>
+
+          <paragraphs xml:id="par-area-triangle">
+            <title>Area of Triangle <m>OPQ</m> (Log Tables p. 18)</title>
+
+            <p>The area of a triangle with one vertex at the origin <m>O</m> and
+            the other two at <m>P(x_1, y_1)</m> and <m>Q(x_2, y_2)</m> is:</p>
+            <me>\text{Area} = \frac{1}{2}|x_1 y_2 - x_2 y_1|</me>
+
+            <p>Think of it this way: <m>x_1 y_2</m> and <m>x_2 y_1</m> are the
+            areas of two rectangles — one built from the coordinates of <m>P</m>
+            stretched to <m>Q</m>, and the other from <m>Q</m> stretched to
+            <m>P</m>. The difference gives twice the area of the triangle. The
+            <m>\frac{1}{2}</m> is there because a triangle is half a parallelogram.</p>
+          </paragraphs>
+
+          <paragraphs xml:id="par-hl-warning-line">
+            <title>What to Ignore (HL Content)</title>
+
+            <p><alert>The following formulae from the log tables (p. 19) are Higher
+            Level only. They are NOT on the Ordinary Level course.</alert></p>
+
+            <p>Cross these out on your log tables so you are not tempted to use them:</p>
+
+            <p><em>Perpendicular distance</em> from a point to a line:
+            <m>\dfrac{|ax_1 + by_1 + c|}{\sqrt{a^2 + b^2}}</m> — <alert>HL only</alert>.</p>
+
+            <p><em>Angle between two lines</em>:
+            <m>\tan\theta = \pm\dfrac{m_1 - m_2}{1 + m_1 m_2}</m> — <alert>HL only</alert>.</p>
+
+            <p><em>Point dividing <m>[PQ]</m> in ratio <m>a:b</m></em>
+            (bottom of p. 18) — <alert>HL only</alert>.</p>
+
+            <p>A common mistake in OL exam scripts is to attempt these formulae.
+            If you see them, ignore them. They are not on your course and using
+            them incorrectly will cost you marks.</p>
+          </paragraphs>
+
+          <exercise xml:id="ex-line-slope-practice">
+            <title>Slope Practice</title>
+            <statement>
+              <p>Find the slope of line <m>AB</m> where <m>A(-1, 4)</m> and
+              <m>B(3, -2)</m>.</p>
+            </statement>
+            <hint>
+              <p>Let <m>B</m> be on the right since <m>3 > -1</m>. What is the
+              rise? What is the run?</p>
+            </hint>
+            <answer>
+              <p><m>m = -\frac{3}{2}</m></p>
+            </answer>
+            <solution>
+              <p>With <m>B</m> on the right:</p>
+              <md>
+                <mrow>m &amp;= \frac{-2 - 4}{3 - (-1)}</mrow>
+                <mrow> &amp;= \frac{-6}{4} = -\frac{3}{2}</mrow>
+              </md>
+              <p>The rise is <m>-6</m> (going down) and the run is <m>4</m>
+              (going right). The line is decreasing.</p>
+            </solution>
+          </exercise>
+
+          <exercise xml:id="ex-line-distance-practice">
+            <title>Distance Practice</title>
+            <statement>
+              <p>Find <m>|AB|</m> where <m>A(-1, 4)</m> and <m>B(3, -2)</m>.</p>
+            </statement>
+            <answer>
+              <p><m>|AB| = 2\sqrt{13}</m></p>
+            </answer>
+            <solution>
+              <md>
+                <mrow>|AB| &amp;= \sqrt{(3-(-1))^2 + (-2-4)^2}</mrow>
+                <mrow> &amp;= \sqrt{16 + 36}</mrow>
+                <mrow> &amp;= \sqrt{52} = 2\sqrt{13}</mrow>
+              </md>
+            </solution>
+          </exercise>
+
+          <exercise xml:id="ex-line-midpoint-practice">
+            <title>Midpoint Practice</title>
+            <statement>
+              <p>Find the midpoint of <m>[AB]</m> where <m>A(-1, 4)</m> and
+              <m>B(3, -2)</m>.</p>
+            </statement>
+            <answer>
+              <p><m>(1, 1)</m></p>
+            </answer>
+            <solution>
+              <md>
+                <mrow>\text{Midpoint} &amp;= \left(\frac{-1+3}{2},\; \frac{4+(-2)}{2}\right)</mrow>
+                <mrow> &amp;= \left(\frac{2}{2},\; \frac{2}{2}\right) = (1, 1)</mrow>
+              </md>
+            </solution>
+          </exercise>
+
+          <exercise xml:id="ex-line-equation-practice">
+            <title>Equation of a Line</title>
+            <statement>
+              <p>Find the equation of line <m>AB</m> where <m>A(-1, 4)</m> and
+              <m>B(3, -2)</m>. Give your answer in the form <m>y = mx + c</m>.</p>
+            </statement>
+            <hint>
+              <p>You already found the slope in a previous exercise. Now use the
+              point-slope formula with either point.</p>
+            </hint>
+            <answer>
+              <p><m>y = -\frac{3}{2}x + \frac{5}{2}</m></p>
+            </answer>
+            <solution>
+              <p>Using the point-slope formula with <m>A(-1, 4)</m> and
+              <m>m = -\frac{3}{2}</m>:</p>
+              <md>
+                <mrow>y - 4 &amp;= -\frac{3}{2}(x - (-1))</mrow>
+                <mrow>y - 4 &amp;= -\frac{3}{2}(x + 1)</mrow>
+                <mrow>y - 4 &amp;= -\frac{3}{2}x - \frac{3}{2}</mrow>
+                <mrow>y &amp;= -\frac{3}{2}x + \frac{5}{2}</mrow>
+              </md>
+            </solution>
+          </exercise>
+
+        </subsection>
