@@ -14,18 +14,7 @@
     <title>Mathematics: A Structured Journey for Junior and Leaving Certificate</title>
     <subtitle>Ordinary Level</subtitle>
 
-    <frontmatter xml:id="frontmatter">
-      <bibinfo>
-        <author>
-          <personname>Mr Downes</personname>
-          <institution>Mr Downes Maths</institution>
-        </author>
-        <date><today/></date>
-      </bibinfo>
-      <titlepage>
-        <titlepage-items/>
-      </titlepage>
-    </frontmatter>
+    <xi:include href="frontmatter.ptx"/>
 
     <!-- ============================== -->
     <!-- STRAND 1: STATISTICS & PROBABILITY -->

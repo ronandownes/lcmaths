@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <bibinfo>
+    <author>
+      <personname>Mr Downes</personname>
+      <institution>Mr Downes Maths</institution>
+    </author>
+    <date><today/></date>
+  </bibinfo>
+
+  <titlepage>
+    <titlepage-items/>
+  </titlepage>
+
+  <!-- To the Student -->
+  <preface xml:id="preface-student">
+    <title>To the Student</title>
+
+    <p>You are capable of understanding mathematics.</p>
+
+    <p>If it has ever felt confusing or fragmented, that experience does not define you. It simply means the structure was not made visible.</p>
+
+    <p>This book begins with simple ideas, arranged carefully. Each chapter builds from what came before it. Nothing appears without reason. Nothing is expected before it has been discovered.</p>
+
+    <p>You will see patterns before formulas. You will explore before formalising. You will ask what changes, what stays the same, and what must be true.</p>
+
+    <p>Mathematics is not about speed. It is about clarity.</p>
+
+    <p>You are here to understand.</p>
+  </preface>
+
+  <!-- To the Teacher -->
+  <preface xml:id="preface-teacher">
+    <title>To the Teacher</title>
+
+    <p>This book is linear by design.</p>
+
+    <p>The order of ideas is intentional and cumulative. Concepts are introduced informally, strengthened through use, and formalised only when the structure is ready.</p>
+
+    <p>Students may revisit foundations when needed. Stronger students may extend beyond the core development. The structure is stable; the pace remains yours.</p>
+
+    <p>The aim is durable understanding. Examination success should follow naturally from that.</p>
+  </preface>
+
+  <!-- Why This Book Is Needed -->
+  <preface xml:id="preface-why">
+    <title>Why This Book Is Needed</title>
+
+    <p>As a student, I was drawn to pattern and structure. Physics revealed an ordered world <mdash/> systems that could be described clearly and precisely.</p>
+
+    <p>But when the mathematics behind that world became demanding, I realised my foundations were not as deep as I had believed. I had learned procedures, but I had not fully seen how the ideas connected.</p>
+
+    <p>Years later, returning to mathematics as a teacher and learner, I discovered something simple and powerful: it was the foundations that mattered most.</p>
+
+    <p>Working carefully through basic ideas <mdash/> sometimes more deeply than before <mdash/> revealed how reliable and transferable they were. The language mattered. Definitions mattered. Small distinctions mattered.</p>
+
+    <p>The simplicity of well-understood mathematics is not trivial. It is strong.</p>
+
+    <p>This book is built on that belief: when foundations are clear, everything else grows naturally.</p>
+
+    <p>The goal is not to move quickly. The goal is to understand well.</p>
+  </preface>
+
+</frontmatter>
