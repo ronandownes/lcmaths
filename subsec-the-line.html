@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Line</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Mathematics: A Structured Journey for Junior and Leaving Certificate">
+<meta property="book:author" content="Mr Downes">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.14';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.d892923478694492.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="lc-ol-maths.html"><span class="title">Mathematics: A Structured Journey for Junior and Leaving Certificate</span> <span class="subtitle">Ordinary Level</span></a></h1>
+<p class="byline">Mr Downes</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch-coordinate-geometry.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-coordinate-geometry.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-number.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-student.html" class="internal"><span class="title">To the Student</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-teacher.html" class="internal"><span class="title">To the Teacher</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-why.html" class="internal"><span class="title">Why This Book Is Needed</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-stats-prob.html" class="internal"><span class="codenumber">1</span> <span class="title">Statistics and Probability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-counting.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Counting</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-concepts-probability.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Concepts of Probability</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-outcomes-random.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Outcomes of Random Processes</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-statistical-reasoning.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Statistical Reasoning</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-collecting-data.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Finding, Collecting and Organising Data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-representing-data.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Representing Data Graphically and Numerically</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-analysing-data.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Analysing, Interpreting and Drawing Inferences from Data</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-geo-trig.html" class="internal"><span class="codenumber">2</span> <span class="title">Geometry and Trigonometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-synthetic-geometry.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Synthetic Geometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-language-of-geometry" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The Language of Geometry</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-building-blocks" class="internal"><span class="codenumber">2.1.2</span> <span class="title">The Building Blocks</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-angles" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Angles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-congruence" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Congruent Triangles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-parallel-lines" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Parallel Lines</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-jc-theorems-review" class="internal"><span class="codenumber">2.1.6</span> <span class="title">The Junior Cycle Theorems (Assumed Knowledge)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-triangle-inequalities" class="internal"><span class="codenumber">2.1.7</span> <span class="title">Sides and Angles in a Triangle (Theorems 7 and 8)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-ratio-similarity" class="internal"><span class="codenumber">2.1.8</span> <span class="title">Ratio and Similarity (Theorems 11, 12, 13)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-area-theory" class="internal"><span class="codenumber">2.1.9</span> <span class="title">Area (Theorems 16, 17, 18)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-circles-lc" class="internal"><span class="codenumber">2.1.10</span> <span class="title">Circles: Tangents and Chords (Theorems 20, 21, Corollary 6)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-constructions-lc" class="internal"><span class="codenumber">2.1.11</span> <span class="title">Constructions 16–21</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-quadrilaterals" class="internal"><span class="codenumber">2.1.12</span> <span class="title">Quadrilaterals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-synthetic-geometry.html#subsec-mixed-problems" class="internal"><span class="codenumber">2.1.13</span> <span class="title">Mixed Exam-Style Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-trigonometry.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Trigonometry</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-enlargements.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Transformation Geometry: Enlargements</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-enlargements.html#subsec-enlargement-definition" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Centre of Enlargement and Scale Factor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-enlargements.html#subsec-enlargement-lengths" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Effect on Lengths</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-enlargements.html#subsec-enlargement-area" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Effect on Area</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-enlargements.html#subsec-enlargement-problems" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Problem-Solving Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-circle.html" class="internal"><span class="codenumber">1</span> <span class="title">The Circle</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-circle-prior.html" class="internal"><span class="codenumber">1.1</span> <span class="title">What You Already Know</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-circle-definition.html" class="internal"><span class="codenumber">1.2</span> <span class="title">What is a Circle?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-circle-parts.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Parts of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-circle-theorems.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Key Circle Theorems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-circle-equation.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Circle on the Coordinate Plane</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-circle-worked-examples.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Worked Examples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-circle-progress-check.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Progress Check</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-circle-exercises.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="subsec-circle-summary.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Section Summary</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-coordinate-geometry.html" class="internal"><span class="codenumber">3</span> <span class="title">Co-ordinate Geometry</span></a></div>
+<ul class="structural toc-item-list contains-active"><li class="toc-item toc-subsection active"><div class="toc-title-box"><a href="subsec-the-line.html" class="internal"><span class="codenumber">3.1</span> <span class="title">The Line</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-number.html" class="internal"><span class="codenumber">4</span> <span class="title">Number</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-number-systems.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-number-systems.html#subsec-number-sets" class="internal"><span class="codenumber">4.1.1</span> <span class="title">The Number Sets: <span class="process-math">\(\mathbb{N}\text{,}\)</span> <span class="process-math">\(\mathbb{Z}\text{,}\)</span> <span class="process-math">\(\mathbb{Q}\text{,}\)</span> <span class="process-math">\(\mathbb{R}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-number-systems.html#subsec-rational-irrational" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Rational and Irrational: The Decimal Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-number-systems.html#subsec-operations" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Operations: <span class="process-math">\(+\text{,}\)</span> <span class="process-math">\(-\text{,}\)</span> <span class="process-math">\(\times\text{,}\)</span> <span class="process-math">\(\div\)</span> Across the Number Sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-number-systems.html#subsec-factors-primes" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Factors, Multiples, and Primes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-number-systems.html#subsec-order-of-operations" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Order of Operations (BIMDAS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-number-systems.html#subsec-decimals-fractions" class="internal"><span class="codenumber">4.1.6</span> <span class="title">Decimals and Fractions: Two Sides of the Same Coin</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-number-systems.html#subsec-scientific-notation" class="internal"><span class="codenumber">4.1.7</span> <span class="title">Scientific Notation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-indices.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Indices</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-arithmetic.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Arithmetic</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-length-area-volume.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Length, Area and Volume</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-algebra.html" class="internal"><span class="codenumber">5</span> <span class="title">Algebra</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-expressions.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Expressions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-solving-equations.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Solving Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inequalities.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Inequalities</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-functions.html" class="internal"><span class="codenumber">6</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-functions.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-calculus.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Calculus</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="subsection" id="subsec-the-line"><h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Line</span>
+</h2>
+<section class="introduction" id="subsec-the-line-2"><div class="para" id="subsec-the-line-2-1">Before we begin co-ordinate geometry, we review some essential notation and ideas from Junior Cycle. Everything in this section builds on what you already know — we are simply making it more precise and more powerful.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-the-line-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="paragraphs" id="par-notation-review"><h3 class="heading"><span class="title">Notation Review (Log Tables p. 17).</span></h3>
+<div class="para" id="par-notation-review-2">In co-ordinate geometry, we work with points, lines, and segments. The notation matters — it tells us exactly what we mean.<div class="autopermalink" data-description="Paragraph"><a href="#par-notation-review-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="table-geo-notation"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Geometry Notation<div class="autopermalink" data-description="Table 3.1.21: Geometry Notation"><a href="#table-geo-notation" title="Copy heading and permalink for Table 3.1.21: Geometry Notation" aria-label="Copy heading and permalink for Table 3.1.21: Geometry Notation">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b2 r0 l0 t0 lines">Symbol</th>
+<th scope="col" class="c m b2 r0 l0 t0 lines">Meaning</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(PQ\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">The <em class="emphasis">line</em> through <span class="process-math">\(P\)</span> and <span class="process-math">\(Q\)</span>
+</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\([PQ]\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">The <em class="emphasis">line segment</em> from <span class="process-math">\(P\)</span> to <span class="process-math">\(Q\)</span>
+</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(|PQ|\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">The <em class="emphasis">distance</em> from <span class="process-math">\(P\)</span> to <span class="process-math">\(Q\)</span>
+</td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(\overrightarrow{AB}\)</span></td>
+<td class="c m b1 r0 l0 t0 lines">The <em class="emphasis">vector</em> from <span class="process-math">\(A\)</span> to <span class="process-math">\(B\)</span>
+</td>
+</tr>
+</table></div></figure><div class="para" id="par-notation-review-4">Notice the difference: <span class="process-math">\(PQ\)</span> extends forever in both directions, <span class="process-math">\([PQ]\)</span> has endpoints, and <span class="process-math">\(|PQ|\)</span> is a number — a length. Get comfortable reading and writing these. They appear constantly in exam questions and marking schemes.<div class="autopermalink" data-description="Paragraph"><a href="#par-notation-review-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Notation Review (Log Tables p. 17)"><a href="#par-notation-review" title="Copy heading and permalink for Paragraphs: Notation Review (Log Tables p. 17)" aria-label="Copy heading and permalink for Paragraphs: Notation Review (Log Tables p. 17)">🔗</a></div></section><section class="paragraphs" id="par-what-is-a-line"><h3 class="heading"><span class="title">What Is a Line?</span></h3>
+<div class="para" id="par-what-is-a-line-2">A line is a <em class="emphasis">set of points</em>. Every point <span class="process-math">\((x, y)\)</span> on the line satisfies the equation of that line. We call <span class="process-math">\((x, y)\)</span> a <dfn class="terminology">variable point</dfn> — it can be any point on the line.<div class="autopermalink" data-description="Paragraph"><a href="#par-what-is-a-line-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="par-what-is-a-line-3">By contrast, <span class="process-math">\((x_1, y_1)\)</span> is a <dfn class="terminology">fixed point</dfn> — a known, specific point on the line. Think of it as an anchor or reference point. Much of co-ordinate geometry is about the relationship between a fixed point and a variable point on the same line.<div class="autopermalink" data-description="Paragraph"><a href="#par-what-is-a-line-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: What Is a Line?"><a href="#par-what-is-a-line" title="Copy heading and permalink for Paragraphs: What Is a Line?" aria-label="Copy heading and permalink for Paragraphs: What Is a Line?">🔗</a></div></section><section class="paragraphs" id="par-slope"><h3 class="heading"><span class="title">Slope (Log Tables p. 18).</span></h3>
+<div class="para" id="par-slope-2">Given two points <span class="process-math">\(P(x_1, y_1)\)</span> and <span class="process-math">\(Q(x_2, y_2)\text{,}\)</span> the <dfn class="terminology">slope of line <span class="process-math">\(PQ\)</span></dfn> is:<div class="autopermalink" data-description="Paragraph"><a href="#par-slope-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="par-slope-3">
+\begin{equation*}
+m = \frac{y_2 - y_1}{x_2 - x_1}
+\end{equation*}
+</div>
+<div class="para" id="par-slope-4">Read this aloud: “the slope of line <span class="process-math">\(PQ\)</span>” — not just “the slope of <span class="process-math">\(P\)</span> and <span class="process-math">\(Q\)</span>”. The slope belongs to the <em class="emphasis">line</em>, not to the points.<div class="autopermalink" data-description="Paragraph"><a href="#par-slope-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Slope (Log Tables p. 18)"><a href="#par-slope" title="Copy heading and permalink for Paragraphs: Slope (Log Tables p. 18)" aria-label="Copy heading and permalink for Paragraphs: Slope (Log Tables p. 18)">🔗</a></div></section><section class="paragraphs" id="par-slope-anatomy"><h3 class="heading"><span class="title">Anatomy of the Slope Formula.</span></h3>
+<div class="para" id="par-slope-anatomy-2">Let us decompose the formula. The numerator <span class="process-math">\(y_2 - y_1\)</span> is the <dfn class="terminology">rise</dfn> — the vertical change. The denominator <span class="process-math">\(x_2 - x_1\)</span> is the <dfn class="terminology">run</dfn> — the horizontal change. So slope is:<div class="autopermalink" data-description="Paragraph"><a href="#par-slope-anatomy-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="par-slope-anatomy-3">
+\begin{equation*}
+m = \frac{\text{rise}}{\text{run}} = \frac{\text{vertical change}}{\text{horizontal change}}
+\end{equation*}
+</div>
+<div class="para" id="par-slope-anatomy-4">Every line segment can be decomposed into a horizontal and a vertical component — a <dfn class="terminology">supporting triangle</dfn>. The slope measures how these two components compare.<div class="autopermalink" data-description="Paragraph"><a href="#par-slope-anatomy-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="par-slope-anatomy-5">This is a <em class="emphasis">relative comparison</em>. The subtraction means we don’t care where the points are in absolute terms — only their position <em class="emphasis">relative to each other</em>. A line through <span class="process-math">\((1, 2)\)</span> and <span class="process-math">\((3, 6)\)</span> has the same slope as a line through <span class="process-math">\((101, 102)\)</span> and <span class="process-math">\((103, 106)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#par-slope-anatomy-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Anatomy of the Slope Formula"><a href="#par-slope-anatomy" title="Copy heading and permalink for Paragraphs: Anatomy of the Slope Formula" aria-label="Copy heading and permalink for Paragraphs: Anatomy of the Slope Formula">🔗</a></div></section><section class="paragraphs" id="par-slope-properties"><h3 class="heading"><span class="title">Properties of Slope.</span></h3>
+<div class="para" id="par-slope-properties-2">
+<em class="emphasis">Is the slope formula commutative?</em> Yes. It does not matter which point you call <span class="process-math">\(P\)</span> and which you call <span class="process-math">\(Q\text{.}\)</span> If you swap them, both the numerator and denominator change sign, and <span class="process-math">\(\frac{-(y_2-y_1)}{-(x_2-x_1)} = \frac{y_2-y_1}{x_2-x_1}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#par-slope-properties-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="par-slope-properties-3">However, <em class="emphasis">good practice</em> is to let the second point be the one further to the right. This way the run <span class="process-math">\((x_2 - x_1)\)</span> is positive, and the sign of the slope comes entirely from the rise. This makes it easier to see whether the line is increasing or decreasing:<div class="autopermalink" data-description="Paragraph"><a href="#par-slope-properties-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="table-slope-sign"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.22<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Slope and Direction<div class="autopermalink" data-description="Table 3.1.22: Slope and Direction"><a href="#table-slope-sign" title="Copy heading and permalink for Table 3.1.22: Slope and Direction" aria-label="Copy heading and permalink for Table 3.1.22: Slope and Direction">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b2 r0 l0 t0 lines">Rise</th>
+<th scope="col" class="c m b2 r0 l0 t0 lines">Run</th>
+<th scope="col" class="c m b2 r0 l0 t0 lines">Slope</th>
+<th scope="col" class="c m b2 r0 l0 t0 lines">Line</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Positive</td>
+<td class="c m b0 r0 l0 t0 lines">Positive</td>
+<td class="c m b0 r0 l0 t0 lines">Positive</td>
+<td class="c m b0 r0 l0 t0 lines">Increasing (goes uphill left to right)</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Negative</td>
+<td class="c m b0 r0 l0 t0 lines">Positive</td>
+<td class="c m b0 r0 l0 t0 lines">Negative</td>
+<td class="c m b0 r0 l0 t0 lines">Decreasing (goes downhill left to right)</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Zero</td>
+<td class="c m b0 r0 l0 t0 lines">Positive</td>
+<td class="c m b0 r0 l0 t0 lines">Zero</td>
+<td class="c m b0 r0 l0 t0 lines">Horizontal</td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">Any</td>
+<td class="c m b1 r0 l0 t0 lines">Zero</td>
+<td class="c m b1 r0 l0 t0 lines">Undefined</td>
+<td class="c m b1 r0 l0 t0 lines">Vertical</td>
+</tr>
+</table></div></figure><div class="autopermalink" data-description="Paragraphs: Properties of Slope"><a href="#par-slope-properties" title="Copy heading and permalink for Paragraphs: Properties of Slope" aria-label="Copy heading and permalink for Paragraphs: Properties of Slope">🔗</a></div></section><section class="paragraphs" id="par-slope-jc-connections"><h3 class="heading"><span class="title">Connections to Junior Cycle.</span></h3>
+<div class="para" id="par-slope-jc-connections-2">The slope formula connects to several ideas from the Number strand (JC spec N.1):<div class="autopermalink" data-description="Paragraph"><a href="#par-slope-jc-connections-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="par-slope-jc-connections-3">
+<em class="emphasis">Decomposition:</em> We decompose the change between two points into a vertical part (rise) and a horizontal part (run). This is the same idea as decomposing numbers or operations into simpler parts.<div class="autopermalink" data-description="Paragraph"><a href="#par-slope-jc-connections-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="par-slope-jc-connections-4">
+<em class="emphasis">Commutativity:</em> We saw that the slope formula is commutative with respect to swapping points. This connects directly to the commutative property of multiplication and division of signed numbers (JC spec N.1b).<div class="autopermalink" data-description="Paragraph"><a href="#par-slope-jc-connections-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="par-slope-jc-connections-5">
+<em class="emphasis">Relative comparison:</em> Slope is a ratio. It uses subtraction to compare positions relatively, not absolutely (JC spec N.3a). The actual coordinates don’t matter — only the <em class="emphasis">differences</em> do.<div class="autopermalink" data-description="Paragraph"><a href="#par-slope-jc-connections-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Connections to Junior Cycle"><a href="#par-slope-jc-connections" title="Copy heading and permalink for Paragraphs: Connections to Junior Cycle" aria-label="Copy heading and permalink for Paragraphs: Connections to Junior Cycle">🔗</a></div></section><article class="example example-like" id="ex-slope-calc"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculating Slope.</span>
+</h3>
+<div class="para" id="ex-slope-calc-2-1">Find the slope of line <span class="process-math">\(PQ\)</span> where <span class="process-math">\(P(1, 3)\)</span> and <span class="process-math">\(Q(4, 9)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-slope-calc-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-slope-calc-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-slope-calc-3-1">With <span class="process-math">\(Q\)</span> on the right (<span class="process-math">\(x_2 = 4 &gt; x_1 = 1\)</span>):<div class="autopermalink" data-description="Paragraph"><a href="#ex-slope-calc-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="ex-slope-calc-3-2">
+\begin{align*}
+m &amp;= \frac{y_2 - y_1}{x_2 - x_1}\\
+&amp;= \frac{9 - 3}{4 - 1}\\
+&amp;= \frac{6}{3} = 2
+\end{align*}
+</div>
+<div class="para" id="ex-slope-calc-3-3">The rise is <span class="process-math">\(6\)</span> (positive — going up), the run is <span class="process-math">\(3\)</span> (positive — going right). The line is increasing.<div class="autopermalink" data-description="Paragraph"><a href="#ex-slope-calc-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.1.23.1"><a href="#ex-slope-calc-3" title="Copy heading and permalink for Solution 3.1.23.1" aria-label="Copy heading and permalink for Solution 3.1.23.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.1.23: Calculating Slope"><a href="#ex-slope-calc" title="Copy heading and permalink for Example 3.1.23: Calculating Slope" aria-label="Copy heading and permalink for Example 3.1.23: Calculating Slope">🔗</a></div></article><section class="paragraphs" id="par-distance"><h3 class="heading"><span class="title">Distance (Log Tables p. 18).</span></h3>
+<div class="para" id="par-distance-2">The distance from <span class="process-math">\(P\)</span> to <span class="process-math">\(Q\)</span> is:<div class="autopermalink" data-description="Paragraph"><a href="#par-distance-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="par-distance-3">
+\begin{equation*}
+|PQ| = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+\end{equation*}
+</div>
+<div class="para" id="par-distance-4">Read this as: “the square root of the sum of two squares”. The two squares are the rise squared and the run squared. This is Pythagoras applied to the supporting triangle.<div class="autopermalink" data-description="Paragraph"><a href="#par-distance-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="par-distance-5">
+<em class="emphasis">Is this formula commutative?</em> Yes — and for a stronger reason than slope. Subtraction is not commutative: <span class="process-math">\(3 - 7 \neq 7 - 3\text{.}\)</span> But <em class="emphasis">squaring removes the sign</em>: <span class="process-math">\((3-7)^2 = (-4)^2 = 16 = (4)^2 = (7-3)^2\text{.}\)</span> So it genuinely does not matter which point comes first in the distance formula.<div class="autopermalink" data-description="Paragraph"><a href="#par-distance-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Distance (Log Tables p. 18)"><a href="#par-distance" title="Copy heading and permalink for Paragraphs: Distance (Log Tables p. 18)" aria-label="Copy heading and permalink for Paragraphs: Distance (Log Tables p. 18)">🔗</a></div></section><article class="example example-like" id="ex-distance-calc"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculating Distance.</span>
+</h3>
+<div class="para" id="ex-distance-calc-2-1">Find <span class="process-math">\(|PQ|\)</span> where <span class="process-math">\(P(1, 3)\)</span> and <span class="process-math">\(Q(4, 9)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-distance-calc-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-distance-calc-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="displaymath process-math" id="ex-distance-calc-3-1">
+\begin{align*}
+|PQ| &amp;= \sqrt{(4-1)^2 + (9-3)^2}\\
+&amp;= \sqrt{9 + 36}\\
+&amp;= \sqrt{45} = 3\sqrt{5}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Solution 3.1.24.1"><a href="#ex-distance-calc-3" title="Copy heading and permalink for Solution 3.1.24.1" aria-label="Copy heading and permalink for Solution 3.1.24.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.1.24: Calculating Distance"><a href="#ex-distance-calc" title="Copy heading and permalink for Example 3.1.24: Calculating Distance" aria-label="Copy heading and permalink for Example 3.1.24: Calculating Distance">🔗</a></div></article><section class="paragraphs" id="par-midpoint"><h3 class="heading"><span class="title">Midpoint (Log Tables p. 18).</span></h3>
+<div class="para" id="par-midpoint-2">The midpoint of <span class="process-math">\([PQ]\)</span> is:<div class="autopermalink" data-description="Paragraph"><a href="#par-midpoint-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="par-midpoint-3">
+\begin{equation*}
+\left(\frac{x_1 + x_2}{2},\; \frac{y_1 + y_2}{2}\right)
+\end{equation*}
+</div>
+<div class="para" id="par-midpoint-4">This is the <dfn class="terminology">mean</dfn> of the <span class="process-math">\(x\)</span>-coordinates and the mean of the <span class="process-math">\(y\)</span>-coordinates. The same idea of “average” that you know from the Statistics strand.<div class="autopermalink" data-description="Paragraph"><a href="#par-midpoint-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="par-midpoint-5">Notice the crucial difference from slope and distance: midpoint uses <em class="emphasis">addition</em>, not subtraction. This is an <em class="emphasis">absolute</em> comparison — where the midpoint is depends on where the actual points are, not just on their relative position. Move both points 10 units to the right and the midpoint moves too.<div class="autopermalink" data-description="Paragraph"><a href="#par-midpoint-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Midpoint (Log Tables p. 18)"><a href="#par-midpoint" title="Copy heading and permalink for Paragraphs: Midpoint (Log Tables p. 18)" aria-label="Copy heading and permalink for Paragraphs: Midpoint (Log Tables p. 18)">🔗</a></div></section><section class="paragraphs" id="par-three-formulas-compared"><h3 class="heading"><span class="title">Slope, Distance, Midpoint — Compared.</span></h3>
+<figure class="table table-like" id="table-formulas-compared"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.25<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Comparing the Three Key Formulae<div class="autopermalink" data-description="Table 3.1.25: Comparing the Three Key Formulae"><a href="#table-formulas-compared" title="Copy heading and permalink for Table 3.1.25: Comparing the Three Key Formulae" aria-label="Copy heading and permalink for Table 3.1.25: Comparing the Three Key Formulae">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b2 r0 l0 t0 lines">Formula</th>
+<th scope="col" class="c m b2 r0 l0 t0 lines">Operation</th>
+<th scope="col" class="c m b2 r0 l0 t0 lines">Comparison Type</th>
+<th scope="col" class="c m b2 r0 l0 t0 lines">Commutative?</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Slope</td>
+<td class="c m b0 r0 l0 t0 lines">Subtraction (ratio)</td>
+<td class="c m b0 r0 l0 t0 lines">Relative</td>
+<td class="c m b0 r0 l0 t0 lines">Yes (sign cancels)</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Distance</td>
+<td class="c m b0 r0 l0 t0 lines">Subtraction (squared)</td>
+<td class="c m b0 r0 l0 t0 lines">Relative</td>
+<td class="c m b0 r0 l0 t0 lines">Yes (squaring removes sign)</td>
+</tr>
+<tr>
+<td class="c m b1 r0 l0 t0 lines">Midpoint</td>
+<td class="c m b1 r0 l0 t0 lines">Addition (mean)</td>
+<td class="c m b1 r0 l0 t0 lines">Absolute</td>
+<td class="c m b1 r0 l0 t0 lines">Yes (addition is commutative)</td>
+</tr>
+</table></div></figure><div class="autopermalink" data-description="Paragraphs: Slope, Distance, Midpoint — Compared"><a href="#par-three-formulas-compared" title="Copy heading and permalink for Paragraphs: Slope, Distance, Midpoint — Compared" aria-label="Copy heading and permalink for Paragraphs: Slope, Distance, Midpoint — Compared">🔗</a></div></section><section class="paragraphs" id="par-equation-of-line"><h3 class="heading"><span class="title">Equation of a Line (Log Tables p. 18).</span></h3>
+<div class="para" id="par-equation-of-line-2">Now we connect slope to the equation of a line. Start with the slope formula, but replace the second point <span class="process-math">\((x_2, y_2)\)</span> with the variable point <span class="process-math">\((x, y)\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#par-equation-of-line-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="par-equation-of-line-3">
+\begin{equation*}
+m = \frac{y - y_1}{x - x_1}
+\end{equation*}
+</div>
+<div class="para" id="par-equation-of-line-4">Multiply both sides by <span class="process-math">\((x - x_1)\)</span> and we get:<div class="autopermalink" data-description="Paragraph"><a href="#par-equation-of-line-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="par-equation-of-line-5">
+\begin{equation*}
+y - y_1 = m(x - x_1)
+\end{equation*}
+</div>
+<div class="para" id="par-equation-of-line-6">This is the <dfn class="terminology">point-slope formula</dfn>. It is not named on the log tables, but it is the first equation given under “equation of <span class="process-math">\(PQ\)</span>”. It says: if you know <em class="emphasis">one fixed point</em> and the <em class="emphasis">slope</em>, you can write the equation of the line.<div class="autopermalink" data-description="Paragraph"><a href="#par-equation-of-line-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="par-equation-of-line-7">The second equation on the log tables is:<div class="autopermalink" data-description="Paragraph"><a href="#par-equation-of-line-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="par-equation-of-line-8">
+\begin{equation*}
+y = mx + c
+\end{equation*}
+</div>
+<div class="para" id="par-equation-of-line-9">This is the <dfn class="terminology">slope-intercept formula</dfn> (or better: <em class="emphasis">intercept-slope</em>, because that is the order you see it). Here <span class="process-math">\(c\)</span> is the <span class="process-math">\(y\)</span>-intercept — where the line crosses the <span class="process-math">\(y\)</span>-axis. You get this form by expanding the point-slope formula and collecting terms.<div class="autopermalink" data-description="Paragraph"><a href="#par-equation-of-line-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Equation of a Line (Log Tables p. 18)"><a href="#par-equation-of-line" title="Copy heading and permalink for Paragraphs: Equation of a Line (Log Tables p. 18)" aria-label="Copy heading and permalink for Paragraphs: Equation of a Line (Log Tables p. 18)">🔗</a></div></section><article class="example example-like" id="ex-equation-of-line"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.26</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding the Equation of a Line.</span>
+</h3>
+<div class="para" id="ex-equation-of-line-2-1">Find the equation of the line through <span class="process-math">\((2, 5)\)</span> with slope <span class="process-math">\(3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-equation-of-line-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-equation-of-line-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-equation-of-line-3-1">Using the point-slope formula with <span class="process-math">\((x_1, y_1) = (2, 5)\)</span> and <span class="process-math">\(m = 3\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-equation-of-line-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="ex-equation-of-line-3-2">
+\begin{align*}
+y - 5 &amp;= 3(x - 2)\\
+y - 5 &amp;= 3x - 6\\
+y &amp;= 3x - 1
+\end{align*}
+</div>
+<div class="para" id="ex-equation-of-line-3-3">In slope-intercept form: <span class="process-math">\(y = 3x - 1\text{,}\)</span> so the <span class="process-math">\(y\)</span>-intercept is <span class="process-math">\(c = -1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-equation-of-line-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.1.26.1"><a href="#ex-equation-of-line-3" title="Copy heading and permalink for Solution 3.1.26.1" aria-label="Copy heading and permalink for Solution 3.1.26.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.1.26: Finding the Equation of a Line"><a href="#ex-equation-of-line" title="Copy heading and permalink for Example 3.1.26: Finding the Equation of a Line" aria-label="Copy heading and permalink for Example 3.1.26: Finding the Equation of a Line">🔗</a></div></article><section class="paragraphs" id="par-area-triangle"><h3 class="heading"><span class="title">Area of Triangle <span class="process-math">\(OPQ\)</span> (Log Tables p. 18).</span></h3>
+<div class="para" id="par-area-triangle-2">The area of a triangle with one vertex at the origin <span class="process-math">\(O\)</span> and the other two at <span class="process-math">\(P(x_1, y_1)\)</span> and <span class="process-math">\(Q(x_2, y_2)\)</span> is:<div class="autopermalink" data-description="Paragraph"><a href="#par-area-triangle-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="par-area-triangle-3">
+\begin{equation*}
+\text{Area} = \frac{1}{2}|x_1 y_2 - x_2 y_1|
+\end{equation*}
+</div>
+<div class="para" id="par-area-triangle-4">Think of it this way: <span class="process-math">\(x_1 y_2\)</span> and <span class="process-math">\(x_2 y_1\)</span> are the areas of two rectangles — one built from the coordinates of <span class="process-math">\(P\)</span> stretched to <span class="process-math">\(Q\text{,}\)</span> and the other from <span class="process-math">\(Q\)</span> stretched to <span class="process-math">\(P\text{.}\)</span> The difference gives twice the area of the triangle. The <span class="process-math">\(\frac{1}{2}\)</span> is there because a triangle is half a parallelogram.<div class="autopermalink" data-description="Paragraph"><a href="#par-area-triangle-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Area of Triangle OPQ (Log Tables p. 18)"><a href="#par-area-triangle" title="Copy heading and permalink for Paragraphs: Area of Triangle OPQ (Log Tables p. 18)" aria-label="Copy heading and permalink for Paragraphs: Area of Triangle OPQ (Log Tables p. 18)">🔗</a></div></section><section class="paragraphs" id="par-hl-warning-line"><h3 class="heading"><span class="title">What to Ignore (HL Content).</span></h3>
+<div class="para" id="par-hl-warning-line-2">
+<em class="alert">The following formulae from the log tables (p. 19) are Higher Level only. They are NOT on the Ordinary Level course.</em><div class="autopermalink" data-description="Paragraph"><a href="#par-hl-warning-line-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="par-hl-warning-line-3">Cross these out on your log tables so you are not tempted to use them:<div class="autopermalink" data-description="Paragraph"><a href="#par-hl-warning-line-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="par-hl-warning-line-4">
+<em class="emphasis">Perpendicular distance</em> from a point to a line: <span class="process-math">\(\dfrac{|ax_1 + by_1 + c|}{\sqrt{a^2 + b^2}}\)</span> — <em class="alert">HL only</em>.<div class="autopermalink" data-description="Paragraph"><a href="#par-hl-warning-line-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="par-hl-warning-line-5">
+<em class="emphasis">Angle between two lines</em>: <span class="process-math">\(\tan\theta = \pm\dfrac{m_1 - m_2}{1 + m_1 m_2}\)</span> — <em class="alert">HL only</em>.<div class="autopermalink" data-description="Paragraph"><a href="#par-hl-warning-line-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="par-hl-warning-line-6">
+<em class="emphasis">Point dividing <span class="process-math">\([PQ]\)</span> in ratio <span class="process-math">\(a:b\)</span></em> (bottom of p. 18) — <em class="alert">HL only</em>.<div class="autopermalink" data-description="Paragraph"><a href="#par-hl-warning-line-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="par-hl-warning-line-7">A common mistake in OL exam scripts is to attempt these formulae. If you see them, ignore them. They are not on your course and using them incorrectly will cost you marks.<div class="autopermalink" data-description="Paragraph"><a href="#par-hl-warning-line-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: What to Ignore (HL Content)"><a href="#par-hl-warning-line" title="Copy heading and permalink for Paragraphs: What to Ignore (HL Content)" aria-label="Copy heading and permalink for Paragraphs: What to Ignore (HL Content)">🔗</a></div></section><details id="ex-line-slope-practice" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.27</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Slope Practice.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-line-slope-practice-2-1">Find the slope of line <span class="process-math">\(AB\)</span> where <span class="process-math">\(A(-1, 4)\)</span> and <span class="process-math">\(B(3, -2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-line-slope-practice-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-line-slope-practice-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="ex-line-slope-practice-3-1">Let <span class="process-math">\(B\)</span> be on the right since <span class="process-math">\(3 &gt; -1\text{.}\)</span> What is the rise? What is the run?<div class="autopermalink" data-description="Paragraph"><a href="#ex-line-slope-practice-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 3.1.27.1"><a href="#ex-line-slope-practice-3" title="Copy heading and permalink for Hint 3.1.27.1" aria-label="Copy heading and permalink for Hint 3.1.27.1">🔗</a></div>
+</div></details><details id="ex-line-slope-practice-4" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="ex-line-slope-practice-4-1">
+<span class="process-math">\(m = -\frac{3}{2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-line-slope-practice-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.1.27.1"><a href="#ex-line-slope-practice-4" title="Copy heading and permalink for Answer 3.1.27.1" aria-label="Copy heading and permalink for Answer 3.1.27.1">🔗</a></div>
+</div></details><details id="ex-line-slope-practice-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-line-slope-practice-5-1">With <span class="process-math">\(B\)</span> on the right:<div class="autopermalink" data-description="Paragraph"><a href="#ex-line-slope-practice-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="ex-line-slope-practice-5-2">
+\begin{align*}
+m &amp;= \frac{-2 - 4}{3 - (-1)}\\
+&amp;= \frac{-6}{4} = -\frac{3}{2}
+\end{align*}
+</div>
+<div class="para" id="ex-line-slope-practice-5-3">The rise is <span class="process-math">\(-6\)</span> (going down) and the run is <span class="process-math">\(4\)</span> (going right). The line is decreasing.<div class="autopermalink" data-description="Paragraph"><a href="#ex-line-slope-practice-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.1.27.1"><a href="#ex-line-slope-practice-5" title="Copy heading and permalink for Solution 3.1.27.1" aria-label="Copy heading and permalink for Solution 3.1.27.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 3.1.27: Slope Practice"><a href="#ex-line-slope-practice" title="Copy heading and permalink for Checkpoint 3.1.27: Slope Practice" aria-label="Copy heading and permalink for Checkpoint 3.1.27: Slope Practice">🔗</a></div></article></details><details id="ex-line-distance-practice" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.28</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Distance Practice.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-line-distance-practice-2-1">Find <span class="process-math">\(|AB|\)</span> where <span class="process-math">\(A(-1, 4)\)</span> and <span class="process-math">\(B(3, -2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-line-distance-practice-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-line-distance-practice-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="ex-line-distance-practice-3-1">
+<span class="process-math">\(|AB| = 2\sqrt{13}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-line-distance-practice-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.1.28.1"><a href="#ex-line-distance-practice-3" title="Copy heading and permalink for Answer 3.1.28.1" aria-label="Copy heading and permalink for Answer 3.1.28.1">🔗</a></div>
+</div></details><details id="ex-line-distance-practice-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="displaymath process-math" id="ex-line-distance-practice-4-1">
+\begin{align*}
+|AB| &amp;= \sqrt{(3-(-1))^2 + (-2-4)^2}\\
+&amp;= \sqrt{16 + 36}\\
+&amp;= \sqrt{52} = 2\sqrt{13}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Solution 3.1.28.1"><a href="#ex-line-distance-practice-4" title="Copy heading and permalink for Solution 3.1.28.1" aria-label="Copy heading and permalink for Solution 3.1.28.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 3.1.28: Distance Practice"><a href="#ex-line-distance-practice" title="Copy heading and permalink for Checkpoint 3.1.28: Distance Practice" aria-label="Copy heading and permalink for Checkpoint 3.1.28: Distance Practice">🔗</a></div></article></details><details id="ex-line-midpoint-practice" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.29</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Midpoint Practice.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-line-midpoint-practice-2-1">Find the midpoint of <span class="process-math">\([AB]\)</span> where <span class="process-math">\(A(-1, 4)\)</span> and <span class="process-math">\(B(3, -2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-line-midpoint-practice-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-line-midpoint-practice-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="ex-line-midpoint-practice-3-1">
+<span class="process-math">\((1, 1)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-line-midpoint-practice-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.1.29.1"><a href="#ex-line-midpoint-practice-3" title="Copy heading and permalink for Answer 3.1.29.1" aria-label="Copy heading and permalink for Answer 3.1.29.1">🔗</a></div>
+</div></details><details id="ex-line-midpoint-practice-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="displaymath process-math" id="ex-line-midpoint-practice-4-1">
+\begin{align*}
+\text{Midpoint} &amp;= \left(\frac{-1+3}{2},\; \frac{4+(-2)}{2}\right)\\
+&amp;= \left(\frac{2}{2},\; \frac{2}{2}\right) = (1, 1)
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Solution 3.1.29.1"><a href="#ex-line-midpoint-practice-4" title="Copy heading and permalink for Solution 3.1.29.1" aria-label="Copy heading and permalink for Solution 3.1.29.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 3.1.29: Midpoint Practice"><a href="#ex-line-midpoint-practice" title="Copy heading and permalink for Checkpoint 3.1.29: Midpoint Practice" aria-label="Copy heading and permalink for Checkpoint 3.1.29: Midpoint Practice">🔗</a></div></article></details><details id="ex-line-equation-practice" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.30</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Equation of a Line.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-line-equation-practice-2-1">Find the equation of line <span class="process-math">\(AB\)</span> where <span class="process-math">\(A(-1, 4)\)</span> and <span class="process-math">\(B(3, -2)\text{.}\)</span> Give your answer in the form <span class="process-math">\(y = mx + c\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-line-equation-practice-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-line-equation-practice-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="ex-line-equation-practice-3-1">You already found the slope in a previous exercise. Now use the point-slope formula with either point.<div class="autopermalink" data-description="Paragraph"><a href="#ex-line-equation-practice-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 3.1.30.1"><a href="#ex-line-equation-practice-3" title="Copy heading and permalink for Hint 3.1.30.1" aria-label="Copy heading and permalink for Hint 3.1.30.1">🔗</a></div>
+</div></details><details id="ex-line-equation-practice-4" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="ex-line-equation-practice-4-1">
+<span class="process-math">\(y = -\frac{3}{2}x + \frac{5}{2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-line-equation-practice-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.1.30.1"><a href="#ex-line-equation-practice-4" title="Copy heading and permalink for Answer 3.1.30.1" aria-label="Copy heading and permalink for Answer 3.1.30.1">🔗</a></div>
+</div></details><details id="ex-line-equation-practice-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-line-equation-practice-5-1">Using the point-slope formula with <span class="process-math">\(A(-1, 4)\)</span> and <span class="process-math">\(m = -\frac{3}{2}\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-line-equation-practice-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="ex-line-equation-practice-5-2">
+\begin{align*}
+y - 4 &amp;= -\frac{3}{2}(x - (-1))\\
+y - 4 &amp;= -\frac{3}{2}(x + 1)\\
+y - 4 &amp;= -\frac{3}{2}x - \frac{3}{2}\\
+y &amp;= -\frac{3}{2}x + \frac{5}{2}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Solution 3.1.30.1"><a href="#ex-line-equation-practice-5" title="Copy heading and permalink for Solution 3.1.30.1" aria-label="Copy heading and permalink for Solution 3.1.30.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 3.1.30: Equation of a Line"><a href="#ex-line-equation-practice" title="Copy heading and permalink for Checkpoint 3.1.30: Equation of a Line" aria-label="Copy heading and permalink for Checkpoint 3.1.30: Equation of a Line">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 3.1: The Line"><a href="#subsec-the-line" title="Copy heading and permalink for Subsection 3.1: The Line" aria-label="Copy heading and permalink for Subsection 3.1: The Line">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="ch-coordinate-geometry.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-number.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
