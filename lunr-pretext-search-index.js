@@ -1157,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-definition.html#def-circle",
   "type": "Definition",
-  "number": "1.2.1",
+  "number": "1.2.2",
   "title": "Circle (Appendix B, Definition 40).",
   "body": " Circle (Appendix B, Definition 40)   A circle is the set of all points in a plane that are at a given distance (its radius ) from a fixed point (its centre ).   "
 },
@@ -1184,7 +1184,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-parts.html#def-circle-parts",
   "type": "Definition",
-  "number": "1.3.2",
+  "number": "1.3.3",
   "title": "Circle Terminology.",
   "body": " Circle Terminology   Let be a circle with centre and radius .  A radius (plural: radii ) is any line segment joining the centre to a point on the circle. Its length is .  A chord is a line segment joining any two points on the circle.  A diameter is a chord that passes through the centre. Every diameter has length . This number is also called the diameter of the circle.  Two points and on a circle divide it into two pieces called arcs . A semicircle is an arc whose endpoints are the endpoints of a diameter.  A sector is the region enclosed by an arc and the two radii to its endpoints (like a \"slice of pizza\").  The disc is the region inside the circle. Its area is .  The circumference is the total length around the circle: .   "
 },
@@ -1193,7 +1193,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-parts.html#def-tangent",
   "type": "Definition",
-  "number": "1.3.3",
+  "number": "1.3.4",
   "title": "Tangent to a Circle (Appendix B, Definition 42).",
   "body": " Tangent to a Circle (Appendix B, Definition 42)   A line is called a tangent to a circle when meets in exactly one point. That point is called the point of contact .   "
 },
@@ -1202,7 +1202,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-parts.html#thm-tangent-perpendicular",
   "type": "Theorem",
-  "number": "1.3.4",
+  "number": "1.3.5",
   "title": "Tangent–Radius Theorem (Appendix B, Theorem 20).",
   "body": " Tangent–Radius Theorem (Appendix B, Theorem 20)   Each tangent is perpendicular to the radius drawn to the point of contact.  Conversely, if lies on a circle and a line through is perpendicular to the radius at , then that line is a tangent.   "
 },
@@ -1220,7 +1220,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-theorems.html#thm-angle-at-centre",
   "type": "Theorem",
-  "number": "1.4.5",
+  "number": "1.4.6",
   "title": "Theorem 19 — Angle at the Centre.",
   "body": " Theorem 19 — Angle at the Centre   The angle at the centre of a circle standing on a given arc is twice the angle at any point of the circle standing on the same arc.   "
 },
@@ -1229,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-theorems.html#cor-angles-same-arc",
   "type": "Corollary",
-  "number": "1.4.6",
+  "number": "1.4.7",
   "title": "Corollary 2 — Angles on the Same Arc.",
   "body": " Corollary 2 — Angles on the Same Arc   All angles at points of the circle, standing on the same arc, are equal.   "
 },
@@ -1238,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-theorems.html#cor-angle-semicircle",
   "type": "Corollary",
-  "number": "1.4.7",
+  "number": "1.4.8",
   "title": "Corollary 3 — Angle in a Semicircle.",
   "body": " Corollary 3 — Angle in a Semicircle   Each angle in a semicircle is a right angle. That is, if is a diameter of a circle and is any other point of the circle, then .   "
 },
@@ -1247,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-theorems.html#cor-right-angle-diameter",
   "type": "Corollary",
-  "number": "1.4.8",
+  "number": "1.4.9",
   "title": "Corollary 4.",
   "body": " Corollary 4   If the angle standing on a chord at some point of the circle is a right angle, then is a diameter.   "
 },
@@ -1265,7 +1265,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-equation.html#remark-read-equation",
   "type": "Remark",
-  "number": "1.5.9",
+  "number": "1.5.10",
   "title": "Reading an Equation.",
   "body": " Reading an Equation  Given an equation like , you can immediately identify the centre as and the radius as . Watch the signs carefully: means .  "
 },
@@ -1283,7 +1283,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-worked-examples.html#ex-circle-write-equation",
   "type": "Example",
-  "number": "1.6.10",
+  "number": "1.6.11",
   "title": "Writing the Equation of a Circle.",
   "body": " Writing the Equation of a Circle   The circle has centre and radius 4. Write down the equation of . (LC 2016, Paper 2, Q3)      Step 1 — Understand: We are given the centre and radius . We need the equation.   Step 2 — Plan: Substitute into .   Step 3 — Carry out:      Step 4 — Look back: Check: the centre should satisfy . The centre is not on the circle — correct, it is inside. A point on the circle, say , gives . ✓   "
 },
@@ -1292,7 +1292,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-worked-examples.html#ex-circle-read-equation",
   "type": "Example",
-  "number": "1.6.11",
+  "number": "1.6.12",
   "title": "Reading Centre and Radius from an Equation.",
   "body": " Reading Centre and Radius from an Equation   The circle has equation .  (i) Write down the centre and radius of .  (ii) Show that the point is on the circle .  (iii) Write down the coordinates of two other points on . (LC 2023, Paper 2, Q2)      (i)  Identify that matches .  Centre: . Radius: .   (ii)  Substitute  into the left-hand side: Since this equals , the point is on the circle. ✓   (iii) We need two points with and . Recall the Pythagorean triple :  Two other points: and .   Look back: Check: ✓ and ✓.   "
 },
@@ -1301,7 +1301,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-worked-examples.html#ex-circle-point-outside",
   "type": "Example",
-  "number": "1.6.12",
+  "number": "1.6.13",
   "title": "Verifying a Point is Outside a Circle.",
   "body": " Verifying a Point is Outside a Circle   The circle has equation . Verify , using algebra, that the point is outside . (LC 2016, Paper 2, Q3)      Understand: A point is on the circle if the LHS equals , inside if the LHS is less than , and outside if the LHS is greater than .   Carry out: Substitute : Since , the point is outside the circle. ✓   Look back: The distance from the centre to is , which is greater than the radius 4. This confirms the point is outside.   "
 },
@@ -1310,7 +1310,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-worked-examples.html#ex-circle-diameter-centre",
   "type": "Example",
-  "number": "1.6.13",
+  "number": "1.6.14",
   "title": "Finding Centre from Diameter Endpoints.",
   "body": " Finding Centre from Diameter Endpoints   The points and are the endpoints of a diameter of the circle .  (a) Find the centre of .  (b) Find the radius. Give your answer in the form .  (c) Write down the equation of .  (d) Find the equation of the tangent to at . (LC 2018, Paper 2, Q4)      (a) Centre — use the midpoint formula:       (b) Radius — distance from centre to :       (c) Equation:       (d) Tangent at :    Recall Theorem 20: the tangent is perpendicular to the radius at the point of contact.  Slope of radius (from centre to ):   Since the tangent is perpendicular: (the negative reciprocal).  Equation of tangent through with slope 1:     Look back: Check satisfies it: . ✓   "
 },
@@ -1319,7 +1319,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-worked-examples.html#ex-circle-semicircle-area",
   "type": "Example",
-  "number": "1.6.14",
+  "number": "1.6.15",
   "title": "Semicircle — Right Angle and Area.",
   "body": " Semicircle — Right Angle and Area   The circle has centre and radius 5. The point , where , is on the semicircle above the -axis. The points and are the endpoints of a diameter.  (i) Find the value of .  (ii) Show that triangle is right-angled at .  (iii) Find the area of the region inside the semicircle but outside triangle . (LC 2017, Paper 2, Q2)      (i) Since is on : (taking ).   (ii)  Method 1 (using Corollary 3): is a diameter, so by Corollary 3, the angle at in the semicircle is . ✓   Method 2 (using slopes):  Since the product of slopes is , . ✓   (iii)        "
 },
@@ -1328,7 +1328,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-worked-examples.html#ex-circle-inscribed-square",
   "type": "Example",
-  "number": "1.6.15",
+  "number": "1.6.16",
   "title": "Circle Inscribed in a Square.",
   "body": " Circle Inscribed in a Square   A square has sides of length 12 cm. The circle is inscribed in the square (it touches all four sides). The circle is circumscribed about the square (it passes through all four corners).  (a) Find the radius of circle .  (b) Calculate the area of circle , correct to 2 decimal places.  (c) What percentage of the square's area is taken up by circle ?  (d) Show that the radius of circle is cm, correct to 2 decimal places.  (e) Calculate the circumference of circle , correct to 2 decimal places. (LC 2023, Paper 2, Q5)      (a) The inscribed circle touches each side of the square, so its diameter equals the side length. Radius cm.   (b)     (c) Area of square cm .    (d) The circumscribed circle passes through the corners. The diameter of is the diagonal of the square. By Pythagoras:     (e)     "
 },
@@ -1337,7 +1337,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-worked-examples.html#ex-circle-find-radius",
   "type": "Example",
-  "number": "1.6.16",
+  "number": "1.6.17",
   "title": "Finding the Radius and Identifying Points.",
   "body": " Finding the Radius and Identifying Points   The circle has centre . The point is on .  (i) Find the radius of .  (ii) Write down the coordinates of two other integer points on . (LC 2025, Paper 2, Q3)      (i)     (ii) The equation is . We need integer points. Recall the Pythagorean triple and note that also works.  Moving from the centre by shifts of , , or , :  Two points: — check: ✓  and — check: ✓   "
 },
@@ -1346,7 +1346,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-worked-examples.html#ex-circle-match-equations",
   "type": "Example",
-  "number": "1.6.17",
+  "number": "1.6.18",
   "title": "Matching Circles to Their Equations.",
   "body": " Matching Circles to Their Equations   Three circles , , and are shown on a coordinate diagram. Match each to its equation:   , , . (LC 2025, Paper 2, Q3)      Identify the centre and radius of each equation:   : centre , radius .   : centre , radius .   : centre , radius .  Match these to the circles on the diagram using their positions and sizes. The large circle at the origin is (radius 3), the small circle at the origin is (radius 1), and the circle at is (radius 2).   "
 },
@@ -1364,7 +1364,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-progress-check.html#pc-circle-1",
   "type": "Checkpoint",
-  "number": "1.7.18",
+  "number": "1.7.19",
   "title": "",
   "body": "  A circle has centre and passes through . Find the radius and write the equation.     . Equation: .   "
 },
@@ -1373,7 +1373,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-progress-check.html#pc-circle-2",
   "type": "Checkpoint",
-  "number": "1.7.19",
+  "number": "1.7.20",
   "title": "",
   "body": "  Is the point on the circle ? Give a reason.     . No, the point is inside the circle (since ).   "
 },
@@ -1382,7 +1382,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-progress-check.html#pc-circle-3",
   "type": "Checkpoint",
-  "number": "1.7.20",
+  "number": "1.7.21",
   "title": "",
   "body": "  A circle has centre and radius 2. Write down its equation, then find the centre and radius of its image under central symmetry through the origin.    Equation: . Under central symmetry in , the centre maps to and the radius stays the same: .   "
 },
@@ -1409,7 +1409,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-exercises.html#ex-c-core-1",
   "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "number": "[STRUCT].21",
   "title": "",
   "body": "   Write down the equation of the circle with:  (a) centre , radius  (b) centre , radius  (c) centre , radius    (a)  (b)  (c)   "
 },
@@ -1418,7 +1418,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-exercises.html#ex-c-core-2",
   "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "number": "[STRUCT].21",
   "title": "",
   "body": "  For each equation, identify the centre and radius of the circle.  (a)  (b)  (c)    (a) Centre , radius  (b) Centre , radius  (c) Centre , radius   "
 },
@@ -1427,7 +1427,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-exercises.html#ex-c-core-3",
   "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "number": "[STRUCT].21",
   "title": "",
   "body": "  A circle has radius 8 cm. Calculate its circumference and the area of the enclosed disc, each correct to 2 decimal places.     cm. cm .   "
 },
@@ -1436,7 +1436,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-exercises.html#ex-c-core-4",
   "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "number": "[STRUCT].21",
   "title": "",
   "body": "   Determine whether each point is on, inside, or outside the circle :  (a)  (b)  (c)    (a) : on the circle  (b) : inside  (c) : outside   "
 },
@@ -1445,7 +1445,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-exercises.html#ex-c-std-1",
   "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "number": "[STRUCT].21",
   "title": "",
   "body": "  The points and are the endpoints of a diameter of circle .  (a) Find the centre of .  (b) Find the radius of .  (c) Write the equation of .    (a) Centre  (b)  (c)   "
 },
@@ -1454,7 +1454,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-exercises.html#ex-c-std-2",
   "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "number": "[STRUCT].21",
   "title": "",
   "body": "  The circle has centre and radius 5. The point , , is on .  (a) Find the value of .  (b) and are on . Show that .  (c) Find the area inside the semicircle but outside .    (a)  (b) is a diameter, so by Corollary 3, . Or use slopes: , , product .  (c) sq. units   "
 },
@@ -1463,7 +1463,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-exercises.html#ex-c-std-3",
   "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "number": "[STRUCT].21",
   "title": "",
   "body": "  The circle has centre and passes through . Find the equation of the tangent to at . Give your answer in the form .    Slope of radius: . Tangent slope: . .   "
 },
@@ -1472,7 +1472,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-exercises.html#ex-c-std-4",
   "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "number": "[STRUCT].21",
   "title": "",
   "body": "  Two wheels are in non-slip contact. Wheel has radius 4 cm and wheel has radius 6 cm.  (a) Find the circumference of each wheel in terms of .  (b) If wheel makes 100 complete rotations, how many complete rotations does wheel make?    (a) cm, cm  (b) rotations   "
 },
@@ -1481,7 +1481,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-exercises.html#ex-c-chal-1",
   "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "number": "[STRUCT].21",
   "title": "",
   "body": "  The circle has centre on the -axis and passes through both and .  (a) Find the centre and equation of .  (b) A square is drawn so that and are on the -axis and , , , are all tangent to . Find the area of .    The centre is the midpoint of . The radius equals the distance from the centre to either point.    (a) Centre , . Equation: .  (b) The tangent square has side . Area .   "
 },
@@ -1490,7 +1490,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-exercises.html#ex-c-chal-2",
   "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "number": "[STRUCT].21",
   "title": "",
   "body": "  Two circles and both have their centres on the -axis. has centre and passes through . has as a diameter.  (a) Find the equation of .  (b) Find the equation of .  (c) cuts the -axis at a point . Find the coordinates of .    (a) . Equation: .  (b) Centre of , . Equation: .  (c) Set : or . Since , the other intersection is .   "
 },
@@ -1526,7 +1526,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-the-line.html#table-geo-notation",
   "type": "Table",
-  "number": "3.1.21",
+  "number": "3.1.22",
   "title": "Geometry Notation",
   "body": " Geometry Notation    Symbol  Meaning     The line through and     The line segment from to     The distance from to     The vector from to    "
 },
@@ -1580,7 +1580,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-the-line.html#table-slope-sign",
   "type": "Table",
-  "number": "3.1.22",
+  "number": "3.1.23",
   "title": "Slope and Direction",
   "body": " Slope and Direction    Rise  Run  Slope  Line    Positive  Positive  Positive  Increasing (goes uphill left to right)    Negative  Positive  Negative  Decreasing (goes downhill left to right)    Zero  Positive  Zero  Horizontal    Any  Zero  Undefined  Vertical    "
 },
@@ -1589,7 +1589,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-the-line.html#ex-slope-calc",
   "type": "Example",
-  "number": "3.1.23",
+  "number": "3.1.24",
   "title": "Calculating Slope.",
   "body": " Calculating Slope   Find the slope of line where and .    With on the right ( ):   The rise is (positive — going up), the run is (positive — going right). The line is increasing.   "
 },
@@ -1598,7 +1598,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-the-line.html#ex-distance-calc",
   "type": "Example",
-  "number": "3.1.24",
+  "number": "3.1.25",
   "title": "Calculating Distance.",
   "body": " Calculating Distance   Find where and .      "
 },
@@ -1616,7 +1616,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-the-line.html#table-formulas-compared",
   "type": "Table",
-  "number": "3.1.25",
+  "number": "3.1.26",
   "title": "Comparing the Three Key Formulae",
   "body": " Comparing the Three Key Formulae    Formula  Operation  Comparison Type  Commutative?    Slope  Subtraction (ratio)  Relative  Yes (sign cancels)    Distance  Subtraction (squared)  Relative  Yes (squaring removes sign)    Midpoint  Addition (mean)  Absolute  Yes (addition is commutative)    "
 },
@@ -1643,7 +1643,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-the-line.html#ex-equation-of-line",
   "type": "Example",
-  "number": "3.1.26",
+  "number": "3.1.27",
   "title": "Finding the Equation of a Line.",
   "body": " Finding the Equation of a Line   Find the equation of the line through with slope .    Using the point-slope formula with and :   In slope-intercept form: , so the -intercept is .   "
 },
@@ -1652,7 +1652,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-the-line.html#ex-line-slope-practice",
   "type": "Checkpoint",
-  "number": "3.1.27",
+  "number": "3.1.28",
   "title": "Slope Practice.",
   "body": " Slope Practice   Find the slope of line where and .    Let be on the right since . What is the rise? What is the run?       With on the right:   The rise is (going down) and the run is (going right). The line is decreasing.   "
 },
@@ -1661,7 +1661,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-the-line.html#ex-line-distance-practice",
   "type": "Checkpoint",
-  "number": "3.1.28",
+  "number": "3.1.29",
   "title": "Distance Practice.",
   "body": " Distance Practice   Find where and .         "
 },
@@ -1670,7 +1670,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-the-line.html#ex-line-midpoint-practice",
   "type": "Checkpoint",
-  "number": "3.1.29",
+  "number": "3.1.30",
   "title": "Midpoint Practice.",
   "body": " Midpoint Practice   Find the midpoint of where and .         "
 },
@@ -1679,7 +1679,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-the-line.html#ex-line-equation-practice",
   "type": "Checkpoint",
-  "number": "3.1.30",
+  "number": "3.1.31",
   "title": "Equation of a Line.",
   "body": " Equation of a Line   Find the equation of line where and . Give your answer in the form .    You already found the slope in a previous exercise. Now use the point-slope formula with either point.       Using the point-slope formula with and :    "
 },
