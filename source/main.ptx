@@ -11,7 +11,7 @@
   </docinfo>
 
   <book xml:id="lc-ol-maths">
-    <title>Leaving Certificate Mathematics</title>
+    <title>Mathematics: A Structured Journey for Junior and Leaving Certificate</title>
     <subtitle>Ordinary Level</subtitle>
 
     <frontmatter xml:id="frontmatter">
@@ -83,28 +83,34 @@
 
       <xi:include href="geometry/synthetic-geometry.ptx"/>
 
-
-      <section xml:id="sec-coordinate-geometry">
-        <title>Co-ordinate Geometry</title>
-        <introduction>
-          <p>Co-ordinate geometry connects algebra and geometry. We use
-          coordinates to describe points, and equations to describe lines and
-          circles. The formulae on pages 17–19 of your log tables are your
-          toolkit — but understanding the <em>properties</em> and
-          <em>anatomy</em> of each formula is what makes them powerful.</p>
-        </introduction>
-
-        <xi:include href="geometry/line.ptx"/>
-
-        <xi:include href="geometry/circle.ptx"/>
-      </section>
-
       <section xml:id="sec-trigonometry">
         <title>Trigonometry</title>
         <p>Content coming soon.</p>
       </section>
 
       <xi:include href="geometry/enlargements.ptx"/>
+
+    </chapter>
+
+    <!-- ============================== -->
+    <!-- THE CIRCLE (standalone chapter) -->
+    <!-- ============================== -->
+    <xi:include href="geometry/circle2.ptx"/>
+
+    <!-- ============================== -->
+    <!-- CO-ORDINATE GEOMETRY            -->
+    <!-- ============================== -->
+    <chapter xml:id="ch-coordinate-geometry">
+      <title>Co-ordinate Geometry</title>
+      <introduction>
+        <p>Co-ordinate geometry connects algebra and geometry. We use
+        coordinates to describe points, and equations to describe lines and
+        circles. The formulae on pages 17–19 of your log tables are your
+        toolkit — but understanding the <em>properties</em> and
+        <em>anatomy</em> of each formula is what makes them powerful.</p>
+      </introduction>
+
+      <xi:include href="geometry/line.ptx"/>
 
     </chapter>
 

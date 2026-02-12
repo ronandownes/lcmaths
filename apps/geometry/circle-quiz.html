@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Circle — Assessment as Learning | Mr Downes Maths</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  header {
+    background: #fff;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    border-left: 5px solid #2563eb;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+    color: #1e3a5f;
+    margin-bottom: 4px;
+  }
+
+  header p {
+    color: #555;
+    font-size: 0.95rem;
+  }
+
+  .score-bar {
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .score-bar .score-text {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1e3a5f;
+  }
+
+  .progress-track {
+    flex: 1;
+    min-width: 200px;
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: #2563eb;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+    width: 0%;
+  }
+
+  .btn-reset {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .btn-reset:hover { background: #1d4ed8; }
+
+  .question-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    transition: border-color 0.3s;
+    border: 2px solid transparent;
+  }
+
+  .question-card.correct { border-color: #16a34a; }
+  .question-card.incorrect { border-color: #dc2626; }
+
+  .q-number {
+    display: inline-block;
+    background: #eff6ff;
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+
+  .q-stem {
+    font-size: 1.05rem;
+    margin-bottom: 14px;
+    line-height: 1.7;
+  }
+
+  .q-stem .math {
+    font-family: 'Cambria Math', 'Times New Roman', serif;
+    font-style: italic;
+  }
+
+  .options {
+    display: grid;
+    gap: 8px;
+  }
+
+  .option-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 12px 16px;
+    background: #f9fafb;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 0.98rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+    line-height: 1.5;
+  }
+
+  .option-btn:hover:not(.locked) {
+    background: #eff6ff;
+    border-color: #93c5fd;
+  }
+
+  .option-btn.selected-correct {
+    background: #dcfce7;
+    border-color: #16a34a;
+    color: #15803d;
+    font-weight: 600;
+  }
+
+  .option-btn.selected-wrong {
+    background: #fee2e2;
+    border-color: #dc2626;
+    color: #991b1b;
+  }
+
+  .option-btn.reveal-correct {
+    background: #dcfce7;
+    border-color: #16a34a;
+    color: #15803d;
+  }
+
+  .option-btn.locked {
+    cursor: default;
+    opacity: 0.85;
+  }
+
+  .feedback {
+    margin-top: 12px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    display: none;
+    line-height: 1.6;
+  }
+
+  .feedback.show { display: block; }
+
+  .feedback.correct-fb {
+    background: #f0fdf4;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+  }
+
+  .feedback.incorrect-fb {
+    background: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+  }
+
+  .katex-like {
+    font-family: 'Cambria Math', 'Times New Roman', Georgia, serif;
+    font-style: italic;
+  }
+
+  sup { font-size: 0.75em; vertical-align: super; }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 600px) {
+    body { padding: 12px; }
+    header { padding: 20px; }
+    .question-card { padding: 18px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>The Circle — Assessment as Learning</h1>
+  <p>9 questions · Leaving Certificate Ordinary Level · Coordinate Geometry</p>
+</header>
+
+<div class="score-bar">
+  <span class="score-text" id="scoreDisplay">Score: 0 / 9</span>
+  <div class="progress-track">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+  <button class="btn-reset" onclick="resetQuiz()">Reset</button>
+</div>
+
+<div id="quizContainer"></div>
+
+<footer>
+  Mr Downes Maths · Learning Made as Simple as Possible · Prepared using Claude
+</footer>
+
+<script>
+const questions = [
+  {
+    id: 1,
+    stem: 'A circle has centre (0, 0) and radius 5. Which is its equation?',
+    options: [
+      '<span class="katex-like">x</span><sup>2</sup> + <span class="katex-like">y</span><sup>2</sup> = 5',
+      '<span class="katex-like">x</span><sup>2</sup> + <span class="katex-like">y</span><sup>2</sup> = 25',
+      '(<span class="katex-like">x</span> − 5)<sup>2</sup> + <span class="katex-like">y</span><sup>2</sup> = 25',
+      '<span class="katex-like">x</span><sup>2</sup> + <span class="katex-like">y</span><sup>2</sup> = 10'
+    ],
+    correct: 1,
+    explanation: 'The equation is <span class="katex-like">x</span><sup>2</sup> + <span class="katex-like">y</span><sup>2</sup> = <span class="katex-like">r</span><sup>2</sup> = 5<sup>2</sup> = 25. Remember: the right-hand side is the radius <em>squared</em>, not the radius itself.'
+  },
+  {
+    id: 2,
+    stem: 'The circle <span class="katex-like">c</span> has equation (<span class="katex-like">x</span> − 3)<sup>2</sup> + (<span class="katex-like">y</span> + 4)<sup>2</sup> = 49. What is its centre and radius?',
+    options: [
+      'Centre (3, 4), radius 7',
+      'Centre (3, −4), radius 49',
+      'Centre (3, −4), radius 7',
+      'Centre (−3, 4), radius 7'
+    ],
+    correct: 2,
+    explanation: 'Centre is (<span class="katex-like">h, k</span>) = (3, −4). Watch the signs: (<span class="katex-like">y</span> + 4) means <span class="katex-like">k</span> = −4. Radius = √49 = 7.'
+  },
+  {
+    id: 3,
+    stem: 'Is the point (3, 4) on, inside, or outside the circle <span class="katex-like">x</span><sup>2</sup> + <span class="katex-like">y</span><sup>2</sup> = 25?',
+    options: [
+      'Inside the circle',
+      'On the circle',
+      'Outside the circle',
+      'Cannot be determined'
+    ],
+    correct: 1,
+    explanation: 'Substitute: 3<sup>2</sup> + 4<sup>2</sup> = 9 + 16 = 25 = <span class="katex-like">r</span><sup>2</sup>. Since LHS = RHS, the point is <em>on</em> the circle. (Recall: the 3, 4, 5 Pythagorean triple!)'
+  },
+  {
+    id: 4,
+    stem: 'The points <span class="katex-like">A</span>(2, 6) and <span class="katex-like">B</span>(8, −2) are the endpoints of a diameter of a circle. What are the coordinates of the centre?',
+    options: [
+      '(5, 2)',
+      '(6, 4)',
+      '(3, 4)',
+      '(10, 4)'
+    ],
+    correct: 0,
+    explanation: 'The centre is the midpoint of the diameter: ((2+8)/2, (6+(−2))/2) = (5, 2). Always use the midpoint formula for diameter endpoints.'
+  },
+  {
+    id: 5,
+    stem: 'A circle has centre (−1, 3) and passes through (2, 7). What is the radius?',
+    options: [
+      '√7',
+      '√25 = 5',
+      '√13',
+      '25'
+    ],
+    correct: 1,
+    explanation: '<span class="katex-like">r</span> = √((2−(−1))<sup>2</sup> + (7−3)<sup>2</sup>) = √(9 + 16) = √25 = 5. Use the distance formula from centre to the known point.'
+  },
+  {
+    id: 6,
+    stem: '<span class="katex-like">BC</span> is a diameter of a circle and <span class="katex-like">A</span> is another point on the circle. What is ∠<span class="katex-like">BAC</span>?',
+    options: [
+      '45°',
+      '90°',
+      '180°',
+      'It depends on where A is'
+    ],
+    correct: 1,
+    explanation: 'By Corollary 3 (Angle in a Semicircle), the angle in a semicircle is always 90°. This is one of the most important circle theorems.'
+  },
+  {
+    id: 7,
+    stem: 'The tangent to a circle at a point <span class="katex-like">P</span> is related to the radius at <span class="katex-like">P</span> by being:',
+    options: [
+      'Parallel to it',
+      'Perpendicular to it',
+      'Equal in length to it',
+      'At 45° to it'
+    ],
+    correct: 1,
+    explanation: 'Theorem 20 states that each tangent is perpendicular to the radius at the point of contact. This is essential for finding tangent equations.'
+  },
+  {
+    id: 8,
+    stem: 'A circle has centre (5, 4) and passes through <span class="katex-like">A</span>(1, 8). The slope of the radius to <span class="katex-like">A</span> is −1. What is the slope of the tangent at <span class="katex-like">A</span>?',
+    options: [
+      '−1',
+      '1',
+      '0',
+      'Undefined'
+    ],
+    correct: 1,
+    explanation: 'Since the tangent is perpendicular to the radius, and the radius has slope −1, the tangent slope is the negative reciprocal: −1/(−1) = 1.'
+  },
+  {
+    id: 9,
+    stem: 'A circle is inscribed in a square with side length 12 cm (touching all four sides). What is the radius of the circle?',
+    options: [
+      '12 cm',
+      '6 cm',
+      '6√2 cm',
+      '3 cm'
+    ],
+    correct: 1,
+    explanation: 'When a circle is inscribed in a square, the diameter equals the side length. So the diameter is 12 cm, giving radius = 12 ÷ 2 = 6 cm.'
+  }
+];
+
+let score = 0;
+let answered = new Set();
+
+function renderQuiz() {
+  const container = document.getElementById('quizContainer');
+  container.innerHTML = '';
+
+  questions.forEach((q, idx) => {
+    const card = document.createElement('div');
+    card.className = 'question-card';
+    card.id = `card-${q.id}`;
+
+    let optionsHTML = q.options.map((opt, oi) =>
+      `<button class="option-btn" id="opt-${q.id}-${oi}" onclick="selectAnswer(${q.id}, ${oi})">${opt}</button>`
+    ).join('');
+
+    card.innerHTML = `
+      <span class="q-number">Question ${q.id} of 9</span>
+      <div class="q-stem">${q.stem}</div>
+      <div class="options">${optionsHTML}</div>
+      <div class="feedback" id="fb-${q.id}"></div>
+    `;
+
+    container.appendChild(card);
+  });
+}
+
+function selectAnswer(qId, selectedIdx) {
+  if (answered.has(qId)) return;
+  answered.add(qId);
+
+  const q = questions.find(x => x.id === qId);
+  const card = document.getElementById(`card-${qId}`);
+  const fb = document.getElementById(`fb-${qId}`);
+  const isCorrect = selectedIdx === q.correct;
+
+  // Lock all options
+  q.options.forEach((_, oi) => {
+    const btn = document.getElementById(`opt-${qId}-${oi}`);
+    btn.classList.add('locked');
+  });
+
+  // Style selected button
+  const selectedBtn = document.getElementById(`opt-${qId}-${selectedIdx}`);
+
+  if (isCorrect) {
+    selectedBtn.classList.add('selected-correct');
+    card.classList.add('correct');
+    fb.className = 'feedback correct-fb show';
+    fb.innerHTML = `✓ Correct! ${q.explanation}`;
+    score++;
+  } else {
+    selectedBtn.classList.add('selected-wrong');
+    card.classList.add('incorrect');
+    // Reveal the correct answer
+    const correctBtn = document.getElementById(`opt-${qId}-${q.correct}`);
+    correctBtn.classList.add('reveal-correct');
+    fb.className = 'feedback incorrect-fb show';
+    fb.innerHTML = `✗ Not quite. ${q.explanation}`;
+  }
+
+  updateScore();
+}
+
+function updateScore() {
+  document.getElementById('scoreDisplay').textContent = `Score: ${score} / 9`;
+  const pct = (answered.size / 9) * 100;
+  document.getElementById('progressFill').style.width = pct + '%';
+  if (score === answered.size && answered.size > 0) {
+    document.getElementById('progressFill').style.background = '#16a34a';
+  } else if (answered.size > 0) {
+    document.getElementById('progressFill').style.background = '#2563eb';
+  }
+}
+
+function resetQuiz() {
+  score = 0;
+  answered = new Set();
+  updateScore();
+  document.getElementById('progressFill').style.width = '0%';
+  document.getElementById('progressFill').style.background = '#2563eb';
+  renderQuiz();
+}
+
+renderQuiz();
+</script>
+</body>
+</html>

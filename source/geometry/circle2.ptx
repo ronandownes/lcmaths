@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ============================================================ -->
+<!--  The Circle — Leaving Certificate Mathematics (Ordinary Level) -->
+<!--  Strand 2: Geometry and Trigonometry — Co-ordinate Geometry    -->
+<!--  Mr Downes Maths · Learning Made as Simple as Possible        -->
+<!-- ============================================================ -->
+
+<section xml:id="sec-circle" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Circle</title>
+
+  <introduction>
+    <p>
+      In this section we study the circle — one of the most important shapes in all of mathematics.
+      You first met circles in primary school, where you learned to name their parts and calculate
+      their circumference and area. Here we take a deeper look: we define the circle precisely as a
+      <em>set of points</em>, explore its geometric properties, and learn how to work with circles
+      on the coordinate plane using algebra.
+    </p>
+
+    <p>
+      <alert>Focus Questions</alert>
+    </p>
+    <p>
+      As you work through this section, aim to answer each of the following:
+    </p>
+    <ol>
+      <li><p>What is the precise mathematical definition of a circle?</p></li>
+      <li><p>What are the key parts of a circle and how do they relate to one another?</p></li>
+      <li><p>How do we write the equation of a circle with centre <m>(h, k)</m> and radius <m>r</m>?</p></li>
+      <li><p>How can we determine whether a point lies on, inside, or outside a circle?</p></li>
+      <li><p>How do we find the equation of a tangent to a circle at a given point?</p></li>
+    </ol>
+  </introduction>
+
+
+  <!-- ======================================================== -->
+  <!-- SUBSECTION 1: What You Already Know                       -->
+  <!-- ======================================================== -->
+
+  <subsection xml:id="subsec-circle-prior">
+    <title>What You Already Know</title>
+
+    <p>
+      <em>Recall</em> from primary school that a circle is a perfectly round shape.
+      You learned to identify its <term>centre</term>, <term>radius</term>, and
+      <term>diameter</term>, and you used the formulas for circumference and area:
+    </p>
+
+    <assemblage xml:id="assemblage-circle-primary-formulas">
+      <title>Primary School Circle Formulas</title>
+      <p>
+        For a circle with radius <m>r</m> and diameter <m>d = 2r</m>:
+      </p>
+      <p>
+        <me>\text{Circumference} = \pi d = 2\pi r</me>
+      </p>
+      <p>
+        <me>\text{Area of disc} = \pi r^2</me>
+      </p>
+    </assemblage>
+
+    <p>
+      You also encountered the special number <m>\pi \approx 3{.}14159\ldots</m>,
+      which is the ratio of every circle's circumference to its diameter. These formulas
+      remain essential — many Leaving Certificate questions ask you to calculate
+      circumference or area as part of a larger problem.
+    </p>
+
+    <activity xml:id="activity-circle-recall">
+      <title>Beginning Activity — Circle Recall</title>
+      <introduction>
+        <p>
+          Test your recall of these primary-school ideas before moving on.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            A circle has radius 6 cm. <em>Calculate</em> its diameter, circumference,
+            and the area of the disc it encloses.
+          </p>
+        </statement>
+        <hint>
+          <p>Use <m>d = 2r</m>, <m>C = 2\pi r</m>, and <m>A = \pi r^2</m>.</p>
+        </hint>
+        <answer>
+          <p>
+            <m>d = 12</m> cm, <m>C = 12\pi \approx 37{.}70</m> cm,
+            <m>A = 36\pi \approx 113{.}10</m> cm<m>{}^2</m>.
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            A wheel has diameter 50 cm. <em>Calculate</em> how far the wheel
+            travels in one complete rotation. Give your answer in metres.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>C = \pi \times 50 = 50\pi \approx 157{.}08</m> cm <m>= 1{.}57</m> m.
+          </p>
+        </answer>
+      </task>
+    </activity>
+  </subsection>
+
+
+  <!-- ======================================================== -->
+  <!-- SUBSECTION 2: The Definition of a Circle                  -->
+  <!-- ======================================================== -->
+
+  <subsection xml:id="subsec-circle-definition">
+    <title>What is a Circle?</title>
+
+    <p>
+      In primary school you thought of a circle as a round shape.
+      Now we need a precise definition — one that tells us exactly
+      which points belong to the circle and which do not.
+    </p>
+
+    <definition xml:id="def-circle">
+      <title>Circle (Appendix B, Definition 40)</title>
+      <statement>
+        <p>
+          A <term>circle</term> is the set of all points in a plane that are at a given distance
+          (its <term>radius</term>) from a fixed point (its <term>centre</term>).
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      <em>Appreciate</em> what this definition says: a circle is <em>not</em> the filled-in
+      region — it is only the boundary. The filled-in region is called the
+      <term>disc</term>. Every point on the circle is <em>exactly</em> the same distance from
+      the centre. This idea of equidistance is the key property of the circle and
+      underlies everything we do in this section.
+    </p>
+
+    <p>
+      Think of it this way: if you tie a piece of string to a pin stuck in a board and
+      pull the string taut with a pencil, every point the pencil can reach traces out a
+      circle. The pin is the centre, and the length of the string is the radius.
+    </p>
+  </subsection>
+
+
+  <!-- ======================================================== -->
+  <!-- SUBSECTION 3: Parts of a Circle                           -->
+  <!-- ======================================================== -->
+
+  <subsection xml:id="subsec-circle-parts">
+    <title>Parts of a Circle</title>
+
+    <p>
+      <em>Identify</em> the following terms. Each is defined precisely in
+      Appendix B (Definition 40 and surrounding material) of the specification.
+    </p>
+
+    <definition xml:id="def-circle-parts">
+      <title>Circle Terminology</title>
+      <statement>
+        <p>
+          Let <m>s</m> be a circle with centre <m>O</m> and radius <m>r</m>.
+        </p>
+        <p>
+          A <term>radius</term> (plural: <term>radii</term>) is any line segment joining
+          the centre to a point on the circle. Its length is <m>r</m>.
+        </p>
+        <p>
+          A <term>chord</term> is a line segment joining any two points on the circle.
+        </p>
+        <p>
+          A <term>diameter</term> is a chord that passes through the centre.
+          Every diameter has length <m>2r</m>. This number is also called the
+          diameter of the circle.
+        </p>
+        <p>
+          Two points <m>A</m> and <m>B</m> on a circle divide it into two pieces
+          called <term>arcs</term>. A <term>semicircle</term> is an arc whose endpoints are
+          the endpoints of a diameter.
+        </p>
+        <p>
+          A <term>sector</term> is the region enclosed by an arc and the two radii
+          to its endpoints (like a "slice of pizza").
+        </p>
+        <p>
+          The <term>disc</term> is the region inside the circle. Its area is <m>\pi r^2</m>.
+        </p>
+        <p>
+          The <term>circumference</term> is the total length around the circle:
+          <m>C = 2\pi r = \pi d</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-tangent">
+      <title>Tangent to a Circle (Appendix B, Definition 42)</title>
+      <statement>
+        <p>
+          A line <m>l</m> is called a <term>tangent</term> to a circle <m>s</m>
+          when <m>l</m> meets <m>s</m> in exactly one point. That point is called
+          the <term>point of contact</term>.
+        </p>
+      </statement>
+    </definition>
+
+    <theorem xml:id="thm-tangent-perpendicular">
+      <title>Tangent–Radius Theorem (Appendix B, Theorem 20)</title>
+      <statement>
+        <p>
+          Each tangent is perpendicular to the radius drawn to the point of contact.
+        </p>
+        <p>
+          Conversely, if <m>P</m> lies on a circle and a line through <m>P</m> is perpendicular
+          to the radius at <m>P</m>, then that line is a tangent.
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      This theorem is extremely important for exam questions that ask you to
+      <em>find the equation of a tangent</em>. The method is: find the slope of the
+      radius, then the tangent slope is the negative reciprocal.
+    </p>
+  </subsection>
+
+
+  <!-- ======================================================== -->
+  <!-- SUBSECTION 4: Circle Theorems (Synthetic Geometry)        -->
+  <!-- ======================================================== -->
+
+  <subsection xml:id="subsec-circle-theorems">
+    <title>Key Circle Theorems</title>
+
+    <p>
+      The following results from Appendix B are part of the Leaving Certificate
+      Ordinary Level course. You should be able to <em>use</em> them to solve problems,
+      even though you are not asked to reproduce their proofs in the exam.
+    </p>
+
+    <theorem xml:id="thm-angle-at-centre">
+      <title>Theorem 19 — Angle at the Centre</title>
+      <statement>
+        <p>
+          The angle at the centre of a circle standing on a given arc is
+          <em>twice</em> the angle at any point of the circle standing on the same arc.
+        </p>
+      </statement>
+    </theorem>
+
+    <corollary xml:id="cor-angles-same-arc">
+      <title>Corollary 2 — Angles on the Same Arc</title>
+      <statement>
+        <p>
+          All angles at points of the circle, standing on the same arc, are equal.
+        </p>
+      </statement>
+    </corollary>
+
+    <corollary xml:id="cor-angle-semicircle">
+      <title>Corollary 3 — Angle in a Semicircle</title>
+      <statement>
+        <p>
+          Each angle in a semicircle is a right angle. That is, if <m>BC</m> is a diameter
+          of a circle and <m>A</m> is any other point of the circle, then
+          <m>\angle BAC = 90°</m>.
+        </p>
+      </statement>
+    </corollary>
+
+    <corollary xml:id="cor-right-angle-diameter">
+      <title>Corollary 4</title>
+      <statement>
+        <p>
+          If the angle standing on a chord <m>[BC]</m> at some point of the circle is
+          a right angle, then <m>[BC]</m> is a diameter.
+        </p>
+      </statement>
+    </corollary>
+
+    <p>
+      Corollary 3 appears frequently in exam questions. If you see a triangle inscribed
+      in a circle where one side is a diameter, the angle opposite that diameter is
+      automatically <m>90°</m>.
+    </p>
+  </subsection>
+
+
+  <!-- ======================================================== -->
+  <!-- SUBSECTION 5: The Circle on the Coordinate Plane          -->
+  <!-- ======================================================== -->
+
+  <subsection xml:id="subsec-circle-equation">
+    <title>The Circle on the Coordinate Plane</title>
+
+    <p>
+      We now connect the geometric definition to algebra.
+      <em>Recall</em> the definition: a circle is the set of all points at distance <m>r</m> from
+      a centre <m>(h, k)</m>. If <m>(x, y)</m> is any point on the circle, the distance from
+      <m>(x, y)</m> to <m>(h, k)</m> equals <m>r</m>. Using the distance formula:
+    </p>
+
+    <p>
+      <me>\sqrt{(x - h)^2 + (y - k)^2} = r</me>
+    </p>
+
+    <p>
+      Squaring both sides gives us the standard equation.
+    </p>
+
+    <assemblage xml:id="assemblage-circle-equation">
+      <title>Equation of a Circle</title>
+      <p>
+        The circle with centre <m>(h, k)</m> and radius <m>r</m> has equation:
+      </p>
+      <p>
+        <me>(x - h)^2 + (y - k)^2 = r^2</me>
+      </p>
+      <p>
+        <alert>Special case:</alert> When the centre is the origin <m>(0, 0)</m>:
+      </p>
+      <p>
+        <me>x^2 + y^2 = r^2</me>
+      </p>
+    </assemblage>
+
+    <p>
+      <em>Appreciate</em> that this equation is simply the distance formula in disguise.
+      Every point <m>(x, y)</m> satisfying the equation is exactly <m>r</m> units from the centre.
+      This is entirely consistent with Definition 40.
+    </p>
+
+    <remark xml:id="remark-read-equation">
+      <title>Reading an Equation</title>
+      <p>
+        Given an equation like <m>(x - 3)^2 + (y + 4)^2 = 49</m>, you can immediately
+        <em>identify</em> the centre as <m>(3, -4)</m> and the radius as <m>\sqrt{49} = 7</m>.
+        Watch the signs carefully: <m>(y + 4)</m> means <m>k = -4</m>.
+      </p>
+    </remark>
+  </subsection>
+
+
+  <!-- ======================================================== -->
+  <!-- SUBSECTION 6: Worked Examples (Exam-Style, Pólya Method)  -->
+  <!-- ======================================================== -->
+
+  <subsection xml:id="subsec-circle-worked-examples">
+    <title>Worked Examples</title>
+
+    <p>
+      Each worked example below follows Pólya's four-step method:
+      <em>Understand</em> the problem, <em>Devise</em> a plan,
+      <em>Carry out</em> the plan, and <em>Look back</em>.
+      Questions are drawn from actual Leaving Certificate exam papers.
+    </p>
+
+
+    <!-- EXAMPLE 1: Write down equation (LC 2016 Q3a style) -->
+    <example xml:id="ex-circle-write-equation">
+      <title>Writing the Equation of a Circle</title>
+      <statement>
+        <p>
+          The circle <m>c</m> has centre <m>(2, -3)</m> and radius 4.
+          <em>Write down</em> the equation of <m>c</m>.
+          <em>(LC 2016, Paper 2, Q3)</em>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <alert>Step 1 — Understand:</alert>
+          We are given the centre <m>(h, k) = (2, -3)</m> and radius <m>r = 4</m>.
+          We need the equation.
+        </p>
+        <p>
+          <alert>Step 2 — Plan:</alert>
+          Substitute into <m>(x - h)^2 + (y - k)^2 = r^2</m>.
+        </p>
+        <p>
+          <alert>Step 3 — Carry out:</alert>
+          <me>(x - 2)^2 + (y - (-3))^2 = 4^2</me>
+          <me>(x - 2)^2 + (y + 3)^2 = 16</me>
+        </p>
+        <p>
+          <alert>Step 4 — Look back:</alert>
+          Check: the centre <m>(2, -3)</m> should satisfy <m>(2-2)^2 + (-3+3)^2 = 0 + 0 = 0 \neq 16</m>.
+          The centre is <em>not</em> on the circle — correct, it is inside. A point on the circle, say
+          <m>(6, -3)</m>, gives <m>(6-2)^2 + (-3+3)^2 = 16 + 0 = 16</m>. ✓
+        </p>
+      </solution>
+    </example>
+
+
+    <!-- EXAMPLE 2: Read centre and radius (LC 2023 Q2 style) -->
+    <example xml:id="ex-circle-read-equation">
+      <title>Reading Centre and Radius from an Equation</title>
+      <statement>
+        <p>
+          The circle <m>s</m> has equation <m>x^2 + y^2 = 25</m>.
+        </p>
+        <p>
+          (i) <em>Write down</em> the centre and radius of <m>s</m>.
+        </p>
+        <p>
+          (ii) <em>Show</em> that the point <m>(3, -4)</m> is on the circle <m>s</m>.
+        </p>
+        <p>
+          (iii) <em>Write down</em> the coordinates of two other points on <m>s</m>.
+          <em>(LC 2023, Paper 2, Q2)</em>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <alert>(i)</alert>
+          <em>Identify</em> that <m>x^2 + y^2 = 25</m> matches <m>(x - 0)^2 + (y - 0)^2 = 5^2</m>.
+        </p>
+        <p>
+          Centre: <m>(0, 0)</m>. Radius: <m>5</m>.
+        </p>
+        <p>
+          <alert>(ii)</alert>
+          <em>Substitute</em> <m>(3, -4)</m> into the left-hand side:
+          <me>3^2 + (-4)^2 = 9 + 16 = 25</me>
+          Since this equals <m>r^2 = 25</m>, the point is on the circle. ✓
+        </p>
+        <p>
+          <alert>(iii)</alert>
+          We need two points <m>(a, b)</m> with <m>a^2 + b^2 = 25</m> and <m>a, b \in \mathbb{Z}</m>.
+          <em>Recall</em> the Pythagorean triple <m>3, 4, 5</m>:
+        </p>
+        <p>
+          Two other points: <m>(4, 3)</m> and <m>(-5, 0)</m>.
+        </p>
+        <p>
+          <alert>Look back:</alert> Check: <m>4^2 + 3^2 = 16 + 9 = 25</m> ✓ and
+          <m>(-5)^2 + 0^2 = 25</m> ✓.
+        </p>
+      </solution>
+    </example>
+
+
+    <!-- EXAMPLE 3: Verify point outside (LC 2016 Q3c style) -->
+    <example xml:id="ex-circle-point-outside">
+      <title>Verifying a Point is Outside a Circle</title>
+      <statement>
+        <p>
+          The circle <m>c</m> has equation <m>(x - 2)^2 + (y + 3)^2 = 16</m>.
+          <em>Verify</em>, using algebra, that the point <m>(3, 1)</m> is outside <m>c</m>.
+          <em>(LC 2016, Paper 2, Q3)</em>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <alert>Understand:</alert>
+          A point is on the circle if the LHS equals <m>r^2</m>,
+          inside if the LHS is less than <m>r^2</m>, and outside if the LHS is greater than <m>r^2</m>.
+        </p>
+        <p>
+          <alert>Carry out:</alert>
+          Substitute <m>(3, 1)</m>:
+          <me>(3 - 2)^2 + (1 + 3)^2 = 1 + 16 = 17</me>
+          Since <m>17 > 16 = r^2</m>, the point <m>(3, 1)</m> is <em>outside</em> the circle. ✓
+        </p>
+        <p>
+          <alert>Look back:</alert>
+          The distance from the centre <m>(2, -3)</m> to <m>(3, 1)</m> is <m>\sqrt{17} \approx 4{.}12</m>,
+          which is greater than the radius 4. This confirms the point is outside.
+        </p>
+      </solution>
+    </example>
+
+
+    <!-- EXAMPLE 4: Centre from diameter endpoints (LC 2018 Q4 style) -->
+    <example xml:id="ex-circle-diameter-centre">
+      <title>Finding Centre from Diameter Endpoints</title>
+      <statement>
+        <p>
+          The points <m>A(1, 8)</m> and <m>B(9, 0)</m> are the endpoints of a
+          diameter of the circle <m>w</m>.
+        </p>
+        <p>
+          (a) <em>Find</em> the centre of <m>w</m>.
+        </p>
+        <p>
+          (b) <em>Find</em> the radius. Give your answer in the form <m>p\sqrt{q}</m>.
+        </p>
+        <p>
+          (c) <em>Write down</em> the equation of <m>w</m>.
+        </p>
+        <p>
+          (d) <em>Find</em> the equation of the tangent to <m>w</m> at <m>A</m>.
+          <em>(LC 2018, Paper 2, Q4)</em>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <alert>(a) Centre — use the midpoint formula:</alert>
+        </p>
+        <p>
+          <me>\text{Centre} = \left(\frac{1 + 9}{2},\; \frac{8 + 0}{2}\right) = (5,\; 4)</me>
+        </p>
+
+        <p>
+          <alert>(b) Radius — distance from centre to <m>B</m>:</alert>
+        </p>
+        <p>
+          <me>r = \sqrt{(9 - 5)^2 + (0 - 4)^2} = \sqrt{16 + 16} = \sqrt{32} = 4\sqrt{2}</me>
+        </p>
+
+        <p>
+          <alert>(c) Equation:</alert>
+        </p>
+        <p>
+          <me>(x - 5)^2 + (y - 4)^2 = 32</me>
+        </p>
+
+        <p>
+          <alert>(d) Tangent at <m>A(1, 8)</m>:</alert>
+        </p>
+        <p>
+          <em>Recall</em> Theorem 20: the tangent is perpendicular to the radius at the point of contact.
+        </p>
+        <p>
+          Slope of radius <m>OA</m> (from centre <m>(5, 4)</m> to <m>A(1, 8)</m>):
+          <me>m_r = \frac{8 - 4}{1 - 5} = \frac{4}{-4} = -1</me>
+        </p>
+        <p>
+          Since the tangent is perpendicular: <m>m_t = 1</m> (the negative reciprocal).
+        </p>
+        <p>
+          Equation of tangent through <m>A(1, 8)</m> with slope 1:
+          <me>y - 8 = 1(x - 1)</me>
+          <me>x - y + 7 = 0</me>
+        </p>
+        <p>
+          <alert>Look back:</alert> Check <m>A(1, 8)</m> satisfies it: <m>1 - 8 + 7 = 0</m>. ✓
+        </p>
+      </solution>
+    </example>
+
+
+    <!-- EXAMPLE 5: Semicircle, right angle, area (LC 2017 Q2 style) -->
+    <example xml:id="ex-circle-semicircle-area">
+      <title>Semicircle — Right Angle and Area</title>
+      <statement>
+        <p>
+          The circle <m>c</m> has centre <m>(0, 0)</m> and radius 5.
+          The point <m>P(-4, k)</m>, where <m>k > 0</m>, is on the semicircle above the <m>x</m>-axis.
+          The points <m>A(-5, 0)</m> and <m>B(5, 0)</m> are the endpoints of a diameter.
+        </p>
+        <p>
+          (i) <em>Find</em> the value of <m>k</m>.
+        </p>
+        <p>
+          (ii) <em>Show</em> that triangle <m>ABP</m> is right-angled at <m>P</m>.
+        </p>
+        <p>
+          (iii) <em>Find</em> the area of the region inside the semicircle but outside triangle <m>ABP</m>.
+          <em>(LC 2017, Paper 2, Q2)</em>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <alert>(i)</alert> Since <m>P(-4, k)</m> is on <m>x^2 + y^2 = 25</m>:
+          <me>(-4)^2 + k^2 = 25 \implies 16 + k^2 = 25 \implies k^2 = 9 \implies k = 3</me>
+          (taking <m>k > 0</m>).
+        </p>
+        <p>
+          <alert>(ii)</alert> <em>Method 1</em> (using Corollary 3): <m>[AB]</m> is a diameter, so by
+          Corollary 3, the angle at <m>P</m> in the semicircle is <m>90°</m>. ✓
+        </p>
+        <p>
+          <em>Method 2</em> (using slopes):
+          <me>m_{PA} = \frac{3 - 0}{-4 - (-5)} = \frac{3}{1} = 3, \qquad
+              m_{PB} = \frac{3 - 0}{-4 - 5} = \frac{3}{-9} = -\frac{1}{3}</me>
+          <me>m_{PA} \times m_{PB} = 3 \times \left(-\frac{1}{3}\right) = -1</me>
+          Since the product of slopes is <m>-1</m>, <m>PA \perp PB</m>. ✓
+        </p>
+        <p>
+          <alert>(iii)</alert>
+          <me>A_{\text{region}} = A_{\text{semicircle}} - A_{\text{triangle}}</me>
+          <me>= \frac{1}{2}\pi(5)^2 - \frac{1}{2}(10)(3)</me>
+          <me>= \frac{25\pi}{2} - 15</me>
+          <me>= 39{.}27 - 15 = 24{.}27 \text{ square units}</me>
+        </p>
+      </solution>
+    </example>
+
+
+    <!-- EXAMPLE 6: Circle inscribed in square (LC 2023 Q5 style) -->
+    <example xml:id="ex-circle-inscribed-square">
+      <title>Circle Inscribed in a Square</title>
+      <statement>
+        <p>
+          A square has sides of length 12 cm. The circle <m>c</m> is inscribed
+          in the square (it touches all four sides). The circle <m>k</m> is
+          circumscribed about the square (it passes through all four corners).
+        </p>
+        <p>
+          (a) <em>Find</em> the radius of circle <m>c</m>.
+        </p>
+        <p>
+          (b) <em>Calculate</em> the area of circle <m>c</m>, correct to 2 decimal places.
+        </p>
+        <p>
+          (c) What percentage of the square's area is taken up by circle <m>c</m>?
+        </p>
+        <p>
+          (d) <em>Show</em> that the radius of circle <m>k</m> is <m>8{.}49</m> cm, correct to 2 decimal places.
+        </p>
+        <p>
+          (e) <em>Calculate</em> the circumference of circle <m>k</m>, correct to 2 decimal places.
+          <em>(LC 2023, Paper 2, Q5)</em>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <alert>(a)</alert> The inscribed circle touches each side of the square, so its
+          diameter equals the side length. Radius <m>= 12 \div 2 = 6</m> cm.
+        </p>
+        <p>
+          <alert>(b)</alert>
+          <me>A = \pi r^2 = \pi(6)^2 = 36\pi \approx 113{.}10 \text{ cm}^2</me>
+        </p>
+        <p>
+          <alert>(c)</alert> Area of square <m>= 12 \times 12 = 144</m> cm<m>{}^2</m>.
+          <me>\text{Percentage} = \frac{113{.}10}{144} \times 100 \approx 79\%</me>
+        </p>
+        <p>
+          <alert>(d)</alert> The circumscribed circle passes through the corners. The diameter
+          of <m>k</m> is the diagonal of the square. By Pythagoras:
+          <me>d = \sqrt{12^2 + 12^2} = \sqrt{288} \approx 16{.}97</me>
+          <me>r = \frac{16{.}97}{2} \approx 8{.}49 \text{ cm} \quad \checkmark</me>
+        </p>
+        <p>
+          <alert>(e)</alert>
+          <me>C = 2\pi(8{.}49) \approx 53{.}34 \text{ cm}</me>
+        </p>
+      </solution>
+    </example>
+
+
+    <!-- EXAMPLE 7: Finding radius using distance (LC 2025 Q3c style) -->
+    <example xml:id="ex-circle-find-radius">
+      <title>Finding the Radius and Identifying Points</title>
+      <statement>
+        <p>
+          The circle <m>k</m> has centre <m>(-1, 3)</m>. The point <m>(2, 7)</m> is on <m>k</m>.
+        </p>
+        <p>
+          (i) <em>Find</em> the radius of <m>k</m>.
+        </p>
+        <p>
+          (ii) <em>Write down</em> the coordinates of two other integer points on <m>k</m>.
+          <em>(LC 2025, Paper 2, Q3)</em>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <alert>(i)</alert>
+          <me>r = \sqrt{(2 - (-1))^2 + (7 - 3)^2} = \sqrt{9 + 16} = \sqrt{25} = 5</me>
+        </p>
+        <p>
+          <alert>(ii)</alert> The equation is <m>(x + 1)^2 + (y - 3)^2 = 25</m>.
+          We need integer points. <em>Recall</em> the Pythagorean triple <m>3, 4, 5</m> and note that
+          <m>5, 0, 5</m> also works.
+        </p>
+        <p>
+          Moving from the centre <m>(-1, 3)</m> by shifts of <m>(\pm 3, \pm 4)</m>,
+          <m>(\pm 4, \pm 3)</m>, or <m>(\pm 5, 0)</m>, <m>(0, \pm 5)</m>:
+        </p>
+        <p>
+          Two points: <m>(-4, 7)</m> — check: <m>(-4+1)^2 + (7-3)^2 = 9 + 16 = 25</m> ✓
+        </p>
+        <p>
+          and <m>(-1, 8)</m> — check: <m>(-1+1)^2 + (8-3)^2 = 0 + 25 = 25</m> ✓
+        </p>
+      </solution>
+    </example>
+
+
+    <!-- EXAMPLE 8: Matching circles to equations (LC 2025 Q3a style) -->
+    <example xml:id="ex-circle-match-equations">
+      <title>Matching Circles to Their Equations</title>
+      <statement>
+        <p>
+          Three circles <m>p</m>, <m>q</m>, and <m>r</m> are shown on a coordinate diagram.
+          Match each to its equation:
+        </p>
+        <p>
+          <m>x^2 + y^2 = 9</m>, <m>\quad (x - 6)^2 + (y - 2)^2 = 4</m>, <m>\quad x^2 + y^2 = 1</m>.
+          <em>(LC 2025, Paper 2, Q3)</em>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <em>Identify</em> the centre and radius of each equation:
+        </p>
+        <p>
+          <m>x^2 + y^2 = 9</m>: centre <m>(0, 0)</m>, radius <m>3</m>.
+        </p>
+        <p>
+          <m>(x - 6)^2 + (y - 2)^2 = 4</m>: centre <m>(6, 2)</m>, radius <m>2</m>.
+        </p>
+        <p>
+          <m>x^2 + y^2 = 1</m>: centre <m>(0, 0)</m>, radius <m>1</m>.
+        </p>
+        <p>
+          Match these to the circles on the diagram using their positions and sizes.
+          The large circle at the origin is <m>q</m> (radius 3), the small circle at the origin
+          is <m>p</m> (radius 1), and the circle at <m>(6, 2)</m> is <m>r</m> (radius 2).
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+
+  <!-- ======================================================== -->
+  <!-- SUBSECTION 7: Progress Check                              -->
+  <!-- ======================================================== -->
+
+  <subsection xml:id="subsec-circle-progress-check">
+    <title>Progress Check</title>
+
+    <p>
+      Before moving to the exercises, test your understanding with these quick checks.
+    </p>
+
+    <exercise xml:id="pc-circle-1">
+      <statement>
+        <p>
+          A circle has centre <m>(0, 0)</m> and passes through <m>(5, 12)</m>.
+          <em>Find</em> the radius and write the equation.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>r = \sqrt{25 + 144} = \sqrt{169} = 13</m>. Equation: <m>x^2 + y^2 = 169</m>.
+        </p>
+      </answer>
+    </exercise>
+
+    <exercise xml:id="pc-circle-2">
+      <statement>
+        <p>
+          Is the point <m>(1, 12)</m> on the circle <m>x^2 + y^2 = 169</m>?
+          Give a reason.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>1^2 + 12^2 = 1 + 144 = 145 \neq 169</m>. No, the point is <em>inside</em> the circle
+          (since <m>145 &lt; 169</m>).
+        </p>
+      </answer>
+    </exercise>
+
+    <exercise xml:id="pc-circle-3">
+      <statement>
+        <p>
+          A circle has centre <m>(3, -1)</m> and radius 2.
+          <em>Write down</em> its equation, then <em>find</em> the centre and radius
+          of its image under central symmetry through the origin.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Equation: <m>(x - 3)^2 + (y + 1)^2 = 4</m>.
+          Under central symmetry in <m>(0, 0)</m>, the centre maps to <m>(-3, 1)</m>
+          and the radius stays the same: <m>2</m>.
+        </p>
+      </answer>
+    </exercise>
+  </subsection>
+
+
+  <!-- ======================================================== -->
+  <!-- SUBSECTION 8: Exercises                                   -->
+  <!-- ======================================================== -->
+
+  <subsection xml:id="subsec-circle-exercises">
+    <title>Exercises</title>
+
+    <p>
+      The exercises are arranged in three tiers:
+      <term>Core</term> (essential skills),
+      <term>Standard</term> (exam-level), and
+      <term>Challenge</term> (extension).
+    </p>
+
+
+    <exercisegroup xml:id="exgrp-circle-core">
+      <title>Core</title>
+
+      <exercise xml:id="ex-c-core-1">
+        <statement>
+          <p>
+            <em>Write down</em> the equation of the circle with:
+          </p>
+          <p>(a) centre <m>(0, 0)</m>, radius <m>7</m></p>
+          <p>(b) centre <m>(4, -2)</m>, radius <m>3</m></p>
+          <p>(c) centre <m>(-1, 5)</m>, radius <m>\sqrt{10}</m></p>
+        </statement>
+        <answer>
+          <p>(a) <m>x^2 + y^2 = 49</m></p>
+          <p>(b) <m>(x - 4)^2 + (y + 2)^2 = 9</m></p>
+          <p>(c) <m>(x + 1)^2 + (y - 5)^2 = 10</m></p>
+        </answer>
+      </exercise>
+
+      <exercise xml:id="ex-c-core-2">
+        <statement>
+          <p>
+            For each equation, <em>identify</em> the centre and radius of the circle.
+          </p>
+          <p>(a) <m>x^2 + y^2 = 100</m></p>
+          <p>(b) <m>(x - 3)^2 + (y + 4)^2 = 49</m></p>
+          <p>(c) <m>(x + 6)^2 + (y - 1)^2 = 20</m></p>
+        </statement>
+        <answer>
+          <p>(a) Centre <m>(0,0)</m>, radius <m>10</m></p>
+          <p>(b) Centre <m>(3, -4)</m>, radius <m>7</m></p>
+          <p>(c) Centre <m>(-6, 1)</m>, radius <m>\sqrt{20} = 2\sqrt{5}</m></p>
+        </answer>
+      </exercise>
+
+      <exercise xml:id="ex-c-core-3">
+        <statement>
+          <p>
+            A circle has radius 8 cm. <em>Calculate</em> its circumference
+            and the area of the enclosed disc, each correct to 2 decimal places.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>C = 2\pi(8) = 16\pi \approx 50{.}27</m> cm.
+            <m>A = \pi(8)^2 = 64\pi \approx 201{.}06</m> cm<m>{}^2</m>.
+          </p>
+        </answer>
+      </exercise>
+
+      <exercise xml:id="ex-c-core-4">
+        <statement>
+          <p>
+            <em>Determine</em> whether each point is on, inside, or outside
+            the circle <m>x^2 + y^2 = 25</m>:
+          </p>
+          <p>(a) <m>(3, 4)</m></p>
+          <p>(b) <m>(2, 3)</m></p>
+          <p>(c) <m>(4, 4)</m></p>
+        </statement>
+        <answer>
+          <p>(a) <m>9 + 16 = 25</m>: on the circle</p>
+          <p>(b) <m>4 + 9 = 13 &lt; 25</m>: inside</p>
+          <p>(c) <m>16 + 16 = 32 > 25</m>: outside</p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+
+
+    <exercisegroup xml:id="exgrp-circle-standard">
+      <title>Standard</title>
+
+      <exercise xml:id="ex-c-std-1">
+        <statement>
+          <p>
+            The points <m>P(2, 6)</m> and <m>Q(8, -2)</m> are the endpoints
+            of a diameter of circle <m>c</m>.
+          </p>
+          <p>(a) <em>Find</em> the centre of <m>c</m>.</p>
+          <p>(b) <em>Find</em> the radius of <m>c</m>.</p>
+          <p>(c) <em>Write</em> the equation of <m>c</m>.</p>
+        </statement>
+        <answer>
+          <p>(a) Centre <m>= (5, 2)</m></p>
+          <p>(b) <m>r = \sqrt{(8-5)^2 + (-2-2)^2} = \sqrt{9 + 16} = 5</m></p>
+          <p>(c) <m>(x - 5)^2 + (y - 2)^2 = 25</m></p>
+        </answer>
+      </exercise>
+
+      <exercise xml:id="ex-c-std-2">
+        <statement>
+          <p>
+            The circle <m>c</m> has centre <m>(0, 0)</m> and radius 5.
+            The point <m>P(-3, k)</m>, <m>k > 0</m>, is on <m>c</m>.
+          </p>
+          <p>(a) <em>Find</em> the value of <m>k</m>.</p>
+          <p>(b) <m>A(-5, 0)</m> and <m>B(5, 0)</m> are on <m>c</m>.
+            <em>Show</em> that <m>\angle APB = 90°</m>.</p>
+          <p>(c) <em>Find</em> the area inside the semicircle but outside <m>\triangle APB</m>.</p>
+        </statement>
+        <answer>
+          <p>(a) <m>9 + k^2 = 25 \implies k = 4</m></p>
+          <p>(b) <m>[AB]</m> is a diameter, so by Corollary 3, <m>\angle APB = 90°</m>.
+            Or use slopes: <m>m_{PA} = 2</m>, <m>m_{PB} = -\tfrac{1}{2}</m>,
+            product <m>= -1</m>.</p>
+          <p>(c) <m>\tfrac{25\pi}{2} - \tfrac{1}{2}(10)(4) = \tfrac{25\pi}{2} - 20 \approx 19{.}27</m> sq. units</p>
+        </answer>
+      </exercise>
+
+      <exercise xml:id="ex-c-std-3">
+        <statement>
+          <p>
+            The circle <m>w</m> has centre <m>(5, 4)</m> and passes through <m>A(1, 8)</m>.
+            <em>Find</em> the equation of the tangent to <m>w</m> at <m>A</m>.
+            Give your answer in the form <m>ax + by + c = 0</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Slope of radius: <m>\frac{8-4}{1-5} = -1</m>. Tangent slope: <m>1</m>.
+            <m>y - 8 = 1(x - 1) \implies x - y + 7 = 0</m>.
+          </p>
+        </answer>
+      </exercise>
+
+      <exercise xml:id="ex-c-std-4">
+        <statement>
+          <p>
+            Two wheels are in non-slip contact. Wheel <m>u</m> has radius 4 cm
+            and wheel <m>v</m> has radius 6 cm.
+          </p>
+          <p>(a) <em>Find</em> the circumference of each wheel in terms of <m>\pi</m>.</p>
+          <p>(b) If wheel <m>v</m> makes 100 complete rotations,
+            how many complete rotations does wheel <m>u</m> make?</p>
+        </statement>
+        <answer>
+          <p>(a) <m>C_u = 8\pi</m> cm, <m>C_v = 12\pi</m> cm</p>
+          <p>(b) <m>\frac{12\pi \times 100}{8\pi} = 150</m> rotations</p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+
+
+    <exercisegroup xml:id="exgrp-circle-challenge">
+      <title>Challenge</title>
+
+      <exercise xml:id="ex-c-chal-1">
+        <statement>
+          <p>
+            The circle <m>c</m> has centre on the <m>x</m>-axis and passes through
+            both <m>O(0, 0)</m> and <m>T(4, 0)</m>.
+          </p>
+          <p>(a) <em>Find</em> the centre and equation of <m>c</m>.</p>
+          <p>(b) A square <m>PQRS</m> is drawn so that <m>[PQ]</m> and <m>[RS]</m> are
+            on the <m>x</m>-axis and <m>PQ</m>, <m>QR</m>, <m>RS</m>, <m>SP</m> are all tangent to <m>c</m>.
+            <em>Find</em> the area of <m>PQRS</m>.</p>
+        </statement>
+        <hint>
+          <p>The centre is the midpoint of <m>[OT]</m>. The radius equals
+          the distance from the centre to either point.</p>
+        </hint>
+        <answer>
+          <p>(a) Centre <m>(2, 0)</m>, <m>r = 2</m>. Equation: <m>(x - 2)^2 + y^2 = 4</m>.</p>
+          <p>(b) The tangent square has side <m>= 2r = 4</m>. Area <m>= 16</m>.</p>
+        </answer>
+      </exercise>
+
+      <exercise xml:id="ex-c-chal-2">
+        <statement>
+          <p>
+            Two circles <m>c_1</m> and <m>c_2</m> both have their centres on the
+            <m>x</m>-axis. <m>c_1</m> has centre <m>(0, 0)</m> and passes through <m>A(8, 6)</m>.
+            <m>c_2</m> has <m>[OA]</m> as a diameter.
+          </p>
+          <p>(a) <em>Find</em> the equation of <m>c_1</m>.</p>
+          <p>(b) <em>Find</em> the equation of <m>c_2</m>.</p>
+          <p>(c) <m>c_2</m> cuts the <m>x</m>-axis at a point <m>P</m>. <em>Find</em> the coordinates of <m>P</m>.</p>
+        </statement>
+        <answer>
+          <p>(a) <m>r_1 = \sqrt{64 + 36} = 10</m>. Equation: <m>x^2 + y^2 = 100</m>.</p>
+          <p>(b) Centre of <m>c_2 = (4, 3)</m>, <m>r_2 = 5</m>. Equation: <m>(x-4)^2 + (y-3)^2 = 25</m>.</p>
+          <p>(c) Set <m>y = 0</m>: <m>(x-4)^2 + 9 = 25 \implies (x-4)^2 = 16 \implies x = 8</m> or <m>x = 0</m>.
+            Since <m>O = (0,0)</m>, the other intersection is <m>P(8, 0)</m>.</p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+  </subsection>
+
+
+  <!-- ======================================================== -->
+  <!-- SUBSECTION 9: Section Summary                             -->
+  <!-- ======================================================== -->
+
+  <subsection xml:id="subsec-circle-summary">
+    <title>Section Summary</title>
+
+    <p>
+      <alert>Key Definitions:</alert>
+      A <term>circle</term> is the set of all points at a given distance (the radius) from
+      a fixed point (the centre). The filled region is the <term>disc</term>.
+      A <term>tangent</term> is a line meeting the circle at exactly one point.
+    </p>
+
+    <p>
+      <alert>Key Theorems:</alert>
+      The tangent at any point is perpendicular to the radius at that point (Theorem 20).
+      The angle in a semicircle is a right angle (Corollary 3).
+      All angles standing on the same arc are equal (Corollary 2).
+    </p>
+
+    <p>
+      <alert>Key Formula:</alert>
+      The circle with centre <m>(h, k)</m> and radius <m>r</m> has equation
+      <me>(x - h)^2 + (y - k)^2 = r^2</me>
+    </p>
+
+    <p>
+      <alert>Key Skills:</alert>
+      Write the equation given centre and radius;
+      read centre and radius from the equation;
+      verify whether a point is on/inside/outside the circle;
+      find the equation of a tangent;
+      use circumference and area formulas in context.
+    </p>
+  </subsection>
+
+</section>

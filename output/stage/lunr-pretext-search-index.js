@@ -928,11 +928,335 @@ var ptx_lunr_docs = [
   "body": " Construction Description   Describe how to construct the circumcircle of a triangle. State the theorem that justifies your method.    Construct perpendicular bisectors of two sides; they meet at the circumcentre. Draw circle from circumcentre through any vertex. Justified by Theorem 21(2).   "
 },
 {
+  "id": "sec-circle",
+  "level": "1",
+  "url": "sec-circle.html",
+  "type": "Section",
+  "number": "2.2",
+  "title": "The Circle",
+  "body": " The Circle   In this section we study the circle — one of the most important shapes in all of mathematics. You first met circles in primary school, where you learned to name their parts and calculate their circumference and area. Here we take a deeper look: we define the circle precisely as a set of points , explore its geometric properties, and learn how to work with circles on the coordinate plane using algebra.   Focus Questions   As you work through this section, aim to answer each of the following:   What is the precise mathematical definition of a circle?  What are the key parts of a circle and how do they relate to one another?  How do we write the equation of a circle with centre and radius ?  How can we determine whether a point lies on, inside, or outside a circle?  How do we find the equation of a tangent to a circle at a given point?        What You Already Know   Recall from primary school that a circle is a perfectly round shape. You learned to identify its centre , radius , and diameter , and you used the formulas for circumference and area:   Primary School Circle Formulas  For a circle with radius and diameter :         You also encountered the special number , which is the ratio of every circle's circumference to its diameter. These formulas remain essential — many Leaving Certificate questions ask you to calculate circumference or area as part of a larger problem.   Beginning Activity — Circle Recall   Test your recall of these primary-school ideas before moving on.     A circle has radius 6 cm. Calculate its diameter, circumference, and the area of the disc it encloses.    Use , , and .     cm, cm, cm .      A wheel has diameter 50 cm. Calculate how far the wheel travels in one complete rotation. Give your answer in metres.     cm m.          What is a Circle?  In primary school you thought of a circle as a round shape. Now we need a precise definition — one that tells us exactly which points belong to the circle and which do not.   Circle (Appendix B, Definition 40)   A circle is the set of all points in a plane that are at a given distance (its radius ) from a fixed point (its centre ).     Appreciate what this definition says: a circle is not the filled-in region — it is only the boundary. The filled-in region is called the disc . Every point on the circle is exactly the same distance from the centre. This idea of equidistance is the key property of the circle and underlies everything we do in this section.  Think of it this way: if you tie a piece of string to a pin stuck in a board and pull the string taut with a pencil, every point the pencil can reach traces out a circle. The pin is the centre, and the length of the string is the radius.       Parts of a Circle   Identify the following terms. Each is defined precisely in Appendix B (Definition 40 and surrounding material) of the specification.   Circle Terminology   Let be a circle with centre and radius .  A radius (plural: radii ) is any line segment joining the centre to a point on the circle. Its length is .  A chord is a line segment joining any two points on the circle.  A diameter is a chord that passes through the centre. Every diameter has length . This number is also called the diameter of the circle.  Two points and on a circle divide it into two pieces called arcs . A semicircle is an arc whose endpoints are the endpoints of a diameter.  A sector is the region enclosed by an arc and the two radii to its endpoints (like a \"slice of pizza\").  The disc is the region inside the circle. Its area is .  The circumference is the total length around the circle: .     Tangent to a Circle (Appendix B, Definition 42)   A line is called a tangent to a circle when meets in exactly one point. That point is called the point of contact .     Tangent–Radius Theorem (Appendix B, Theorem 20)   Each tangent is perpendicular to the radius drawn to the point of contact.  Conversely, if lies on a circle and a line through is perpendicular to the radius at , then that line is a tangent.    This theorem is extremely important for exam questions that ask you to find the equation of a tangent . The method is: find the slope of the radius, then the tangent slope is the negative reciprocal.       Key Circle Theorems  The following results from Appendix B are part of the Leaving Certificate Ordinary Level course. You should be able to use them to solve problems, even though you are not asked to reproduce their proofs in the exam.   Theorem 19 — Angle at the Centre   The angle at the centre of a circle standing on a given arc is twice the angle at any point of the circle standing on the same arc.     Corollary 2 — Angles on the Same Arc   All angles at points of the circle, standing on the same arc, are equal.     Corollary 3 — Angle in a Semicircle   Each angle in a semicircle is a right angle. That is, if is a diameter of a circle and is any other point of the circle, then .     Corollary 4   If the angle standing on a chord at some point of the circle is a right angle, then is a diameter.    Corollary 3 appears frequently in exam questions. If you see a triangle inscribed in a circle where one side is a diameter, the angle opposite that diameter is automatically .       The Circle on the Coordinate Plane  We now connect the geometric definition to algebra. Recall the definition: a circle is the set of all points at distance from a centre . If is any point on the circle, the distance from to equals . Using the distance formula:     Squaring both sides gives us the standard equation.   Equation of a Circle  The circle with centre and radius has equation:      Special case: When the centre is the origin :       Appreciate that this equation is simply the distance formula in disguise. Every point satisfying the equation is exactly units from the centre. This is entirely consistent with Definition 40.   Reading an Equation  Given an equation like , you can immediately identify the centre as and the radius as . Watch the signs carefully: means .        Worked Examples  Each worked example below follows Pólya's four-step method: Understand the problem, Devise a plan, Carry out the plan, and Look back . Questions are drawn from actual Leaving Certificate exam papers.    Writing the Equation of a Circle   The circle has centre and radius 4. Write down the equation of . (LC 2016, Paper 2, Q3)      Step 1 — Understand: We are given the centre and radius . We need the equation.   Step 2 — Plan: Substitute into .   Step 3 — Carry out:      Step 4 — Look back: Check: the centre should satisfy . The centre is not on the circle — correct, it is inside. A point on the circle, say , gives . ✓      Reading Centre and Radius from an Equation   The circle has equation .  (i) Write down the centre and radius of .  (ii) Show that the point is on the circle .  (iii) Write down the coordinates of two other points on . (LC 2023, Paper 2, Q2)      (i)  Identify that matches .  Centre: . Radius: .   (ii)  Substitute  into the left-hand side: Since this equals , the point is on the circle. ✓   (iii) We need two points with and . Recall the Pythagorean triple :  Two other points: and .   Look back: Check: ✓ and ✓.      Verifying a Point is Outside a Circle   The circle has equation . Verify , using algebra, that the point is outside . (LC 2016, Paper 2, Q3)      Understand: A point is on the circle if the LHS equals , inside if the LHS is less than , and outside if the LHS is greater than .   Carry out: Substitute : Since , the point is outside the circle. ✓   Look back: The distance from the centre to is , which is greater than the radius 4. This confirms the point is outside.      Finding Centre from Diameter Endpoints   The points and are the endpoints of a diameter of the circle .  (a) Find the centre of .  (b) Find the radius. Give your answer in the form .  (c) Write down the equation of .  (d) Find the equation of the tangent to at . (LC 2018, Paper 2, Q4)      (a) Centre — use the midpoint formula:       (b) Radius — distance from centre to :       (c) Equation:       (d) Tangent at :    Recall Theorem 20: the tangent is perpendicular to the radius at the point of contact.  Slope of radius (from centre to ):   Since the tangent is perpendicular: (the negative reciprocal).  Equation of tangent through with slope 1:     Look back: Check satisfies it: . ✓      Semicircle — Right Angle and Area   The circle has centre and radius 5. The point , where , is on the semicircle above the -axis. The points and are the endpoints of a diameter.  (i) Find the value of .  (ii) Show that triangle is right-angled at .  (iii) Find the area of the region inside the semicircle but outside triangle . (LC 2017, Paper 2, Q2)      (i) Since is on : (taking ).   (ii)  Method 1 (using Corollary 3): is a diameter, so by Corollary 3, the angle at in the semicircle is . ✓   Method 2 (using slopes):  Since the product of slopes is , . ✓   (iii)           Circle Inscribed in a Square   A square has sides of length 12 cm. The circle is inscribed in the square (it touches all four sides). The circle is circumscribed about the square (it passes through all four corners).  (a) Find the radius of circle .  (b) Calculate the area of circle , correct to 2 decimal places.  (c) What percentage of the square's area is taken up by circle ?  (d) Show that the radius of circle is cm, correct to 2 decimal places.  (e) Calculate the circumference of circle , correct to 2 decimal places. (LC 2023, Paper 2, Q5)      (a) The inscribed circle touches each side of the square, so its diameter equals the side length. Radius cm.   (b)     (c) Area of square cm .    (d) The circumscribed circle passes through the corners. The diameter of is the diagonal of the square. By Pythagoras:     (e)        Finding the Radius and Identifying Points   The circle has centre . The point is on .  (i) Find the radius of .  (ii) Write down the coordinates of two other integer points on . (LC 2025, Paper 2, Q3)      (i)     (ii) The equation is . We need integer points. Recall the Pythagorean triple and note that also works.  Moving from the centre by shifts of , , or , :  Two points: — check: ✓  and — check: ✓      Matching Circles to Their Equations   Three circles , , and are shown on a coordinate diagram. Match each to its equation:   , , . (LC 2025, Paper 2, Q3)      Identify the centre and radius of each equation:   : centre , radius .   : centre , radius .   : centre , radius .  Match these to the circles on the diagram using their positions and sizes. The large circle at the origin is (radius 3), the small circle at the origin is (radius 1), and the circle at is (radius 2).         Progress Check  Before moving to the exercises, test your understanding with these quick checks.    A circle has centre and passes through . Find the radius and write the equation.     . Equation: .      Is the point on the circle ? Give a reason.     . No, the point is inside the circle (since ).      A circle has centre and radius 2. Write down its equation, then find the centre and radius of its image under central symmetry through the origin.    Equation: . Under central symmetry in , the centre maps to and the radius stays the same: .         Exercises  The exercises are arranged in three tiers: Core (essential skills), Standard (exam-level), and Challenge (extension).   Core     Write down the equation of the circle with:  (a) centre , radius  (b) centre , radius  (c) centre , radius    (a)  (b)  (c)      For each equation, identify the centre and radius of the circle.  (a)  (b)  (c)    (a) Centre , radius  (b) Centre , radius  (c) Centre , radius      A circle has radius 8 cm. Calculate its circumference and the area of the enclosed disc, each correct to 2 decimal places.     cm. cm .       Determine whether each point is on, inside, or outside the circle :  (a)  (b)  (c)    (a) : on the circle  (b) : inside  (c) : outside      Standard    The points and are the endpoints of a diameter of circle .  (a) Find the centre of .  (b) Find the radius of .  (c) Write the equation of .    (a) Centre  (b)  (c)      The circle has centre and radius 5. The point , , is on .  (a) Find the value of .  (b) and are on . Show that .  (c) Find the area inside the semicircle but outside .    (a)  (b) is a diameter, so by Corollary 3, . Or use slopes: , , product .  (c) sq. units      The circle has centre and passes through . Find the equation of the tangent to at . Give your answer in the form .    Slope of radius: . Tangent slope: . .      Two wheels are in non-slip contact. Wheel has radius 4 cm and wheel has radius 6 cm.  (a) Find the circumference of each wheel in terms of .  (b) If wheel makes 100 complete rotations, how many complete rotations does wheel make?    (a) cm, cm  (b) rotations      Challenge    The circle has centre on the -axis and passes through both and .  (a) Find the centre and equation of .  (b) A square is drawn so that and are on the -axis and , , , are all tangent to . Find the area of .    The centre is the midpoint of . The radius equals the distance from the centre to either point.    (a) Centre , . Equation: .  (b) The tangent square has side . Area .      Two circles and both have their centres on the -axis. has centre and passes through . has as a diameter.  (a) Find the equation of .  (b) Find the equation of .  (c) cuts the -axis at a point . Find the coordinates of .    (a) . Equation: .  (b) Centre of , . Equation: .  (c) Set : or . Since , the other intersection is .          Section Summary   Key Definitions: A circle is the set of all points at a given distance (the radius) from a fixed point (the centre). The filled region is the disc . A tangent is a line meeting the circle at exactly one point.   Key Theorems: The tangent at any point is perpendicular to the radius at that point (Theorem 20). The angle in a semicircle is a right angle (Corollary 3). All angles standing on the same arc are equal (Corollary 2).   Key Formula: The circle with centre and radius has equation    Key Skills: Write the equation given centre and radius; read centre and radius from the equation; verify whether a point is on\/inside\/outside the circle; find the equation of a tangent; use circumference and area formulas in context.   "
+},
+{
+  "id": "subsec-circle-prior-2",
+  "level": "2",
+  "url": "sec-circle.html#subsec-circle-prior-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "centre radius diameter "
+},
+{
+  "id": "activity-circle-recall",
+  "level": "2",
+  "url": "sec-circle.html#activity-circle-recall",
+  "type": "Activity",
+  "number": "2.2.1",
+  "title": "Beginning Activity — Circle Recall.",
+  "body": " Beginning Activity — Circle Recall   Test your recall of these primary-school ideas before moving on.     A circle has radius 6 cm. Calculate its diameter, circumference, and the area of the disc it encloses.    Use , , and .     cm, cm, cm .      A wheel has diameter 50 cm. Calculate how far the wheel travels in one complete rotation. Give your answer in metres.     cm m.    "
+},
+{
+  "id": "def-circle",
+  "level": "2",
+  "url": "sec-circle.html#def-circle",
+  "type": "Definition",
+  "number": "2.2.1",
+  "title": "Circle (Appendix B, Definition 40).",
+  "body": " Circle (Appendix B, Definition 40)   A circle is the set of all points in a plane that are at a given distance (its radius ) from a fixed point (its centre ).   "
+},
+{
+  "id": "subsec-circle-definition-4",
+  "level": "2",
+  "url": "sec-circle.html#subsec-circle-definition-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "disc "
+},
+{
+  "id": "def-circle-parts",
+  "level": "2",
+  "url": "sec-circle.html#def-circle-parts",
+  "type": "Definition",
+  "number": "2.2.2",
+  "title": "Circle Terminology.",
+  "body": " Circle Terminology   Let be a circle with centre and radius .  A radius (plural: radii ) is any line segment joining the centre to a point on the circle. Its length is .  A chord is a line segment joining any two points on the circle.  A diameter is a chord that passes through the centre. Every diameter has length . This number is also called the diameter of the circle.  Two points and on a circle divide it into two pieces called arcs . A semicircle is an arc whose endpoints are the endpoints of a diameter.  A sector is the region enclosed by an arc and the two radii to its endpoints (like a \"slice of pizza\").  The disc is the region inside the circle. Its area is .  The circumference is the total length around the circle: .   "
+},
+{
+  "id": "def-tangent",
+  "level": "2",
+  "url": "sec-circle.html#def-tangent",
+  "type": "Definition",
+  "number": "2.2.3",
+  "title": "Tangent to a Circle (Appendix B, Definition 42).",
+  "body": " Tangent to a Circle (Appendix B, Definition 42)   A line is called a tangent to a circle when meets in exactly one point. That point is called the point of contact .   "
+},
+{
+  "id": "thm-tangent-perpendicular",
+  "level": "2",
+  "url": "sec-circle.html#thm-tangent-perpendicular",
+  "type": "Theorem",
+  "number": "2.2.4",
+  "title": "Tangent–Radius Theorem (Appendix B, Theorem 20).",
+  "body": " Tangent–Radius Theorem (Appendix B, Theorem 20)   Each tangent is perpendicular to the radius drawn to the point of contact.  Conversely, if lies on a circle and a line through is perpendicular to the radius at , then that line is a tangent.   "
+},
+{
+  "id": "thm-angle-at-centre",
+  "level": "2",
+  "url": "sec-circle.html#thm-angle-at-centre",
+  "type": "Theorem",
+  "number": "2.2.5",
+  "title": "Theorem 19 — Angle at the Centre.",
+  "body": " Theorem 19 — Angle at the Centre   The angle at the centre of a circle standing on a given arc is twice the angle at any point of the circle standing on the same arc.   "
+},
+{
+  "id": "cor-angles-same-arc",
+  "level": "2",
+  "url": "sec-circle.html#cor-angles-same-arc",
+  "type": "Corollary",
+  "number": "2.2.6",
+  "title": "Corollary 2 — Angles on the Same Arc.",
+  "body": " Corollary 2 — Angles on the Same Arc   All angles at points of the circle, standing on the same arc, are equal.   "
+},
+{
+  "id": "cor-angle-semicircle",
+  "level": "2",
+  "url": "sec-circle.html#cor-angle-semicircle",
+  "type": "Corollary",
+  "number": "2.2.7",
+  "title": "Corollary 3 — Angle in a Semicircle.",
+  "body": " Corollary 3 — Angle in a Semicircle   Each angle in a semicircle is a right angle. That is, if is a diameter of a circle and is any other point of the circle, then .   "
+},
+{
+  "id": "cor-right-angle-diameter",
+  "level": "2",
+  "url": "sec-circle.html#cor-right-angle-diameter",
+  "type": "Corollary",
+  "number": "2.2.8",
+  "title": "Corollary 4.",
+  "body": " Corollary 4   If the angle standing on a chord at some point of the circle is a right angle, then is a diameter.   "
+},
+{
+  "id": "remark-read-equation",
+  "level": "2",
+  "url": "sec-circle.html#remark-read-equation",
+  "type": "Remark",
+  "number": "2.2.9",
+  "title": "Reading an Equation.",
+  "body": " Reading an Equation  Given an equation like , you can immediately identify the centre as and the radius as . Watch the signs carefully: means .  "
+},
+{
+  "id": "ex-circle-write-equation",
+  "level": "2",
+  "url": "sec-circle.html#ex-circle-write-equation",
+  "type": "Example",
+  "number": "2.2.10",
+  "title": "Writing the Equation of a Circle.",
+  "body": " Writing the Equation of a Circle   The circle has centre and radius 4. Write down the equation of . (LC 2016, Paper 2, Q3)      Step 1 — Understand: We are given the centre and radius . We need the equation.   Step 2 — Plan: Substitute into .   Step 3 — Carry out:      Step 4 — Look back: Check: the centre should satisfy . The centre is not on the circle — correct, it is inside. A point on the circle, say , gives . ✓   "
+},
+{
+  "id": "ex-circle-read-equation",
+  "level": "2",
+  "url": "sec-circle.html#ex-circle-read-equation",
+  "type": "Example",
+  "number": "2.2.11",
+  "title": "Reading Centre and Radius from an Equation.",
+  "body": " Reading Centre and Radius from an Equation   The circle has equation .  (i) Write down the centre and radius of .  (ii) Show that the point is on the circle .  (iii) Write down the coordinates of two other points on . (LC 2023, Paper 2, Q2)      (i)  Identify that matches .  Centre: . Radius: .   (ii)  Substitute  into the left-hand side: Since this equals , the point is on the circle. ✓   (iii) We need two points with and . Recall the Pythagorean triple :  Two other points: and .   Look back: Check: ✓ and ✓.   "
+},
+{
+  "id": "ex-circle-point-outside",
+  "level": "2",
+  "url": "sec-circle.html#ex-circle-point-outside",
+  "type": "Example",
+  "number": "2.2.12",
+  "title": "Verifying a Point is Outside a Circle.",
+  "body": " Verifying a Point is Outside a Circle   The circle has equation . Verify , using algebra, that the point is outside . (LC 2016, Paper 2, Q3)      Understand: A point is on the circle if the LHS equals , inside if the LHS is less than , and outside if the LHS is greater than .   Carry out: Substitute : Since , the point is outside the circle. ✓   Look back: The distance from the centre to is , which is greater than the radius 4. This confirms the point is outside.   "
+},
+{
+  "id": "ex-circle-diameter-centre",
+  "level": "2",
+  "url": "sec-circle.html#ex-circle-diameter-centre",
+  "type": "Example",
+  "number": "2.2.13",
+  "title": "Finding Centre from Diameter Endpoints.",
+  "body": " Finding Centre from Diameter Endpoints   The points and are the endpoints of a diameter of the circle .  (a) Find the centre of .  (b) Find the radius. Give your answer in the form .  (c) Write down the equation of .  (d) Find the equation of the tangent to at . (LC 2018, Paper 2, Q4)      (a) Centre — use the midpoint formula:       (b) Radius — distance from centre to :       (c) Equation:       (d) Tangent at :    Recall Theorem 20: the tangent is perpendicular to the radius at the point of contact.  Slope of radius (from centre to ):   Since the tangent is perpendicular: (the negative reciprocal).  Equation of tangent through with slope 1:     Look back: Check satisfies it: . ✓   "
+},
+{
+  "id": "ex-circle-semicircle-area",
+  "level": "2",
+  "url": "sec-circle.html#ex-circle-semicircle-area",
+  "type": "Example",
+  "number": "2.2.14",
+  "title": "Semicircle — Right Angle and Area.",
+  "body": " Semicircle — Right Angle and Area   The circle has centre and radius 5. The point , where , is on the semicircle above the -axis. The points and are the endpoints of a diameter.  (i) Find the value of .  (ii) Show that triangle is right-angled at .  (iii) Find the area of the region inside the semicircle but outside triangle . (LC 2017, Paper 2, Q2)      (i) Since is on : (taking ).   (ii)  Method 1 (using Corollary 3): is a diameter, so by Corollary 3, the angle at in the semicircle is . ✓   Method 2 (using slopes):  Since the product of slopes is , . ✓   (iii)        "
+},
+{
+  "id": "ex-circle-inscribed-square",
+  "level": "2",
+  "url": "sec-circle.html#ex-circle-inscribed-square",
+  "type": "Example",
+  "number": "2.2.15",
+  "title": "Circle Inscribed in a Square.",
+  "body": " Circle Inscribed in a Square   A square has sides of length 12 cm. The circle is inscribed in the square (it touches all four sides). The circle is circumscribed about the square (it passes through all four corners).  (a) Find the radius of circle .  (b) Calculate the area of circle , correct to 2 decimal places.  (c) What percentage of the square's area is taken up by circle ?  (d) Show that the radius of circle is cm, correct to 2 decimal places.  (e) Calculate the circumference of circle , correct to 2 decimal places. (LC 2023, Paper 2, Q5)      (a) The inscribed circle touches each side of the square, so its diameter equals the side length. Radius cm.   (b)     (c) Area of square cm .    (d) The circumscribed circle passes through the corners. The diameter of is the diagonal of the square. By Pythagoras:     (e)     "
+},
+{
+  "id": "ex-circle-find-radius",
+  "level": "2",
+  "url": "sec-circle.html#ex-circle-find-radius",
+  "type": "Example",
+  "number": "2.2.16",
+  "title": "Finding the Radius and Identifying Points.",
+  "body": " Finding the Radius and Identifying Points   The circle has centre . The point is on .  (i) Find the radius of .  (ii) Write down the coordinates of two other integer points on . (LC 2025, Paper 2, Q3)      (i)     (ii) The equation is . We need integer points. Recall the Pythagorean triple and note that also works.  Moving from the centre by shifts of , , or , :  Two points: — check: ✓  and — check: ✓   "
+},
+{
+  "id": "ex-circle-match-equations",
+  "level": "2",
+  "url": "sec-circle.html#ex-circle-match-equations",
+  "type": "Example",
+  "number": "2.2.17",
+  "title": "Matching Circles to Their Equations.",
+  "body": " Matching Circles to Their Equations   Three circles , , and are shown on a coordinate diagram. Match each to its equation:   , , . (LC 2025, Paper 2, Q3)      Identify the centre and radius of each equation:   : centre , radius .   : centre , radius .   : centre , radius .  Match these to the circles on the diagram using their positions and sizes. The large circle at the origin is (radius 3), the small circle at the origin is (radius 1), and the circle at is (radius 2).   "
+},
+{
+  "id": "pc-circle-1",
+  "level": "2",
+  "url": "sec-circle.html#pc-circle-1",
+  "type": "Checkpoint",
+  "number": "2.2.18",
+  "title": "",
+  "body": "  A circle has centre and passes through . Find the radius and write the equation.     . Equation: .   "
+},
+{
+  "id": "pc-circle-2",
+  "level": "2",
+  "url": "sec-circle.html#pc-circle-2",
+  "type": "Checkpoint",
+  "number": "2.2.19",
+  "title": "",
+  "body": "  Is the point on the circle ? Give a reason.     . No, the point is inside the circle (since ).   "
+},
+{
+  "id": "pc-circle-3",
+  "level": "2",
+  "url": "sec-circle.html#pc-circle-3",
+  "type": "Checkpoint",
+  "number": "2.2.20",
+  "title": "",
+  "body": "  A circle has centre and radius 2. Write down its equation, then find the centre and radius of its image under central symmetry through the origin.    Equation: . Under central symmetry in , the centre maps to and the radius stays the same: .   "
+},
+{
+  "id": "subsec-circle-exercises-2",
+  "level": "2",
+  "url": "sec-circle.html#subsec-circle-exercises-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Core Standard Challenge "
+},
+{
+  "id": "ex-c-core-1",
+  "level": "2",
+  "url": "sec-circle.html#ex-c-core-1",
+  "type": "Checkpoint",
+  "number": "[STRUCT].20",
+  "title": "",
+  "body": "   Write down the equation of the circle with:  (a) centre , radius  (b) centre , radius  (c) centre , radius    (a)  (b)  (c)   "
+},
+{
+  "id": "ex-c-core-2",
+  "level": "2",
+  "url": "sec-circle.html#ex-c-core-2",
+  "type": "Checkpoint",
+  "number": "[STRUCT].20",
+  "title": "",
+  "body": "  For each equation, identify the centre and radius of the circle.  (a)  (b)  (c)    (a) Centre , radius  (b) Centre , radius  (c) Centre , radius   "
+},
+{
+  "id": "ex-c-core-3",
+  "level": "2",
+  "url": "sec-circle.html#ex-c-core-3",
+  "type": "Checkpoint",
+  "number": "[STRUCT].20",
+  "title": "",
+  "body": "  A circle has radius 8 cm. Calculate its circumference and the area of the enclosed disc, each correct to 2 decimal places.     cm. cm .   "
+},
+{
+  "id": "ex-c-core-4",
+  "level": "2",
+  "url": "sec-circle.html#ex-c-core-4",
+  "type": "Checkpoint",
+  "number": "[STRUCT].20",
+  "title": "",
+  "body": "   Determine whether each point is on, inside, or outside the circle :  (a)  (b)  (c)    (a) : on the circle  (b) : inside  (c) : outside   "
+},
+{
+  "id": "ex-c-std-1",
+  "level": "2",
+  "url": "sec-circle.html#ex-c-std-1",
+  "type": "Checkpoint",
+  "number": "[STRUCT].20",
+  "title": "",
+  "body": "  The points and are the endpoints of a diameter of circle .  (a) Find the centre of .  (b) Find the radius of .  (c) Write the equation of .    (a) Centre  (b)  (c)   "
+},
+{
+  "id": "ex-c-std-2",
+  "level": "2",
+  "url": "sec-circle.html#ex-c-std-2",
+  "type": "Checkpoint",
+  "number": "[STRUCT].20",
+  "title": "",
+  "body": "  The circle has centre and radius 5. The point , , is on .  (a) Find the value of .  (b) and are on . Show that .  (c) Find the area inside the semicircle but outside .    (a)  (b) is a diameter, so by Corollary 3, . Or use slopes: , , product .  (c) sq. units   "
+},
+{
+  "id": "ex-c-std-3",
+  "level": "2",
+  "url": "sec-circle.html#ex-c-std-3",
+  "type": "Checkpoint",
+  "number": "[STRUCT].20",
+  "title": "",
+  "body": "  The circle has centre and passes through . Find the equation of the tangent to at . Give your answer in the form .    Slope of radius: . Tangent slope: . .   "
+},
+{
+  "id": "ex-c-std-4",
+  "level": "2",
+  "url": "sec-circle.html#ex-c-std-4",
+  "type": "Checkpoint",
+  "number": "[STRUCT].20",
+  "title": "",
+  "body": "  Two wheels are in non-slip contact. Wheel has radius 4 cm and wheel has radius 6 cm.  (a) Find the circumference of each wheel in terms of .  (b) If wheel makes 100 complete rotations, how many complete rotations does wheel make?    (a) cm, cm  (b) rotations   "
+},
+{
+  "id": "ex-c-chal-1",
+  "level": "2",
+  "url": "sec-circle.html#ex-c-chal-1",
+  "type": "Checkpoint",
+  "number": "[STRUCT].20",
+  "title": "",
+  "body": "  The circle has centre on the -axis and passes through both and .  (a) Find the centre and equation of .  (b) A square is drawn so that and are on the -axis and , , , are all tangent to . Find the area of .    The centre is the midpoint of . The radius equals the distance from the centre to either point.    (a) Centre , . Equation: .  (b) The tangent square has side . Area .   "
+},
+{
+  "id": "ex-c-chal-2",
+  "level": "2",
+  "url": "sec-circle.html#ex-c-chal-2",
+  "type": "Checkpoint",
+  "number": "[STRUCT].20",
+  "title": "",
+  "body": "  Two circles and both have their centres on the -axis. has centre and passes through . has as a diameter.  (a) Find the equation of .  (b) Find the equation of .  (c) cuts the -axis at a point . Find the coordinates of .    (a) . Equation: .  (b) Centre of , . Equation: .  (c) Set : or . Since , the other intersection is .   "
+},
+{
+  "id": "subsec-circle-summary-2",
+  "level": "2",
+  "url": "sec-circle.html#subsec-circle-summary-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "circle disc tangent "
+},
+{
   "id": "sec-coordinate-geometry",
   "level": "1",
   "url": "sec-coordinate-geometry.html",
   "type": "Section",
-  "number": "2.2",
+  "number": "2.3",
   "title": "Co-ordinate Geometry",
   "body": " Co-ordinate Geometry   Co-ordinate geometry connects algebra and geometry. We use coordinates to describe points, and equations to describe lines and circles. The formulae on pages 17–19 of your log tables are your toolkit — but understanding the properties and anatomy of each formula is what makes them powerful.    The Line   Before we begin co-ordinate geometry, we review some essential notation and ideas from Junior Cycle. Everything in this section builds on what you already know — we are simply making it more precise and more powerful.    Notation Review (Log Tables p. 17)  In co-ordinate geometry, we work with points, lines, and segments. The notation matters — it tells us exactly what we mean.   Geometry Notation    Symbol  Meaning     The line through and     The line segment from to     The distance from to     The vector from to     Notice the difference: extends forever in both directions, has endpoints, and is a number — a length. Get comfortable reading and writing these. They appear constantly in exam questions and marking schemes.    What Is a Line?  A line is a set of points . Every point on the line satisfies the equation of that line. We call a variable point — it can be any point on the line.  By contrast, is a fixed point — a known, specific point on the line. Think of it as an anchor or reference point. Much of co-ordinate geometry is about the relationship between a fixed point and a variable point on the same line.    Slope (Log Tables p. 18)  Given two points and , the slope of line is:   Read this aloud: the slope of line — not just the slope of and . The slope belongs to the line , not to the points.    Anatomy of the Slope Formula  Let us decompose the formula. The numerator is the rise — the vertical change. The denominator is the run — the horizontal change. So slope is:   Every line segment can be decomposed into a horizontal and a vertical component — a supporting triangle . The slope measures how these two components compare.  This is a relative comparison . The subtraction means we don't care where the points are in absolute terms — only their position relative to each other . A line through and has the same slope as a line through and .    Properties of Slope  Is the slope formula commutative? Yes. It does not matter which point you call and which you call . If you swap them, both the numerator and denominator change sign, and .  However, good practice is to let the second point be the one further to the right. This way the run is positive, and the sign of the slope comes entirely from the rise. This makes it easier to see whether the line is increasing or decreasing:   Slope and Direction    Rise  Run  Slope  Line    Positive  Positive  Positive  Increasing (goes uphill left to right)    Negative  Positive  Negative  Decreasing (goes downhill left to right)    Zero  Positive  Zero  Horizontal    Any  Zero  Undefined  Vertical       Connections to Junior Cycle  The slope formula connects to several ideas from the Number strand (JC spec N.1):  Decomposition: We decompose the change between two points into a vertical part (rise) and a horizontal part (run). This is the same idea as decomposing numbers or operations into simpler parts.  Commutativity: We saw that the slope formula is commutative with respect to swapping points. This connects directly to the commutative property of multiplication and division of signed numbers (JC spec N.1b).  Relative comparison: Slope is a ratio. It uses subtraction to compare positions relatively, not absolutely (JC spec N.3a). The actual coordinates don't matter — only the differences do.    Calculating Slope   Find the slope of line where and .    With on the right ( ):   The rise is (positive — going up), the run is (positive — going right). The line is increasing.     Distance (Log Tables p. 18)  The distance from to is:   Read this as: the square root of the sum of two squares . The two squares are the rise squared and the run squared. This is Pythagoras applied to the supporting triangle.  Is this formula commutative? Yes — and for a stronger reason than slope. Subtraction is not commutative: . But squaring removes the sign : . So it genuinely does not matter which point comes first in the distance formula.    Calculating Distance   Find where and .        Midpoint (Log Tables p. 18)  The midpoint of is:   This is the mean of the -coordinates and the mean of the -coordinates. The same idea of average that you know from the Statistics strand.  Notice the crucial difference from slope and distance: midpoint uses addition , not subtraction. This is an absolute comparison — where the midpoint is depends on where the actual points are, not just on their relative position. Move both points 10 units to the right and the midpoint moves too.    Slope, Distance, Midpoint — Compared   Comparing the Three Key Formulae    Formula  Operation  Comparison Type  Commutative?    Slope  Subtraction (ratio)  Relative  Yes (sign cancels)    Distance  Subtraction (squared)  Relative  Yes (squaring removes sign)    Midpoint  Addition (mean)  Absolute  Yes (addition is commutative)       Equation of a Line (Log Tables p. 18)  Now we connect slope to the equation of a line. Start with the slope formula, but replace the second point with the variable point :   Multiply both sides by and we get:   This is the point-slope formula . It is not named on the log tables, but it is the first equation given under equation of . It says: if you know one fixed point and the slope , you can write the equation of the line.  The second equation on the log tables is:   This is the slope-intercept formula (or better: intercept-slope , because that is the order you see it). Here is the -intercept — where the line crosses the -axis. You get this form by expanding the point-slope formula and collecting terms.    Finding the Equation of a Line   Find the equation of the line through with slope .    Using the point-slope formula with and :   In slope-intercept form: , so the -intercept is .     Area of Triangle (Log Tables p. 18)  The area of a triangle with one vertex at the origin and the other two at and is:   Think of it this way: and are the areas of two rectangles — one built from the coordinates of stretched to , and the other from stretched to . The difference gives twice the area of the triangle. The is there because a triangle is half a parallelogram.    What to Ignore (HL Content)  The following formulae from the log tables (p. 19) are Higher Level only. They are NOT on the Ordinary Level course.  Cross these out on your log tables so you are not tempted to use them:  Perpendicular distance from a point to a line: — HL only .  Angle between two lines : — HL only .  Point dividing in ratio (bottom of p. 18) — HL only .  A common mistake in OL exam scripts is to attempt these formulae. If you see them, ignore them. They are not on your course and using them incorrectly will cost you marks.    Slope Practice   Find the slope of line where and .    Let be on the right since . What is the rise? What is the run?       With on the right:   The rise is (going down) and the run is (going right). The line is decreasing.     Distance Practice   Find where and .           Midpoint Practice   Find the midpoint of where and .           Equation of a Line   Find the equation of line where and . Give your answer in the form .    You already found the slope in a previous exercise. Now use the point-slope formula with either point.       Using the point-slope formula with and :       The Circle   The circle is one of the most examined topics at Ordinary Level. Every year, Paper 2 asks you to do some combination of: write down the centre and radius, write the equation, find the radius, investigate if a point is on\/inside\/outside, construct a circle on a diagram, and work out the centre from geometric clues. This section trains each skill separately, then combines them in exam-style problems.  Every worked solution follows Pólya's four-step method :  Step 1 — Understand: State the problem in your own words. Identify the unknowns, the given information, and which formulas or facts are relevant.  Step 2 — Plan: Choose a strategy — draw a diagram, write an equation, work backwards, use substitution, look for a pattern.  Step 3 — Execute: Carry out the plan step by step, showing all working.  Step 4 — Review: Check your answer is correct and reasonable. Does it make sense on the diagram? Can you verify it a different way?       The Equation of a Circle  A circle is the set of all points at a fixed distance (the radius ) from a fixed point (the centre ).  Using the distance formula, a point lies on the circle exactly when:   This is the equation you need. It is not in the log tables, but it comes directly from the distance formula (p. 18) applied to the centre and any point on the circle.    The circle with centre and radius .   A circle on a coordinate grid showing centre (h,k), radius r, and a general point (x,y) on the circle with the right triangle formed by (x-h) and (y-k).     Special Case: Centre at the Origin  When the centre is , the equation simplifies to:     The circle : centre , radius 3.   A circle centred at the origin with radius 3 on a coordinate grid.        Skill 1: \"Write down the centre and radius\"  When the equation is in the form , you read off:  Centre = . Be careful with signs — a inside the bracket means the coordinate is negative .  Radius = . The number on the right is , not .    LC 2023 Paper 2 OL — Q2(a)(i)   is the circle . Write down the centre and radius of the circle .    Step 1 — Understand: We are given an equation in the form . We need the centre and the radius.  Step 2 — Plan:  Appreciate that is the same as . Compare with the general form .  Step 3 — Execute:  , , so Centre = .  Appreciate that , so .  Radius = .  Step 4 — Review: A circle centred at the origin with radius 5 — this matches the simple form . ✓     LC 2024 Paper 2 OL — Q4(a)(i)   The circle has equation . Write down the centre and radius of .    Step 1 — Understand: The circle formula is given. Identify the values of , , and .  Step 2 — Plan:  Work backwards — compare with and read off the values. Be careful: means .  Step 3 — Execute:  , and so .  Centre = .  , so .  Step 4 — Review: The centre has a negative -coordinate because of the sign inside the bracket — a common trap. ✓     Reading the Origin Form   Write down the centre and radius of: (a) (b) (c) .    (a) Centre , radius .  (b) Centre , radius .  (c) Centre , radius .        Skill 2: \"Write down the equation\"  Given the centre and radius , substitute into the formula. Remember to square the radius on the right-hand side.    LC 2024 Paper 2 OL — Q3(a)(i)   A circle has centre and radius 2. Write down the equation of .    Step 1 — Understand:  Identify the values: , , . We need the equation of the circle.  Step 2 — Plan: Use the equation of a circle centred on with radius : substitute into .  Step 3 — Execute:    Step 4 — Review: Reading back: centre ✓, radius ✓.     Practice: Writing Equations   Write the equation of each circle:  1. Centre , radius 6.  2. Centre , radius 3.  3. Centre , radius .  4. Centre , radius 4.    1.  2.  3.  4.        Skill 3: \"Show that the point is on the circle\"  When the exam says \"show that\" , it means prove . You prove a point is on the circle by illustrating that substitution of the point into the equation gives a true number statement .    LC 2023 Paper 2 OL — Q2(a)(ii)   is the circle . Show that the point is on the circle .    Step 1 — Understand: \"Show that\" means prove . We must illustrate that substituting the point into the equation gives a true statement.  Step 2 — Plan: Substitute and into the left-hand side of and check that it equals 25.  Step 3 — Execute:  ✓  Since is a true statement, the point is on the circle.  Step 4 — Review: Notice — this is a Pythagorean triple (3, 4, 5), which confirms our answer. ✓        Skill 4: \"Write down the coordinates of other points on the circle\"  Once you know the centre and radius, you can find other integer points. The easiest method: translate  along the -axis or along the -axis from the centre. These four points are always on the circle.  Common Pythagorean triples are also useful for finding extra points: , , , .    LC 2023 Paper 2 OL — Q2(a)(iii)   is the circle . Write down the co-ordinates of two other points that are also on the circle .    Step 1 — Understand: The circle has centre and radius 5. We need two points (other than ) whose coordinates satisfy .  Step 2 — Plan: The easiest method is to translate  along the -axis from the centre . Since is a Pythagorean triple, we can also use points like , , , .  Step 3 — Execute:  and .  Check: ✓ and ✓.  Also allowed: and .  Step 4 — Review: Moving 5 units along an axis from the origin always lands on the circle — this is the simplest approach. ✓        Skill 5: \"Investigate if a point is on, inside, or outside\"  Substitute the point into the left-hand side of the equation and compare with :  Recall  compared with :  Result : the point is outside .  Result : the point is inside .  Result : the point is on the circle.    The algebraic test for a point's position relative to a circle.   A circle with three points marked: one on the circle (green), one inside (blue), one outside (red), with the substitution test shown below.     LC 2024 Paper 2 OL — Q4(a)(ii)   The circle has equation . Use algebra to investigate if the point is on, inside, or outside .    Step 1 — Understand: We have the circle equation and a point. We need to determine the point's position relative to the circle.  Step 2 — Plan:  Recall the test: substitute the point into the LHS of the equation and compare the result with .  Step 3 — Execute: Substitute :   Compare: .  Since the result is greater than  , the point is outside the circle.  Step 4 — Review: The point is further from the centre than the radius, so \"outside\" makes sense. ✓     Practice: On, Inside, or Outside?   The circle has equation .  Investigate each point:  1.  2.  3.  4.    1. → ON.  2. → INSIDE.  3. → ON.  4. → INSIDE.        Skill 6: \"Find the radius\"  If you know the centre and a point on the circle, the radius is the distance between them. Use the distance formula (log tables p. 18):     Finding the Radius from Centre and Point   The circle has centre . The point is on the circle. Find the radius.    Step 1 — Understand: We know the centre and a point on the circle. The radius is the distance from centre to any point on the circle.  Step 2 — Plan: Use the distance formula.  Step 3 — Execute:   Step 4 — Review: We see the Pythagorean triple again — this is a very common pattern in LC questions. ✓        Skill 7: Matching Circles to Equations  The 2025 paper showed three circles on a diagram and asked you to match each to its equation. The strategy:  Step 1: Read the centre from the equation. If the equation is , the centre is .  Step 2: Read the radius ( ).  Step 3: Check the diagram — which circle has that centre and roughly that size?    LC 2025 Q3(a) Style   Three circles , , are shown on a diagram. From the diagram: is a small circle at the origin, is a larger circle at the origin, and is a small circle centred near . Match each to its equation:  (A)  (B)  (C)    (A) Centre , radius 3 — the larger circle at the origin → .  (B) Centre , radius 2 — off-centre → .  (C) Centre , radius 1 — the small one at the origin → .        Skill 8: \"Central symmetry through a point\"  Recall : central symmetry through a point means is the midpoint between each point and its image. If the centre of circle is and the symmetry is through , then the image circle has centre and the same radius.    LC 2024 Paper 2 OL — Q3(a)(ii)   A circle has centre and radius 2. Circle is the image of circle by central symmetry through the point . Work out the centre and the radius of circle .    Step 1 — Understand:  Classify this as an instruction about transformations. Central symmetry through means is the midpoint between each original point and its image.  Step 2 — Plan:  Recall that central symmetry in maps to . The radius does not change under symmetry.  Step 3 — Execute: Centre of is . Image centre: .  Centre of = . Radius of = 2.  Step 4 — Review: Check: midpoint of and is ✓. Radius unchanged ✓.        Skill 9: \"Construct this circle on the co-ordinate diagram\"  To draw a circle on the co-ordinate diagram:  1. Plot the centre.  2. Use the run step to mark a point units to the left\/right of the centre (along the -direction).  3. Use the rise step to mark a point units above\/below the centre (along the -direction).  4. Place your compass point on the centre and draw through these points. In the exam, use a compass — freehand circles lose marks.    LC 2024 Paper 2 OL — Q4(b)   A different circle has centre and radius 3. Construct this circle on the co-ordinate diagram.    Step 1 — Understand: We need to draw a circle with centre and radius 3 on the grid.  Step 2 — Plan: Place the compass point on the centre . Count 3 units straight over (or back) for a horizontal guide point, and 3 units up (or down) for a vertical guide point.  Step 3 — Execute: Mark the centre .  Right: .  Left: .  Up: .  Down: .  Set compass to radius 3 and draw through these four points.  Step 4 — Review: All four guide points should sit exactly on the circle. Check each is 3 units from the centre. ✓        Skill 10: \"Work out the radius and centre\" from Geometric Clues  The hardest circle questions give you geometric information (tangent to an axis, lowest\/highest point, passes through a point) and ask you to deduce the centre and radius. Draw a picture and use these key facts:  If the circle is tangent to the x-axis , the radius equals (the absolute value of the y-coordinate of the centre).  If the circle is tangent to the y-axis , the radius equals (the absolute value of the x-coordinate of the centre).  The lowest point is directly below the centre: .  The highest point is directly above: .    A circle tangent to the y-axis: the radius equals the x-coordinate of the centre.   A circle tangent to the y-axis, showing the radius equal to the horizontal distance from centre to axis, and the lowest point directly below the centre.     LC 2024 Paper 2 OL — Q4(c)   The point is the lowest point on a circle with centre . The y-axis is a tangent to the circle. Work out the radius and centre of .    Step 1 — Understand:  Examine what we know. We have two geometric clues: is the lowest point, and the y-axis is tangent. We need both the radius and the centre.  Step 2 — Plan:  Investigate and explore until you recognise the connections. Analyse what is telling us — use visual thinking :  Since is the lowest point, the centre is directly above it: .  Since the y-axis is tangent, the radius equals the -coordinate of the centre. The centre has -coordinate 2, so .  Step 3 — Execute:  .  Centre = .  Step 4 — Review: Check tangent to y-axis: distance from to the y-axis is 2 = ✓. Lowest point: ✓.     Practice: Geometric Clues   1. A circle has centre and is tangent to the x-axis. The radius is 3. Find (two possible answers).  2. The highest point on a circle is and the circle is tangent to the x-axis. Find the centre and radius.  3. A circle is tangent to both axes and has radius 4. The centre is in the first quadrant. Write down its equation.    1. or .  2. Tangent to x-axis means . Highest point is , so and . Since : , , . Centre .  3. Centre = . Equation: .        Skill 11: \"Find the points of intersection\" of a line and a circle  Identify the system: one equation is linear (the line) and one is non-linear (the circle). This is critical:  Elimination NEVER works for a linear–non-linear system. Elimination only works for two linear equations. You must use substitution (or plotting for intersection points).  The method: rearrange the linear equation to make (or ) the subject, then substitute into the circle equation.    LC 2023 Paper 2 OL — Q2(b)   Find the points of intersection between a circle , and the line , where:  :  :    Step 1 — Understand:  Identify  as a linear equation and as a non-linear equation. We need the points where the line crosses the circle.  Step 2 — Plan:  Appreciate that substitution (or plotting) is required — elimination does not work for a linear–non-linear system. Rearrange the line for and substitute into the circle.  Step 3 — Execute: From : .  Substitute into :     Divide through by 26:    or .  When : . Point: .  When : . Point: .  Step 4 — Review: Check on the circle: ✓.  Check on the line: ✓.  Check on the circle: ✓.  Check on the line: ✓.        Skill 12: \"Find the slope of the tangent line\"  The tangent to a circle at any point is perpendicular to the radius at that point. The method is:  1. Find the slope of the radius (from centre to the point of tangency).  2. Calculate the slope of the tangent: (negative reciprocal, since perpendicular lines have slopes whose product is ).  3. Use the point and slope in the point-slope formula: .    LC 2024 Paper 2 OL — Q3(b)   The circle has centre . The point is also on the circle and is the point of contact for the tangent line . Find the slope of , and hence, work out the slope of the tangent line .    Step 1 — Understand:  Appreciate that the point of tangency is on the tangent line, and the centre is not on the tangent. The radius is perpendicular to the tangent at .  Step 2 — Plan:  Explain the method : find the slope of the radius first ( ), then calculate the slope of the tangent ( ) using the perpendicular relationship. Finally, use point and slope in the point-slope formula.  Step 3 — Execute: Slope of :   Slope of tangent (perpendicular to radius):   Equation of tangent using :      Step 4 — Review: Check the product of slopes: ✓ (perpendicular).  Check on the tangent: ✓.        Interactive: Explore the Circle Equation  Use this Desmos applet to explore how the equation changes as you drag the centre and adjust the radius. Notice how the equation updates in real time.   Try these challenges in Desmos:  1. Set the centre to and radius to 2. Check that the equation matches the LC 2024 Q3(a)(i) example above.  2. Set the centre to . Change the radius. What happens to the equation?  3. Make a circle tangent to the y-axis. What do you notice about the radius and the x-coordinate of the centre?       Exam-Style Mixed Problems  These problems combine multiple skills, just like the real exam. Attempt each one fully before checking the answer. Use Pólya's four steps on every question.    Mixed Problem 1   A circle has centre and passes through the point .  (a) Find the radius.  (b) Write the equation of the circle.  (c) Investigate whether is on, inside, or outside the circle.    (a) .  (b) .  (c) → ON the circle.     Mixed Problem 2   The circle has equation .  (a) Write down the centre and radius.  (b) Write down the coordinates of the highest and lowest points on .  (c) Is the point inside or outside ?    (a) Centre , radius 6.  (b) Highest: . Lowest: .  (c) → INSIDE.     Mixed Problem 3   A circle has its centre on the positive x-axis and is tangent to both the x-axis and the line .  (a) Find the radius and the y-coordinate of the centre.  (b) The point is on the circle. Find the x-coordinate of the centre and write the equation.    (a) If tangent to and , the centre must be halfway between them.    (a) Centre is midway between and , so and .  (b) Centre is . Substitute : , so , giving . Since centre is on the positive x-axis: . Equation: .     Mixed Problem 4   The circle has centre and passes through the origin .  (a) Find the radius.  (b) Write the equation of .  (c) Write down the coordinates of the point on that is furthest from the origin.    (c) The furthest point from the origin is on the far side of the circle from , along the line through the origin and the centre.    (a) .  (b) .  (c) Furthest point is diametrically opposite the origin through the centre: .     Mixed Problem 5 (Challenge)   A circle passes through the points , , and .  (a) Find the midpoint of .  (b) Show that the centre of the circle is the midpoint of .  (c) Find the radius and write the equation of the circle.    What type of triangle is ? What theorem tells you about the circumscribed circle of a right-angled triangle?    (a) Midpoint of = .  (b) Triangle is right-angled at (check: ). For a right-angled triangle, the circumcentre is the midpoint of the hypotenuse.  (c) . Centre . Equation: .     Mixed Problem 6 (Challenge)   Two circles have equations and .  (a) Write down the centre and radius of each circle.  (b) Find the distance between the centres.  (c) Do the circles overlap, touch, or are they separate? Explain your reasoning.    (a) Circle 1: centre , . Circle 2: centre , .  (b) Distance = 7.  (c) , so the circles overlap (two intersection points). If the distance equalled they would touch externally.     "
 },
@@ -941,7 +1265,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#table-geo-notation",
   "type": "Table",
-  "number": "2.2.1",
+  "number": "2.3.1",
   "title": "Geometry Notation",
   "body": " Geometry Notation    Symbol  Meaning     The line through and     The line segment from to     The distance from to     The vector from to    "
 },
@@ -995,7 +1319,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#table-slope-sign",
   "type": "Table",
-  "number": "2.2.2",
+  "number": "2.3.2",
   "title": "Slope and Direction",
   "body": " Slope and Direction    Rise  Run  Slope  Line    Positive  Positive  Positive  Increasing (goes uphill left to right)    Negative  Positive  Negative  Decreasing (goes downhill left to right)    Zero  Positive  Zero  Horizontal    Any  Zero  Undefined  Vertical    "
 },
@@ -1004,7 +1328,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-slope-calc",
   "type": "Example",
-  "number": "2.2.3",
+  "number": "2.3.3",
   "title": "Calculating Slope.",
   "body": " Calculating Slope   Find the slope of line where and .    With on the right ( ):   The rise is (positive — going up), the run is (positive — going right). The line is increasing.   "
 },
@@ -1013,7 +1337,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-distance-calc",
   "type": "Example",
-  "number": "2.2.4",
+  "number": "2.3.4",
   "title": "Calculating Distance.",
   "body": " Calculating Distance   Find where and .      "
 },
@@ -1031,7 +1355,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#table-formulas-compared",
   "type": "Table",
-  "number": "2.2.5",
+  "number": "2.3.5",
   "title": "Comparing the Three Key Formulae",
   "body": " Comparing the Three Key Formulae    Formula  Operation  Comparison Type  Commutative?    Slope  Subtraction (ratio)  Relative  Yes (sign cancels)    Distance  Subtraction (squared)  Relative  Yes (squaring removes sign)    Midpoint  Addition (mean)  Absolute  Yes (addition is commutative)    "
 },
@@ -1058,7 +1382,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-equation-of-line",
   "type": "Example",
-  "number": "2.2.6",
+  "number": "2.3.6",
   "title": "Finding the Equation of a Line.",
   "body": " Finding the Equation of a Line   Find the equation of the line through with slope .    Using the point-slope formula with and :   In slope-intercept form: , so the -intercept is .   "
 },
@@ -1067,7 +1391,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-line-slope-practice",
   "type": "Checkpoint",
-  "number": "2.2.7",
+  "number": "2.3.7",
   "title": "Slope Practice.",
   "body": " Slope Practice   Find the slope of line where and .    Let be on the right since . What is the rise? What is the run?       With on the right:   The rise is (going down) and the run is (going right). The line is decreasing.   "
 },
@@ -1076,7 +1400,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-line-distance-practice",
   "type": "Checkpoint",
-  "number": "2.2.8",
+  "number": "2.3.8",
   "title": "Distance Practice.",
   "body": " Distance Practice   Find where and .         "
 },
@@ -1085,7 +1409,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-line-midpoint-practice",
   "type": "Checkpoint",
-  "number": "2.2.9",
+  "number": "2.3.9",
   "title": "Midpoint Practice.",
   "body": " Midpoint Practice   Find the midpoint of where and .         "
 },
@@ -1094,7 +1418,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-line-equation-practice",
   "type": "Checkpoint",
-  "number": "2.2.10",
+  "number": "2.3.10",
   "title": "Equation of a Line.",
   "body": " Equation of a Line   Find the equation of line where and . Give your answer in the form .    You already found the slope in a previous exercise. Now use the point-slope formula with either point.       Using the point-slope formula with and :    "
 },
@@ -1112,7 +1436,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#fig-circle-general-cg",
   "type": "Figure",
-  "number": "2.2.11",
+  "number": "2.3.11",
   "title": "",
   "body": " The circle with centre and radius .   A circle on a coordinate grid showing centre (h,k), radius r, and a general point (x,y) on the circle with the right triangle formed by (x-h) and (y-k).   "
 },
@@ -1121,7 +1445,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#fig-circle-origin-cg",
   "type": "Figure",
-  "number": "2.2.12",
+  "number": "2.3.12",
   "title": "",
   "body": " The circle : centre , radius 3.   A circle centred at the origin with radius 3 on a coordinate grid.   "
 },
@@ -1130,7 +1454,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-lc2023-q2a-i",
   "type": "Example",
-  "number": "2.2.13",
+  "number": "2.3.13",
   "title": "LC 2023 Paper 2 OL — Q2(a)(i).",
   "body": " LC 2023 Paper 2 OL — Q2(a)(i)   is the circle . Write down the centre and radius of the circle .    Step 1 — Understand: We are given an equation in the form . We need the centre and the radius.  Step 2 — Plan:  Appreciate that is the same as . Compare with the general form .  Step 3 — Execute:  , , so Centre = .  Appreciate that , so .  Radius = .  Step 4 — Review: A circle centred at the origin with radius 5 — this matches the simple form . ✓   "
 },
@@ -1139,7 +1463,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-lc2024-q4a-i",
   "type": "Example",
-  "number": "2.2.14",
+  "number": "2.3.14",
   "title": "LC 2024 Paper 2 OL — Q4(a)(i).",
   "body": " LC 2024 Paper 2 OL — Q4(a)(i)   The circle has equation . Write down the centre and radius of .    Step 1 — Understand: The circle formula is given. Identify the values of , , and .  Step 2 — Plan:  Work backwards — compare with and read off the values. Be careful: means .  Step 3 — Execute:  , and so .  Centre = .  , so .  Step 4 — Review: The centre has a negative -coordinate because of the sign inside the bracket — a common trap. ✓   "
 },
@@ -1148,7 +1472,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-read-circle-eq-2",
   "type": "Example",
-  "number": "2.2.15",
+  "number": "2.3.15",
   "title": "Reading the Origin Form.",
   "body": " Reading the Origin Form   Write down the centre and radius of: (a) (b) (c) .    (a) Centre , radius .  (b) Centre , radius .  (c) Centre , radius .   "
 },
@@ -1157,7 +1481,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-lc2024-q3a-i",
   "type": "Example",
-  "number": "2.2.16",
+  "number": "2.3.16",
   "title": "LC 2024 Paper 2 OL — Q3(a)(i).",
   "body": " LC 2024 Paper 2 OL — Q3(a)(i)   A circle has centre and radius 2. Write down the equation of .    Step 1 — Understand:  Identify the values: , , . We need the equation of the circle.  Step 2 — Plan: Use the equation of a circle centred on with radius : substitute into .  Step 3 — Execute:    Step 4 — Review: Reading back: centre ✓, radius ✓.   "
 },
@@ -1166,7 +1490,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-write-equations-practice",
   "type": "Checkpoint",
-  "number": "2.2.17",
+  "number": "2.3.17",
   "title": "Practice: Writing Equations.",
   "body": " Practice: Writing Equations   Write the equation of each circle:  1. Centre , radius 6.  2. Centre , radius 3.  3. Centre , radius .  4. Centre , radius 4.    1.  2.  3.  4.   "
 },
@@ -1175,7 +1499,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-lc2023-q2a-ii",
   "type": "Example",
-  "number": "2.2.18",
+  "number": "2.3.18",
   "title": "LC 2023 Paper 2 OL — Q2(a)(ii).",
   "body": " LC 2023 Paper 2 OL — Q2(a)(ii)   is the circle . Show that the point is on the circle .    Step 1 — Understand: \"Show that\" means prove . We must illustrate that substituting the point into the equation gives a true statement.  Step 2 — Plan: Substitute and into the left-hand side of and check that it equals 25.  Step 3 — Execute:  ✓  Since is a true statement, the point is on the circle.  Step 4 — Review: Notice — this is a Pythagorean triple (3, 4, 5), which confirms our answer. ✓   "
 },
@@ -1184,7 +1508,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-lc2023-q2a-iii",
   "type": "Example",
-  "number": "2.2.19",
+  "number": "2.3.19",
   "title": "LC 2023 Paper 2 OL — Q2(a)(iii).",
   "body": " LC 2023 Paper 2 OL — Q2(a)(iii)   is the circle . Write down the co-ordinates of two other points that are also on the circle .    Step 1 — Understand: The circle has centre and radius 5. We need two points (other than ) whose coordinates satisfy .  Step 2 — Plan: The easiest method is to translate  along the -axis from the centre . Since is a Pythagorean triple, we can also use points like , , , .  Step 3 — Execute:  and .  Check: ✓ and ✓.  Also allowed: and .  Step 4 — Review: Moving 5 units along an axis from the origin always lands on the circle — this is the simplest approach. ✓   "
 },
@@ -1193,7 +1517,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#fig-point-position-cg",
   "type": "Figure",
-  "number": "2.2.20",
+  "number": "2.3.20",
   "title": "",
   "body": " The algebraic test for a point's position relative to a circle.   A circle with three points marked: one on the circle (green), one inside (blue), one outside (red), with the substitution test shown below.   "
 },
@@ -1202,7 +1526,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-lc2024-q4a-ii",
   "type": "Example",
-  "number": "2.2.21",
+  "number": "2.3.21",
   "title": "LC 2024 Paper 2 OL — Q4(a)(ii).",
   "body": " LC 2024 Paper 2 OL — Q4(a)(ii)   The circle has equation . Use algebra to investigate if the point is on, inside, or outside .    Step 1 — Understand: We have the circle equation and a point. We need to determine the point's position relative to the circle.  Step 2 — Plan:  Recall the test: substitute the point into the LHS of the equation and compare the result with .  Step 3 — Execute: Substitute :   Compare: .  Since the result is greater than  , the point is outside the circle.  Step 4 — Review: The point is further from the centre than the radius, so \"outside\" makes sense. ✓   "
 },
@@ -1211,7 +1535,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-investigate-practice",
   "type": "Checkpoint",
-  "number": "2.2.22",
+  "number": "2.3.22",
   "title": "Practice: On, Inside, or Outside?",
   "body": " Practice: On, Inside, or Outside?   The circle has equation .  Investigate each point:  1.  2.  3.  4.    1. → ON.  2. → INSIDE.  3. → ON.  4. → INSIDE.   "
 },
@@ -1220,7 +1544,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-find-radius",
   "type": "Example",
-  "number": "2.2.23",
+  "number": "2.3.23",
   "title": "Finding the Radius from Centre and Point.",
   "body": " Finding the Radius from Centre and Point   The circle has centre . The point is on the circle. Find the radius.    Step 1 — Understand: We know the centre and a point on the circle. The radius is the distance from centre to any point on the circle.  Step 2 — Plan: Use the distance formula.  Step 3 — Execute:   Step 4 — Review: We see the Pythagorean triple again — this is a very common pattern in LC questions. ✓   "
 },
@@ -1229,7 +1553,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-matching-circles",
   "type": "Example",
-  "number": "2.2.24",
+  "number": "2.3.24",
   "title": "LC 2025 Q3(a) Style.",
   "body": " LC 2025 Q3(a) Style   Three circles , , are shown on a diagram. From the diagram: is a small circle at the origin, is a larger circle at the origin, and is a small circle centred near . Match each to its equation:  (A)  (B)  (C)    (A) Centre , radius 3 — the larger circle at the origin → .  (B) Centre , radius 2 — off-centre → .  (C) Centre , radius 1 — the small one at the origin → .   "
 },
@@ -1238,7 +1562,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-lc2024-q3a-ii",
   "type": "Example",
-  "number": "2.2.25",
+  "number": "2.3.25",
   "title": "LC 2024 Paper 2 OL — Q3(a)(ii).",
   "body": " LC 2024 Paper 2 OL — Q3(a)(ii)   A circle has centre and radius 2. Circle is the image of circle by central symmetry through the point . Work out the centre and the radius of circle .    Step 1 — Understand:  Classify this as an instruction about transformations. Central symmetry through means is the midpoint between each original point and its image.  Step 2 — Plan:  Recall that central symmetry in maps to . The radius does not change under symmetry.  Step 3 — Execute: Centre of is . Image centre: .  Centre of = . Radius of = 2.  Step 4 — Review: Check: midpoint of and is ✓. Radius unchanged ✓.   "
 },
@@ -1247,7 +1571,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-lc2024-q4b",
   "type": "Example",
-  "number": "2.2.26",
+  "number": "2.3.26",
   "title": "LC 2024 Paper 2 OL — Q4(b).",
   "body": " LC 2024 Paper 2 OL — Q4(b)   A different circle has centre and radius 3. Construct this circle on the co-ordinate diagram.    Step 1 — Understand: We need to draw a circle with centre and radius 3 on the grid.  Step 2 — Plan: Place the compass point on the centre . Count 3 units straight over (or back) for a horizontal guide point, and 3 units up (or down) for a vertical guide point.  Step 3 — Execute: Mark the centre .  Right: .  Left: .  Up: .  Down: .  Set compass to radius 3 and draw through these four points.  Step 4 — Review: All four guide points should sit exactly on the circle. Check each is 3 units from the centre. ✓   "
 },
@@ -1256,7 +1580,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#fig-tangent-y-axis-cg",
   "type": "Figure",
-  "number": "2.2.27",
+  "number": "2.3.27",
   "title": "",
   "body": " A circle tangent to the y-axis: the radius equals the x-coordinate of the centre.   A circle tangent to the y-axis, showing the radius equal to the horizontal distance from centre to axis, and the lowest point directly below the centre.   "
 },
@@ -1265,7 +1589,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-lc2024-q4c",
   "type": "Example",
-  "number": "2.2.28",
+  "number": "2.3.28",
   "title": "LC 2024 Paper 2 OL — Q4(c).",
   "body": " LC 2024 Paper 2 OL — Q4(c)   The point is the lowest point on a circle with centre . The y-axis is a tangent to the circle. Work out the radius and centre of .    Step 1 — Understand:  Examine what we know. We have two geometric clues: is the lowest point, and the y-axis is tangent. We need both the radius and the centre.  Step 2 — Plan:  Investigate and explore until you recognise the connections. Analyse what is telling us — use visual thinking :  Since is the lowest point, the centre is directly above it: .  Since the y-axis is tangent, the radius equals the -coordinate of the centre. The centre has -coordinate 2, so .  Step 3 — Execute:  .  Centre = .  Step 4 — Review: Check tangent to y-axis: distance from to the y-axis is 2 = ✓. Lowest point: ✓.   "
 },
@@ -1274,7 +1598,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-work-out-practice",
   "type": "Checkpoint",
-  "number": "2.2.29",
+  "number": "2.3.29",
   "title": "Practice: Geometric Clues.",
   "body": " Practice: Geometric Clues   1. A circle has centre and is tangent to the x-axis. The radius is 3. Find (two possible answers).  2. The highest point on a circle is and the circle is tangent to the x-axis. Find the centre and radius.  3. A circle is tangent to both axes and has radius 4. The centre is in the first quadrant. Write down its equation.    1. or .  2. Tangent to x-axis means . Highest point is , so and . Since : , , . Centre .  3. Centre = . Equation: .   "
 },
@@ -1283,7 +1607,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-lc2023-q2b",
   "type": "Example",
-  "number": "2.2.30",
+  "number": "2.3.30",
   "title": "LC 2023 Paper 2 OL — Q2(b).",
   "body": " LC 2023 Paper 2 OL — Q2(b)   Find the points of intersection between a circle , and the line , where:  :  :    Step 1 — Understand:  Identify  as a linear equation and as a non-linear equation. We need the points where the line crosses the circle.  Step 2 — Plan:  Appreciate that substitution (or plotting) is required — elimination does not work for a linear–non-linear system. Rearrange the line for and substitute into the circle.  Step 3 — Execute: From : .  Substitute into :     Divide through by 26:    or .  When : . Point: .  When : . Point: .  Step 4 — Review: Check on the circle: ✓.  Check on the line: ✓.  Check on the circle: ✓.  Check on the line: ✓.   "
 },
@@ -1292,7 +1616,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-lc2024-q3b",
   "type": "Example",
-  "number": "2.2.31",
+  "number": "2.3.31",
   "title": "LC 2024 Paper 2 OL — Q3(b).",
   "body": " LC 2024 Paper 2 OL — Q3(b)   The circle has centre . The point is also on the circle and is the point of contact for the tangent line . Find the slope of , and hence, work out the slope of the tangent line .    Step 1 — Understand:  Appreciate that the point of tangency is on the tangent line, and the centre is not on the tangent. The radius is perpendicular to the tangent at .  Step 2 — Plan:  Explain the method : find the slope of the radius first ( ), then calculate the slope of the tangent ( ) using the perpendicular relationship. Finally, use point and slope in the point-slope formula.  Step 3 — Execute: Slope of :   Slope of tangent (perpendicular to radius):   Equation of tangent using :      Step 4 — Review: Check the product of slopes: ✓ (perpendicular).  Check on the tangent: ✓.   "
 },
@@ -1301,7 +1625,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-circle-mixed-1",
   "type": "Checkpoint",
-  "number": "2.2.32",
+  "number": "2.3.32",
   "title": "Mixed Problem 1.",
   "body": " Mixed Problem 1   A circle has centre and passes through the point .  (a) Find the radius.  (b) Write the equation of the circle.  (c) Investigate whether is on, inside, or outside the circle.    (a) .  (b) .  (c) → ON the circle.   "
 },
@@ -1310,7 +1634,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-circle-mixed-2",
   "type": "Checkpoint",
-  "number": "2.2.33",
+  "number": "2.3.33",
   "title": "Mixed Problem 2.",
   "body": " Mixed Problem 2   The circle has equation .  (a) Write down the centre and radius.  (b) Write down the coordinates of the highest and lowest points on .  (c) Is the point inside or outside ?    (a) Centre , radius 6.  (b) Highest: . Lowest: .  (c) → INSIDE.   "
 },
@@ -1319,7 +1643,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-circle-mixed-3",
   "type": "Checkpoint",
-  "number": "2.2.34",
+  "number": "2.3.34",
   "title": "Mixed Problem 3.",
   "body": " Mixed Problem 3   A circle has its centre on the positive x-axis and is tangent to both the x-axis and the line .  (a) Find the radius and the y-coordinate of the centre.  (b) The point is on the circle. Find the x-coordinate of the centre and write the equation.    (a) If tangent to and , the centre must be halfway between them.    (a) Centre is midway between and , so and .  (b) Centre is . Substitute : , so , giving . Since centre is on the positive x-axis: . Equation: .   "
 },
@@ -1328,7 +1652,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-circle-mixed-4",
   "type": "Checkpoint",
-  "number": "2.2.35",
+  "number": "2.3.35",
   "title": "Mixed Problem 4.",
   "body": " Mixed Problem 4   The circle has centre and passes through the origin .  (a) Find the radius.  (b) Write the equation of .  (c) Write down the coordinates of the point on that is furthest from the origin.    (c) The furthest point from the origin is on the far side of the circle from , along the line through the origin and the centre.    (a) .  (b) .  (c) Furthest point is diametrically opposite the origin through the centre: .   "
 },
@@ -1337,7 +1661,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-circle-mixed-5",
   "type": "Checkpoint",
-  "number": "2.2.36",
+  "number": "2.3.36",
   "title": "Mixed Problem 5 (Challenge).",
   "body": " Mixed Problem 5 (Challenge)   A circle passes through the points , , and .  (a) Find the midpoint of .  (b) Show that the centre of the circle is the midpoint of .  (c) Find the radius and write the equation of the circle.    What type of triangle is ? What theorem tells you about the circumscribed circle of a right-angled triangle?    (a) Midpoint of = .  (b) Triangle is right-angled at (check: ). For a right-angled triangle, the circumcentre is the midpoint of the hypotenuse.  (c) . Centre . Equation: .   "
 },
@@ -1346,7 +1670,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-coordinate-geometry.html#ex-circle-mixed-6",
   "type": "Checkpoint",
-  "number": "2.2.37",
+  "number": "2.3.37",
   "title": "Mixed Problem 6 (Challenge).",
   "body": " Mixed Problem 6 (Challenge)   Two circles have equations and .  (a) Write down the centre and radius of each circle.  (b) Find the distance between the centres.  (c) Do the circles overlap, touch, or are they separate? Explain your reasoning.    (a) Circle 1: centre , . Circle 2: centre , .  (b) Distance = 7.  (c) , so the circles overlap (two intersection points). If the distance equalled they would touch externally.   "
 },
@@ -1355,7 +1679,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-trigonometry.html",
   "type": "Section",
-  "number": "2.3",
+  "number": "2.4",
   "title": "Trigonometry",
   "body": " Trigonometry  Content coming soon.  "
 },
@@ -1364,7 +1688,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-enlargements.html",
   "type": "Section",
-  "number": "2.4",
+  "number": "2.5",
   "title": "Transformation Geometry: Enlargements",
   "body": " Transformation Geometry: Enlargements   An enlargement is a transformation that changes the size of a figure while keeping its shape. At LC OL, you need to understand how enlargements affect lengths and areas, and be able to solve problems involving them.    Centre of Enlargement and Scale Factor  An enlargement is defined by two things:  1. A fixed point called the centre of enlargement .  2. A number called the scale factor , where and .  To enlarge a point about a centre with scale factor : the image lies on the ray such that .  Every point of the figure is transformed this way. Lines from the centre through corresponding points of the object and image are called rays of enlargement .   Effect of Scale Factor    Scale Factor  Effect  Example     Image is larger than the object  : every length is doubled     Image is the same size (identity)  No change     Image is smaller than the object (reduction)  : every length is one-third     Note: when , we still call it an enlargement even though the image is smaller. Some texts use the word reduction for this case.    Effect on Lengths  Under an enlargement with scale factor , every length in the image is times the corresponding length in the object:   This applies to all lengths: sides, diagonals, perimeters, heights, radii — everything.  Since the shape is preserved and only the size changes, the object and its image are similar figures . All corresponding angles are equal. All corresponding sides are in the ratio .   Lengths Under Enlargement   A triangle with sides 6, 8, 10 is enlarged with scale factor . Find the side lengths and perimeter of the image.    Each side is multiplied by :  Sides: , , .  Perimeter of object: .  Perimeter of image: .  The perimeter also scales by .      Effect on Area  This is the key result for exam questions. Under an enlargement with scale factor :   Why ? Area depends on two dimensions (e.g. base height). Each dimension is multiplied by , so the area is multiplied by .  For example, if a rectangle has base and height , its area is . After enlargement by factor , the base becomes and the height becomes , so the new area is .  This works for any shape — triangles, circles, irregular figures — because any area can be built up from triangles, and the argument applies to each one.   Summary: Effect of Scale Factor    Quantity  Multiplied by  Example ( )    Lengths (sides, perimeter, height)      Angles  1 (unchanged)  Same angles    Area        Area Under Enlargement   A triangle has area . It is enlarged with scale factor . Find the area of the image.    Image area .  Halving the lengths reduces the area to one quarter.     Finding the Scale Factor from Areas   A shape has area . After enlargement, its area is . Find the scale factor.    , so .     Enlarging a Circle   A circle with radius 4 cm is enlarged with scale factor . Find the radius and area of the image.    New radius cm.  Original area .  Image area cm .  Check: . Correct.      Problem-Solving Exercises   Side Lengths and Area   A rectangle has dimensions . It is enlarged with scale factor . Find the dimensions, perimeter, and area of the image.    Dimensions: . Perimeter: . Area: .    New dimensions: and .  Perimeter: .  Area: .  Check with : original area ; . Correct.     Finding Scale Factor from Lengths   A triangle is enlarged about a centre . The original triangle has a side of length 5. The corresponding side in the image has length 8. Find the scale factor and the ratio of the areas.    . Area ratio .     Working Backwards from Area   A shape is enlarged and its area increases from to . Find the scale factor . If a side of the original shape is 7 cm long, find the corresponding side in the image.    . Corresponding side cm.    , so .  Image side cm.     Map Scales   On a map with scale , a lake has area . Find the actual area of the lake in km .    The scale factor from map to real life is . Remember: cm km.       Real area .  Convert: , so .  Real area .     Centre of Enlargement   Triangle has vertices , , . It is enlarged with centre and scale factor 2. Find the vertices of the image and verify that the area has increased by a factor of 4.    , , .    Each coordinate is multiplied by :  , , .  Original area: .  Image area: .  Ratio: . Confirmed.     "
 },
@@ -1409,7 +1733,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-enlargements.html#table-scale-factor",
   "type": "Table",
-  "number": "2.4.1",
+  "number": "2.5.1",
   "title": "Effect of Scale Factor",
   "body": " Effect of Scale Factor    Scale Factor  Effect  Example     Image is larger than the object  : every length is doubled     Image is the same size (identity)  No change     Image is smaller than the object (reduction)  : every length is one-third    "
 },
@@ -1427,7 +1751,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-enlargements.html#ex-enlargement-length",
   "type": "Example",
-  "number": "2.4.2",
+  "number": "2.5.2",
   "title": "Lengths Under Enlargement.",
   "body": " Lengths Under Enlargement   A triangle with sides 6, 8, 10 is enlarged with scale factor . Find the side lengths and perimeter of the image.    Each side is multiplied by :  Sides: , , .  Perimeter of object: .  Perimeter of image: .  The perimeter also scales by .   "
 },
@@ -1436,7 +1760,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-enlargements.html#table-enlargement-summary",
   "type": "Table",
-  "number": "2.4.3",
+  "number": "2.5.3",
   "title": "Summary: Effect of Scale Factor <span class=\"process-math\">\\(k\\)<\/span>",
   "body": " Summary: Effect of Scale Factor    Quantity  Multiplied by  Example ( )    Lengths (sides, perimeter, height)      Angles  1 (unchanged)  Same angles    Area      "
 },
@@ -1445,7 +1769,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-enlargements.html#ex-enlargement-area",
   "type": "Example",
-  "number": "2.4.4",
+  "number": "2.5.4",
   "title": "Area Under Enlargement.",
   "body": " Area Under Enlargement   A triangle has area . It is enlarged with scale factor . Find the area of the image.    Image area .  Halving the lengths reduces the area to one quarter.   "
 },
@@ -1454,7 +1778,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-enlargements.html#ex-enlargement-find-k",
   "type": "Example",
-  "number": "2.4.5",
+  "number": "2.5.5",
   "title": "Finding the Scale Factor from Areas.",
   "body": " Finding the Scale Factor from Areas   A shape has area . After enlargement, its area is . Find the scale factor.    , so .   "
 },
@@ -1463,7 +1787,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-enlargements.html#ex-enlargement-circle",
   "type": "Example",
-  "number": "2.4.6",
+  "number": "2.5.6",
   "title": "Enlarging a Circle.",
   "body": " Enlarging a Circle   A circle with radius 4 cm is enlarged with scale factor . Find the radius and area of the image.    New radius cm.  Original area .  Image area cm .  Check: . Correct.   "
 },
@@ -1472,7 +1796,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-enlargements.html#ex-enlarge-1",
   "type": "Checkpoint",
-  "number": "2.4.7",
+  "number": "2.5.7",
   "title": "Side Lengths and Area.",
   "body": " Side Lengths and Area   A rectangle has dimensions . It is enlarged with scale factor . Find the dimensions, perimeter, and area of the image.    Dimensions: . Perimeter: . Area: .    New dimensions: and .  Perimeter: .  Area: .  Check with : original area ; . Correct.   "
 },
@@ -1481,7 +1805,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-enlargements.html#ex-enlarge-2",
   "type": "Checkpoint",
-  "number": "2.4.8",
+  "number": "2.5.8",
   "title": "Finding Scale Factor from Lengths.",
   "body": " Finding Scale Factor from Lengths   A triangle is enlarged about a centre . The original triangle has a side of length 5. The corresponding side in the image has length 8. Find the scale factor and the ratio of the areas.    . Area ratio .   "
 },
@@ -1490,7 +1814,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-enlargements.html#ex-enlarge-3",
   "type": "Checkpoint",
-  "number": "2.4.9",
+  "number": "2.5.9",
   "title": "Working Backwards from Area.",
   "body": " Working Backwards from Area   A shape is enlarged and its area increases from to . Find the scale factor . If a side of the original shape is 7 cm long, find the corresponding side in the image.    . Corresponding side cm.    , so .  Image side cm.   "
 },
@@ -1499,7 +1823,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-enlargements.html#ex-enlarge-4",
   "type": "Checkpoint",
-  "number": "2.4.10",
+  "number": "2.5.10",
   "title": "Map Scales.",
   "body": " Map Scales   On a map with scale , a lake has area . Find the actual area of the lake in km .    The scale factor from map to real life is . Remember: cm km.       Real area .  Convert: , so .  Real area .   "
 },
@@ -1508,7 +1832,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-enlargements.html#ex-enlarge-5",
   "type": "Checkpoint",
-  "number": "2.4.11",
+  "number": "2.5.11",
   "title": "Centre of Enlargement.",
   "body": " Centre of Enlargement   Triangle has vertices , , . It is enlarged with centre and scale factor 2. Find the vertices of the image and verify that the area has increased by a factor of 4.    , , .    Each coordinate is multiplied by :  , , .  Original area: .  Image area: .  Ratio: . Confirmed.   "
 },
