@@ -78,12 +78,9 @@
 
       <xi:include href="geometry/enlargements.ptx"/>
 
-    </chapter>
+      <xi:include href="geometry/circle2.ptx"/>
 
-    <!-- ============================== -->
-    <!-- THE CIRCLE (standalone chapter) -->
-    <!-- ============================== -->
-    <xi:include href="geometry/circle2.ptx"/>
+    </chapter>
 
     <!-- ============================== -->
     <!-- CO-ORDINATE GEOMETRY            -->

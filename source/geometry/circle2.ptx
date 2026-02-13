@@ -6,7 +6,7 @@
 <!--  Mr Downes Maths · Learning Made as Simple as Possible        -->
 <!-- ============================================================ -->
 
-<chapter xml:id="ch-circle" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-circle" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Circle</title>
 
   <introduction>
@@ -38,7 +38,7 @@
   <!-- SUBSECTION 1: What You Already Know                       -->
   <!-- ======================================================== -->
 
-  <section xml:id="subsec-circle-prior">
+  <subsection xml:id="subsec-circle-prior">
     <title>What You Already Know</title>
 
     <p>
@@ -105,7 +105,7 @@
         </answer>
       </task>
     </activity>
-  </section>
+  </subsection>
 
 
 
@@ -123,7 +123,7 @@
   <!-- SUBSECTION 2: The Definition of a Circle                  -->
   <!-- ======================================================== -->
 
-  <section xml:id="subsec-circle-definition">
+  <subsection xml:id="subsec-circle-definition">
     <title>What is a Circle?</title>
 
     <p>
@@ -155,14 +155,14 @@
       pull the string taut with a pencil, every point the pencil can reach traces out a
       circle. The pin is the centre, and the length of the string is the radius.
     </p>
-  </section>
+  </subsection>
 
 
   <!-- ======================================================== -->
   <!-- SUBSECTION 3: Parts of a Circle                           -->
   <!-- ======================================================== -->
 
-  <section xml:id="subsec-circle-parts">
+  <subsection xml:id="subsec-circle-parts">
     <title>Parts of a Circle</title>
 
     <p>
@@ -236,14 +236,14 @@
       <em>find the equation of a tangent</em>. The method is: find the slope of the
       radius, then the tangent slope is the negative reciprocal.
     </p>
-  </section>
+  </subsection>
 
 
   <!-- ======================================================== -->
   <!-- SUBSECTION 4: Circle Theorems (Synthetic Geometry)        -->
   <!-- ======================================================== -->
 
-  <section xml:id="subsec-circle-theorems">
+  <subsection xml:id="subsec-circle-theorems">
     <title>Key Circle Theorems</title>
 
     <p>
@@ -297,14 +297,14 @@
       in a circle where one side is a diameter, the angle opposite that diameter is
       automatically <m>90°</m>.
     </p>
-  </section>
+  </subsection>
 
 
   <!-- ======================================================== -->
   <!-- SUBSECTION 5: The Circle on the Coordinate Plane          -->
   <!-- ======================================================== -->
 
-  <section xml:id="subsec-circle-equation">
+  <subsection xml:id="subsec-circle-equation">
     <title>The Circle on the Coordinate Plane</title>
 
     <p>
@@ -352,14 +352,14 @@
         Watch the signs carefully: <m>(y + 4)</m> means <m>k = -4</m>.
       </p>
     </remark>
-  </section>
+  </subsection>
 
 
   <!-- ======================================================== -->
   <!-- SUBSECTION 6: Worked Examples (Exam-Style, Pólya Method)  -->
   <!-- ======================================================== -->
 
-  <section xml:id="subsec-circle-worked-examples">
+  <subsection xml:id="subsec-circle-worked-examples">
     <title>Worked Examples</title>
 
     <p>
@@ -726,14 +726,14 @@
         </p>
       </solution>
     </example>
-  </section>
+  </subsection>
 
 
   <!-- ======================================================== -->
   <!-- SUBSECTION 7: Progress Check                              -->
   <!-- ======================================================== -->
 
-  <section xml:id="subsec-circle-progress-check">
+  <subsection xml:id="subsec-circle-progress-check">
     <title>Progress Check</title>
 
     <p>
@@ -785,7 +785,7 @@
         </p>
       </answer>
     </exercise>
-  </section>
+  </subsection>
 
 
   <!-- ======================================================== -->
@@ -998,7 +998,7 @@
   <!-- SECTION: Axis Tangency and Geometric Reasoning            -->
   <!-- ======================================================== -->
 
-  <section xml:id="sec-circle-tangent-axis">
+  <subsection xml:id="subsec-circle-tangent-axis">
     <title>When a Circle Touches an Axis</title>
 
     <p>
@@ -1098,10 +1098,10 @@
       direction to that point. This gives one coordinate of the centre and a
       relationship between the other coordinate and <m>r</m>.
     </p>
-  </section>
+  </subsection>
 
 
-  <section xml:id="subsec-circle-summary">
+  <subsection xml:id="subsec-circle-summary">
     <title>Chapter Summary</title>
 
     <p>
@@ -1132,9 +1132,9 @@
       find the equation of a tangent;
       use circumference and area formulas in context.
     </p>
-  </section>
+  </subsection>
 
   <!-- Problem-Solving Section -->
   <xi:include href="ch-circle-problem-solving.ptx"/>
 
-</chapter>
+</section>
