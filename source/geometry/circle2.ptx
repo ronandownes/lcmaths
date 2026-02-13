@@ -6,7 +6,7 @@
 <!--  Mr Downes Maths · Learning Made as Simple as Possible        -->
 <!-- ============================================================ -->
 
-<section xml:id="sec-circle" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xml:id="ch-circle" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Circle</title>
 
   <introduction>
@@ -38,7 +38,7 @@
   <!-- SUBSECTION 1: What You Already Know                       -->
   <!-- ======================================================== -->
 
-  <subsection xml:id="subsec-circle-prior">
+  <section xml:id="subsec-circle-prior">
     <title>What You Already Know</title>
 
     <p>
@@ -105,7 +105,7 @@
         </answer>
       </task>
     </activity>
-  </subsection>
+  </section>
 
 
 
@@ -123,7 +123,7 @@
   <!-- SUBSECTION 2: The Definition of a Circle                  -->
   <!-- ======================================================== -->
 
-  <subsection xml:id="subsec-circle-definition">
+  <section xml:id="subsec-circle-definition">
     <title>What is a Circle?</title>
 
     <p>
@@ -155,14 +155,14 @@
       pull the string taut with a pencil, every point the pencil can reach traces out a
       circle. The pin is the centre, and the length of the string is the radius.
     </p>
-  </subsection>
+  </section>
 
 
   <!-- ======================================================== -->
   <!-- SUBSECTION 3: Parts of a Circle                           -->
   <!-- ======================================================== -->
 
-  <subsection xml:id="subsec-circle-parts">
+  <section xml:id="subsec-circle-parts">
     <title>Parts of a Circle</title>
 
     <p>
@@ -236,14 +236,14 @@
       <em>find the equation of a tangent</em>. The method is: find the slope of the
       radius, then the tangent slope is the negative reciprocal.
     </p>
-  </subsection>
+  </section>
 
 
   <!-- ======================================================== -->
   <!-- SUBSECTION 4: Circle Theorems (Synthetic Geometry)        -->
   <!-- ======================================================== -->
 
-  <subsection xml:id="subsec-circle-theorems">
+  <section xml:id="subsec-circle-theorems">
     <title>Key Circle Theorems</title>
 
     <p>
@@ -297,14 +297,14 @@
       in a circle where one side is a diameter, the angle opposite that diameter is
       automatically <m>90°</m>.
     </p>
-  </subsection>
+  </section>
 
 
   <!-- ======================================================== -->
   <!-- SUBSECTION 5: The Circle on the Coordinate Plane          -->
   <!-- ======================================================== -->
 
-  <subsection xml:id="subsec-circle-equation">
+  <section xml:id="subsec-circle-equation">
     <title>The Circle on the Coordinate Plane</title>
 
     <p>
@@ -352,14 +352,14 @@
         Watch the signs carefully: <m>(y + 4)</m> means <m>k = -4</m>.
       </p>
     </remark>
-  </subsection>
+  </section>
 
 
   <!-- ======================================================== -->
   <!-- SUBSECTION 6: Worked Examples (Exam-Style, Pólya Method)  -->
   <!-- ======================================================== -->
 
-  <subsection xml:id="subsec-circle-worked-examples">
+  <section xml:id="subsec-circle-worked-examples">
     <title>Worked Examples</title>
 
     <p>
@@ -726,14 +726,14 @@
         </p>
       </solution>
     </example>
-  </subsection>
+  </section>
 
 
   <!-- ======================================================== -->
   <!-- SUBSECTION 7: Progress Check                              -->
   <!-- ======================================================== -->
 
-  <subsection xml:id="subsec-circle-progress-check">
+  <section xml:id="subsec-circle-progress-check">
     <title>Progress Check</title>
 
     <p>
@@ -785,28 +785,30 @@
         </p>
       </answer>
     </exercise>
-  </subsection>
+  </section>
 
 
   <!-- ======================================================== -->
   <!-- SUBSECTION 8: Exercises                                   -->
   <!-- ======================================================== -->
 
-  <subsection xml:id="subsec-circle-exercises">
+  <exercises xml:id="exercises-circle">
     <title>Exercises</title>
 
+    <introduction>
     <p>
       The exercises are arranged in three tiers:
       <term>Core</term> (essential skills),
       <term>Standard</term> (exam-level), and
       <term>Challenge</term> (extension).
     </p>
+    </introduction>
 
 
     <exercisegroup xml:id="exgrp-circle-core">
       <title>Core</title>
 
-      <exercise xml:id="ex-c-core-1">
+      <exercise xml:id="exer-circ-core-1">
         <statement>
           <p>
             <em>Write down</em> the equation of the circle with:
@@ -822,7 +824,7 @@
         </answer>
       </exercise>
 
-      <exercise xml:id="ex-c-core-2">
+      <exercise xml:id="exer-circ-core-2">
         <statement>
           <p>
             For each equation, <em>identify</em> the centre and radius of the circle.
@@ -838,7 +840,7 @@
         </answer>
       </exercise>
 
-      <exercise xml:id="ex-c-core-3">
+      <exercise xml:id="exer-circ-core-3">
         <statement>
           <p>
             A circle has radius 8 cm. <em>Calculate</em> its circumference
@@ -853,7 +855,7 @@
         </answer>
       </exercise>
 
-      <exercise xml:id="ex-c-core-4">
+      <exercise xml:id="exer-circ-core-4">
         <statement>
           <p>
             <em>Determine</em> whether each point is on, inside, or outside
@@ -875,7 +877,7 @@
     <exercisegroup xml:id="exgrp-circle-standard">
       <title>Standard</title>
 
-      <exercise xml:id="ex-c-std-1">
+      <exercise xml:id="exer-circ-std-1">
         <statement>
           <p>
             The points <m>P(2, 6)</m> and <m>Q(8, -2)</m> are the endpoints
@@ -892,7 +894,7 @@
         </answer>
       </exercise>
 
-      <exercise xml:id="ex-c-std-2">
+      <exercise xml:id="exer-circ-std-2">
         <statement>
           <p>
             The circle <m>c</m> has centre <m>(0, 0)</m> and radius 5.
@@ -912,7 +914,7 @@
         </answer>
       </exercise>
 
-      <exercise xml:id="ex-c-std-3">
+      <exercise xml:id="exer-circ-std-3">
         <statement>
           <p>
             The circle <m>w</m> has centre <m>(5, 4)</m> and passes through <m>A(1, 8)</m>.
@@ -928,7 +930,7 @@
         </answer>
       </exercise>
 
-      <exercise xml:id="ex-c-std-4">
+      <exercise xml:id="exer-circ-std-4">
         <statement>
           <p>
             Two wheels are in non-slip contact. Wheel <m>u</m> has radius 4 cm
@@ -949,7 +951,7 @@
     <exercisegroup xml:id="exgrp-circle-challenge">
       <title>Challenge</title>
 
-      <exercise xml:id="ex-c-chal-1">
+      <exercise xml:id="exer-circ-chal-1">
         <statement>
           <p>
             The circle <m>c</m> has centre on the <m>x</m>-axis and passes through
@@ -970,7 +972,7 @@
         </answer>
       </exercise>
 
-      <exercise xml:id="ex-c-chal-2">
+      <exercise xml:id="exer-circ-chal-2">
         <statement>
           <p>
             Two circles <m>c_1</m> and <m>c_2</m> both have their centres on the
@@ -989,15 +991,118 @@
         </answer>
       </exercise>
     </exercisegroup>
-  </subsection>
+  </exercises>
 
 
   <!-- ======================================================== -->
-  <!-- SUBSECTION 9: Section Summary                             -->
+  <!-- SECTION: Axis Tangency and Geometric Reasoning            -->
   <!-- ======================================================== -->
 
-  <subsection xml:id="subsec-circle-summary">
-    <title>Section Summary</title>
+  <section xml:id="sec-circle-tangent-axis">
+    <title>When a Circle Touches an Axis</title>
+
+    <p>
+      Some of the most elegant exam questions ask you to find a circle's centre
+      and radius from <em>geometric clues</em> rather than from a formula.
+      A common scenario is: the circle touches one of the axes, and you are given
+      one special point on the circle.
+    </p>
+
+    <assemblage xml:id="assemblage-axis-tangent">
+      <title>Circle Tangent to an Axis</title>
+      <p>If a circle with centre <m>(h, k)</m> and radius <m>r</m> is:</p>
+      <p><alert>Tangent to the <m>x</m>-axis:</alert> then <m>|k| = r</m>.
+        The point of tangency is <m>(h, 0)</m>.</p>
+      <p><alert>Tangent to the <m>y</m>-axis:</alert> then <m>|h| = r</m>.
+        The point of tangency is <m>(0, k)</m>.</p>
+    </assemblage>
+
+    <p>
+      These follow from Theorem 20: the tangent is perpendicular to the radius at
+      the point of contact. Since the axes are horizontal/vertical, the radius to
+      the tangent point must be vertical/horizontal.
+    </p>
+
+    <example xml:id="ex-circle-lowest-point">
+      <title>Lowest Point and Axis Tangent (LC 2024, Q4c)</title>
+      <statement>
+        <p>The point <m>(2, 1)</m> is the <em>lowest point</em> on circle <m>s</m>
+          with centre <m>c</m>. The <m>y</m>-axis is tangent to <m>s</m>.
+          Find the radius and centre of <m>s</m>.</p>
+      </statement>
+      <solution>
+        <p><alert>Step 1 — Understand:</alert>
+          Two clues: <m>(2, 1)</m> is the bottom, and the <m>y</m>-axis just touches it.</p>
+        <p><alert>Step 2 — Plan:</alert>
+          Lowest point is directly below centre: <m>h = 2</m>, <m>k = 1 + r</m>.
+          The <m>y</m>-axis tangency gives <m>|h| = r</m>, so <m>r = 2</m>.</p>
+        <p><alert>Step 3 — Carry out:</alert>
+          <me>r = 2, \quad k = 1 + 2 = 3, \quad \text{Centre} = (2, 3)</me></p>
+        <p><alert>Step 4 — Look back:</alert>
+          Lowest point: <m>(2, 3 - 2) = (2, 1)</m> ✓.
+          Distance to <m>y</m>-axis: <m>|2| = 2 = r</m> ✓.
+          The circle touches the <m>y</m>-axis at <m>(0, 3)</m> — the point on the diameter
+          directly opposite <m>(4, 3)</m>, the rightmost point. ✓</p>
+      </solution>
+    </example>
+
+    <p>
+      <alert>Key insight:</alert> The "lowest point" means the radius points
+      <em>straight down</em>. Similarly: highest = straight up, leftmost = straight left,
+      rightmost = straight right. This immediately gives one coordinate of the centre.
+    </p>
+
+    <example xml:id="ex-circle-touches-both-axes">
+      <title>Circle Touching Both Axes (LC 2022D, Q3b)</title>
+      <statement>
+        <p>Circle <m>c</m> touches the <m>x</m>-axis at <m>(-2, 0)</m>
+          and the <m>y</m>-axis at <m>(0, 2)</m>.</p>
+        <p>(i) Find the equation of <m>c</m>.</p>
+        <p>(ii) Find the equation of the circle with the same centre
+          that passes through the origin.</p>
+      </statement>
+      <solution>
+        <p><alert>(i)</alert>
+          Tangent at <m>(-2, 0)</m>: <m>h = -2</m>, centre is <m>r</m> above: <m>k = r</m>.
+          Tangent at <m>(0, 2)</m>: <m>k = 2</m>, <m>|h| = r</m>. So <m>r = 2</m>,
+          centre <m>= (-2, 2)</m>.
+          <me>(x + 2)^2 + (y - 2)^2 = 4</me></p>
+        <p><alert>(ii)</alert> Same centre, through <m>(0, 0)</m>:
+          <m>r_2 = \sqrt{4 + 4} = \sqrt{8}</m>.
+          <me>(x + 2)^2 + (y - 2)^2 = 8</me></p>
+        <p><alert>Check:</alert> <m>(-2, 0)</m>: <m>0 + 4 = 4</m> ✓.
+          <m>(0, 0)</m>: <m>4 + 4 = 8</m> ✓.</p>
+      </solution>
+    </example>
+
+    <example xml:id="ex-circle-centre-on-axis">
+      <title>Centre on the Axis Through Two Points (LC 2025D, Q2b)</title>
+      <statement>
+        <p>Circle <m>k</m> has centre on the <m>x</m>-axis and contains
+          <m>O(0,0)</m> and <m>T(4,0)</m>.</p>
+        <p>(i) Find the centre and equation.</p>
+        <p>(ii) <m>PQRS</m> is a square with all sides tangent to <m>k</m>. Find its area.</p>
+      </statement>
+      <solution>
+        <p><alert>(i)</alert> Centre on <m>x</m>-axis: <m>k = 0</m>. Equidistant from
+          <m>O</m> and <m>T</m>: <m>h = 2</m>, <m>r = 2</m>.
+          <m>(x - 2)^2 + y^2 = 4</m>.</p>
+        <p><alert>(ii)</alert> Tangent square has side <m>= 2r = 4</m>.
+          Area <m>= 16</m>.</p>
+      </solution>
+    </example>
+
+    <p>
+      <alert>Summary pattern:</alert> When a circle touches an axis or has a special
+      point (lowest/highest/leftmost/rightmost), the radius points in a cardinal
+      direction to that point. This gives one coordinate of the centre and a
+      relationship between the other coordinate and <m>r</m>.
+    </p>
+  </section>
+
+
+  <section xml:id="subsec-circle-summary">
+    <title>Chapter Summary</title>
 
     <p>
       <alert>Key Definitions:</alert>
@@ -1027,6 +1132,9 @@
       find the equation of a tangent;
       use circumference and area formulas in context.
     </p>
-  </subsection>
+  </section>
 
-</section>
+  <!-- Problem-Solving Section -->
+  <xi:include href="ch-circle-problem-solving.ptx"/>
+
+</chapter>

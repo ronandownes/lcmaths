@@ -1120,8 +1120,8 @@ var ptx_lunr_docs = [
   "id": "subsec-circle-prior",
   "level": "1",
   "url": "subsec-circle-prior.html",
-  "type": "Subsection",
-  "number": "1.1",
+  "type": "Section",
+  "number": "3.1",
   "title": "What You Already Know",
   "body": " What You Already Know   Recall from primary school that a circle is a perfectly round shape. You learned to identify its centre , radius , and diameter , and you used the formulas for circumference and area:   Primary School Circle Formulas  For a circle with radius and diameter :         You also encountered the special number , which is the ratio of every circle's circumference to its diameter. These formulas remain essential — many Leaving Certificate questions ask you to calculate circumference or area as part of a larger problem.   Beginning Activity — Circle Recall   Test your recall of these primary-school ideas before moving on.     A circle has radius 6 cm. Calculate its diameter, circumference, and the area of the disc it encloses.    Use , , and .     cm, cm, cm .      A wheel has diameter 50 cm. Calculate how far the wheel travels in one complete rotation. Give your answer in metres.     cm m.     "
 },
@@ -1139,7 +1139,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-prior.html#activity-circle-recall",
   "type": "Activity",
-  "number": "1.1.1",
+  "number": "3.1.1",
   "title": "Beginning Activity — Circle Recall.",
   "body": " Beginning Activity — Circle Recall   Test your recall of these primary-school ideas before moving on.     A circle has radius 6 cm. Calculate its diameter, circumference, and the area of the disc it encloses.    Use , , and .     cm, cm, cm .      A wheel has diameter 50 cm. Calculate how far the wheel travels in one complete rotation. Give your answer in metres.     cm m.    "
 },
@@ -1147,8 +1147,8 @@ var ptx_lunr_docs = [
   "id": "subsec-circle-definition",
   "level": "1",
   "url": "subsec-circle-definition.html",
-  "type": "Subsection",
-  "number": "1.2",
+  "type": "Section",
+  "number": "3.2",
   "title": "What is a Circle?",
   "body": " What is a Circle?  In primary school you thought of a circle as a round shape. Now we need a precise definition — one that tells us exactly which points belong to the circle and which do not.   Circle (Appendix B, Definition 40)   A circle is the set of all points in a plane that are at a given distance (its radius ) from a fixed point (its centre ).     Appreciate what this definition says: a circle is not the filled-in region — it is only the boundary. The filled-in region is called the disc . Every point on the circle is exactly the same distance from the centre. This idea of equidistance is the key property of the circle and underlies everything we do in this section.  Think of it this way: if you tie a piece of string to a pin stuck in a board and pull the string taut with a pencil, every point the pencil can reach traces out a circle. The pin is the centre, and the length of the string is the radius.  "
 },
@@ -1157,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-definition.html#def-circle",
   "type": "Definition",
-  "number": "1.2.1",
+  "number": "3.2.1",
   "title": "Circle (Appendix B, Definition 40).",
   "body": " Circle (Appendix B, Definition 40)   A circle is the set of all points in a plane that are at a given distance (its radius ) from a fixed point (its centre ).   "
 },
@@ -1174,8 +1174,8 @@ var ptx_lunr_docs = [
   "id": "subsec-circle-parts",
   "level": "1",
   "url": "subsec-circle-parts.html",
-  "type": "Subsection",
-  "number": "1.3",
+  "type": "Section",
+  "number": "3.3",
   "title": "Parts of a Circle",
   "body": " Parts of a Circle   Identify the following terms. Each is defined precisely in Appendix B (Definition 40 and surrounding material) of the specification.   Circle Terminology   Let be a circle with centre and radius .  A radius (plural: radii ) is any line segment joining the centre to a point on the circle. Its length is .  A chord is a line segment joining any two points on the circle.  A diameter is a chord that passes through the centre. Every diameter has length . This number is also called the diameter of the circle.  Two points and on a circle divide it into two pieces called arcs . A semicircle is an arc whose endpoints are the endpoints of a diameter.  A sector is the region enclosed by an arc and the two radii to its endpoints (like a \"slice of pizza\").  The disc is the region inside the circle. Its area is .  The circumference is the total length around the circle: .     Tangent to a Circle (Appendix B, Definition 42)   A line is called a tangent to a circle when meets in exactly one point. That point is called the point of contact .     Tangent–Radius Theorem (Appendix B, Theorem 20)   Each tangent is perpendicular to the radius drawn to the point of contact.  Conversely, if lies on a circle and a line through is perpendicular to the radius at , then that line is a tangent.    This theorem is extremely important for exam questions that ask you to find the equation of a tangent . The method is: find the slope of the radius, then the tangent slope is the negative reciprocal.  "
 },
@@ -1184,7 +1184,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-parts.html#def-circle-parts",
   "type": "Definition",
-  "number": "1.3.2",
+  "number": "3.3.1",
   "title": "Circle Terminology.",
   "body": " Circle Terminology   Let be a circle with centre and radius .  A radius (plural: radii ) is any line segment joining the centre to a point on the circle. Its length is .  A chord is a line segment joining any two points on the circle.  A diameter is a chord that passes through the centre. Every diameter has length . This number is also called the diameter of the circle.  Two points and on a circle divide it into two pieces called arcs . A semicircle is an arc whose endpoints are the endpoints of a diameter.  A sector is the region enclosed by an arc and the two radii to its endpoints (like a \"slice of pizza\").  The disc is the region inside the circle. Its area is .  The circumference is the total length around the circle: .   "
 },
@@ -1193,7 +1193,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-parts.html#def-tangent",
   "type": "Definition",
-  "number": "1.3.3",
+  "number": "3.3.2",
   "title": "Tangent to a Circle (Appendix B, Definition 42).",
   "body": " Tangent to a Circle (Appendix B, Definition 42)   A line is called a tangent to a circle when meets in exactly one point. That point is called the point of contact .   "
 },
@@ -1202,7 +1202,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-parts.html#thm-tangent-perpendicular",
   "type": "Theorem",
-  "number": "1.3.4",
+  "number": "3.3.3",
   "title": "Tangent–Radius Theorem (Appendix B, Theorem 20).",
   "body": " Tangent–Radius Theorem (Appendix B, Theorem 20)   Each tangent is perpendicular to the radius drawn to the point of contact.  Conversely, if lies on a circle and a line through is perpendicular to the radius at , then that line is a tangent.   "
 },
@@ -1210,8 +1210,8 @@ var ptx_lunr_docs = [
   "id": "subsec-circle-theorems",
   "level": "1",
   "url": "subsec-circle-theorems.html",
-  "type": "Subsection",
-  "number": "1.4",
+  "type": "Section",
+  "number": "3.4",
   "title": "Key Circle Theorems",
   "body": " Key Circle Theorems  The following results from Appendix B are part of the Leaving Certificate Ordinary Level course. You should be able to use them to solve problems, even though you are not asked to reproduce their proofs in the exam.   Theorem 19 — Angle at the Centre   The angle at the centre of a circle standing on a given arc is twice the angle at any point of the circle standing on the same arc.     Corollary 2 — Angles on the Same Arc   All angles at points of the circle, standing on the same arc, are equal.     Corollary 3 — Angle in a Semicircle   Each angle in a semicircle is a right angle. That is, if is a diameter of a circle and is any other point of the circle, then .     Corollary 4   If the angle standing on a chord at some point of the circle is a right angle, then is a diameter.    Corollary 3 appears frequently in exam questions. If you see a triangle inscribed in a circle where one side is a diameter, the angle opposite that diameter is automatically .  "
 },
@@ -1220,7 +1220,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-theorems.html#thm-angle-at-centre",
   "type": "Theorem",
-  "number": "1.4.5",
+  "number": "3.4.1",
   "title": "Theorem 19 — Angle at the Centre.",
   "body": " Theorem 19 — Angle at the Centre   The angle at the centre of a circle standing on a given arc is twice the angle at any point of the circle standing on the same arc.   "
 },
@@ -1229,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-theorems.html#cor-angles-same-arc",
   "type": "Corollary",
-  "number": "1.4.6",
+  "number": "3.4.2",
   "title": "Corollary 2 — Angles on the Same Arc.",
   "body": " Corollary 2 — Angles on the Same Arc   All angles at points of the circle, standing on the same arc, are equal.   "
 },
@@ -1238,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-theorems.html#cor-angle-semicircle",
   "type": "Corollary",
-  "number": "1.4.7",
+  "number": "3.4.3",
   "title": "Corollary 3 — Angle in a Semicircle.",
   "body": " Corollary 3 — Angle in a Semicircle   Each angle in a semicircle is a right angle. That is, if is a diameter of a circle and is any other point of the circle, then .   "
 },
@@ -1247,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-theorems.html#cor-right-angle-diameter",
   "type": "Corollary",
-  "number": "1.4.8",
+  "number": "3.4.4",
   "title": "Corollary 4.",
   "body": " Corollary 4   If the angle standing on a chord at some point of the circle is a right angle, then is a diameter.   "
 },
@@ -1255,8 +1255,8 @@ var ptx_lunr_docs = [
   "id": "subsec-circle-equation",
   "level": "1",
   "url": "subsec-circle-equation.html",
-  "type": "Subsection",
-  "number": "1.5",
+  "type": "Section",
+  "number": "3.5",
   "title": "The Circle on the Coordinate Plane",
   "body": " The Circle on the Coordinate Plane  We now connect the geometric definition to algebra. Recall the definition: a circle is the set of all points at distance from a centre . If is any point on the circle, the distance from to equals . Using the distance formula:     Squaring both sides gives us the standard equation.   Equation of a Circle  The circle with centre and radius has equation:      Special case: When the centre is the origin :       Appreciate that this equation is simply the distance formula in disguise. Every point satisfying the equation is exactly units from the centre. This is entirely consistent with Definition 40.   Reading an Equation  Given an equation like , you can immediately identify the centre as and the radius as . Watch the signs carefully: means .   "
 },
@@ -1265,7 +1265,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-equation.html#remark-read-equation",
   "type": "Remark",
-  "number": "1.5.9",
+  "number": "3.5.1",
   "title": "Reading an Equation.",
   "body": " Reading an Equation  Given an equation like , you can immediately identify the centre as and the radius as . Watch the signs carefully: means .  "
 },
@@ -1273,8 +1273,8 @@ var ptx_lunr_docs = [
   "id": "subsec-circle-worked-examples",
   "level": "1",
   "url": "subsec-circle-worked-examples.html",
-  "type": "Subsection",
-  "number": "1.6",
+  "type": "Section",
+  "number": "3.6",
   "title": "Worked Examples",
   "body": " Worked Examples  Each worked example below follows Pólya's four-step method: Understand the problem, Devise a plan, Carry out the plan, and Look back . Questions are drawn from actual Leaving Certificate exam papers.    Writing the Equation of a Circle   The circle has centre and radius 4. Write down the equation of . (LC 2016, Paper 2, Q3)      Step 1 — Understand: We are given the centre and radius . We need the equation.   Step 2 — Plan: Substitute into .   Step 3 — Carry out:      Step 4 — Look back: Check: the centre should satisfy . The centre is not on the circle — correct, it is inside. A point on the circle, say , gives . ✓      Reading Centre and Radius from an Equation   The circle has equation .  (i) Write down the centre and radius of .  (ii) Show that the point is on the circle .  (iii) Write down the coordinates of two other points on . (LC 2023, Paper 2, Q2)      (i)  Identify that matches .  Centre: . Radius: .   (ii)  Substitute  into the left-hand side: Since this equals , the point is on the circle. ✓   (iii) We need two points with and . Recall the Pythagorean triple :  Two other points: and .   Look back: Check: ✓ and ✓.      Verifying a Point is Outside a Circle   The circle has equation . Verify , using algebra, that the point is outside . (LC 2016, Paper 2, Q3)      Understand: A point is on the circle if the LHS equals , inside if the LHS is less than , and outside if the LHS is greater than .   Carry out: Substitute : Since , the point is outside the circle. ✓   Look back: The distance from the centre to is , which is greater than the radius 4. This confirms the point is outside.      Finding Centre from Diameter Endpoints   The points and are the endpoints of a diameter of the circle .  (a) Find the centre of .  (b) Find the radius. Give your answer in the form .  (c) Write down the equation of .  (d) Find the equation of the tangent to at . (LC 2018, Paper 2, Q4)      (a) Centre — use the midpoint formula:       (b) Radius — distance from centre to :       (c) Equation:       (d) Tangent at :    Recall Theorem 20: the tangent is perpendicular to the radius at the point of contact.  Slope of radius (from centre to ):   Since the tangent is perpendicular: (the negative reciprocal).  Equation of tangent through with slope 1:     Look back: Check satisfies it: . ✓      Semicircle — Right Angle and Area   The circle has centre and radius 5. The point , where , is on the semicircle above the -axis. The points and are the endpoints of a diameter.  (i) Find the value of .  (ii) Show that triangle is right-angled at .  (iii) Find the area of the region inside the semicircle but outside triangle . (LC 2017, Paper 2, Q2)      (i) Since is on : (taking ).   (ii)  Method 1 (using Corollary 3): is a diameter, so by Corollary 3, the angle at in the semicircle is . ✓   Method 2 (using slopes):  Since the product of slopes is , . ✓   (iii)           Circle Inscribed in a Square   A square has sides of length 12 cm. The circle is inscribed in the square (it touches all four sides). The circle is circumscribed about the square (it passes through all four corners).  (a) Find the radius of circle .  (b) Calculate the area of circle , correct to 2 decimal places.  (c) What percentage of the square's area is taken up by circle ?  (d) Show that the radius of circle is cm, correct to 2 decimal places.  (e) Calculate the circumference of circle , correct to 2 decimal places. (LC 2023, Paper 2, Q5)      (a) The inscribed circle touches each side of the square, so its diameter equals the side length. Radius cm.   (b)     (c) Area of square cm .    (d) The circumscribed circle passes through the corners. The diameter of is the diagonal of the square. By Pythagoras:     (e)        Finding the Radius and Identifying Points   The circle has centre . The point is on .  (i) Find the radius of .  (ii) Write down the coordinates of two other integer points on . (LC 2025, Paper 2, Q3)      (i)     (ii) The equation is . We need integer points. Recall the Pythagorean triple and note that also works.  Moving from the centre by shifts of , , or , :  Two points: — check: ✓  and — check: ✓      Matching Circles to Their Equations   Three circles , , and are shown on a coordinate diagram. Match each to its equation:   , , . (LC 2025, Paper 2, Q3)      Identify the centre and radius of each equation:   : centre , radius .   : centre , radius .   : centre , radius .  Match these to the circles on the diagram using their positions and sizes. The large circle at the origin is (radius 3), the small circle at the origin is (radius 1), and the circle at is (radius 2).    "
 },
@@ -1283,7 +1283,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-worked-examples.html#ex-circle-write-equation",
   "type": "Example",
-  "number": "1.6.10",
+  "number": "3.6.1",
   "title": "Writing the Equation of a Circle.",
   "body": " Writing the Equation of a Circle   The circle has centre and radius 4. Write down the equation of . (LC 2016, Paper 2, Q3)      Step 1 — Understand: We are given the centre and radius . We need the equation.   Step 2 — Plan: Substitute into .   Step 3 — Carry out:      Step 4 — Look back: Check: the centre should satisfy . The centre is not on the circle — correct, it is inside. A point on the circle, say , gives . ✓   "
 },
@@ -1292,7 +1292,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-worked-examples.html#ex-circle-read-equation",
   "type": "Example",
-  "number": "1.6.11",
+  "number": "3.6.2",
   "title": "Reading Centre and Radius from an Equation.",
   "body": " Reading Centre and Radius from an Equation   The circle has equation .  (i) Write down the centre and radius of .  (ii) Show that the point is on the circle .  (iii) Write down the coordinates of two other points on . (LC 2023, Paper 2, Q2)      (i)  Identify that matches .  Centre: . Radius: .   (ii)  Substitute  into the left-hand side: Since this equals , the point is on the circle. ✓   (iii) We need two points with and . Recall the Pythagorean triple :  Two other points: and .   Look back: Check: ✓ and ✓.   "
 },
@@ -1301,7 +1301,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-worked-examples.html#ex-circle-point-outside",
   "type": "Example",
-  "number": "1.6.12",
+  "number": "3.6.3",
   "title": "Verifying a Point is Outside a Circle.",
   "body": " Verifying a Point is Outside a Circle   The circle has equation . Verify , using algebra, that the point is outside . (LC 2016, Paper 2, Q3)      Understand: A point is on the circle if the LHS equals , inside if the LHS is less than , and outside if the LHS is greater than .   Carry out: Substitute : Since , the point is outside the circle. ✓   Look back: The distance from the centre to is , which is greater than the radius 4. This confirms the point is outside.   "
 },
@@ -1310,7 +1310,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-worked-examples.html#ex-circle-diameter-centre",
   "type": "Example",
-  "number": "1.6.13",
+  "number": "3.6.4",
   "title": "Finding Centre from Diameter Endpoints.",
   "body": " Finding Centre from Diameter Endpoints   The points and are the endpoints of a diameter of the circle .  (a) Find the centre of .  (b) Find the radius. Give your answer in the form .  (c) Write down the equation of .  (d) Find the equation of the tangent to at . (LC 2018, Paper 2, Q4)      (a) Centre — use the midpoint formula:       (b) Radius — distance from centre to :       (c) Equation:       (d) Tangent at :    Recall Theorem 20: the tangent is perpendicular to the radius at the point of contact.  Slope of radius (from centre to ):   Since the tangent is perpendicular: (the negative reciprocal).  Equation of tangent through with slope 1:     Look back: Check satisfies it: . ✓   "
 },
@@ -1319,7 +1319,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-worked-examples.html#ex-circle-semicircle-area",
   "type": "Example",
-  "number": "1.6.14",
+  "number": "3.6.5",
   "title": "Semicircle — Right Angle and Area.",
   "body": " Semicircle — Right Angle and Area   The circle has centre and radius 5. The point , where , is on the semicircle above the -axis. The points and are the endpoints of a diameter.  (i) Find the value of .  (ii) Show that triangle is right-angled at .  (iii) Find the area of the region inside the semicircle but outside triangle . (LC 2017, Paper 2, Q2)      (i) Since is on : (taking ).   (ii)  Method 1 (using Corollary 3): is a diameter, so by Corollary 3, the angle at in the semicircle is . ✓   Method 2 (using slopes):  Since the product of slopes is , . ✓   (iii)        "
 },
@@ -1328,7 +1328,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-worked-examples.html#ex-circle-inscribed-square",
   "type": "Example",
-  "number": "1.6.15",
+  "number": "3.6.6",
   "title": "Circle Inscribed in a Square.",
   "body": " Circle Inscribed in a Square   A square has sides of length 12 cm. The circle is inscribed in the square (it touches all four sides). The circle is circumscribed about the square (it passes through all four corners).  (a) Find the radius of circle .  (b) Calculate the area of circle , correct to 2 decimal places.  (c) What percentage of the square's area is taken up by circle ?  (d) Show that the radius of circle is cm, correct to 2 decimal places.  (e) Calculate the circumference of circle , correct to 2 decimal places. (LC 2023, Paper 2, Q5)      (a) The inscribed circle touches each side of the square, so its diameter equals the side length. Radius cm.   (b)     (c) Area of square cm .    (d) The circumscribed circle passes through the corners. The diameter of is the diagonal of the square. By Pythagoras:     (e)     "
 },
@@ -1337,7 +1337,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-worked-examples.html#ex-circle-find-radius",
   "type": "Example",
-  "number": "1.6.16",
+  "number": "3.6.7",
   "title": "Finding the Radius and Identifying Points.",
   "body": " Finding the Radius and Identifying Points   The circle has centre . The point is on .  (i) Find the radius of .  (ii) Write down the coordinates of two other integer points on . (LC 2025, Paper 2, Q3)      (i)     (ii) The equation is . We need integer points. Recall the Pythagorean triple and note that also works.  Moving from the centre by shifts of , , or , :  Two points: — check: ✓  and — check: ✓   "
 },
@@ -1346,7 +1346,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-worked-examples.html#ex-circle-match-equations",
   "type": "Example",
-  "number": "1.6.17",
+  "number": "3.6.8",
   "title": "Matching Circles to Their Equations.",
   "body": " Matching Circles to Their Equations   Three circles , , and are shown on a coordinate diagram. Match each to its equation:   , , . (LC 2025, Paper 2, Q3)      Identify the centre and radius of each equation:   : centre , radius .   : centre , radius .   : centre , radius .  Match these to the circles on the diagram using their positions and sizes. The large circle at the origin is (radius 3), the small circle at the origin is (radius 1), and the circle at is (radius 2).   "
 },
@@ -1354,8 +1354,8 @@ var ptx_lunr_docs = [
   "id": "subsec-circle-progress-check",
   "level": "1",
   "url": "subsec-circle-progress-check.html",
-  "type": "Subsection",
-  "number": "1.7",
+  "type": "Section",
+  "number": "3.7",
   "title": "Progress Check",
   "body": " Progress Check  Before moving to the exercises, test your understanding with these quick checks.    A circle has centre and passes through . Find the radius and write the equation.     . Equation: .      Is the point on the circle ? Give a reason.     . No, the point is inside the circle (since ).      A circle has centre and radius 2. Write down its equation, then find the centre and radius of its image under central symmetry through the origin.    Equation: . Under central symmetry in , the centre maps to and the radius stays the same: .    "
 },
@@ -1364,7 +1364,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-progress-check.html#pc-circle-1",
   "type": "Checkpoint",
-  "number": "1.7.18",
+  "number": "3.7.1",
   "title": "",
   "body": "  A circle has centre and passes through . Find the radius and write the equation.     . Equation: .   "
 },
@@ -1373,7 +1373,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-progress-check.html#pc-circle-2",
   "type": "Checkpoint",
-  "number": "1.7.19",
+  "number": "3.7.2",
   "title": "",
   "body": "  Is the point on the circle ? Give a reason.     . No, the point is inside the circle (since ).   "
 },
@@ -1382,126 +1382,162 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "subsec-circle-progress-check.html#pc-circle-3",
   "type": "Checkpoint",
-  "number": "1.7.20",
+  "number": "3.7.3",
   "title": "",
   "body": "  A circle has centre and radius 2. Write down its equation, then find the centre and radius of its image under central symmetry through the origin.    Equation: . Under central symmetry in , the centre maps to and the radius stays the same: .   "
 },
 {
-  "id": "subsec-circle-exercises",
+  "id": "exercises-circle",
   "level": "1",
-  "url": "subsec-circle-exercises.html",
-  "type": "Subsection",
-  "number": "1.8",
+  "url": "exercises-circle.html",
+  "type": "Exercises",
+  "number": "3.8",
   "title": "Exercises",
-  "body": " Exercises  The exercises are arranged in three tiers: Core (essential skills), Standard (exam-level), and Challenge (extension).   Core     Write down the equation of the circle with:  (a) centre , radius  (b) centre , radius  (c) centre , radius    (a)  (b)  (c)      For each equation, identify the centre and radius of the circle.  (a)  (b)  (c)    (a) Centre , radius  (b) Centre , radius  (c) Centre , radius      A circle has radius 8 cm. Calculate its circumference and the area of the enclosed disc, each correct to 2 decimal places.     cm. cm .       Determine whether each point is on, inside, or outside the circle :  (a)  (b)  (c)    (a) : on the circle  (b) : inside  (c) : outside      Standard    The points and are the endpoints of a diameter of circle .  (a) Find the centre of .  (b) Find the radius of .  (c) Write the equation of .    (a) Centre  (b)  (c)      The circle has centre and radius 5. The point , , is on .  (a) Find the value of .  (b) and are on . Show that .  (c) Find the area inside the semicircle but outside .    (a)  (b) is a diameter, so by Corollary 3, . Or use slopes: , , product .  (c) sq. units      The circle has centre and passes through . Find the equation of the tangent to at . Give your answer in the form .    Slope of radius: . Tangent slope: . .      Two wheels are in non-slip contact. Wheel has radius 4 cm and wheel has radius 6 cm.  (a) Find the circumference of each wheel in terms of .  (b) If wheel makes 100 complete rotations, how many complete rotations does wheel make?    (a) cm, cm  (b) rotations      Challenge    The circle has centre on the -axis and passes through both and .  (a) Find the centre and equation of .  (b) A square is drawn so that and are on the -axis and , , , are all tangent to . Find the area of .    The centre is the midpoint of . The radius equals the distance from the centre to either point.    (a) Centre , . Equation: .  (b) The tangent square has side . Area .      Two circles and both have their centres on the -axis. has centre and passes through . has as a diameter.  (a) Find the equation of .  (b) Find the equation of .  (c) cuts the -axis at a point . Find the coordinates of .    (a) . Equation: .  (b) Centre of , . Equation: .  (c) Set : or . Since , the other intersection is .     "
+  "body": " Exercises   The exercises are arranged in three tiers: Core (essential skills), Standard (exam-level), and Challenge (extension).    Core     Write down the equation of the circle with:  (a) centre , radius  (b) centre , radius  (c) centre , radius    (a)  (b)  (c)      For each equation, identify the centre and radius of the circle.  (a)  (b)  (c)    (a) Centre , radius  (b) Centre , radius  (c) Centre , radius      A circle has radius 8 cm. Calculate its circumference and the area of the enclosed disc, each correct to 2 decimal places.     cm. cm .       Determine whether each point is on, inside, or outside the circle :  (a)  (b)  (c)    (a) : on the circle  (b) : inside  (c) : outside      Standard    The points and are the endpoints of a diameter of circle .  (a) Find the centre of .  (b) Find the radius of .  (c) Write the equation of .    (a) Centre  (b)  (c)      The circle has centre and radius 5. The point , , is on .  (a) Find the value of .  (b) and are on . Show that .  (c) Find the area inside the semicircle but outside .    (a)  (b) is a diameter, so by Corollary 3, . Or use slopes: , , product .  (c) sq. units      The circle has centre and passes through . Find the equation of the tangent to at . Give your answer in the form .    Slope of radius: . Tangent slope: . .      Two wheels are in non-slip contact. Wheel has radius 4 cm and wheel has radius 6 cm.  (a) Find the circumference of each wheel in terms of .  (b) If wheel makes 100 complete rotations, how many complete rotations does wheel make?    (a) cm, cm  (b) rotations      Challenge    The circle has centre on the -axis and passes through both and .  (a) Find the centre and equation of .  (b) A square is drawn so that and are on the -axis and , , , are all tangent to . Find the area of .    The centre is the midpoint of . The radius equals the distance from the centre to either point.    (a) Centre , . Equation: .  (b) The tangent square has side . Area .      Two circles and both have their centres on the -axis. has centre and passes through . has as a diameter.  (a) Find the equation of .  (b) Find the equation of .  (c) cuts the -axis at a point . Find the coordinates of .    (a) . Equation: .  (b) Centre of , . Equation: .  (c) Set : or . Since , the other intersection is .     "
 },
 {
-  "id": "subsec-circle-exercises-2",
+  "id": "exercises-circle-2-1",
   "level": "2",
-  "url": "subsec-circle-exercises.html#subsec-circle-exercises-2",
+  "url": "exercises-circle.html#exercises-circle-2-1",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Core Standard Challenge "
 },
 {
-  "id": "ex-c-core-1",
+  "id": "exer-circ-core-1",
   "level": "2",
-  "url": "subsec-circle-exercises.html#ex-c-core-1",
-  "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "url": "exercises-circle.html#exer-circ-core-1",
+  "type": "Exercise",
+  "number": "3.8.1",
   "title": "",
   "body": "   Write down the equation of the circle with:  (a) centre , radius  (b) centre , radius  (c) centre , radius    (a)  (b)  (c)   "
 },
 {
-  "id": "ex-c-core-2",
+  "id": "exer-circ-core-2",
   "level": "2",
-  "url": "subsec-circle-exercises.html#ex-c-core-2",
-  "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "url": "exercises-circle.html#exer-circ-core-2",
+  "type": "Exercise",
+  "number": "3.8.2",
   "title": "",
   "body": "  For each equation, identify the centre and radius of the circle.  (a)  (b)  (c)    (a) Centre , radius  (b) Centre , radius  (c) Centre , radius   "
 },
 {
-  "id": "ex-c-core-3",
+  "id": "exer-circ-core-3",
   "level": "2",
-  "url": "subsec-circle-exercises.html#ex-c-core-3",
-  "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "url": "exercises-circle.html#exer-circ-core-3",
+  "type": "Exercise",
+  "number": "3.8.3",
   "title": "",
   "body": "  A circle has radius 8 cm. Calculate its circumference and the area of the enclosed disc, each correct to 2 decimal places.     cm. cm .   "
 },
 {
-  "id": "ex-c-core-4",
+  "id": "exer-circ-core-4",
   "level": "2",
-  "url": "subsec-circle-exercises.html#ex-c-core-4",
-  "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "url": "exercises-circle.html#exer-circ-core-4",
+  "type": "Exercise",
+  "number": "3.8.4",
   "title": "",
   "body": "   Determine whether each point is on, inside, or outside the circle :  (a)  (b)  (c)    (a) : on the circle  (b) : inside  (c) : outside   "
 },
 {
-  "id": "ex-c-std-1",
+  "id": "exer-circ-std-1",
   "level": "2",
-  "url": "subsec-circle-exercises.html#ex-c-std-1",
-  "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "url": "exercises-circle.html#exer-circ-std-1",
+  "type": "Exercise",
+  "number": "3.8.5",
   "title": "",
   "body": "  The points and are the endpoints of a diameter of circle .  (a) Find the centre of .  (b) Find the radius of .  (c) Write the equation of .    (a) Centre  (b)  (c)   "
 },
 {
-  "id": "ex-c-std-2",
+  "id": "exer-circ-std-2",
   "level": "2",
-  "url": "subsec-circle-exercises.html#ex-c-std-2",
-  "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "url": "exercises-circle.html#exer-circ-std-2",
+  "type": "Exercise",
+  "number": "3.8.6",
   "title": "",
   "body": "  The circle has centre and radius 5. The point , , is on .  (a) Find the value of .  (b) and are on . Show that .  (c) Find the area inside the semicircle but outside .    (a)  (b) is a diameter, so by Corollary 3, . Or use slopes: , , product .  (c) sq. units   "
 },
 {
-  "id": "ex-c-std-3",
+  "id": "exer-circ-std-3",
   "level": "2",
-  "url": "subsec-circle-exercises.html#ex-c-std-3",
-  "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "url": "exercises-circle.html#exer-circ-std-3",
+  "type": "Exercise",
+  "number": "3.8.7",
   "title": "",
   "body": "  The circle has centre and passes through . Find the equation of the tangent to at . Give your answer in the form .    Slope of radius: . Tangent slope: . .   "
 },
 {
-  "id": "ex-c-std-4",
+  "id": "exer-circ-std-4",
   "level": "2",
-  "url": "subsec-circle-exercises.html#ex-c-std-4",
-  "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "url": "exercises-circle.html#exer-circ-std-4",
+  "type": "Exercise",
+  "number": "3.8.8",
   "title": "",
   "body": "  Two wheels are in non-slip contact. Wheel has radius 4 cm and wheel has radius 6 cm.  (a) Find the circumference of each wheel in terms of .  (b) If wheel makes 100 complete rotations, how many complete rotations does wheel make?    (a) cm, cm  (b) rotations   "
 },
 {
-  "id": "ex-c-chal-1",
+  "id": "exer-circ-chal-1",
   "level": "2",
-  "url": "subsec-circle-exercises.html#ex-c-chal-1",
-  "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "url": "exercises-circle.html#exer-circ-chal-1",
+  "type": "Exercise",
+  "number": "3.8.9",
   "title": "",
   "body": "  The circle has centre on the -axis and passes through both and .  (a) Find the centre and equation of .  (b) A square is drawn so that and are on the -axis and , , , are all tangent to . Find the area of .    The centre is the midpoint of . The radius equals the distance from the centre to either point.    (a) Centre , . Equation: .  (b) The tangent square has side . Area .   "
 },
 {
-  "id": "ex-c-chal-2",
+  "id": "exer-circ-chal-2",
   "level": "2",
-  "url": "subsec-circle-exercises.html#ex-c-chal-2",
-  "type": "Checkpoint",
-  "number": "[STRUCT].20",
+  "url": "exercises-circle.html#exer-circ-chal-2",
+  "type": "Exercise",
+  "number": "3.8.10",
   "title": "",
   "body": "  Two circles and both have their centres on the -axis. has centre and passes through . has as a diameter.  (a) Find the equation of .  (b) Find the equation of .  (c) cuts the -axis at a point . Find the coordinates of .    (a) . Equation: .  (b) Centre of , . Equation: .  (c) Set : or . Since , the other intersection is .   "
+},
+{
+  "id": "sec-circle-tangent-axis",
+  "level": "1",
+  "url": "sec-circle-tangent-axis.html",
+  "type": "Section",
+  "number": "3.9",
+  "title": "When a Circle Touches an Axis",
+  "body": " When a Circle Touches an Axis  Some of the most elegant exam questions ask you to find a circle's centre and radius from geometric clues rather than from a formula. A common scenario is: the circle touches one of the axes, and you are given one special point on the circle.   Circle Tangent to an Axis  If a circle with centre and radius is:  Tangent to the -axis: then . The point of tangency is .  Tangent to the -axis: then . The point of tangency is .   These follow from Theorem 20: the tangent is perpendicular to the radius at the point of contact. Since the axes are horizontal\/vertical, the radius to the tangent point must be vertical\/horizontal.   Lowest Point and Axis Tangent (LC 2024, Q4c)   The point is the lowest point on circle with centre . The -axis is tangent to . Find the radius and centre of .    Step 1 — Understand: Two clues: is the bottom, and the -axis just touches it.  Step 2 — Plan: Lowest point is directly below centre: , . The -axis tangency gives , so .  Step 3 — Carry out:   Step 4 — Look back: Lowest point: ✓. Distance to -axis: ✓. The circle touches the -axis at — the point on the diameter directly opposite , the rightmost point. ✓     Key insight: The \"lowest point\" means the radius points straight down . Similarly: highest = straight up, leftmost = straight left, rightmost = straight right. This immediately gives one coordinate of the centre.   Circle Touching Both Axes (LC 2022D, Q3b)   Circle touches the -axis at and the -axis at .  (i) Find the equation of .  (ii) Find the equation of the circle with the same centre that passes through the origin.    (i) Tangent at : , centre is above: . Tangent at : , . So , centre .  (ii) Same centre, through : .  Check:  : ✓. : ✓.     Centre on the Axis Through Two Points (LC 2025D, Q2b)   Circle has centre on the -axis and contains and .  (i) Find the centre and equation.  (ii) is a square with all sides tangent to . Find its area.    (i) Centre on -axis: . Equidistant from and : , . .  (ii) Tangent square has side . Area .     Summary pattern: When a circle touches an axis or has a special point (lowest\/highest\/leftmost\/rightmost), the radius points in a cardinal direction to that point. This gives one coordinate of the centre and a relationship between the other coordinate and .  "
+},
+{
+  "id": "ex-circle-lowest-point",
+  "level": "2",
+  "url": "sec-circle-tangent-axis.html#ex-circle-lowest-point",
+  "type": "Example",
+  "number": "3.9.1",
+  "title": "Lowest Point and Axis Tangent (LC 2024, Q4c).",
+  "body": " Lowest Point and Axis Tangent (LC 2024, Q4c)   The point is the lowest point on circle with centre . The -axis is tangent to . Find the radius and centre of .    Step 1 — Understand: Two clues: is the bottom, and the -axis just touches it.  Step 2 — Plan: Lowest point is directly below centre: , . The -axis tangency gives , so .  Step 3 — Carry out:   Step 4 — Look back: Lowest point: ✓. Distance to -axis: ✓. The circle touches the -axis at — the point on the diameter directly opposite , the rightmost point. ✓   "
+},
+{
+  "id": "ex-circle-touches-both-axes",
+  "level": "2",
+  "url": "sec-circle-tangent-axis.html#ex-circle-touches-both-axes",
+  "type": "Example",
+  "number": "3.9.2",
+  "title": "Circle Touching Both Axes (LC 2022D, Q3b).",
+  "body": " Circle Touching Both Axes (LC 2022D, Q3b)   Circle touches the -axis at and the -axis at .  (i) Find the equation of .  (ii) Find the equation of the circle with the same centre that passes through the origin.    (i) Tangent at : , centre is above: . Tangent at : , . So , centre .  (ii) Same centre, through : .  Check:  : ✓. : ✓.   "
+},
+{
+  "id": "ex-circle-centre-on-axis",
+  "level": "2",
+  "url": "sec-circle-tangent-axis.html#ex-circle-centre-on-axis",
+  "type": "Example",
+  "number": "3.9.3",
+  "title": "Centre on the Axis Through Two Points (LC 2025D, Q2b).",
+  "body": " Centre on the Axis Through Two Points (LC 2025D, Q2b)   Circle has centre on the -axis and contains and .  (i) Find the centre and equation.  (ii) is a square with all sides tangent to . Find its area.    (i) Centre on -axis: . Equidistant from and : , . .  (ii) Tangent square has side . Area .   "
 },
 {
   "id": "subsec-circle-summary",
   "level": "1",
   "url": "subsec-circle-summary.html",
-  "type": "Subsection",
-  "number": "1.9",
-  "title": "Section Summary",
-  "body": " Section Summary   Key Definitions: A circle is the set of all points at a given distance (the radius) from a fixed point (the centre). The filled region is the disc . A tangent is a line meeting the circle at exactly one point.   Key Theorems: The tangent at any point is perpendicular to the radius at that point (Theorem 20). The angle in a semicircle is a right angle (Corollary 3). All angles standing on the same arc are equal (Corollary 2).   Key Formula: The circle with centre and radius has equation    Key Skills: Write the equation given centre and radius; read centre and radius from the equation; verify whether a point is on\/inside\/outside the circle; find the equation of a tangent; use circumference and area formulas in context.  "
+  "type": "Section",
+  "number": "3.10",
+  "title": "Chapter Summary",
+  "body": " Chapter Summary   Key Definitions: A circle is the set of all points at a given distance (the radius) from a fixed point (the centre). The filled region is the disc . A tangent is a line meeting the circle at exactly one point.   Key Theorems: The tangent at any point is perpendicular to the radius at that point (Theorem 20). The angle in a semicircle is a right angle (Corollary 3). All angles standing on the same arc are equal (Corollary 2).   Key Formula: The circle with centre and radius has equation    Key Skills: Write the equation given centre and radius; read centre and radius from the equation; verify whether a point is on\/inside\/outside the circle; find the equation of a tangent; use circumference and area formulas in context.  "
 },
 {
   "id": "subsec-circle-summary-2",
@@ -1513,182 +1549,749 @@ var ptx_lunr_docs = [
   "body": "circle disc tangent "
 },
 {
-  "id": "subsec-the-line",
+  "id": "sec-circle-problem-solving",
   "level": "1",
-  "url": "subsec-the-line.html",
-  "type": "Subsection",
-  "number": "3.1",
-  "title": "The Line",
-  "body": " The Line   Before we begin co-ordinate geometry, we review some essential notation and ideas from Junior Cycle. Everything in this section builds on what you already know — we are simply making it more precise and more powerful.    Notation Review (Log Tables p. 17)  In co-ordinate geometry, we work with points, lines, and segments. The notation matters — it tells us exactly what we mean.   Geometry Notation    Symbol  Meaning     The line through and     The line segment from to     The distance from to     The vector from to     Notice the difference: extends forever in both directions, has endpoints, and is a number — a length. Get comfortable reading and writing these. They appear constantly in exam questions and marking schemes.    What Is a Line?  A line is a set of points . Every point on the line satisfies the equation of that line. We call a variable point — it can be any point on the line.  By contrast, is a fixed point — a known, specific point on the line. Think of it as an anchor or reference point. Much of co-ordinate geometry is about the relationship between a fixed point and a variable point on the same line.    Slope (Log Tables p. 18)  Given two points and , the slope of line is:   Read this aloud: the slope of line — not just the slope of and . The slope belongs to the line , not to the points.    Anatomy of the Slope Formula  Let us decompose the formula. The numerator is the rise — the vertical change. The denominator is the run — the horizontal change. So slope is:   Every line segment can be decomposed into a horizontal and a vertical component — a supporting triangle . The slope measures how these two components compare.  This is a relative comparison . The subtraction means we don't care where the points are in absolute terms — only their position relative to each other . A line through and has the same slope as a line through and .    Properties of Slope  Is the slope formula commutative? Yes. It does not matter which point you call and which you call . If you swap them, both the numerator and denominator change sign, and .  However, good practice is to let the second point be the one further to the right. This way the run is positive, and the sign of the slope comes entirely from the rise. This makes it easier to see whether the line is increasing or decreasing:   Slope and Direction    Rise  Run  Slope  Line    Positive  Positive  Positive  Increasing (goes uphill left to right)    Negative  Positive  Negative  Decreasing (goes downhill left to right)    Zero  Positive  Zero  Horizontal    Any  Zero  Undefined  Vertical       Connections to Junior Cycle  The slope formula connects to several ideas from the Number strand (JC spec N.1):  Decomposition: We decompose the change between two points into a vertical part (rise) and a horizontal part (run). This is the same idea as decomposing numbers or operations into simpler parts.  Commutativity: We saw that the slope formula is commutative with respect to swapping points. This connects directly to the commutative property of multiplication and division of signed numbers (JC spec N.1b).  Relative comparison: Slope is a ratio. It uses subtraction to compare positions relatively, not absolutely (JC spec N.3a). The actual coordinates don't matter — only the differences do.    Calculating Slope   Find the slope of line where and .    With on the right ( ):   The rise is (positive — going up), the run is (positive — going right). The line is increasing.     Distance (Log Tables p. 18)  The distance from to is:   Read this as: the square root of the sum of two squares . The two squares are the rise squared and the run squared. This is Pythagoras applied to the supporting triangle.  Is this formula commutative? Yes — and for a stronger reason than slope. Subtraction is not commutative: . But squaring removes the sign : . So it genuinely does not matter which point comes first in the distance formula.    Calculating Distance   Find where and .        Midpoint (Log Tables p. 18)  The midpoint of is:   This is the mean of the -coordinates and the mean of the -coordinates. The same idea of average that you know from the Statistics strand.  Notice the crucial difference from slope and distance: midpoint uses addition , not subtraction. This is an absolute comparison — where the midpoint is depends on where the actual points are, not just on their relative position. Move both points 10 units to the right and the midpoint moves too.    Slope, Distance, Midpoint — Compared   Comparing the Three Key Formulae    Formula  Operation  Comparison Type  Commutative?    Slope  Subtraction (ratio)  Relative  Yes (sign cancels)    Distance  Subtraction (squared)  Relative  Yes (squaring removes sign)    Midpoint  Addition (mean)  Absolute  Yes (addition is commutative)       Equation of a Line (Log Tables p. 18)  Now we connect slope to the equation of a line. Start with the slope formula, but replace the second point with the variable point :   Multiply both sides by and we get:   This is the point-slope formula . It is not named on the log tables, but it is the first equation given under equation of . It says: if you know one fixed point and the slope , you can write the equation of the line.  The second equation on the log tables is:   This is the slope-intercept formula (or better: intercept-slope , because that is the order you see it). Here is the -intercept — where the line crosses the -axis. You get this form by expanding the point-slope formula and collecting terms.    Finding the Equation of a Line   Find the equation of the line through with slope .    Using the point-slope formula with and :   In slope-intercept form: , so the -intercept is .     Area of Triangle (Log Tables p. 18)  The area of a triangle with one vertex at the origin and the other two at and is:   Think of it this way: and are the areas of two rectangles — one built from the coordinates of stretched to , and the other from stretched to . The difference gives twice the area of the triangle. The is there because a triangle is half a parallelogram.    What to Ignore (HL Content)  The following formulae from the log tables (p. 19) are Higher Level only. They are NOT on the Ordinary Level course.  Cross these out on your log tables so you are not tempted to use them:  Perpendicular distance from a point to a line: — HL only .  Angle between two lines : — HL only .  Point dividing in ratio (bottom of p. 18) — HL only .  A common mistake in OL exam scripts is to attempt these formulae. If you see them, ignore them. They are not on your course and using them incorrectly will cost you marks.    Slope Practice   Find the slope of line where and .    Let be on the right since . What is the rise? What is the run?       With on the right:   The rise is (going down) and the run is (going right). The line is decreasing.     Distance Practice   Find where and .           Midpoint Practice   Find the midpoint of where and .           Equation of a Line   Find the equation of line where and . Give your answer in the form .    You already found the slope in a previous exercise. Now use the point-slope formula with either point.       Using the point-slope formula with and :     "
+  "url": "sec-circle-problem-solving.html",
+  "type": "Section",
+  "number": "3.11",
+  "title": "Circle Problem Solving",
+  "body": " Circle Problem Solving   This section applies Pólya's four-step problem-solving method to Leaving Certificate Ordinary Level questions on the coordinate geometry of the circle. Questions are grouped by skill so you can target your weaknesses. Every solution uses the action verbs from the specification: Appreciate , Recall , Identify , Apply , Calculate , Verify , and Analyse .       Reading Centre and Radius  The most basic skill: given the equation, identify the centre and radius. Watch the signs — means .    LC 2022, Q2(a)   The circle has equation . (i) Write down the centre and radius. (ii) Is on, inside, or outside ?    Step 1 — Understand:  Identify the equation matches .  Step 2 — Plan:  Recall that and come from the brackets (with opposite signs), and .  Step 3 — Carry out:  (i) Centre , radius .  (ii) Apply : substitute into the LHS: Since , the point is outside  .  Step 4 — Verify: Distance from centre to point: . ✓      LC 2024, Q4(a)   The circle has equation . (i) Write down the centre and radius. (ii) Use algebra to investigate if is on, inside, or outside .    (i) Identify: Centre , radius .  (ii) Apply:  Since , the point is outside  .  Verify:  . ✓      LC 2023D, Q4(b)   Write down the centre and radius of each circle:    Hence write down two points on and two points on .    Identify:  has centre , radius . has centre , radius .  Recall the Pythagorean triple approach for finding integer points. Points on : and . Points on : move from centre: and .  Verify:  — wait, these go in 's equation: ✓.         Writing the Equation    LC 2025, Q3(b)   Circle has centre and radius . Write down the equation of .    Recall:  .  Apply:   Verify: Centre : (not on circle — correct). Point : ✓ (on circle, 7 above centre).      LC 2024D, Q3(a)   Circle has centre and radius . (i) Write down the equation. (ii) Circle is the image of under central symmetry through . Find the centre and radius of .    (i)  (ii) Recall: central symmetry through the origin maps to . The radius is unchanged.  Centre of . Radius of .  Verify: The midpoint of and is ✓ — confirming the symmetry centre.         Finding the Radius from a Point    LC 2025, Q3(c)   Circle has centre . The point is on . (i) Find the radius. (ii) Find two other integer points on .    Step 1:  Identify the unknowns: radius , then two points on the circle.  Step 2:  Recall the distance formula for , then use Pythagorean triples to find integer points.  Step 3:  Equation: . Using the triple : shift from centre by : . Or shift by : .  Step 4: Check : ✓. Check : ✓.      LC 2021, Q4   Points and are endpoints of a diameter of circle , where and (read from diagram). (i) Find the midpoint. (ii) Find the radius. (iii) Write the equation.    (i) Apply the midpoint formula:  (ii) Calculate distance from centre to :  (iii)  Verify: Check : ✓. Check : ✓.      LC 2023D, Q4(a)   and are endpoints of a diameter of circle . (i) Find centre and radius. (ii) Write the equation. (iii) Show that lies inside .    (i) Centre . Radius .  (ii)  (iii) Substitute : . Since , the point is inside  . ✓         Equation of a Tangent   Recall Theorem 20: the tangent is perpendicular to the radius at the point of contact. Method: find slope of radius → negative reciprocal → point–slope form.    LC 2014, Q3   Circle has equation . The point is on . (i) Find the slope of where is the centre. (ii) Find the equation of the tangent at . (iii) A line is tangent to at and . Find the coordinates of .    Step 1:  Verify  is on : . Hmm — that gives 164, not 100. Let us recheck: , . Sum is 164. So is not on this circle. Let's re-examine: the actual exam gives with centre . Then ✓.  (i) Calculate slope of :  (ii) Tangent slope (negative reciprocal).    (iii) A parallel tangent touches the circle at the diametrically opposite point. is the reflection of through the centre:  Verify:  ✓.      LC 2020, Q4(b)   Circle has equation . Point is on . Find the equation of the tangent at .    Verify:  ✓.  Slope of radius from to : .  Tangent slope: .     Verify:  : ✓.      LC 2024D, Q3(b)   Circle has centre . Point is on and is the point of contact for the tangent line . Find the slope of , and hence the slope of .    Calculate:   Tangent is perpendicular to radius: .  Verify:  ✓.         Circle–Line Intersection    LC 2023, Q2(b)   Find the points of intersection of circle and line .    Step 1:  Identify this as a simultaneous equations problem: one linear, one quadratic.  Step 2:  Recall the method: isolate from the line, substitute into the circle equation.  Step 3: From : . Substitute:      : . : .  Intersection points: and .  Step 4: Check both in circle: ✓, ✓. Check both in line: ✓, ✓.         Finding an Unknown Coordinate    LC 2020, Q4(a)   Circle has equation . The point is on . Find the two possible values of .    Apply: Substitute :     Verify:  : ✓. : ✓. These are the top and bottom of the circle (same as centre).      LC 2021, Q4(b)   The point is in the first quadrant and on the circle . Find .       Since is in the first quadrant ( ): .  Verify:  ✓.         Applied and Multi-Part Problems    LC 2019, Q4 — Circle in a Tilted Square   Circle is enclosed in square and touches all four sides. , , . (a) Find . (b) Find the centre of . (c) Find the radius. (d) Find the equation.    (a)  Recall: In a square, diagonals bisect each other. Midpoint of = midpoint of .    .  (b) The centre of the inscribed circle is the centre of the square: .  (c) The radius equals the perpendicular distance from the centre to any side. Side goes from to . Slope: . Equation of : , i.e. .  (d)   Verify: Check is outside: ✓ (a vertex of the square is outside the inscribed circle).      LC 2022, Q2(b) — Touching Circles   Circles and touch at . Circle has centre . (i) Find another point on . (ii) The radius of is half that of . Find the centre of .    (i) The point is on . The diametrically opposite point: reflect through centre :  (ii)  Calculate the radius of :  . Since the circles touch externally at , the centre of is on the line from through , at distance on the far side of .  Direction from 's centre to touch point: . Continue half that distance beyond the touch point:  Verify: Distance from to : ✓.      LC 2025, Q3(a) — Visual Matching   Three circles , , are shown on a diagram. Match each to: , , .    Identify centre and radius of each equation:  : centre , radius → large circle at origin = .  : centre , radius → small circle at right = .  : centre , radius → tiny circle at origin = .         Axis Tangency and Geometric Reasoning    LC 2024, Q4(c)   is the lowest point on circle . The -axis is tangent to . Find the radius and centre.    Step 1:  Appreciate \"lowest point\" means the centre is directly above: , .  Step 2:  -axis tangent means , so .  Step 3:  . Centre , radius .  Step 4: Lowest point: ✓. Distance to -axis: ✓. The -axis tangent point is — the point on the diameter directly opposite the rightmost point .      LC 2025D, Q2(b)   Circle has centre on the -axis and contains and . (i) Find centre and equation. (ii) Square has all sides tangent to . Find the area.    (i) Centre on -axis: . Midpoint of and : . Radius . .  (ii) Tangent square has side . Area .         Circumference, Area, and Measurement    LC 2023, Q5   A square has sides 12 cm. Circle is inscribed (touches all sides). Circle is circumscribed (passes through all corners). (a) Radius of . (b) Area of . (c) Percentage of square. (d) Show radius of . (e) Circumference of .    (a) Inscribed circle diameter = side: cm.  (b) cm .  (c) .  (d) Circumscribed circle diameter = diagonal: . cm ✓.  (e) cm.      LC 2018, Q5(b) — Rotating Wheels   Wheel has radius 4 cm, wheel has radius 6 cm. They are in non-slip contact. (i) Find each circumference in terms of . (ii) If makes 100 rotations, how many does make?    (i) cm, cm.  (ii) Non-slip means equal arc length. travels cm. rotations: .  Analyse: The smaller wheel always turns more times — makes sense. ✓     "
 },
 {
-  "id": "table-geo-notation",
+  "id": "sec-circle-problem-solving-2-1",
   "level": "2",
-  "url": "subsec-the-line.html#table-geo-notation",
-  "type": "Table",
-  "number": "3.1.21",
-  "title": "Geometry Notation",
-  "body": " Geometry Notation    Symbol  Meaning     The line through and     The line segment from to     The distance from to     The vector from to    "
-},
-{
-  "id": "par-what-is-a-line-2",
-  "level": "2",
-  "url": "subsec-the-line.html#par-what-is-a-line-2",
+  "url": "sec-circle-problem-solving.html#sec-circle-problem-solving-2-1",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "variable point "
+  "body": "Pólya's four-step problem-solving method "
 },
 {
-  "id": "par-what-is-a-line-3",
+  "id": "ex-circ-ps-read-2022",
   "level": "2",
-  "url": "subsec-the-line.html#par-what-is-a-line-3",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "fixed point "
-},
-{
-  "id": "par-slope-2",
-  "level": "2",
-  "url": "subsec-the-line.html#par-slope-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "slope of line "
-},
-{
-  "id": "par-slope-anatomy-2",
-  "level": "2",
-  "url": "subsec-the-line.html#par-slope-anatomy-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "rise run "
-},
-{
-  "id": "par-slope-anatomy-4",
-  "level": "2",
-  "url": "subsec-the-line.html#par-slope-anatomy-4",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "supporting triangle "
-},
-{
-  "id": "table-slope-sign",
-  "level": "2",
-  "url": "subsec-the-line.html#table-slope-sign",
-  "type": "Table",
-  "number": "3.1.22",
-  "title": "Slope and Direction",
-  "body": " Slope and Direction    Rise  Run  Slope  Line    Positive  Positive  Positive  Increasing (goes uphill left to right)    Negative  Positive  Negative  Decreasing (goes downhill left to right)    Zero  Positive  Zero  Horizontal    Any  Zero  Undefined  Vertical    "
-},
-{
-  "id": "ex-slope-calc",
-  "level": "2",
-  "url": "subsec-the-line.html#ex-slope-calc",
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-read-2022",
   "type": "Example",
-  "number": "3.1.23",
-  "title": "Calculating Slope.",
-  "body": " Calculating Slope   Find the slope of line where and .    With on the right ( ):   The rise is (positive — going up), the run is (positive — going right). The line is increasing.   "
+  "number": "3.11.1",
+  "title": "LC 2022, Q2(a).",
+  "body": " LC 2022, Q2(a)   The circle has equation . (i) Write down the centre and radius. (ii) Is on, inside, or outside ?    Step 1 — Understand:  Identify the equation matches .  Step 2 — Plan:  Recall that and come from the brackets (with opposite signs), and .  Step 3 — Carry out:  (i) Centre , radius .  (ii) Apply : substitute into the LHS: Since , the point is outside  .  Step 4 — Verify: Distance from centre to point: . ✓   "
 },
 {
-  "id": "ex-distance-calc",
+  "id": "ex-circ-ps-read-2024",
   "level": "2",
-  "url": "subsec-the-line.html#ex-distance-calc",
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-read-2024",
   "type": "Example",
-  "number": "3.1.24",
-  "title": "Calculating Distance.",
-  "body": " Calculating Distance   Find where and .      "
+  "number": "3.11.2",
+  "title": "LC 2024, Q4(a).",
+  "body": " LC 2024, Q4(a)   The circle has equation . (i) Write down the centre and radius. (ii) Use algebra to investigate if is on, inside, or outside .    (i) Identify: Centre , radius .  (ii) Apply:  Since , the point is outside  .  Verify:  . ✓   "
 },
 {
-  "id": "par-midpoint-4",
+  "id": "ex-circ-ps-read-2023d",
   "level": "2",
-  "url": "subsec-the-line.html#par-midpoint-4",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "mean "
-},
-{
-  "id": "table-formulas-compared",
-  "level": "2",
-  "url": "subsec-the-line.html#table-formulas-compared",
-  "type": "Table",
-  "number": "3.1.25",
-  "title": "Comparing the Three Key Formulae",
-  "body": " Comparing the Three Key Formulae    Formula  Operation  Comparison Type  Commutative?    Slope  Subtraction (ratio)  Relative  Yes (sign cancels)    Distance  Subtraction (squared)  Relative  Yes (squaring removes sign)    Midpoint  Addition (mean)  Absolute  Yes (addition is commutative)    "
-},
-{
-  "id": "par-equation-of-line-6",
-  "level": "2",
-  "url": "subsec-the-line.html#par-equation-of-line-6",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "point-slope formula "
-},
-{
-  "id": "par-equation-of-line-9",
-  "level": "2",
-  "url": "subsec-the-line.html#par-equation-of-line-9",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "slope-intercept formula "
-},
-{
-  "id": "ex-equation-of-line",
-  "level": "2",
-  "url": "subsec-the-line.html#ex-equation-of-line",
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-read-2023d",
   "type": "Example",
-  "number": "3.1.26",
-  "title": "Finding the Equation of a Line.",
-  "body": " Finding the Equation of a Line   Find the equation of the line through with slope .    Using the point-slope formula with and :   In slope-intercept form: , so the -intercept is .   "
+  "number": "3.11.3",
+  "title": "LC 2023D, Q4(b).",
+  "body": " LC 2023D, Q4(b)   Write down the centre and radius of each circle:    Hence write down two points on and two points on .    Identify:  has centre , radius . has centre , radius .  Recall the Pythagorean triple approach for finding integer points. Points on : and . Points on : move from centre: and .  Verify:  — wait, these go in 's equation: ✓.   "
 },
 {
-  "id": "ex-line-slope-practice",
+  "id": "ex-circ-ps-write-2025",
   "level": "2",
-  "url": "subsec-the-line.html#ex-line-slope-practice",
-  "type": "Checkpoint",
-  "number": "3.1.27",
-  "title": "Slope Practice.",
-  "body": " Slope Practice   Find the slope of line where and .    Let be on the right since . What is the rise? What is the run?       With on the right:   The rise is (going down) and the run is (going right). The line is decreasing.   "
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-write-2025",
+  "type": "Example",
+  "number": "3.11.4",
+  "title": "LC 2025, Q3(b).",
+  "body": " LC 2025, Q3(b)   Circle has centre and radius . Write down the equation of .    Recall:  .  Apply:   Verify: Centre : (not on circle — correct). Point : ✓ (on circle, 7 above centre).   "
 },
 {
-  "id": "ex-line-distance-practice",
+  "id": "ex-circ-ps-write-2024d",
   "level": "2",
-  "url": "subsec-the-line.html#ex-line-distance-practice",
-  "type": "Checkpoint",
-  "number": "3.1.28",
-  "title": "Distance Practice.",
-  "body": " Distance Practice   Find where and .         "
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-write-2024d",
+  "type": "Example",
+  "number": "3.11.5",
+  "title": "LC 2024D, Q3(a).",
+  "body": " LC 2024D, Q3(a)   Circle has centre and radius . (i) Write down the equation. (ii) Circle is the image of under central symmetry through . Find the centre and radius of .    (i)  (ii) Recall: central symmetry through the origin maps to . The radius is unchanged.  Centre of . Radius of .  Verify: The midpoint of and is ✓ — confirming the symmetry centre.   "
 },
 {
-  "id": "ex-line-midpoint-practice",
+  "id": "ex-circ-ps-radius-2025",
   "level": "2",
-  "url": "subsec-the-line.html#ex-line-midpoint-practice",
-  "type": "Checkpoint",
-  "number": "3.1.29",
-  "title": "Midpoint Practice.",
-  "body": " Midpoint Practice   Find the midpoint of where and .         "
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-radius-2025",
+  "type": "Example",
+  "number": "3.11.6",
+  "title": "LC 2025, Q3(c).",
+  "body": " LC 2025, Q3(c)   Circle has centre . The point is on . (i) Find the radius. (ii) Find two other integer points on .    Step 1:  Identify the unknowns: radius , then two points on the circle.  Step 2:  Recall the distance formula for , then use Pythagorean triples to find integer points.  Step 3:  Equation: . Using the triple : shift from centre by : . Or shift by : .  Step 4: Check : ✓. Check : ✓.   "
 },
 {
-  "id": "ex-line-equation-practice",
+  "id": "ex-circ-ps-diameter-2021",
   "level": "2",
-  "url": "subsec-the-line.html#ex-line-equation-practice",
-  "type": "Checkpoint",
-  "number": "3.1.30",
-  "title": "Equation of a Line.",
-  "body": " Equation of a Line   Find the equation of line where and . Give your answer in the form .    You already found the slope in a previous exercise. Now use the point-slope formula with either point.       Using the point-slope formula with and :    "
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-diameter-2021",
+  "type": "Example",
+  "number": "3.11.7",
+  "title": "LC 2021, Q4.",
+  "body": " LC 2021, Q4   Points and are endpoints of a diameter of circle , where and (read from diagram). (i) Find the midpoint. (ii) Find the radius. (iii) Write the equation.    (i) Apply the midpoint formula:  (ii) Calculate distance from centre to :  (iii)  Verify: Check : ✓. Check : ✓.   "
+},
+{
+  "id": "ex-circ-ps-diameter-inside-2023d",
+  "level": "2",
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-diameter-inside-2023d",
+  "type": "Example",
+  "number": "3.11.8",
+  "title": "LC 2023D, Q4(a).",
+  "body": " LC 2023D, Q4(a)   and are endpoints of a diameter of circle . (i) Find centre and radius. (ii) Write the equation. (iii) Show that lies inside .    (i) Centre . Radius .  (ii)  (iii) Substitute : . Since , the point is inside  . ✓   "
+},
+{
+  "id": "ex-circ-ps-tangent-2014",
+  "level": "2",
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-tangent-2014",
+  "type": "Example",
+  "number": "3.11.9",
+  "title": "LC 2014, Q3.",
+  "body": " LC 2014, Q3   Circle has equation . The point is on . (i) Find the slope of where is the centre. (ii) Find the equation of the tangent at . (iii) A line is tangent to at and . Find the coordinates of .    Step 1:  Verify  is on : . Hmm — that gives 164, not 100. Let us recheck: , . Sum is 164. So is not on this circle. Let's re-examine: the actual exam gives with centre . Then ✓.  (i) Calculate slope of :  (ii) Tangent slope (negative reciprocal).    (iii) A parallel tangent touches the circle at the diametrically opposite point. is the reflection of through the centre:  Verify:  ✓.   "
+},
+{
+  "id": "ex-circ-ps-tangent-2020",
+  "level": "2",
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-tangent-2020",
+  "type": "Example",
+  "number": "3.11.10",
+  "title": "LC 2020, Q4(b).",
+  "body": " LC 2020, Q4(b)   Circle has equation . Point is on . Find the equation of the tangent at .    Verify:  ✓.  Slope of radius from to : .  Tangent slope: .     Verify:  : ✓.   "
+},
+{
+  "id": "ex-circ-ps-tangent-slope-2024d",
+  "level": "2",
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-tangent-slope-2024d",
+  "type": "Example",
+  "number": "3.11.11",
+  "title": "LC 2024D, Q3(b).",
+  "body": " LC 2024D, Q3(b)   Circle has centre . Point is on and is the point of contact for the tangent line . Find the slope of , and hence the slope of .    Calculate:   Tangent is perpendicular to radius: .  Verify:  ✓.   "
+},
+{
+  "id": "ex-circ-ps-intersect-2023",
+  "level": "2",
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-intersect-2023",
+  "type": "Example",
+  "number": "3.11.12",
+  "title": "LC 2023, Q2(b).",
+  "body": " LC 2023, Q2(b)   Find the points of intersection of circle and line .    Step 1:  Identify this as a simultaneous equations problem: one linear, one quadratic.  Step 2:  Recall the method: isolate from the line, substitute into the circle equation.  Step 3: From : . Substitute:      : . : .  Intersection points: and .  Step 4: Check both in circle: ✓, ✓. Check both in line: ✓, ✓.   "
+},
+{
+  "id": "ex-circ-ps-findk-2020",
+  "level": "2",
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-findk-2020",
+  "type": "Example",
+  "number": "3.11.13",
+  "title": "LC 2020, Q4(a).",
+  "body": " LC 2020, Q4(a)   Circle has equation . The point is on . Find the two possible values of .    Apply: Substitute :     Verify:  : ✓. : ✓. These are the top and bottom of the circle (same as centre).   "
+},
+{
+  "id": "ex-circ-ps-findk-2021",
+  "level": "2",
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-findk-2021",
+  "type": "Example",
+  "number": "3.11.14",
+  "title": "LC 2021, Q4(b).",
+  "body": " LC 2021, Q4(b)   The point is in the first quadrant and on the circle . Find .       Since is in the first quadrant ( ): .  Verify:  ✓.   "
+},
+{
+  "id": "ex-circ-ps-square-2019",
+  "level": "2",
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-square-2019",
+  "type": "Example",
+  "number": "3.11.15",
+  "title": "LC 2019, Q4 — Circle in a Tilted Square.",
+  "body": " LC 2019, Q4 — Circle in a Tilted Square   Circle is enclosed in square and touches all four sides. , , . (a) Find . (b) Find the centre of . (c) Find the radius. (d) Find the equation.    (a)  Recall: In a square, diagonals bisect each other. Midpoint of = midpoint of .    .  (b) The centre of the inscribed circle is the centre of the square: .  (c) The radius equals the perpendicular distance from the centre to any side. Side goes from to . Slope: . Equation of : , i.e. .  (d)   Verify: Check is outside: ✓ (a vertex of the square is outside the inscribed circle).   "
+},
+{
+  "id": "ex-circ-ps-touching-2022",
+  "level": "2",
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-touching-2022",
+  "type": "Example",
+  "number": "3.11.16",
+  "title": "LC 2022, Q2(b) — Touching Circles.",
+  "body": " LC 2022, Q2(b) — Touching Circles   Circles and touch at . Circle has centre . (i) Find another point on . (ii) The radius of is half that of . Find the centre of .    (i) The point is on . The diametrically opposite point: reflect through centre :  (ii)  Calculate the radius of :  . Since the circles touch externally at , the centre of is on the line from through , at distance on the far side of .  Direction from 's centre to touch point: . Continue half that distance beyond the touch point:  Verify: Distance from to : ✓.   "
+},
+{
+  "id": "ex-circ-ps-match-2025",
+  "level": "2",
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-match-2025",
+  "type": "Example",
+  "number": "3.11.17",
+  "title": "LC 2025, Q3(a) — Visual Matching.",
+  "body": " LC 2025, Q3(a) — Visual Matching   Three circles , , are shown on a diagram. Match each to: , , .    Identify centre and radius of each equation:  : centre , radius → large circle at origin = .  : centre , radius → small circle at right = .  : centre , radius → tiny circle at origin = .   "
+},
+{
+  "id": "ex-circ-ps-lowest-2024",
+  "level": "2",
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-lowest-2024",
+  "type": "Example",
+  "number": "3.11.18",
+  "title": "LC 2024, Q4(c).",
+  "body": " LC 2024, Q4(c)   is the lowest point on circle . The -axis is tangent to . Find the radius and centre.    Step 1:  Appreciate \"lowest point\" means the centre is directly above: , .  Step 2:  -axis tangent means , so .  Step 3:  . Centre , radius .  Step 4: Lowest point: ✓. Distance to -axis: ✓. The -axis tangent point is — the point on the diameter directly opposite the rightmost point .   "
+},
+{
+  "id": "ex-circ-ps-axis-centre-2025d",
+  "level": "2",
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-axis-centre-2025d",
+  "type": "Example",
+  "number": "3.11.19",
+  "title": "LC 2025D, Q2(b).",
+  "body": " LC 2025D, Q2(b)   Circle has centre on the -axis and contains and . (i) Find centre and equation. (ii) Square has all sides tangent to . Find the area.    (i) Centre on -axis: . Midpoint of and : . Radius . .  (ii) Tangent square has side . Area .   "
+},
+{
+  "id": "ex-circ-ps-inscribed-2023",
+  "level": "2",
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-inscribed-2023",
+  "type": "Example",
+  "number": "3.11.20",
+  "title": "LC 2023, Q5.",
+  "body": " LC 2023, Q5   A square has sides 12 cm. Circle is inscribed (touches all sides). Circle is circumscribed (passes through all corners). (a) Radius of . (b) Area of . (c) Percentage of square. (d) Show radius of . (e) Circumference of .    (a) Inscribed circle diameter = side: cm.  (b) cm .  (c) .  (d) Circumscribed circle diameter = diagonal: . cm ✓.  (e) cm.   "
+},
+{
+  "id": "ex-circ-ps-wheels-2018",
+  "level": "2",
+  "url": "sec-circle-problem-solving.html#ex-circ-ps-wheels-2018",
+  "type": "Example",
+  "number": "3.11.21",
+  "title": "LC 2018, Q5(b) — Rotating Wheels.",
+  "body": " LC 2018, Q5(b) — Rotating Wheels   Wheel has radius 4 cm, wheel has radius 6 cm. They are in non-slip contact. (i) Find each circumference in terms of . (ii) If makes 100 rotations, how many does make?    (i) cm, cm.  (ii) Non-slip means equal arc length. travels cm. rotations: .  Analyse: The smaller wheel always turns more times — makes sense. ✓   "
+},
+{
+  "id": "sec-line-problem-solving",
+  "level": "1",
+  "url": "sec-line-problem-solving.html",
+  "type": "Section",
+  "number": "4.1",
+  "title": "Line Problem Solving",
+  "body": " Line Problem Solving   This chapter applies Pólya's four-step problem-solving method to Leaving Certificate Ordinary Level questions on the coordinate geometry of the line. Every worked example follows the same disciplined structure:   Pólya's Four Steps     Step 1 — Understand the Problem  Appreciate what the question asks. Identify the given information and the unknowns.    Step 2 — Devise a Plan  Recall the relevant formula or method. Decide which approach to use.    Step 3 — Carry Out the Plan  Apply the chosen method. Calculate step by step, showing all working.    Step 4 — Look Back  Verify the answer is reasonable. Analyse whether the solution answers what was asked.      The questions are drawn from Leaving Certificate Ordinary Level Paper 2 examinations (2012–2025) and are organised by skill rather than by year, so that you can build fluency in each technique before moving to the next.       Finding the Slope of a Line   The slope (or gradient) of a line measures its steepness. Given two points and , the slope is You can also read slope directly from the equation , or use when the line is in the form .     LC 2025 Q4(a)(i)    and are two points on the coordinate plane. Find the slope of the line .    Step 1 — Understand the Problem.  Appreciate that we are given two points and must find the slope of the line joining them. Identify the given information: and .  Step 2 — Devise a Plan.  Recall the slope formula: .  Step 3 — Carry Out the Plan.  Apply the formula with and :   Step 4 — Look Back.  Verify: The line goes from upper-left to lower-right, so a negative slope is expected.       LC 2023 Q1(a)(i)    and are two points in the coordinate plane. Work out the slope of the line .    Step 1 — Understand.  Identify the two points: and . We need the slope of .  Step 2 — Plan.  Recall  .  Step 3 — Carry Out.    Step 4 — Look Back.  Verify: Moving from to , decreases by 3 while increases by 6 — a steep downward (left-to-right) line. Slope is consistent.       LC 2022 Q1(a)(i)   Parts of the lines and are shown, with , , and . Find the slope of .    Step 1 — Understand.  Identify:  and . Find the slope of .  Step 2 — Plan.  Recall the slope formula.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify: The line rises from left to right — positive slope expected.       LC 2019 Q2(a)   The coordinates of the points are , , and . Find the slope of .    Step 1 — Understand.  Identify:  and . Find slope of .  Step 2 — Plan.  Recall  .  Step 3 — Carry Out.    Step 4 — Look Back.  Verify: A rise of 3 over a run of 4 — a gentle positive slope. Consistent with the diagram.       LC 2023 Deferred Q3(a)(i)   The equation of line is . Write down the slope of .    Step 1 — Understand.  Appreciate that the line is in the form . We need to extract the slope.  Step 2 — Plan.  Recall: For , the slope is . Alternatively, rearrange to .  Step 3 — Carry Out. Here and , so Or rearranging: , giving .  Step 4 — Look Back.  Verify: Both methods give .      Slope — Guided Practice   Complete the interactive Slope Drill (10 questions, immediate feedback) before attempting these exercises. The drill is available in the companion line-drills tool.     Find the slope of the line through and .   Use . Before calculating, predict: will the slope be positive or negative?      Find the slope of the line through and .   What do you notice about the -coordinates?  . A horizontal line has slope 0.     The line is given. Write down its slope.   Use or rearrange to .      A line has slope . Starting from the point , find two more points on this line by using the slope as rise\/run.   From , go right 4 and up 3. Repeat. Also try going left 4 and down 3.  and     Without calculating, arrange these slopes from least steep to steepest: , , , , .   Steepness depends on the absolute value. The sign tells direction, not steepness.  Least to steepest: , , , , .         Equation of a Line   The key formula is the point–slope form : where is the slope and is a point on the line. You may be asked to give your answer in the form (with ) or in the form .     LC 2025 Q4(a)(ii)    and are two points. The slope of is (from part (i)). Work out the equation of the line . Give your answer in the form , where .    Step 1 — Understand.  Identify: We have slope and a point, say . We need the equation in the form .  Step 2 — Plan.  Recall the point–slope formula: . Substitute, then rearrange to clear fractions and reach integer form.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify by substituting : .       LC 2025 Deferred Q1(a)   The line has a slope of and crosses the -axis at the point . Find the equation of .    Step 1 — Understand.  Identify:  and the -intercept is .  Step 2 — Plan.  Recall that when the -intercept is given, we can write directly.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify: At , — matches the -intercept.       LC 2024 Q3(c)   Find the equation of the line through the points and .    Step 1 — Understand.  Identify: Two points: and . Find the equation of the line.  Step 2 — Plan.  Recall: First find the slope, then use the point–slope formula (or note that gives us the -intercept directly).  Step 3 — Carry Out.  Since is on the line, , so:   Step 4 — Look Back.  Verify with : .       LC 2023 Q1(b)   Find the equation of the line through the point with a slope of . Give your answer in the form , where .    Step 1 — Understand.  Identify: A point and slope . Required form: .  Step 2 — Plan.  Recall  , then multiply through to clear the fraction.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify with : .       LC 2021 Q3(a)   A line passes through the points and . Write the equation of in the form , where .    Step 1 — Understand.  Identify:  and . We need the equation in form.  Step 2 — Plan.  Recall: Find slope first, then note that gives the -intercept directly ( ).  Step 3 — Carry Out.  Since :   Step 4 — Look Back.  Verify with : .       LC 2016 Q4(a)   The line contains the points and . Find the equation of . Give your answer in the form , where .    Step 1 — Understand.  Identify: Two points and .  Step 2 — Plan.  Recall: Find slope, then use point–slope formula.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify with : .       LC 2019 Q2(b)    and . The slope of is . Find the equation of the line . Give your answer in the form , where .    Step 1 — Understand.  Identify: Slope , point .  Step 2 — Plan.  Recall point–slope form, then clear fractions.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify with : .       LC 2017 Q3(b)    and are vertices of rectangle . Find the equation of the line . Give your answer in the form , where .    Step 1 — Understand.  Identify:  and .  Step 2 — Plan.  Recall: Find slope, then use point–slope formula.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify with : .          Distance and Midpoint   The distance between and is The midpoint of the segment joining them is      LC 2023 Q1(a)(ii)    and . Work out the distance .    Step 1 — Understand.  Identify:  and . Find .  Step 2 — Plan.  Recall the distance formula: .  Step 3 — Carry Out.    Step 4 — Look Back.  Verify:  units. Given the coordinate differences of 3 and 6, this is reasonable.       LC 2020 Q2(a)    and . Find . Give your answer in the form units, where .    Step 1 — Understand.  Identify the two points. Answer must be in surd form.  Step 2 — Plan.  Recall the distance formula.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify:  units. Coordinate differences are 6 and 4 — reasonable.       LC 2022 Deferred Q1(a)–(c)    . is the point on the -axis vertically below ; is the point on the -axis horizontally across from . (a) Write down the coordinates of and . (b) Find the area of triangle . (c) Find .    Step 1 — Understand.  Appreciate:  is directly below on the -axis, so . is directly left of on the -axis, so .  Step 2 — Plan. (b) The triangle has a right angle at (legs along the grid lines), so . (c) Use the distance formula for .  Step 3 — Carry Out.      Step 4 — Look Back.  Verify: 12, 5, 13 is a Pythagorean triple — confirms .       LC 2018 Q2(a) — Midpoint    and . is the midpoint of . Find the coordinates of .    Step 1 — Understand.  Identify:  and . Find midpoint .  Step 2 — Plan.  Recall the midpoint formula: .  Step 3 — Carry Out.    Step 4 — Look Back.  Verify:  should lie between and in both coordinates: and .      Distance and Midpoint — Guided Practice   Complete the interactive Distance Drill and Midpoint Drill (immediate feedback) in the companion line-drills tool before attempting these.     Find the midpoint of and .   Add the 's and divide by 2. Same for 's. Then check: is your answer between the two points in both coordinates?      The midpoint of and is . Find the value of .   The midpoint's -coordinate is . Solve for .      Find the distance between and .   This is a famous Pythagorean triple:      Show that the triangle with vertices , , is right-angled at .   Find , , and . Check if .  , , . Since , right-angled at .     A student says the distance between and is . Without calculating, explain what is wrong with this answer.   Can a distance ever be negative?  Distance is always positive (or zero). The square root in the formula always gives a non-negative value. The actual distance is .         Area of a Triangle   Given vertices , , and , the area is A useful shortcut: translate one vertex to the origin, then use      LC 2025 Q4(a)(iii)    , , and . Work out the area of triangle .    Step 1 — Understand.  Identify: Three vertices. We need the area. Appreciate: Note that and share the same -coordinate ( ), so is horizontal with length .  Step 2 — Plan.  Recall: Since is horizontal, we can use base height: base , height perpendicular distance from to the line , which is .  Step 3 — Carry Out.    Step 4 — Look Back.  Verify using the translation method: Translate to the origin: , . .       LC 2025 Deferred Q1(b)   Find the area of the triangle formed by , , and .    Step 1 — Understand.  Identify: One vertex is already at the origin.  Step 2 — Plan.  Recall: With one vertex at the origin, .  Step 3 — Carry Out.    Step 4 — Look Back.  Verify: Area is positive and the triangle is not degenerate (points are not collinear).       LC 2019 Q2(d)   Find the area of triangle , where , , and .    Step 1 — Understand.  Identify: Three vertices. No vertex is at the origin.  Step 2 — Plan.  Recall: Translate to the origin, then apply the two-point area formula.  Step 3 — Carry Out. Translate by : , , .   Step 4 — Look Back.  Verify: 21 square units for a triangle spanning roughly coordinate units — reasonable.       LC 2018 Q2(c)   Find the area of triangle , where , , and .    Step 1 — Understand.  Identify: Three vertices, no vertex at the origin.  Step 2 — Plan.  Recall: Translate to the origin.  Step 3 — Carry Out. Translate by : , , . Using and :   Step 4 — Look Back.  Verify: For a triangle spanning about units, an area of 34 is plausible.          Parallel and Perpendicular Lines   Two lines are parallel if they have the same slope: . Two lines are perpendicular if .     LC 2025 Q4(b)    and . Investigate if and are parallel, perpendicular, or neither.    Step 1 — Understand.  Appreciate: We need to compare the slopes of two lines.  Step 2 — Plan.  Recall: Read slope of directly; find slope of using . Then test: equal slopes parallel; product perpendicular; otherwise neither.  Step 3 — Carry Out.  Check: , so not parallel. Check: , so not perpendicular.  Step 4 — Look Back.  Analyse: The lines are neither parallel nor perpendicular.       LC 2022 Q1(a)(ii)    , , . Slope of . Investigate if is perpendicular to .    Step 1 — Understand.  Identify: We have . We need and then test perpendicularity.  Step 2 — Plan.  Recall: Find , then check if .  Step 3 — Carry Out.  Test: .  Step 4 — Look Back.  Analyse:  is not perpendicular to .       LC 2023 Deferred Q3(a)(ii) — Finding for parallel lines   Line : (slope ). Line : , where . Line is parallel to line . Find the value of .    Step 1 — Understand.  Appreciate: Parallel lines have equal slopes. We know and must find so that .  Step 2 — Plan.  Recall: For , the slope is . Set .  Step 3 — Carry Out.    Step 4 — Look Back.  Verify: Line becomes , with slope .       LC 2021 Q3(b)(i)   The line and the point . Find the equation of line through perpendicular to . Give your answer in the form .    Step 1 — Understand.  Identify: Line has equation . Point . We need line through , perpendicular to .  Step 2 — Plan.  Recall: Slope of is . The perpendicular slope is (negative reciprocal). Then use point–slope form.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify  lies on : . Also confirm slopes: .       LC 2015 Q2   Line makes equal intercepts on the axes. (a)(i) Write down the slope of . (a)(ii) The point is on . Find the equation of in the form . (b) Line is perpendicular to and passes through . Find the equation of .    Step 1 — Understand.  Appreciate: \"Equal intercepts\" means the line cuts both axes at the same distance from the origin. Since the intercepts are equal and on opposite sides, the slope must be (the line goes from to ).  Step 2 — Plan. (a)(i) Slope . (a)(ii) Use point–slope with and . (b) Perpendicular slope , through origin.  Step 3 — Carry Out.      Step 4 — Look Back.  Verify:  on : . Slopes: , confirming perpendicularity.      Parallel and Perpendicular — Guided Practice   Complete the interactive ∥ or ⊥ ? drill and ⊥ Slope Drill in the companion line-drills tool first.     A line has slope . Write down the slope of any line perpendicular to it.   Flip the fraction and change the sign: .      A line has slope . Write the slope as a fraction first, then find the perpendicular slope.   Write as . Flip and change sign.  . The perpendicular slope is .     Find the equation of a line through parallel to .   Parallel means same slope. The slope of is . Use point–slope form.  . Interesting — it is the same line! Check: does satisfy ? Yes.     Find the equation of the line through perpendicular to a line with slope . Give your answer in the form .   Perpendicular slope is . Then use point–slope and clear fractions.      Are the lines and parallel? Justify your answer.   Find both slopes. Rearrange the second line to form.  First line: . Second line: , so . Same slope, so yes — parallel.      LC 2020 Q2(b)(ii) — Midpoint Theorem    , , . is the midpoint of and is the midpoint of . Show that is parallel to .    Step 1 — Understand.  Identify: We need to find the midpoint , then show .  Step 2 — Plan.  Recall: Find using the midpoint formula, then compare slopes.  Step 3 — Carry Out.  Since , the lines are parallel.  Step 4 — Look Back.  Analyse: This is an instance of the Midpoint Theorem — the segment joining the midpoints of two sides is parallel to the third side.          Point of Intersection   To find where two lines meet, solve their equations simultaneously.     LC 2023 Deferred Q3(a)(iii)    and . Solve simultaneously to find the point of intersection.    Step 1 — Understand.  Identify: Two linear equations in and . Find where they meet.  Step 2 — Plan.  Recall: Use elimination — multiply to make the coefficients of match.  Step 3 — Carry Out.  Adding: Substitute into : .  Step 4 — Look Back.  Verify in : . Point of intersection: .      LC 2021 Q3(b)(ii)   Find the point of intersection of and .    Step 1 — Understand.  Identify: Two equations, two unknowns.  Step 2 — Plan.  Recall: Multiply by to eliminate .  Step 3 — Carry Out.  Adding: . From : .  Step 4 — Look Back.  Verify in : . Intersection: .      LC 2016 Q4(c)    and . Find the coordinates of .    Step 1 — Understand.  Identify: Two equations. Note the -coefficients are and — ready for elimination.  Step 2 — Plan.  Recall: Add the equations directly to eliminate .  Step 3 — Carry Out.  Adding: . From : .  Step 4 — Look Back.  Verify in : . Intersection: .      LC 2013 Q3    (slope ). is perpendicular to and cuts the -axis at . (b) Find the equation of . (c) Find the point of intersection of and .    Step 1 — Understand.  Identify: Slope of is . is perpendicular, so , passing through .  Step 2 — Plan. (b) Use point–slope to find . (c) Solve and simultaneously.  Step 3 — Carry Out.   Multiply first by 3 and second by 2: Adding: . Then .  Step 4 — Look Back.  Verify: Substituting back into both equations confirms the intersection point .          Applied Coordinate Geometry Problems   These longer questions combine multiple skills — slope, distance, area, equations of lines, parallel and perpendicular conditions — in real-world or multi-part settings.     LC 2024 Q3(a) — Verify a point lies on a line   The line has equation . (i) Show that the point lies on .    Step 1 — Understand.  Appreciate: To \"show\" a point lies on a line, substitute its coordinates into the equation and demonstrate both sides are equal.  Step 2 — Plan.  Recall: Substitute into the equation and check if .  Step 3 — Carry Out.  Since the left-hand side equals the right-hand side, lies on .  Step 4 — Look Back.  Verify: The substitution is clean and the result is exact.       LC 2021 Q10 — Treasure Map (Selected Parts)   A TY class created a coordinate treasure map. , , .  (a)(ii) Food is at point , which lies on a line through with slope , and also on a line through with slope . Find the coordinates of .  (c)(iii) A spade is hidden on line which is parallel to and contains . Find the equation of .    Part (a)(ii):  Step 1 — Understand.  Appreciate:  is the intersection of two lines. One has slope through ; the other has slope (horizontal) through .  Step 2 — Plan. The horizontal line through is . The line through with slope : , i.e. .  Step 3 — Carry Out. Substituting into : . So .  Step 4 — Look Back.  Verify:  on the first line: . On the horizontal: .   Part (c)(iii):  Step 1 — Understand.  Identify:  has slope . is parallel to , so , passing through .  Step 2 — Plan.  Recall point–slope form.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify with : . Slopes match: .       LC 2023 Deferred Q9 — Houses on a Grid (Selected Parts)    , , , are positions of houses. (b) Show that . (d) Is perpendicular to ?    Part (b):  Step 1 — Understand.  Identify: Compute both distances and compare.  Step 3 — Carry Out.  Since , the claim is verified.   Part (d):  Step 1 — Understand.  Identify: Find slopes of and , then test perpendicularity.  Step 3 — Carry Out.  Test: .  Step 4 — Look Back.  Analyse:  is not perpendicular to .       LC 2022 Q1(b) — Symmetrical Triangle   Triangle is symmetrical about the -axis. . Line . (i) Find . (ii) Write down the equation of the horizontal line . (iii) Find the coordinates of .    Step 1 — Understand.  Appreciate: Symmetry about the -axis means (the reflection of ). is on the -axis (i.e. ).  Step 3 — Carry Out.  (iii) is on with : So .  Step 4 — Look Back.  Verify  on line : .       LC 2017 Q3(a) — Rectangle    , , , form a rectangle. (i) Show that . (ii) Find the area of rectangle .    Step 1 — Understand.  Identify: We need and the area.  Step 3 — Carry Out.  For the area, we also need :    Step 4 — Look Back.  Verify:  .       LC 2018 Q2(b),(d) — Parallel Lines and Translation    , , . is the midpoint of ; is the midpoint of . (b) Show that is parallel to . (d) is the image of under translation . Find .    Part (b):  Step 3 — Carry Out.   , so .   Part (d):  Step 1 — Understand.  Identify: The translation .  Step 3 — Carry Out.    Step 4 — Look Back.  Verify: Alternatively, is the midpoint of : .          Identifying and Drawing Lines   Several exam questions ask you to match lines on a diagram to their slopes, or to draw a line given a point and slope. These are visual-reasoning questions that test your understanding of what slope looks like .     LC 2025 Deferred Q1(c) — Match slopes to lines   Four lines are shown on a diagram. Match each slope to its line: , , , .    Step 1 — Understand.  Appreciate: A positive slope means the line rises left to right; a negative slope falls. Steeper lines have slopes with larger absolute value.  Step 2 — Plan.  Recall: Rank by steepness: . Identify the steepest rising line as slope 2, the gentle rising line as , the falling line at as , and the nearly horizontal falling line as .  Step 3 — Carry Out. From the diagram: slope (nearly horizontal, falling slightly); slope (steep, rising); slope (falling at ); slope (gentle rise).  Step 4 — Look Back.  Verify each assignment makes visual sense with the diagram.       LC 2023 Q1(c) — Drawing line segments   (i) Draw the line segment through with slope , in the range .  (ii) Draw the line segment through with slope , on the domain .    Step 1 — Understand.  Appreciate: We must plot a line through using the given slope, limited to the specified range or domain.  Step 2 — Plan.  Recall: Slope = rise\/run. From the given point, move according to the slope to find additional points, then draw.  Step 3 — Carry Out.  (i) Slope . From : go right 1, up 2 ; go right 1 more . Going left: , . Draw the segment from to .   (ii) Slope . From : go right 3, down 2 . Going left 3, up 2 . Left 3 more — but domain starts at , so interpolate: at , . Draw from approximately to .  Step 4 — Look Back.  Verify: Check that the line passes through and visually matches the expected steepness.      "
+},
+{
+  "id": "sec-line-problem-solving-2-1",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#sec-line-problem-solving-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Pólya's four-step problem-solving method "
+},
+{
+  "id": "ex-slope-2025-q4ai",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-slope-2025-q4ai",
+  "type": "Example",
+  "number": "4.1.1",
+  "title": "LC 2025 Q4(a)(i).",
+  "body": " LC 2025 Q4(a)(i)    and are two points on the coordinate plane. Find the slope of the line .    Step 1 — Understand the Problem.  Appreciate that we are given two points and must find the slope of the line joining them. Identify the given information: and .  Step 2 — Devise a Plan.  Recall the slope formula: .  Step 3 — Carry Out the Plan.  Apply the formula with and :   Step 4 — Look Back.  Verify: The line goes from upper-left to lower-right, so a negative slope is expected.    "
+},
+{
+  "id": "ex-slope-2023-q1ai",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-slope-2023-q1ai",
+  "type": "Example",
+  "number": "4.1.2",
+  "title": "LC 2023 Q1(a)(i).",
+  "body": " LC 2023 Q1(a)(i)    and are two points in the coordinate plane. Work out the slope of the line .    Step 1 — Understand.  Identify the two points: and . We need the slope of .  Step 2 — Plan.  Recall  .  Step 3 — Carry Out.    Step 4 — Look Back.  Verify: Moving from to , decreases by 3 while increases by 6 — a steep downward (left-to-right) line. Slope is consistent.    "
+},
+{
+  "id": "ex-slope-2022-q1ai",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-slope-2022-q1ai",
+  "type": "Example",
+  "number": "4.1.3",
+  "title": "LC 2022 Q1(a)(i).",
+  "body": " LC 2022 Q1(a)(i)   Parts of the lines and are shown, with , , and . Find the slope of .    Step 1 — Understand.  Identify:  and . Find the slope of .  Step 2 — Plan.  Recall the slope formula.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify: The line rises from left to right — positive slope expected.    "
+},
+{
+  "id": "ex-slope-2019-q2a",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-slope-2019-q2a",
+  "type": "Example",
+  "number": "4.1.4",
+  "title": "LC 2019 Q2(a).",
+  "body": " LC 2019 Q2(a)   The coordinates of the points are , , and . Find the slope of .    Step 1 — Understand.  Identify:  and . Find slope of .  Step 2 — Plan.  Recall  .  Step 3 — Carry Out.    Step 4 — Look Back.  Verify: A rise of 3 over a run of 4 — a gentle positive slope. Consistent with the diagram.    "
+},
+{
+  "id": "ex-slope-from-eq-2023d-q3ai",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-slope-from-eq-2023d-q3ai",
+  "type": "Example",
+  "number": "4.1.5",
+  "title": "LC 2023 Deferred Q3(a)(i).",
+  "body": " LC 2023 Deferred Q3(a)(i)   The equation of line is . Write down the slope of .    Step 1 — Understand.  Appreciate that the line is in the form . We need to extract the slope.  Step 2 — Plan.  Recall: For , the slope is . Alternatively, rearrange to .  Step 3 — Carry Out. Here and , so Or rearranging: , giving .  Step 4 — Look Back.  Verify: Both methods give .    "
+},
+{
+  "id": "ex-gp-slope-1",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-gp-slope-1",
+  "type": "Exercise",
+  "number": "4.1.1.1",
+  "title": "",
+  "body": "  Find the slope of the line through and .   Use . Before calculating, predict: will the slope be positive or negative?   "
+},
+{
+  "id": "ex-gp-slope-2",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-gp-slope-2",
+  "type": "Exercise",
+  "number": "4.1.1.2",
+  "title": "",
+  "body": "  Find the slope of the line through and .   What do you notice about the -coordinates?  . A horizontal line has slope 0.  "
+},
+{
+  "id": "ex-gp-slope-3",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-gp-slope-3",
+  "type": "Exercise",
+  "number": "4.1.1.3",
+  "title": "",
+  "body": "  The line is given. Write down its slope.   Use or rearrange to .   "
+},
+{
+  "id": "ex-gp-slope-4",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-gp-slope-4",
+  "type": "Exercise",
+  "number": "4.1.1.4",
+  "title": "",
+  "body": "  A line has slope . Starting from the point , find two more points on this line by using the slope as rise\/run.   From , go right 4 and up 3. Repeat. Also try going left 4 and down 3.  and  "
+},
+{
+  "id": "ex-gp-slope-interpret",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-gp-slope-interpret",
+  "type": "Exercise",
+  "number": "4.1.1.5",
+  "title": "",
+  "body": "  Without calculating, arrange these slopes from least steep to steepest: , , , , .   Steepness depends on the absolute value. The sign tells direction, not steepness.  Least to steepest: , , , , .  "
+},
+{
+  "id": "subsec-line-equation-2-1",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#subsec-line-equation-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "point–slope form "
+},
+{
+  "id": "ex-eq-2025-q4aii",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-eq-2025-q4aii",
+  "type": "Example",
+  "number": "4.1.6",
+  "title": "LC 2025 Q4(a)(ii).",
+  "body": " LC 2025 Q4(a)(ii)    and are two points. The slope of is (from part (i)). Work out the equation of the line . Give your answer in the form , where .    Step 1 — Understand.  Identify: We have slope and a point, say . We need the equation in the form .  Step 2 — Plan.  Recall the point–slope formula: . Substitute, then rearrange to clear fractions and reach integer form.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify by substituting : .    "
+},
+{
+  "id": "ex-eq-2025d-q1a",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-eq-2025d-q1a",
+  "type": "Example",
+  "number": "4.1.7",
+  "title": "LC 2025 Deferred Q1(a).",
+  "body": " LC 2025 Deferred Q1(a)   The line has a slope of and crosses the -axis at the point . Find the equation of .    Step 1 — Understand.  Identify:  and the -intercept is .  Step 2 — Plan.  Recall that when the -intercept is given, we can write directly.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify: At , — matches the -intercept.    "
+},
+{
+  "id": "ex-eq-2024-q3c",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-eq-2024-q3c",
+  "type": "Example",
+  "number": "4.1.8",
+  "title": "LC 2024 Q3(c).",
+  "body": " LC 2024 Q3(c)   Find the equation of the line through the points and .    Step 1 — Understand.  Identify: Two points: and . Find the equation of the line.  Step 2 — Plan.  Recall: First find the slope, then use the point–slope formula (or note that gives us the -intercept directly).  Step 3 — Carry Out.  Since is on the line, , so:   Step 4 — Look Back.  Verify with : .    "
+},
+{
+  "id": "ex-eq-2023-q1b",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-eq-2023-q1b",
+  "type": "Example",
+  "number": "4.1.9",
+  "title": "LC 2023 Q1(b).",
+  "body": " LC 2023 Q1(b)   Find the equation of the line through the point with a slope of . Give your answer in the form , where .    Step 1 — Understand.  Identify: A point and slope . Required form: .  Step 2 — Plan.  Recall  , then multiply through to clear the fraction.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify with : .    "
+},
+{
+  "id": "ex-eq-2021-q3a",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-eq-2021-q3a",
+  "type": "Example",
+  "number": "4.1.10",
+  "title": "LC 2021 Q3(a).",
+  "body": " LC 2021 Q3(a)   A line passes through the points and . Write the equation of in the form , where .    Step 1 — Understand.  Identify:  and . We need the equation in form.  Step 2 — Plan.  Recall: Find slope first, then note that gives the -intercept directly ( ).  Step 3 — Carry Out.  Since :   Step 4 — Look Back.  Verify with : .    "
+},
+{
+  "id": "ex-eq-2016-q4a",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-eq-2016-q4a",
+  "type": "Example",
+  "number": "4.1.11",
+  "title": "LC 2016 Q4(a).",
+  "body": " LC 2016 Q4(a)   The line contains the points and . Find the equation of . Give your answer in the form , where .    Step 1 — Understand.  Identify: Two points and .  Step 2 — Plan.  Recall: Find slope, then use point–slope formula.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify with : .    "
+},
+{
+  "id": "ex-eq-2019-q2b",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-eq-2019-q2b",
+  "type": "Example",
+  "number": "4.1.12",
+  "title": "LC 2019 Q2(b).",
+  "body": " LC 2019 Q2(b)    and . The slope of is . Find the equation of the line . Give your answer in the form , where .    Step 1 — Understand.  Identify: Slope , point .  Step 2 — Plan.  Recall point–slope form, then clear fractions.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify with : .    "
+},
+{
+  "id": "ex-eq-2017-q3b",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-eq-2017-q3b",
+  "type": "Example",
+  "number": "4.1.13",
+  "title": "LC 2017 Q3(b).",
+  "body": " LC 2017 Q3(b)    and are vertices of rectangle . Find the equation of the line . Give your answer in the form , where .    Step 1 — Understand.  Identify:  and .  Step 2 — Plan.  Recall: Find slope, then use point–slope formula.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify with : .    "
+},
+{
+  "id": "subsec-line-distance-midpoint-2-1",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#subsec-line-distance-midpoint-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "distance midpoint "
+},
+{
+  "id": "ex-dist-2023-q1aii",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-dist-2023-q1aii",
+  "type": "Example",
+  "number": "4.1.14",
+  "title": "LC 2023 Q1(a)(ii).",
+  "body": " LC 2023 Q1(a)(ii)    and . Work out the distance .    Step 1 — Understand.  Identify:  and . Find .  Step 2 — Plan.  Recall the distance formula: .  Step 3 — Carry Out.    Step 4 — Look Back.  Verify:  units. Given the coordinate differences of 3 and 6, this is reasonable.    "
+},
+{
+  "id": "ex-dist-2020-q2a",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-dist-2020-q2a",
+  "type": "Example",
+  "number": "4.1.15",
+  "title": "LC 2020 Q2(a).",
+  "body": " LC 2020 Q2(a)    and . Find . Give your answer in the form units, where .    Step 1 — Understand.  Identify the two points. Answer must be in surd form.  Step 2 — Plan.  Recall the distance formula.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify:  units. Coordinate differences are 6 and 4 — reasonable.    "
+},
+{
+  "id": "ex-dist-2022d-q1c",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-dist-2022d-q1c",
+  "type": "Example",
+  "number": "4.1.16",
+  "title": "LC 2022 Deferred Q1(a)–(c).",
+  "body": " LC 2022 Deferred Q1(a)–(c)    . is the point on the -axis vertically below ; is the point on the -axis horizontally across from . (a) Write down the coordinates of and . (b) Find the area of triangle . (c) Find .    Step 1 — Understand.  Appreciate:  is directly below on the -axis, so . is directly left of on the -axis, so .  Step 2 — Plan. (b) The triangle has a right angle at (legs along the grid lines), so . (c) Use the distance formula for .  Step 3 — Carry Out.      Step 4 — Look Back.  Verify: 12, 5, 13 is a Pythagorean triple — confirms .    "
+},
+{
+  "id": "ex-midpoint-2018-q2a",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-midpoint-2018-q2a",
+  "type": "Example",
+  "number": "4.1.17",
+  "title": "LC 2018 Q2(a) — Midpoint.",
+  "body": " LC 2018 Q2(a) — Midpoint    and . is the midpoint of . Find the coordinates of .    Step 1 — Understand.  Identify:  and . Find midpoint .  Step 2 — Plan.  Recall the midpoint formula: .  Step 3 — Carry Out.    Step 4 — Look Back.  Verify:  should lie between and in both coordinates: and .    "
+},
+{
+  "id": "ex-gp-mid-1",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-gp-mid-1",
+  "type": "Exercise",
+  "number": "4.1.3.1",
+  "title": "",
+  "body": "  Find the midpoint of and .   Add the 's and divide by 2. Same for 's. Then check: is your answer between the two points in both coordinates?   "
+},
+{
+  "id": "ex-gp-mid-2",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-gp-mid-2",
+  "type": "Exercise",
+  "number": "4.1.3.2",
+  "title": "",
+  "body": "  The midpoint of and is . Find the value of .   The midpoint's -coordinate is . Solve for .   "
+},
+{
+  "id": "ex-gp-dist-1",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-gp-dist-1",
+  "type": "Exercise",
+  "number": "4.1.3.3",
+  "title": "",
+  "body": "  Find the distance between and .   This is a famous Pythagorean triple:   "
+},
+{
+  "id": "ex-gp-dist-2",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-gp-dist-2",
+  "type": "Exercise",
+  "number": "4.1.3.4",
+  "title": "",
+  "body": "  Show that the triangle with vertices , , is right-angled at .   Find , , and . Check if .  , , . Since , right-angled at .  "
+},
+{
+  "id": "ex-gp-dist-sense",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-gp-dist-sense",
+  "type": "Exercise",
+  "number": "4.1.3.5",
+  "title": "",
+  "body": "  A student says the distance between and is . Without calculating, explain what is wrong with this answer.   Can a distance ever be negative?  Distance is always positive (or zero). The square root in the formula always gives a non-negative value. The actual distance is .  "
+},
+{
+  "id": "ex-area-2025-q4aiii",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-area-2025-q4aiii",
+  "type": "Example",
+  "number": "4.1.18",
+  "title": "LC 2025 Q4(a)(iii).",
+  "body": " LC 2025 Q4(a)(iii)    , , and . Work out the area of triangle .    Step 1 — Understand.  Identify: Three vertices. We need the area. Appreciate: Note that and share the same -coordinate ( ), so is horizontal with length .  Step 2 — Plan.  Recall: Since is horizontal, we can use base height: base , height perpendicular distance from to the line , which is .  Step 3 — Carry Out.    Step 4 — Look Back.  Verify using the translation method: Translate to the origin: , . .    "
+},
+{
+  "id": "ex-area-2025d-q1b",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-area-2025d-q1b",
+  "type": "Example",
+  "number": "4.1.19",
+  "title": "LC 2025 Deferred Q1(b).",
+  "body": " LC 2025 Deferred Q1(b)   Find the area of the triangle formed by , , and .    Step 1 — Understand.  Identify: One vertex is already at the origin.  Step 2 — Plan.  Recall: With one vertex at the origin, .  Step 3 — Carry Out.    Step 4 — Look Back.  Verify: Area is positive and the triangle is not degenerate (points are not collinear).    "
+},
+{
+  "id": "ex-area-2019-q2d",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-area-2019-q2d",
+  "type": "Example",
+  "number": "4.1.20",
+  "title": "LC 2019 Q2(d).",
+  "body": " LC 2019 Q2(d)   Find the area of triangle , where , , and .    Step 1 — Understand.  Identify: Three vertices. No vertex is at the origin.  Step 2 — Plan.  Recall: Translate to the origin, then apply the two-point area formula.  Step 3 — Carry Out. Translate by : , , .   Step 4 — Look Back.  Verify: 21 square units for a triangle spanning roughly coordinate units — reasonable.    "
+},
+{
+  "id": "ex-area-2018-q2c",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-area-2018-q2c",
+  "type": "Example",
+  "number": "4.1.21",
+  "title": "LC 2018 Q2(c).",
+  "body": " LC 2018 Q2(c)   Find the area of triangle , where , , and .    Step 1 — Understand.  Identify: Three vertices, no vertex at the origin.  Step 2 — Plan.  Recall: Translate to the origin.  Step 3 — Carry Out. Translate by : , , . Using and :   Step 4 — Look Back.  Verify: For a triangle spanning about units, an area of 34 is plausible.    "
+},
+{
+  "id": "subsec-line-parallel-perp-2-1",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#subsec-line-parallel-perp-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "parallel perpendicular "
+},
+{
+  "id": "ex-parperp-2025-q4b",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-parperp-2025-q4b",
+  "type": "Example",
+  "number": "4.1.22",
+  "title": "LC 2025 Q4(b).",
+  "body": " LC 2025 Q4(b)    and . Investigate if and are parallel, perpendicular, or neither.    Step 1 — Understand.  Appreciate: We need to compare the slopes of two lines.  Step 2 — Plan.  Recall: Read slope of directly; find slope of using . Then test: equal slopes parallel; product perpendicular; otherwise neither.  Step 3 — Carry Out.  Check: , so not parallel. Check: , so not perpendicular.  Step 4 — Look Back.  Analyse: The lines are neither parallel nor perpendicular.    "
+},
+{
+  "id": "ex-parperp-2022-q1aii",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-parperp-2022-q1aii",
+  "type": "Example",
+  "number": "4.1.23",
+  "title": "LC 2022 Q1(a)(ii).",
+  "body": " LC 2022 Q1(a)(ii)    , , . Slope of . Investigate if is perpendicular to .    Step 1 — Understand.  Identify: We have . We need and then test perpendicularity.  Step 2 — Plan.  Recall: Find , then check if .  Step 3 — Carry Out.  Test: .  Step 4 — Look Back.  Analyse:  is not perpendicular to .    "
+},
+{
+  "id": "ex-parallel-2023d-q3aii",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-parallel-2023d-q3aii",
+  "type": "Example",
+  "number": "4.1.24",
+  "title": "LC 2023 Deferred Q3(a)(ii) — Finding <span class=\"process-math\">\\(a\\)<\/span> for parallel lines.",
+  "body": " LC 2023 Deferred Q3(a)(ii) — Finding for parallel lines   Line : (slope ). Line : , where . Line is parallel to line . Find the value of .    Step 1 — Understand.  Appreciate: Parallel lines have equal slopes. We know and must find so that .  Step 2 — Plan.  Recall: For , the slope is . Set .  Step 3 — Carry Out.    Step 4 — Look Back.  Verify: Line becomes , with slope .    "
+},
+{
+  "id": "ex-perp-line-2021-q3bi",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-perp-line-2021-q3bi",
+  "type": "Example",
+  "number": "4.1.25",
+  "title": "LC 2021 Q3(b)(i).",
+  "body": " LC 2021 Q3(b)(i)   The line and the point . Find the equation of line through perpendicular to . Give your answer in the form .    Step 1 — Understand.  Identify: Line has equation . Point . We need line through , perpendicular to .  Step 2 — Plan.  Recall: Slope of is . The perpendicular slope is (negative reciprocal). Then use point–slope form.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify  lies on : . Also confirm slopes: .    "
+},
+{
+  "id": "ex-perp-2015-q2",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-perp-2015-q2",
+  "type": "Example",
+  "number": "4.1.26",
+  "title": "LC 2015 Q2.",
+  "body": " LC 2015 Q2   Line makes equal intercepts on the axes. (a)(i) Write down the slope of . (a)(ii) The point is on . Find the equation of in the form . (b) Line is perpendicular to and passes through . Find the equation of .    Step 1 — Understand.  Appreciate: \"Equal intercepts\" means the line cuts both axes at the same distance from the origin. Since the intercepts are equal and on opposite sides, the slope must be (the line goes from to ).  Step 2 — Plan. (a)(i) Slope . (a)(ii) Use point–slope with and . (b) Perpendicular slope , through origin.  Step 3 — Carry Out.      Step 4 — Look Back.  Verify:  on : . Slopes: , confirming perpendicularity.    "
+},
+{
+  "id": "ex-gp-perp-slope-1",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-gp-perp-slope-1",
+  "type": "Exercise",
+  "number": "4.1.5.1",
+  "title": "",
+  "body": "  A line has slope . Write down the slope of any line perpendicular to it.   Flip the fraction and change the sign: .   "
+},
+{
+  "id": "ex-gp-perp-slope-2",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-gp-perp-slope-2",
+  "type": "Exercise",
+  "number": "4.1.5.2",
+  "title": "",
+  "body": "  A line has slope . Write the slope as a fraction first, then find the perpendicular slope.   Write as . Flip and change sign.  . The perpendicular slope is .  "
+},
+{
+  "id": "ex-gp-par-eq",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-gp-par-eq",
+  "type": "Exercise",
+  "number": "4.1.5.3",
+  "title": "",
+  "body": "  Find the equation of a line through parallel to .   Parallel means same slope. The slope of is . Use point–slope form.  . Interesting — it is the same line! Check: does satisfy ? Yes.  "
+},
+{
+  "id": "ex-gp-perp-eq",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-gp-perp-eq",
+  "type": "Exercise",
+  "number": "4.1.5.4",
+  "title": "",
+  "body": "  Find the equation of the line through perpendicular to a line with slope . Give your answer in the form .   Perpendicular slope is . Then use point–slope and clear fractions.   "
+},
+{
+  "id": "ex-gp-par-identify",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-gp-par-identify",
+  "type": "Exercise",
+  "number": "4.1.5.5",
+  "title": "",
+  "body": "  Are the lines and parallel? Justify your answer.   Find both slopes. Rearrange the second line to form.  First line: . Second line: , so . Same slope, so yes — parallel.  "
+},
+{
+  "id": "ex-parallel-midpoint-2020-q2bii",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-parallel-midpoint-2020-q2bii",
+  "type": "Example",
+  "number": "4.1.27",
+  "title": "LC 2020 Q2(b)(ii) — Midpoint Theorem.",
+  "body": " LC 2020 Q2(b)(ii) — Midpoint Theorem    , , . is the midpoint of and is the midpoint of . Show that is parallel to .    Step 1 — Understand.  Identify: We need to find the midpoint , then show .  Step 2 — Plan.  Recall: Find using the midpoint formula, then compare slopes.  Step 3 — Carry Out.  Since , the lines are parallel.  Step 4 — Look Back.  Analyse: This is an instance of the Midpoint Theorem — the segment joining the midpoints of two sides is parallel to the third side.    "
+},
+{
+  "id": "ex-intersect-2023d-q3aiii",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-intersect-2023d-q3aiii",
+  "type": "Example",
+  "number": "4.1.28",
+  "title": "LC 2023 Deferred Q3(a)(iii).",
+  "body": " LC 2023 Deferred Q3(a)(iii)    and . Solve simultaneously to find the point of intersection.    Step 1 — Understand.  Identify: Two linear equations in and . Find where they meet.  Step 2 — Plan.  Recall: Use elimination — multiply to make the coefficients of match.  Step 3 — Carry Out.  Adding: Substitute into : .  Step 4 — Look Back.  Verify in : . Point of intersection: .   "
+},
+{
+  "id": "ex-intersect-2021-q3bii",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-intersect-2021-q3bii",
+  "type": "Example",
+  "number": "4.1.29",
+  "title": "LC 2021 Q3(b)(ii).",
+  "body": " LC 2021 Q3(b)(ii)   Find the point of intersection of and .    Step 1 — Understand.  Identify: Two equations, two unknowns.  Step 2 — Plan.  Recall: Multiply by to eliminate .  Step 3 — Carry Out.  Adding: . From : .  Step 4 — Look Back.  Verify in : . Intersection: .   "
+},
+{
+  "id": "ex-intersect-2016-q4c",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-intersect-2016-q4c",
+  "type": "Example",
+  "number": "4.1.30",
+  "title": "LC 2016 Q4(c).",
+  "body": " LC 2016 Q4(c)    and . Find the coordinates of .    Step 1 — Understand.  Identify: Two equations. Note the -coefficients are and — ready for elimination.  Step 2 — Plan.  Recall: Add the equations directly to eliminate .  Step 3 — Carry Out.  Adding: . From : .  Step 4 — Look Back.  Verify in : . Intersection: .   "
+},
+{
+  "id": "ex-intersect-2013-q3c",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-intersect-2013-q3c",
+  "type": "Example",
+  "number": "4.1.31",
+  "title": "LC 2013 Q3.",
+  "body": " LC 2013 Q3    (slope ). is perpendicular to and cuts the -axis at . (b) Find the equation of . (c) Find the point of intersection of and .    Step 1 — Understand.  Identify: Slope of is . is perpendicular, so , passing through .  Step 2 — Plan. (b) Use point–slope to find . (c) Solve and simultaneously.  Step 3 — Carry Out.   Multiply first by 3 and second by 2: Adding: . Then .  Step 4 — Look Back.  Verify: Substituting back into both equations confirms the intersection point .    "
+},
+{
+  "id": "ex-applied-2024-q3a",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-applied-2024-q3a",
+  "type": "Example",
+  "number": "4.1.32",
+  "title": "LC 2024 Q3(a) — Verify a point lies on a line.",
+  "body": " LC 2024 Q3(a) — Verify a point lies on a line   The line has equation . (i) Show that the point lies on .    Step 1 — Understand.  Appreciate: To \"show\" a point lies on a line, substitute its coordinates into the equation and demonstrate both sides are equal.  Step 2 — Plan.  Recall: Substitute into the equation and check if .  Step 3 — Carry Out.  Since the left-hand side equals the right-hand side, lies on .  Step 4 — Look Back.  Verify: The substitution is clean and the result is exact.    "
+},
+{
+  "id": "ex-applied-2021-q10",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-applied-2021-q10",
+  "type": "Example",
+  "number": "4.1.33",
+  "title": "LC 2021 Q10 — Treasure Map (Selected Parts).",
+  "body": " LC 2021 Q10 — Treasure Map (Selected Parts)   A TY class created a coordinate treasure map. , , .  (a)(ii) Food is at point , which lies on a line through with slope , and also on a line through with slope . Find the coordinates of .  (c)(iii) A spade is hidden on line which is parallel to and contains . Find the equation of .    Part (a)(ii):  Step 1 — Understand.  Appreciate:  is the intersection of two lines. One has slope through ; the other has slope (horizontal) through .  Step 2 — Plan. The horizontal line through is . The line through with slope : , i.e. .  Step 3 — Carry Out. Substituting into : . So .  Step 4 — Look Back.  Verify:  on the first line: . On the horizontal: .   Part (c)(iii):  Step 1 — Understand.  Identify:  has slope . is parallel to , so , passing through .  Step 2 — Plan.  Recall point–slope form.  Step 3 — Carry Out.    Step 4 — Look Back.  Verify with : . Slopes match: .    "
+},
+{
+  "id": "ex-applied-2023d-q9",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-applied-2023d-q9",
+  "type": "Example",
+  "number": "4.1.34",
+  "title": "LC 2023 Deferred Q9 — Houses on a Grid (Selected Parts).",
+  "body": " LC 2023 Deferred Q9 — Houses on a Grid (Selected Parts)    , , , are positions of houses. (b) Show that . (d) Is perpendicular to ?    Part (b):  Step 1 — Understand.  Identify: Compute both distances and compare.  Step 3 — Carry Out.  Since , the claim is verified.   Part (d):  Step 1 — Understand.  Identify: Find slopes of and , then test perpendicularity.  Step 3 — Carry Out.  Test: .  Step 4 — Look Back.  Analyse:  is not perpendicular to .    "
+},
+{
+  "id": "ex-applied-2022-q1b",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-applied-2022-q1b",
+  "type": "Example",
+  "number": "4.1.35",
+  "title": "LC 2022 Q1(b) — Symmetrical Triangle.",
+  "body": " LC 2022 Q1(b) — Symmetrical Triangle   Triangle is symmetrical about the -axis. . Line . (i) Find . (ii) Write down the equation of the horizontal line . (iii) Find the coordinates of .    Step 1 — Understand.  Appreciate: Symmetry about the -axis means (the reflection of ). is on the -axis (i.e. ).  Step 3 — Carry Out.  (iii) is on with : So .  Step 4 — Look Back.  Verify  on line : .    "
+},
+{
+  "id": "ex-applied-2017-q3a",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-applied-2017-q3a",
+  "type": "Example",
+  "number": "4.1.36",
+  "title": "LC 2017 Q3(a) — Rectangle.",
+  "body": " LC 2017 Q3(a) — Rectangle    , , , form a rectangle. (i) Show that . (ii) Find the area of rectangle .    Step 1 — Understand.  Identify: We need and the area.  Step 3 — Carry Out.  For the area, we also need :    Step 4 — Look Back.  Verify:  .    "
+},
+{
+  "id": "ex-applied-2018-q2bd",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-applied-2018-q2bd",
+  "type": "Example",
+  "number": "4.1.37",
+  "title": "LC 2018 Q2(b),(d) — Parallel Lines and Translation.",
+  "body": " LC 2018 Q2(b),(d) — Parallel Lines and Translation    , , . is the midpoint of ; is the midpoint of . (b) Show that is parallel to . (d) is the image of under translation . Find .    Part (b):  Step 3 — Carry Out.   , so .   Part (d):  Step 1 — Understand.  Identify: The translation .  Step 3 — Carry Out.    Step 4 — Look Back.  Verify: Alternatively, is the midpoint of : .    "
+},
+{
+  "id": "ex-visual-2025d-q1c",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-visual-2025d-q1c",
+  "type": "Example",
+  "number": "4.1.38",
+  "title": "LC 2025 Deferred Q1(c) — Match slopes to lines.",
+  "body": " LC 2025 Deferred Q1(c) — Match slopes to lines   Four lines are shown on a diagram. Match each slope to its line: , , , .    Step 1 — Understand.  Appreciate: A positive slope means the line rises left to right; a negative slope falls. Steeper lines have slopes with larger absolute value.  Step 2 — Plan.  Recall: Rank by steepness: . Identify the steepest rising line as slope 2, the gentle rising line as , the falling line at as , and the nearly horizontal falling line as .  Step 3 — Carry Out. From the diagram: slope (nearly horizontal, falling slightly); slope (steep, rising); slope (falling at ); slope (gentle rise).  Step 4 — Look Back.  Verify each assignment makes visual sense with the diagram.    "
+},
+{
+  "id": "ex-visual-2023-q1c",
+  "level": "2",
+  "url": "sec-line-problem-solving.html#ex-visual-2023-q1c",
+  "type": "Example",
+  "number": "4.1.39",
+  "title": "LC 2023 Q1(c) — Drawing line segments.",
+  "body": " LC 2023 Q1(c) — Drawing line segments   (i) Draw the line segment through with slope , in the range .  (ii) Draw the line segment through with slope , on the domain .    Step 1 — Understand.  Appreciate: We must plot a line through using the given slope, limited to the specified range or domain.  Step 2 — Plan.  Recall: Slope = rise\/run. From the given point, move according to the slope to find additional points, then draw.  Step 3 — Carry Out.  (i) Slope . From : go right 1, up 2 ; go right 1 more . Going left: , . Draw the segment from to .   (ii) Slope . From : go right 3, down 2 . Going left 3, up 2 . Left 3 more — but domain starts at , so interpolate: at , . Draw from approximately to .  Step 4 — Look Back.  Verify: Check that the line passes through and visually matches the expected steepness.    "
 },
 {
   "id": "sec-number-systems",
   "level": "1",
   "url": "sec-number-systems.html",
   "type": "Section",
-  "number": "4.1",
+  "number": "5.1",
   "title": "Number Systems",
   "body": " Number Systems   Mathematics uses different types of numbers for different purposes. In this section, we meet the four main number sets, understand how they are related, and learn to work fluently with each one. We also cover the essential skills: prime factorisation, order of operations, and scientific notation.       The Number Sets: , , ,  Each number set is contained inside the next, like nested boxes.   The four number sets, each containing the previous.   Nested rectangles showing N inside Z inside Q inside R, with examples of each type.     Natural Numbers   The natural numbers are the counting numbers: . They go on forever — there is no largest natural number.    With natural numbers alone, we can add and multiply freely. But we cannot subtract freely — has no answer in . This motivates our next set.   Integers   The integers include all natural numbers and their negatives: . The letter comes from the German word Zahlen (numbers).    Now subtraction always works. But division doesn't — is not an integer.   Rational Numbers   The rational numbers are all numbers that can be written as a fraction where and .    Every integer is rational (just put it over 1: ). Every terminating decimal is rational ( ). Every repeating decimal is rational ( ).  But there are numbers that are not rational.   Irrational Numbers   An irrational number is a real number that cannot be written as a fraction of integers. Its decimal expansion goes on forever without ever repeating.    The most famous irrational numbers are , , and . The ancient Greeks were shocked to discover that cannot be expressed as a fraction — it broke their assumption that all quantities were ratios of whole numbers.   Real Numbers   The real numbers are all the rational and irrational numbers together. They fill the entire number line with no gaps: .    The key relationship: . Every natural number is an integer, every integer is rational, every rational number is real. But not the other way around.  Since contains numbers that are not in (the irrationals), we write .   Different types of number on the number line.   A number line showing integers, rationals like one half and negative three halves, and irrationals like root two.     Classifying Numbers   Classify each number into its smallest number set: , , , , , , , .    (natural number).  (integer, not natural).  (rational, not integer).  (it simplifies to a natural number).  (irrational — 7 is not a perfect square).  (irrational).  (repeating decimal, so rational).  (rational, not integer).     Number Classification Practice   1. Classify: , , , , ,  2. True or false? (a) Every integer is rational. (b) Every rational number is an integer. (c) is irrational. (d) is rational because is close to it.  3. Give an example of a number that is: (a) in but not , (b) in but not , (c) in but not .    1. ; ; irrational; ; ; irrational (non-repeating).  2. (a) True. (b) False. (c) False ( ). (d) False ( is rational but is not).  3. (a) . (b) . (c) .         Rational and Irrational: The Decimal Test  How do you know whether a number is rational or irrational? The decimal expansion tells you everything.   Rational decimals terminate or repeat. Irrational decimals do neither.   A table comparing rational decimals (terminating or repeating) with irrational decimals (non-terminating, non-repeating).    The rule is simple:  A decimal that terminates (stops) or repeats (a block of digits recurs forever) is rational .  A decimal that goes on forever without any repeating pattern is irrational .   Converting a Repeating Decimal to a Fraction   Show that .    Let  Then  Subtract: , so , giving .     Working with Irrational Numbers  You can do arithmetic with irrational numbers using the surd rules from algebra. For now, the key facts are:  and .  Adding irrationals does not simplify in general: cannot be written as a single surd.  Sometimes an expression that looks irrational is actually rational: .    Simplifying Surds   Simplify: (a) (b) (c)    (a) .  (b) and , so the sum is .  (c) .     Practice   1. Convert to a fraction: (a) (b) (c)  2. Simplify: (a) (b) (c)  3. Is rational or irrational? What about ?    1. (a) . (b) . (c) .  2. (a) . (b) . (c) .  3. , irrational. , rational.         Operations: , , , Across the Number Sets  Some sets are closed under certain operations — the result always stays in the set. Others are not.   Closure of Operations    Set         Closed  Not closed  Closed  Not closed     Closed  Closed  Closed  Not closed     Closed  Closed  Closed  Closed*     Closed  Closed  Closed  Closed*     *Division by zero is never allowed in any set.  Not closed means you can find examples where the operation takes you outside the set. For instance, takes you out of into . And takes you out of into .  This is essentially why each larger set was invented — to make more operations possible.   Closure Examples   For each operation, state which set the result belongs to and whether it remains in the starting set: (a) in . (b) in . (c) in . (d) in .    (a) . Stays in.  (b) . Leaves .  (c) . Stays in.  (d) . Stays in (but is irrational).         Factors, Multiples, and Primes   Factor and Multiple   If (where ), then and are factors of , and is a multiple of both and .     Prime Number   A prime number is a natural number greater than 1 whose only factors are 1 and itself. The first few primes are 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, ...  Note: 1 is not prime. And 2 is the only even prime.     Composite Number   A composite number is a natural number greater than 1 that is not prime (i.e. it has factors other than 1 and itself).     Prime Factorisation  Every natural number greater than 1 can be written as a product of prime numbers in exactly one way (ignoring order). This is the Fundamental Theorem of Arithmetic .  A factor tree is a handy way to find the prime factorisation. Start with the number, split it into any two factors, then keep splitting until every leaf is prime.    Factor tree for 360.   A factor tree breaking 360 down into its prime factors: 2 cubed times 3 squared times 5.     Prime Factorisation   Express in prime factor form: (a) 180 (b) 504 (c) 2025    (a) .  (b) .  (c) .     HCF and LCM  The Highest Common Factor (HCF) of two numbers is the largest number that divides both. Take the lowest power of each common prime.  The Lowest Common Multiple (LCM) is the smallest number that both divide into. Take the highest power of each prime that appears in either factorisation.    HCF and LCM Using Prime Factors   Find the HCF and LCM of 180 and 504.    .  .  HCF: common primes at lowest powers = .  LCM: all primes at highest powers = .  Check: . ✓     Practice   1. Express in prime factor form: (a) 240 (b) 1764  2. Find the HCF and LCM of 240 and 360.  3. Two gear wheels have 36 and 48 teeth. After how many revolutions of the smaller wheel do both wheels return to their starting position?    1. (a) . (b) .  2. HCF = 120, LCM = 720.  3. LCM(36, 48) = 144. Smaller wheel: revolutions.         Order of Operations (BIMDAS)  When a calculation has multiple operations, the order matters. We follow a universal convention.   BIMDAS: the order of operations.   Six boxes spelling BIMDAS: Brackets, Indices, Multiply, Divide, Add, Subtract, with priority arrow from highest to lowest.    B rackets first. Then I ndices (powers and roots). Then M ultiply and D ivide (left to right — they have equal priority). Finally A dd and S ubtract (left to right — equal priority).   BIMDAS in Action   Evaluate:    (brackets first)  (indices)  (multiply)  (add, then subtract, left to right)     Nested Brackets   Evaluate:    (inner brackets)  (index)  (outer bracket)      Practice   Evaluate each expression:  1.  2.  3.  4.  5.    1. . 2. . 3. . 4. . 5. .         Decimals and Fractions: Two Sides of the Same Coin  Every decimal is a fraction in disguise. Understanding this connection deepens your number sense and is essential for estimation.  A decimal like is shorthand for . The denominator is always a power of 10, which is why we call it a base-10 system.   Place Value    Position  Hundreds  Tens  Units  .  Tenths  Hundredths  Thousandths    Value           Fraction  100  10  1          Converting Between Decimals and Fractions   Convert: (a) to a fraction. (b) to a decimal. (c) to a fraction.    (a) .  (b) .  (c) .         Scientific Notation  Very large and very small numbers are awkward to write in full. Scientific notation expresses any positive number in the form , where and .   The anatomy of scientific notation.   Diagram showing a times 10 to the n, with annotations: a has one non-zero digit before the decimal point, n is an integer indicating magnitude.    The exponent tells you how many places to move the decimal point. Positive : move right (big number). Negative : move left (small number).   Converting to Scientific Notation   Write in scientific notation: (a) 56,000 (b) 0.00042 (c) 7,200,000 (d) 0.091    (a) .  (b) .  (c) .  (d) .     Arithmetic in Scientific Notation   Calculate: (a) (b)    (a) and . Answer: .  (b) and . Answer: .     Adding in Scientific Notation   Calculate:    Make the powers the same first: .  .     Practice   1. Write in scientific notation: (a) 340,000 (b) 0.0062 (c) 98,700,000  2. Write as an ordinary number: (a) (b)  3. Calculate, giving your answer in scientific notation: (a) (b) (c)  4. The distance from the Earth to the Sun is approximately km. Light travels at approximately km per second. How long does it take light to reach us from the Sun?    1. (a) . (b) . (c) .  2. (a) 4500. (b) 0.000071.  3. (a) . (b) . (c) .  4. seconds ≈ 8 min 20 sec.     "
 },
@@ -1697,7 +2300,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#fig-number-sets",
   "type": "Figure",
-  "number": "4.1.1",
+  "number": "5.1.1",
   "title": "",
   "body": " The four number sets, each containing the previous.   Nested rectangles showing N inside Z inside Q inside R, with examples of each type.   "
 },
@@ -1706,7 +2309,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#def-natural-numbers",
   "type": "Definition",
-  "number": "4.1.2",
+  "number": "5.1.2",
   "title": "Natural Numbers <span class=\"process-math\">\\(\\mathbb{N}\\)<\/span>.",
   "body": " Natural Numbers   The natural numbers are the counting numbers: . They go on forever — there is no largest natural number.   "
 },
@@ -1715,7 +2318,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#def-integers",
   "type": "Definition",
-  "number": "4.1.3",
+  "number": "5.1.3",
   "title": "Integers <span class=\"process-math\">\\(\\mathbb{Z}\\)<\/span>.",
   "body": " Integers   The integers include all natural numbers and their negatives: . The letter comes from the German word Zahlen (numbers).   "
 },
@@ -1724,7 +2327,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#def-rational-numbers",
   "type": "Definition",
-  "number": "4.1.4",
+  "number": "5.1.4",
   "title": "Rational Numbers <span class=\"process-math\">\\(\\mathbb{Q}\\)<\/span>.",
   "body": " Rational Numbers   The rational numbers are all numbers that can be written as a fraction where and .   "
 },
@@ -1733,7 +2336,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#def-irrational-numbers",
   "type": "Definition",
-  "number": "4.1.5",
+  "number": "5.1.5",
   "title": "Irrational Numbers.",
   "body": " Irrational Numbers   An irrational number is a real number that cannot be written as a fraction of integers. Its decimal expansion goes on forever without ever repeating.   "
 },
@@ -1742,7 +2345,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#def-real-numbers",
   "type": "Definition",
-  "number": "4.1.6",
+  "number": "5.1.6",
   "title": "Real Numbers <span class=\"process-math\">\\(\\mathbb{R}\\)<\/span>.",
   "body": " Real Numbers   The real numbers are all the rational and irrational numbers together. They fill the entire number line with no gaps: .   "
 },
@@ -1751,7 +2354,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#fig-number-line",
   "type": "Figure",
-  "number": "4.1.7",
+  "number": "5.1.7",
   "title": "",
   "body": " Different types of number on the number line.   A number line showing integers, rationals like one half and negative three halves, and irrationals like root two.   "
 },
@@ -1760,7 +2363,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#ex-classify-numbers",
   "type": "Example",
-  "number": "4.1.8",
+  "number": "5.1.8",
   "title": "Classifying Numbers.",
   "body": " Classifying Numbers   Classify each number into its smallest number set: , , , , , , , .    (natural number).  (integer, not natural).  (rational, not integer).  (it simplifies to a natural number).  (irrational — 7 is not a perfect square).  (irrational).  (repeating decimal, so rational).  (rational, not integer).   "
 },
@@ -1769,7 +2372,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#ex-classify-practice",
   "type": "Checkpoint",
-  "number": "4.1.9",
+  "number": "5.1.9",
   "title": "Number Classification Practice.",
   "body": " Number Classification Practice   1. Classify: , , , , ,  2. True or false? (a) Every integer is rational. (b) Every rational number is an integer. (c) is irrational. (d) is rational because is close to it.  3. Give an example of a number that is: (a) in but not , (b) in but not , (c) in but not .    1. ; ; irrational; ; ; irrational (non-repeating).  2. (a) True. (b) False. (c) False ( ). (d) False ( is rational but is not).  3. (a) . (b) . (c) .   "
 },
@@ -1778,7 +2381,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#fig-decimal-patterns",
   "type": "Figure",
-  "number": "4.1.10",
+  "number": "5.1.10",
   "title": "",
   "body": " Rational decimals terminate or repeat. Irrational decimals do neither.   A table comparing rational decimals (terminating or repeating) with irrational decimals (non-terminating, non-repeating).   "
 },
@@ -1787,7 +2390,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#ex-repeating-to-fraction",
   "type": "Example",
-  "number": "4.1.11",
+  "number": "5.1.11",
   "title": "Converting a Repeating Decimal to a Fraction.",
   "body": " Converting a Repeating Decimal to a Fraction   Show that .    Let  Then  Subtract: , so , giving .   "
 },
@@ -1796,7 +2399,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#ex-simplify-surds",
   "type": "Example",
-  "number": "4.1.12",
+  "number": "5.1.12",
   "title": "Simplifying Surds.",
   "body": " Simplifying Surds   Simplify: (a) (b) (c)    (a) .  (b) and , so the sum is .  (c) .   "
 },
@@ -1805,7 +2408,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#ex-rational-irrational-practice",
   "type": "Checkpoint",
-  "number": "4.1.13",
+  "number": "5.1.13",
   "title": "Practice.",
   "body": " Practice   1. Convert to a fraction: (a) (b) (c)  2. Simplify: (a) (b) (c)  3. Is rational or irrational? What about ?    1. (a) . (b) . (c) .  2. (a) . (b) . (c) .  3. , irrational. , rational.   "
 },
@@ -1823,7 +2426,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#table-closure",
   "type": "Table",
-  "number": "4.1.14",
+  "number": "5.1.14",
   "title": "Closure of Operations",
   "body": " Closure of Operations    Set         Closed  Not closed  Closed  Not closed     Closed  Closed  Closed  Not closed     Closed  Closed  Closed  Closed*     Closed  Closed  Closed  Closed*    "
 },
@@ -1832,7 +2435,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#ex-closure",
   "type": "Example",
-  "number": "4.1.15",
+  "number": "5.1.15",
   "title": "Closure Examples.",
   "body": " Closure Examples   For each operation, state which set the result belongs to and whether it remains in the starting set: (a) in . (b) in . (c) in . (d) in .    (a) . Stays in.  (b) . Leaves .  (c) . Stays in.  (d) . Stays in (but is irrational).   "
 },
@@ -1841,7 +2444,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#def-factor-multiple",
   "type": "Definition",
-  "number": "4.1.16",
+  "number": "5.1.16",
   "title": "Factor and Multiple.",
   "body": " Factor and Multiple   If (where ), then and are factors of , and is a multiple of both and .   "
 },
@@ -1850,7 +2453,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#def-prime",
   "type": "Definition",
-  "number": "4.1.17",
+  "number": "5.1.17",
   "title": "Prime Number.",
   "body": " Prime Number   A prime number is a natural number greater than 1 whose only factors are 1 and itself. The first few primes are 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, ...  Note: 1 is not prime. And 2 is the only even prime.   "
 },
@@ -1859,7 +2462,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#def-composite",
   "type": "Definition",
-  "number": "4.1.18",
+  "number": "5.1.18",
   "title": "Composite Number.",
   "body": " Composite Number   A composite number is a natural number greater than 1 that is not prime (i.e. it has factors other than 1 and itself).   "
 },
@@ -1886,7 +2489,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#fig-factor-tree",
   "type": "Figure",
-  "number": "4.1.19",
+  "number": "5.1.19",
   "title": "",
   "body": " Factor tree for 360.   A factor tree breaking 360 down into its prime factors: 2 cubed times 3 squared times 5.   "
 },
@@ -1895,7 +2498,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#ex-prime-factorise",
   "type": "Example",
-  "number": "4.1.20",
+  "number": "5.1.20",
   "title": "Prime Factorisation.",
   "body": " Prime Factorisation   Express in prime factor form: (a) 180 (b) 504 (c) 2025    (a) .  (b) .  (c) .   "
 },
@@ -1922,7 +2525,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#ex-hcf-lcm",
   "type": "Example",
-  "number": "4.1.21",
+  "number": "5.1.21",
   "title": "HCF and LCM Using Prime Factors.",
   "body": " HCF and LCM Using Prime Factors   Find the HCF and LCM of 180 and 504.    .  .  HCF: common primes at lowest powers = .  LCM: all primes at highest powers = .  Check: . ✓   "
 },
@@ -1931,7 +2534,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#ex-factors-practice",
   "type": "Checkpoint",
-  "number": "4.1.22",
+  "number": "5.1.22",
   "title": "Practice.",
   "body": " Practice   1. Express in prime factor form: (a) 240 (b) 1764  2. Find the HCF and LCM of 240 and 360.  3. Two gear wheels have 36 and 48 teeth. After how many revolutions of the smaller wheel do both wheels return to their starting position?    1. (a) . (b) .  2. HCF = 120, LCM = 720.  3. LCM(36, 48) = 144. Smaller wheel: revolutions.   "
 },
@@ -1940,7 +2543,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#fig-bimdas",
   "type": "Figure",
-  "number": "4.1.23",
+  "number": "5.1.23",
   "title": "",
   "body": " BIMDAS: the order of operations.   Six boxes spelling BIMDAS: Brackets, Indices, Multiply, Divide, Add, Subtract, with priority arrow from highest to lowest.   "
 },
@@ -1958,7 +2561,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#ex-bimdas-1",
   "type": "Example",
-  "number": "4.1.24",
+  "number": "5.1.24",
   "title": "BIMDAS in Action.",
   "body": " BIMDAS in Action   Evaluate:    (brackets first)  (indices)  (multiply)  (add, then subtract, left to right)   "
 },
@@ -1967,7 +2570,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#ex-bimdas-2",
   "type": "Example",
-  "number": "4.1.25",
+  "number": "5.1.25",
   "title": "Nested Brackets.",
   "body": " Nested Brackets   Evaluate:    (inner brackets)  (index)  (outer bracket)    "
 },
@@ -1976,7 +2579,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#ex-bimdas-practice",
   "type": "Checkpoint",
-  "number": "4.1.26",
+  "number": "5.1.26",
   "title": "Practice.",
   "body": " Practice   Evaluate each expression:  1.  2.  3.  4.  5.    1. . 2. . 3. . 4. . 5. .   "
 },
@@ -1985,7 +2588,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#table-place-value",
   "type": "Table",
-  "number": "4.1.27",
+  "number": "5.1.27",
   "title": "Place Value",
   "body": " Place Value    Position  Hundreds  Tens  Units  .  Tenths  Hundredths  Thousandths    Value           Fraction  100  10  1        "
 },
@@ -1994,7 +2597,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#ex-decimal-fraction",
   "type": "Example",
-  "number": "4.1.28",
+  "number": "5.1.28",
   "title": "Converting Between Decimals and Fractions.",
   "body": " Converting Between Decimals and Fractions   Convert: (a) to a fraction. (b) to a decimal. (c) to a fraction.    (a) .  (b) .  (c) .   "
 },
@@ -2003,7 +2606,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#fig-sci-notation",
   "type": "Figure",
-  "number": "4.1.29",
+  "number": "5.1.29",
   "title": "",
   "body": " The anatomy of scientific notation.   Diagram showing a times 10 to the n, with annotations: a has one non-zero digit before the decimal point, n is an integer indicating magnitude.   "
 },
@@ -2012,7 +2615,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#ex-to-scientific",
   "type": "Example",
-  "number": "4.1.30",
+  "number": "5.1.30",
   "title": "Converting to Scientific Notation.",
   "body": " Converting to Scientific Notation   Write in scientific notation: (a) 56,000 (b) 0.00042 (c) 7,200,000 (d) 0.091    (a) .  (b) .  (c) .  (d) .   "
 },
@@ -2021,7 +2624,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#ex-sci-arithmetic",
   "type": "Example",
-  "number": "4.1.31",
+  "number": "5.1.31",
   "title": "Arithmetic in Scientific Notation.",
   "body": " Arithmetic in Scientific Notation   Calculate: (a) (b)    (a) and . Answer: .  (b) and . Answer: .   "
 },
@@ -2030,7 +2633,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#ex-sci-add",
   "type": "Example",
-  "number": "4.1.32",
+  "number": "5.1.32",
   "title": "Adding in Scientific Notation.",
   "body": " Adding in Scientific Notation   Calculate:    Make the powers the same first: .  .   "
 },
@@ -2039,7 +2642,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-number-systems.html#ex-sci-practice",
   "type": "Checkpoint",
-  "number": "4.1.33",
+  "number": "5.1.33",
   "title": "Practice.",
   "body": " Practice   1. Write in scientific notation: (a) 340,000 (b) 0.0062 (c) 98,700,000  2. Write as an ordinary number: (a) (b)  3. Calculate, giving your answer in scientific notation: (a) (b) (c)  4. The distance from the Earth to the Sun is approximately km. Light travels at approximately km per second. How long does it take light to reach us from the Sun?    1. (a) . (b) . (c) .  2. (a) 4500. (b) 0.000071.  3. (a) . (b) . (c) .  4. seconds ≈ 8 min 20 sec.   "
 },
@@ -2048,7 +2651,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-indices.html",
   "type": "Section",
-  "number": "4.2",
+  "number": "5.2",
   "title": "Indices",
   "body": " Indices  Content coming soon.  "
 },
@@ -2057,7 +2660,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-arithmetic.html",
   "type": "Section",
-  "number": "4.3",
+  "number": "5.3",
   "title": "Arithmetic",
   "body": " Arithmetic  Content coming soon.  "
 },
@@ -2066,7 +2669,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-length-area-volume.html",
   "type": "Section",
-  "number": "4.4",
+  "number": "5.4",
   "title": "Length, Area and Volume",
   "body": " Length, Area and Volume  Content coming soon.  "
 },
@@ -2075,7 +2678,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-expressions.html",
   "type": "Section",
-  "number": "5.1",
+  "number": "6.1",
   "title": "Expressions",
   "body": " Expressions  Content coming soon.  "
 },
@@ -2084,7 +2687,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-solving-equations.html",
   "type": "Section",
-  "number": "5.2",
+  "number": "6.2",
   "title": "Solving Equations",
   "body": " Solving Equations  Content coming soon.  "
 },
@@ -2093,7 +2696,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-inequalities.html",
   "type": "Section",
-  "number": "5.3",
+  "number": "6.3",
   "title": "Inequalities",
   "body": " Inequalities  Content coming soon.  "
 },
@@ -2102,7 +2705,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-functions.html",
   "type": "Section",
-  "number": "6.1",
+  "number": "7.1",
   "title": "Functions",
   "body": " Functions  Content coming soon.  "
 },
@@ -2111,7 +2714,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-calculus.html",
   "type": "Section",
-  "number": "6.2",
+  "number": "7.2",
   "title": "Calculus",
   "body": " Calculus  Content coming soon.  "
 },

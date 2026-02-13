@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ********************************************************** -->
+<!-- Chapter: Line Problem Solving                               -->
+<!-- Leaving Certificate Mathematics — Ordinary Level            -->
+<!-- Paper 2 — Coordinate Geometry of the Line                   -->
+<!-- ********************************************************** -->
+
+<section xml:id="sec-line-problem-solving" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Line Problem Solving</title>
+
+  <introduction>
+    <p>
+      This chapter applies <term>Pólya's four-step problem-solving method</term> to
+      Leaving Certificate Ordinary Level questions on the coordinate geometry of the line.
+      Every worked example follows the same disciplined structure:
+    </p>
+
+    <paragraphs xml:id="polya-steps">
+      <title>Pólya's Four Steps</title>
+      <p>
+        <dl>
+          <li>
+            <title>Step 1 — Understand the Problem</title>
+            <p><em>Appreciate</em> what the question asks. <em>Identify</em> the given information and the unknowns.</p>
+          </li>
+          <li>
+            <title>Step 2 — Devise a Plan</title>
+            <p><em>Recall</em> the relevant formula or method. Decide which approach to use.</p>
+          </li>
+          <li>
+            <title>Step 3 — Carry Out the Plan</title>
+            <p><em>Apply</em> the chosen method. <em>Calculate</em> step by step, showing all working.</p>
+          </li>
+          <li>
+            <title>Step 4 — Look Back</title>
+            <p><em>Verify</em> the answer is reasonable. <em>Analyse</em> whether the solution answers what was asked.</p>
+          </li>
+        </dl>
+      </p>
+    </paragraphs>
+
+    <p>
+      The questions are drawn from Leaving Certificate Ordinary Level Paper 2 examinations
+      (2012–2025) and are organised by skill rather than by year, so that you can build
+      fluency in each technique before moving to the next.
+    </p>
+  </introduction>
+
+  <!-- ======================================================== -->
+  <!-- SECTION 1: FINDING THE SLOPE                              -->
+  <!-- ======================================================== -->
+  <subsection xml:id="subsec-line-slope">
+    <title>Finding the Slope of a Line</title>
+
+    <introduction>
+      <p>
+        The slope (or gradient) of a line measures its steepness.
+        Given two points <m>(x_1, y_1)</m> and <m>(x_2, y_2)</m>, the slope is
+        <me>m = \frac{y_2 - y_1}{x_2 - x_1}.</me>
+        You can also read slope directly from the equation <m>y = mx + c</m>,
+        or use <m>m = -\dfrac{a}{b}</m> when the line is in the form <m>ax + by + c = 0</m>.
+      </p>
+    </introduction>
+
+    <!-- Worked Example: 2025 Q4(a)(i) -->
+    <example xml:id="ex-slope-2025-q4ai">
+      <title>LC 2025 Q4(a)(i)</title>
+      <statement>
+        <p>
+          <m>A(-5, 3)</m> and <m>B(2, 0)</m> are two points on the coordinate plane.
+          Find the slope of the line <m>AB</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand the Problem.</em>
+          <em>Appreciate</em> that we are given two points and must find the slope of the line joining them.
+          <em>Identify</em> the given information: <m>A(-5, 3)</m> and <m>B(2, 0)</m>.
+        </p>
+        <p><em>Step 2 — Devise a Plan.</em>
+          <em>Recall</em> the slope formula: <m>m = \dfrac{y_2 - y_1}{x_2 - x_1}</m>.
+        </p>
+        <p><em>Step 3 — Carry Out the Plan.</em>
+          <em>Apply</em> the formula with <m>(x_1, y_1) = (-5, 3)</m> and <m>(x_2, y_2) = (2, 0)</m>:
+          <md>
+            <mrow>m \amp= \frac{0 - 3}{2 - (-5)}</mrow>
+            <mrow>\amp= \frac{-3}{7}</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> The line goes from upper-left to lower-right, so a negative slope is expected. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- Worked Example: 2023 Q1(a)(i) -->
+    <example xml:id="ex-slope-2023-q1ai">
+      <title>LC 2023 Q1(a)(i)</title>
+      <statement>
+        <p>
+          <m>A(4, 2)</m> and <m>B(1, 8)</m> are two points in the coordinate plane.
+          Work out the slope of the line <m>AB</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify</em> the two points: <m>A(4, 2)</m> and <m>B(1, 8)</m>. We need the slope of <m>AB</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall</em> <m>m = \dfrac{y_2 - y_1}{x_2 - x_1}</m>.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>m = \frac{8 - 2}{1 - 4} = \frac{6}{-3} = -2</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> Moving from <m>A</m> to <m>B</m>, <m>x</m> decreases by 3 while <m>y</m> increases by 6 — a steep downward (left-to-right) line. Slope <m>= -2</m> is consistent. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- Worked Example: 2022 Q1(a)(i) -->
+    <example xml:id="ex-slope-2022-q1ai">
+      <title>LC 2022 Q1(a)(i)</title>
+      <statement>
+        <p>
+          Parts of the lines <m>AC</m> and <m>BC</m> are shown, with
+          <m>A(-2, 0)</m>, <m>B(5, 0)</m>, and <m>C(0, 3)</m>.
+          Find the slope of <m>AC</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> <m>A(-2, 0)</m> and <m>C(0, 3)</m>. Find the slope of <m>AC</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall</em> the slope formula.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>m_{AC} = \frac{3 - 0}{0 - (-2)} = \frac{3}{2}</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> The line rises from left to right — positive slope expected. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- Worked Example: 2019 Q2(a) -->
+    <example xml:id="ex-slope-2019-q2a">
+      <title>LC 2019 Q2(a)</title>
+      <statement>
+        <p>
+          The coordinates of the points are <m>P(4, 2)</m>, <m>Q(8, 5)</m>, and <m>R(2, 11)</m>.
+          Find the slope of <m>PQ</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> <m>P(4, 2)</m> and <m>Q(8, 5)</m>. Find slope of <m>PQ</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall</em> <m>m = \dfrac{y_2 - y_1}{x_2 - x_1}</m>.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>m_{PQ} = \frac{5 - 2}{8 - 4} = \frac{3}{4}</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> A rise of 3 over a run of 4 — a gentle positive slope. Consistent with the diagram. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- Worked Example: Slope from equation 2023D Q3(a)(i) -->
+    <example xml:id="ex-slope-from-eq-2023d-q3ai">
+      <title>LC 2023 Deferred Q3(a)(i)</title>
+      <statement>
+        <p>
+          The equation of line <m>t</m> is <m>2x - 3y + 7 = 0</m>.
+          Write down the slope of <m>t</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Appreciate</em> that the line is in the form <m>ax + by + c = 0</m>.
+          We need to extract the slope.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> For <m>ax + by + c = 0</m>, the slope is <m>m = -\dfrac{a}{b}</m>.
+          Alternatively, rearrange to <m>y = mx + c</m>.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          Here <m>a = 2</m> and <m>b = -3</m>, so
+          <me>m = -\frac{2}{-3} = \frac{2}{3}.</me>
+          Or rearranging: <m>3y = 2x + 7 \implies y = \tfrac{2}{3}x + \tfrac{7}{3}</m>, giving <m>m = \tfrac{2}{3}</m>.
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> Both methods give <m>\tfrac{2}{3}</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <exercises xml:id="exercises-slope">
+      <title>Slope — Guided Practice</title>
+
+      <introduction>
+        <p>
+          Complete the interactive <em>Slope Drill</em> (10 questions, immediate feedback)
+          before attempting these exercises. The drill is available in the companion
+          <c>line-drills</c> tool.
+        </p>
+      </introduction>
+
+      <exercise xml:id="ex-gp-slope-1">
+        <statement>
+          <p>Find the slope of the line through <m>(3, -1)</m> and <m>(7, 11)</m>.</p>
+        </statement>
+        <hint><p>Use <m>m = \dfrac{y_2 - y_1}{x_2 - x_1}</m>. Before calculating, predict: will the slope be positive or negative?</p></hint>
+        <answer><p><m>m = \dfrac{11 - (-1)}{7 - 3} = \dfrac{12}{4} = 3</m></p></answer>
+      </exercise>
+
+      <exercise xml:id="ex-gp-slope-2">
+        <statement>
+          <p>Find the slope of the line through <m>(-4, 5)</m> and <m>(2, 5)</m>.</p>
+        </statement>
+        <hint><p>What do you notice about the <m>y</m>-coordinates?</p></hint>
+        <answer><p><m>m = \dfrac{5 - 5}{2 - (-4)} = \dfrac{0}{6} = 0</m>. A horizontal line has slope 0.</p></answer>
+      </exercise>
+
+      <exercise xml:id="ex-gp-slope-3">
+        <statement>
+          <p>The line <m>4x + 2y - 10 = 0</m> is given. Write down its slope.</p>
+        </statement>
+        <hint><p>Use <m>m = -\dfrac{a}{b}</m> or rearrange to <m>y = mx + c</m>.</p></hint>
+        <answer><p><m>m = -\dfrac{4}{2} = -2</m></p></answer>
+      </exercise>
+
+      <exercise xml:id="ex-gp-slope-4">
+        <statement>
+          <p>A line has slope <m>\tfrac{3}{4}</m>. Starting from the point <m>(2, 1)</m>,
+          find two more points on this line by using the slope as rise/run.</p>
+        </statement>
+        <hint><p>From <m>(2, 1)</m>, go right 4 and up 3. Repeat. Also try going left 4 and down 3.</p></hint>
+        <answer><p><m>(6, 4)</m> and <m>(-2, -2)</m></p></answer>
+      </exercise>
+
+      <exercise xml:id="ex-gp-slope-interpret">
+        <statement>
+          <p>Without calculating, arrange these slopes from least steep to steepest:
+          <m>\tfrac{1}{5}</m>, <m>-3</m>, <m>\tfrac{2}{3}</m>, <m>0</m>, <m>-\tfrac{1}{2}</m>.</p>
+        </statement>
+        <hint><p>Steepness depends on the absolute value. The sign tells direction, not steepness.</p></hint>
+        <answer><p>Least to steepest: <m>0</m>, <m>\tfrac{1}{5}</m>, <m>-\tfrac{1}{2}</m>, <m>\tfrac{2}{3}</m>, <m>-3</m>.</p></answer>
+      </exercise>
+    </exercises>
+
+  </subsection>
+
+  <!-- ======================================================== -->
+  <!-- SECTION 2: EQUATION OF A LINE                             -->
+  <!-- ======================================================== -->
+  <subsection xml:id="subsec-line-equation">
+    <title>Equation of a Line</title>
+
+    <introduction>
+      <p>
+        The key formula is the <term>point–slope form</term>:
+        <me>y - y_1 = m(x - x_1)</me>
+        where <m>m</m> is the slope and <m>(x_1, y_1)</m> is a point on the line.
+        You may be asked to give your answer in the form <m>ax + by + c = 0</m> (with <m>a, b, c \in \mathbb{Z}</m>)
+        or in the form <m>y = mx + c</m>.
+      </p>
+    </introduction>
+
+    <!-- 2025 Q4(a)(ii) -->
+    <example xml:id="ex-eq-2025-q4aii">
+      <title>LC 2025 Q4(a)(ii)</title>
+      <statement>
+        <p>
+          <m>A(-5, 3)</m> and <m>B(2, 0)</m> are two points.
+          The slope of <m>AB</m> is <m>-\tfrac{3}{7}</m> (from part (i)).
+          Work out the equation of the line <m>AB</m>.
+          Give your answer in the form <m>ax + by + c = 0</m>, where <m>a, b, c \in \mathbb{Z}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> We have slope <m>m = -\tfrac{3}{7}</m> and a point, say <m>A(-5, 3)</m>.
+          We need the equation in the form <m>ax + by + c = 0</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall</em> the point–slope formula: <m>y - y_1 = m(x - x_1)</m>.
+          Substitute, then rearrange to clear fractions and reach integer form.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>y - 3 \amp= -\frac{3}{7}\big(x - (-5)\big)</mrow>
+            <mrow>y - 3 \amp= -\frac{3}{7}(x + 5)</mrow>
+            <mrow>7(y - 3) \amp= -3(x + 5)</mrow>
+            <mrow>7y - 21 \amp= -3x - 15</mrow>
+            <mrow>3x + 7y - 6 \amp= 0</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify</em> by substituting <m>B(2, 0)</m>: <m>3(2) + 7(0) - 6 = 6 - 6 = 0</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2025D Q1(a) -->
+    <example xml:id="ex-eq-2025d-q1a">
+      <title>LC 2025 Deferred Q1(a)</title>
+      <statement>
+        <p>
+          The line <m>p</m> has a slope of <m>\tfrac{3}{2}</m> and crosses the <m>y</m>-axis at the point <m>(0, 4)</m>.
+          Find the equation of <m>p</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> <m>m = \tfrac{3}{2}</m> and the <m>y</m>-intercept is <m>c = 4</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall</em> that when the <m>y</m>-intercept is given, we can write <m>y = mx + c</m> directly.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <me>y = \frac{3}{2}x + 4</me>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> At <m>x = 0</m>, <m>y = 4</m> — matches the <m>y</m>-intercept. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2024 Q3(c) -->
+    <example xml:id="ex-eq-2024-q3c">
+      <title>LC 2024 Q3(c)</title>
+      <statement>
+        <p>
+          Find the equation of the line through the points <m>(0, 6)</m> and <m>(2, 9)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> Two points: <m>(0, 6)</m> and <m>(2, 9)</m>. Find the equation of the line.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> First find the slope, then use the point–slope formula (or note that <m>(0, 6)</m> gives us the <m>y</m>-intercept directly).
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>m \amp= \frac{9 - 6}{2 - 0} = \frac{3}{2}</mrow>
+          </md>
+          Since <m>(0, 6)</m> is on the line, <m>c = 6</m>, so:
+          <me>y = \frac{3}{2}x + 6</me>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify</em> with <m>(2, 9)</m>: <m>\tfrac{3}{2}(2) + 6 = 3 + 6 = 9</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2023 Q1(b) -->
+    <example xml:id="ex-eq-2023-q1b">
+      <title>LC 2023 Q1(b)</title>
+      <statement>
+        <p>
+          Find the equation of the line through the point <m>(-2, 7)</m> with a slope of <m>\tfrac{1}{3}</m>.
+          Give your answer in the form <m>ax + by + c = 0</m>, where <m>a, b, c \in \mathbb{Z}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> A point <m>(-2, 7)</m> and slope <m>m = \tfrac{1}{3}</m>. Required form: <m>ax + by + c = 0</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall</em> <m>y - y_1 = m(x - x_1)</m>, then multiply through to clear the fraction.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>y - 7 \amp= \frac{1}{3}\big(x - (-2)\big)</mrow>
+            <mrow>y - 7 \amp= \frac{1}{3}(x + 2)</mrow>
+            <mrow>3(y - 7) \amp= x + 2</mrow>
+            <mrow>3y - 21 \amp= x + 2</mrow>
+            <mrow>x - 3y + 23 \amp= 0</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify</em> with <m>(-2, 7)</m>: <m>(-2) - 3(7) + 23 = -2 - 21 + 23 = 0</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2021 Q3(a) -->
+    <example xml:id="ex-eq-2021-q3a">
+      <title>LC 2021 Q3(a)</title>
+      <statement>
+        <p>
+          A line <m>n</m> passes through the points <m>A(-1, 2)</m> and <m>B(0, -2)</m>.
+          Write the equation of <m>n</m> in the form <m>y = mx + c</m>, where <m>m, c \in \mathbb{Z}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> <m>A(-1, 2)</m> and <m>B(0, -2)</m>. We need the equation in <m>y = mx + c</m> form.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> Find slope first, then note that <m>B(0, -2)</m> gives the <m>y</m>-intercept directly (<m>c = -2</m>).
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>m \amp= \frac{-2 - 2}{0 - (-1)} = \frac{-4}{1} = -4</mrow>
+          </md>
+          Since <m>c = -2</m>:
+          <me>y = -4x - 2</me>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify</em> with <m>A(-1, 2)</m>: <m>-4(-1) - 2 = 4 - 2 = 2</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2016 Q4(a) -->
+    <example xml:id="ex-eq-2016-q4a">
+      <title>LC 2016 Q4(a)</title>
+      <statement>
+        <p>
+          The line <m>\ell</m> contains the points <m>A(4, 5)</m> and <m>B(2, 0)</m>.
+          Find the equation of <m>\ell</m>.
+          Give your answer in the form <m>ax + by + c = 0</m>, where <m>a, b, c \in \mathbb{Z}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> Two points <m>A(4, 5)</m> and <m>B(2, 0)</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> Find slope, then use point–slope formula.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>m \amp= \frac{0 - 5}{2 - 4} = \frac{-5}{-2} = \frac{5}{2}</mrow>
+            <mrow>y - 5 \amp= \frac{5}{2}(x - 4)</mrow>
+            <mrow>2(y - 5) \amp= 5(x - 4)</mrow>
+            <mrow>2y - 10 \amp= 5x - 20</mrow>
+            <mrow>5x - 2y - 10 \amp= 0</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify</em> with <m>B(2, 0)</m>: <m>5(2) - 2(0) - 10 = 10 - 10 = 0</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2019 Q2(b) -->
+    <example xml:id="ex-eq-2019-q2b">
+      <title>LC 2019 Q2(b)</title>
+      <statement>
+        <p>
+          <m>P(4, 2)</m> and <m>Q(8, 5)</m>. The slope of <m>PQ</m> is <m>\tfrac{3}{4}</m>.
+          Find the equation of the line <m>PQ</m>.
+          Give your answer in the form <m>ax + by + c = 0</m>, where <m>a, b, c \in \mathbb{Z}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> Slope <m>m = \tfrac{3}{4}</m>, point <m>P(4, 2)</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall</em> point–slope form, then clear fractions.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>y - 2 \amp= \frac{3}{4}(x - 4)</mrow>
+            <mrow>4(y - 2) \amp= 3(x - 4)</mrow>
+            <mrow>4y - 8 \amp= 3x - 12</mrow>
+            <mrow>3x - 4y - 4 \amp= 0</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify</em> with <m>Q(8, 5)</m>: <m>3(8) - 4(5) - 4 = 24 - 20 - 4 = 0</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2017 Q3(b) -->
+    <example xml:id="ex-eq-2017-q3b">
+      <title>LC 2017 Q3(b)</title>
+      <statement>
+        <p>
+          <m>B(6, 3)</m> and <m>C(5, 5)</m> are vertices of rectangle <m>ABCD</m>.
+          Find the equation of the line <m>BC</m>.
+          Give your answer in the form <m>ax + by + c = 0</m>, where <m>a, b, c \in \mathbb{Z}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> <m>B(6, 3)</m> and <m>C(5, 5)</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> Find slope, then use point–slope formula.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>m_{BC} \amp= \frac{5 - 3}{5 - 6} = \frac{2}{-1} = -2</mrow>
+            <mrow>y - 3 \amp= -2(x - 6)</mrow>
+            <mrow>y - 3 \amp= -2x + 12</mrow>
+            <mrow>2x + y - 15 \amp= 0</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify</em> with <m>C(5, 5)</m>: <m>2(5) + 5 - 15 = 10 + 5 - 15 = 0</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+  </subsection>
+
+  <!-- ======================================================== -->
+  <!-- SECTION 3: DISTANCE AND MIDPOINT                          -->
+  <!-- ======================================================== -->
+  <subsection xml:id="subsec-line-distance-midpoint">
+    <title>Distance and Midpoint</title>
+
+    <introduction>
+      <p>
+        The <term>distance</term> between <m>(x_1, y_1)</m> and <m>(x_2, y_2)</m> is
+        <me>d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}.</me>
+        The <term>midpoint</term> of the segment joining them is
+        <me>\left(\frac{x_1 + x_2}{2},\; \frac{y_1 + y_2}{2}\right).</me>
+      </p>
+    </introduction>
+
+    <!-- 2023 Q1(a)(ii) -->
+    <example xml:id="ex-dist-2023-q1aii">
+      <title>LC 2023 Q1(a)(ii)</title>
+      <statement>
+        <p>
+          <m>A(4, 2)</m> and <m>B(1, 8)</m>. Work out the distance <m>|AB|</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> <m>A(4, 2)</m> and <m>B(1, 8)</m>. Find <m>|AB|</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall</em> the distance formula: <m>d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}</m>.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>|AB| \amp= \sqrt{(1 - 4)^2 + (8 - 2)^2}</mrow>
+            <mrow>\amp= \sqrt{(-3)^2 + 6^2}</mrow>
+            <mrow>\amp= \sqrt{9 + 36}</mrow>
+            <mrow>\amp= \sqrt{45} = 3\sqrt{5}</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> <m>3\sqrt{5} \approx 6.7</m> units. Given the coordinate differences of 3 and 6, this is reasonable. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2020 Q2(a) -->
+    <example xml:id="ex-dist-2020-q2a">
+      <title>LC 2020 Q2(a)</title>
+      <statement>
+        <p>
+          <m>A(4, 6)</m> and <m>B(-2, 2)</m>. Find <m>|AB|</m>.
+          Give your answer in the form <m>a\sqrt{b}</m> units, where <m>a, b \in \mathbb{N}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify</em> the two points. Answer must be in surd form.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall</em> the distance formula.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>|AB| \amp= \sqrt{(-2 - 4)^2 + (2 - 6)^2}</mrow>
+            <mrow>\amp= \sqrt{36 + 16} = \sqrt{52} = 2\sqrt{13}</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> <m>2\sqrt{13} \approx 7.2</m> units. Coordinate differences are 6 and 4 — reasonable. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2022D Q1(c) -->
+    <example xml:id="ex-dist-2022d-q1c">
+      <title>LC 2022 Deferred Q1(a)–(c)</title>
+      <statement>
+        <p>
+          <m>P(12, 5)</m>. <m>A</m> is the point on the <m>x</m>-axis vertically below <m>P</m>;
+          <m>B</m> is the point on the <m>y</m>-axis horizontally across from <m>P</m>.
+          (a) Write down the coordinates of <m>A</m> and <m>B</m>.
+          (b) Find the area of triangle <m>APB</m>.
+          (c) Find <m>|AB|</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Appreciate:</em> <m>A</m> is directly below <m>P</m> on the <m>x</m>-axis, so <m>A = (12, 0)</m>.
+          <m>B</m> is directly left of <m>P</m> on the <m>y</m>-axis, so <m>B = (0, 5)</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          (b) The triangle <m>APB</m> has a right angle at <m>P</m> (legs along the grid lines), so
+          <m>\text{Area} = \tfrac{1}{2} \times \text{base} \times \text{height}</m>.
+          (c) Use the distance formula for <m>|AB|</m>.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>\text{(a)} \quad A = (12, 0), \quad B = (0, 5)</mrow>
+          </md>
+          <md>
+            <mrow>\text{(b)} \quad \text{Area} \amp= \frac{1}{2}(12)(5) = 30 \text{ square units}</mrow>
+          </md>
+          <md>
+            <mrow>\text{(c)} \quad |AB| \amp= \sqrt{(12 - 0)^2 + (0 - 5)^2}</mrow>
+            <mrow>\amp= \sqrt{144 + 25} = \sqrt{169} = 13</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> 12, 5, 13 is a Pythagorean triple — confirms <m>|AB| = 13</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2018 Q2(a) Midpoint -->
+    <example xml:id="ex-midpoint-2018-q2a">
+      <title>LC 2018 Q2(a) — Midpoint</title>
+      <statement>
+        <p>
+          <m>P(7, 10)</m> and <m>R(11, 4)</m>.
+          <m>V</m> is the midpoint of <m>[PR]</m>. Find the coordinates of <m>V</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> <m>P(7, 10)</m> and <m>R(11, 4)</m>. Find midpoint <m>V</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall</em> the midpoint formula: <m>\left(\dfrac{x_1 + x_2}{2}, \dfrac{y_1 + y_2}{2}\right)</m>.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <me>V = \left(\frac{7 + 11}{2},\; \frac{10 + 4}{2}\right) = (9, 7)</me>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> <m>V</m> should lie between <m>P</m> and <m>R</m> in both coordinates: <m>7 \lt 9 \lt 11</m> and <m>4 \lt 7 \lt 10</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <exercises xml:id="exercises-distance-midpoint">
+      <title>Distance and Midpoint — Guided Practice</title>
+
+      <introduction>
+        <p>
+          Complete the interactive <em>Distance Drill</em> and <em>Midpoint Drill</em>
+          (immediate feedback) in the companion <c>line-drills</c> tool before attempting these.
+        </p>
+      </introduction>
+
+      <exercise xml:id="ex-gp-mid-1">
+        <statement>
+          <p>Find the midpoint of <m>(-6, 3)</m> and <m>(4, -1)</m>.</p>
+        </statement>
+        <hint><p>Add the <m>x</m>'s and divide by 2. Same for <m>y</m>'s. Then check: is your answer between the two points in both coordinates?</p></hint>
+        <answer><p><m>\left(\dfrac{-6 + 4}{2}, \dfrac{3 + (-1)}{2}\right) = (-1, 1)</m></p></answer>
+      </exercise>
+
+      <exercise xml:id="ex-gp-mid-2">
+        <statement>
+          <p>The midpoint of <m>A(2, k)</m> and <m>B(8, 5)</m> is <m>(5, 1)</m>.
+          Find the value of <m>k</m>.</p>
+        </statement>
+        <hint><p>The midpoint's <m>y</m>-coordinate is <m>\dfrac{k + 5}{2} = 1</m>. Solve for <m>k</m>.</p></hint>
+        <answer><p><m>k + 5 = 2 \implies k = -3</m></p></answer>
+      </exercise>
+
+      <exercise xml:id="ex-gp-dist-1">
+        <statement>
+          <p>Find the distance between <m>(0, 0)</m> and <m>(5, 12)</m>.</p>
+        </statement>
+        <hint><p>This is a famous Pythagorean triple: <m>5, 12, \ldots</m></p></hint>
+        <answer><p><m>d = \sqrt{25 + 144} = \sqrt{169} = 13</m></p></answer>
+      </exercise>
+
+      <exercise xml:id="ex-gp-dist-2">
+        <statement>
+          <p>Show that the triangle with vertices <m>A(1, 1)</m>, <m>B(4, 5)</m>, <m>C(4, 1)</m>
+          is right-angled at <m>C</m>.</p>
+        </statement>
+        <hint><p>Find <m>|AC|</m>, <m>|BC|</m>, and <m>|AB|</m>. Check if <m>|AC|^2 + |BC|^2 = |AB|^2</m>.</p></hint>
+        <answer><p><m>|AC| = 3</m>, <m>|BC| = 4</m>, <m>|AB| = 5</m>. Since <m>9 + 16 = 25</m>, right-angled at <m>C</m>.</p></answer>
+      </exercise>
+
+      <exercise xml:id="ex-gp-dist-sense">
+        <statement>
+          <p>A student says the distance between <m>(1, 2)</m> and <m>(4, 6)</m> is <m>-5</m>.
+          Without calculating, explain what is wrong with this answer.</p>
+        </statement>
+        <hint><p>Can a distance ever be negative?</p></hint>
+        <answer><p>Distance is always positive (or zero). The square root in the formula always gives a non-negative value. The actual distance is <m>\sqrt{9 + 16} = 5</m>.</p></answer>
+      </exercise>
+    </exercises>
+
+  </subsection>
+
+  <!-- ======================================================== -->
+  <!-- SECTION 4: AREA OF A TRIANGLE                             -->
+  <!-- ======================================================== -->
+  <subsection xml:id="subsec-line-area-triangle">
+    <title>Area of a Triangle</title>
+
+    <introduction>
+      <p>
+        Given vertices <m>(x_1, y_1)</m>, <m>(x_2, y_2)</m>, and <m>(x_3, y_3)</m>, the area is
+        <me>\text{Area} = \frac{1}{2}\big|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)\big|.</me>
+        A useful shortcut: translate one vertex to the origin, then use
+        <me>\text{Area} = \frac{1}{2}|x_1 y_2 - x_2 y_1|.</me>
+      </p>
+    </introduction>
+
+    <!-- 2025 Q4(a)(iii) -->
+    <example xml:id="ex-area-2025-q4aiii">
+      <title>LC 2025 Q4(a)(iii)</title>
+      <statement>
+        <p>
+          <m>A(-5, 3)</m>, <m>B(2, 0)</m>, and <m>C(4, 3)</m>.
+          Work out the area of triangle <m>ABC</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> Three vertices. We need the area.
+          <em>Appreciate:</em> Note that <m>A</m> and <m>C</m> share the same <m>y</m>-coordinate (<m>y = 3</m>),
+          so <m>AC</m> is horizontal with length <m>4 - (-5) = 9</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> Since <m>AC</m> is horizontal, we can use base <m>\times</m> height:
+          base <m>= |AC| = 9</m>, height <m>= </m> perpendicular distance from <m>B</m> to the line <m>y = 3</m>,
+          which is <m>|3 - 0| = 3</m>.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <me>\text{Area} = \frac{1}{2}(9)(3) = 13.5 \text{ square units}</me>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify</em> using the translation method:
+          Translate <m>B(2,0)</m> to the origin: <m>A \to (-7, 3)</m>, <m>C \to (2, 3)</m>.
+          <m>\text{Area} = \tfrac{1}{2}|(-7)(3) - (2)(3)| = \tfrac{1}{2}|-21 - 6| = \tfrac{1}{2}(27) = 13.5</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2025D Q1(b) -->
+    <example xml:id="ex-area-2025d-q1b">
+      <title>LC 2025 Deferred Q1(b)</title>
+      <statement>
+        <p>
+          Find the area of the triangle formed by <m>O(0, 0)</m>, <m>A(3, 4)</m>, and <m>B(5, -1)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> One vertex is already at the origin.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> With one vertex at the origin, <m>\text{Area} = \tfrac{1}{2}|x_1 y_2 - x_2 y_1|</m>.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>\text{Area} \amp= \frac{1}{2}\big|3(-1) - 5(4)\big|</mrow>
+            <mrow>\amp= \frac{1}{2}|-3 - 20|</mrow>
+            <mrow>\amp= \frac{1}{2}(23) = 11.5 \text{ square units}</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> Area is positive and the triangle is not degenerate (points are not collinear). <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2019 Q2(d) -->
+    <example xml:id="ex-area-2019-q2d">
+      <title>LC 2019 Q2(d)</title>
+      <statement>
+        <p>
+          Find the area of triangle <m>PQR</m>, where <m>P(4, 2)</m>, <m>Q(8, 5)</m>, and <m>R(2, 11)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> Three vertices. No vertex is at the origin.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> Translate <m>P</m> to the origin, then apply the two-point area formula.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          Translate by <m>(-4, -2)</m>:
+          <m>P \to (0, 0)</m>, <m>Q \to (4, 3)</m>, <m>R \to (-2, 9)</m>.
+          <md>
+            <mrow>\text{Area} \amp= \frac{1}{2}\big|(4)(9) - (-2)(3)\big|</mrow>
+            <mrow>\amp= \frac{1}{2}|36 + 6| = \frac{1}{2}(42) = 21 \text{ square units}</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> 21 square units for a triangle spanning roughly <m>6 \times 9</m> coordinate units — reasonable. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2018 Q2(c) -->
+    <example xml:id="ex-area-2018-q2c">
+      <title>LC 2018 Q2(c)</title>
+      <statement>
+        <p>
+          Find the area of triangle <m>PQR</m>, where <m>P(7, 10)</m>, <m>Q(1, 2)</m>, and <m>R(11, 4)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> Three vertices, no vertex at the origin.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> Translate <m>Q(1, 2)</m> to the origin.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          Translate by <m>(-1, -2)</m>: <m>P \to (6, 8)</m>, <m>Q \to (0, 0)</m>, <m>R \to (10, 2)</m>.
+          <md>
+            <mrow>\text{Area} = \frac{1}{2}|(-6)(2) - (10)(-8)| \quad \text{Careful with signs!}</mrow>
+          </md>
+          Using <m>P' = (6, 8)</m> and <m>R' = (10, 2)</m>:
+          <md>
+            <mrow>\text{Area} \amp= \frac{1}{2}|(6)(2) - (10)(8)|</mrow>
+            <mrow>\amp= \frac{1}{2}|12 - 80|</mrow>
+            <mrow>\amp= \frac{1}{2}(68) = 34 \text{ square units}</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> For a triangle spanning about <m>10 \times 8</m> units, an area of 34 is plausible. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+  </subsection>
+
+  <!-- ======================================================== -->
+  <!-- SECTION 5: PARALLEL AND PERPENDICULAR LINES               -->
+  <!-- ======================================================== -->
+  <subsection xml:id="subsec-line-parallel-perp">
+    <title>Parallel and Perpendicular Lines</title>
+
+    <introduction>
+      <p>
+        Two lines are <term>parallel</term> if they have the same slope: <m>m_1 = m_2</m>.
+        Two lines are <term>perpendicular</term> if <m>m_1 \times m_2 = -1</m>.
+      </p>
+    </introduction>
+
+    <!-- 2025 Q4(b) -->
+    <example xml:id="ex-parperp-2025-q4b">
+      <title>LC 2025 Q4(b)</title>
+      <statement>
+        <p>
+          <m>\ell:\; y = \tfrac{2}{3}x - 5</m> and <m>k:\; 2x + 3y - 7 = 0</m>.
+          Investigate if <m>\ell</m> and <m>k</m> are parallel, perpendicular, or neither.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Appreciate:</em> We need to compare the slopes of two lines.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> Read slope of <m>\ell</m> directly; find slope of <m>k</m> using <m>m = -a/b</m>.
+          Then test: equal slopes <m>\Rightarrow</m> parallel; product <m>= -1 \Rightarrow</m> perpendicular; otherwise neither.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>m_\ell \amp= \frac{2}{3}</mrow>
+            <mrow>m_k \amp= -\frac{2}{3}</mrow>
+          </md>
+          Check: <m>m_\ell \neq m_k</m>, so not parallel.
+          Check: <m>\tfrac{2}{3} \times \left(-\tfrac{2}{3}\right) = -\tfrac{4}{9} \neq -1</m>, so not perpendicular.
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Analyse:</em> The lines are <em>neither</em> parallel nor perpendicular. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2022 Q1(a)(ii) -->
+    <example xml:id="ex-parperp-2022-q1aii">
+      <title>LC 2022 Q1(a)(ii)</title>
+      <statement>
+        <p>
+          <m>A(-2, 0)</m>, <m>B(5, 0)</m>, <m>C(0, 3)</m>.
+          Slope of <m>AC = \tfrac{3}{2}</m>.
+          Investigate if <m>AC</m> is perpendicular to <m>BC</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> We have <m>m_{AC} = \tfrac{3}{2}</m>. We need <m>m_{BC}</m> and then test perpendicularity.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> Find <m>m_{BC}</m>, then check if <m>m_{AC} \times m_{BC} = -1</m>.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>m_{BC} \amp= \frac{3 - 0}{0 - 5} = -\frac{3}{5}</mrow>
+          </md>
+          Test: <m>\tfrac{3}{2} \times \left(-\tfrac{3}{5}\right) = -\tfrac{9}{10} \neq -1</m>.
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Analyse:</em> <m>AC</m> is <em>not</em> perpendicular to <m>BC</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2023D Q3(a)(ii) — Parallel condition -->
+    <example xml:id="ex-parallel-2023d-q3aii">
+      <title>LC 2023 Deferred Q3(a)(ii) — Finding <m>a</m> for parallel lines</title>
+      <statement>
+        <p>
+          Line <m>t</m>: <m>2x - 3y + 7 = 0</m> (slope <m>= \tfrac{2}{3}</m>).
+          Line <m>v</m>: <m>ax - 6y + 1 = 0</m>, where <m>a \in \mathbb{R}</m>.
+          Line <m>t</m> is parallel to line <m>v</m>. Find the value of <m>a</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Appreciate:</em> Parallel lines have equal slopes. We know <m>m_t = \tfrac{2}{3}</m> and must find <m>a</m> so that <m>m_v = \tfrac{2}{3}</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> For <m>ax - 6y + 1 = 0</m>, the slope is <m>m_v = -\dfrac{a}{-6} = \dfrac{a}{6}</m>.
+          Set <m>\dfrac{a}{6} = \dfrac{2}{3}</m>.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>\frac{a}{6} \amp= \frac{2}{3}</mrow>
+            <mrow>3a \amp= 12</mrow>
+            <mrow>a \amp= 4</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> Line <m>v</m> becomes <m>4x - 6y + 1 = 0</m>, with slope <m>\tfrac{4}{6} = \tfrac{2}{3} = m_t</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2021 Q3(b)(i) — Perpendicular line equation -->
+    <example xml:id="ex-perp-line-2021-q3bi">
+      <title>LC 2021 Q3(b)(i)</title>
+      <statement>
+        <p>
+          The line <m>\ell: 3x - 4y = 5</m> and the point <m>P(6, -3)</m>.
+          Find the equation of line <m>k</m> through <m>P</m> perpendicular to <m>\ell</m>.
+          Give your answer in the form <m>ax + by + c = 0</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> Line <m>\ell</m> has equation <m>3x - 4y - 5 = 0</m>.
+          Point <m>P(6, -3)</m>. We need line <m>k</m> through <m>P</m>, perpendicular to <m>\ell</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> Slope of <m>\ell</m> is <m>m_\ell = \tfrac{3}{4}</m>.
+          The perpendicular slope is <m>m_k = -\tfrac{4}{3}</m> (negative reciprocal).
+          Then use point–slope form.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>y - (-3) \amp= -\frac{4}{3}(x - 6)</mrow>
+            <mrow>y + 3 \amp= -\frac{4}{3}(x - 6)</mrow>
+            <mrow>3(y + 3) \amp= -4(x - 6)</mrow>
+            <mrow>3y + 9 \amp= -4x + 24</mrow>
+            <mrow>4x + 3y - 15 \amp= 0</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify</em> <m>P(6, -3)</m> lies on <m>k</m>: <m>4(6) + 3(-3) - 15 = 24 - 9 - 15 = 0</m>. <m>\checkmark</m>
+          Also confirm slopes: <m>\tfrac{3}{4} \times (-\tfrac{4}{3}) = -1</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2015 Q2 -->
+    <example xml:id="ex-perp-2015-q2">
+      <title>LC 2015 Q2</title>
+      <statement>
+        <p>
+          Line <m>p</m> makes equal intercepts on the axes.
+          (a)(i) Write down the slope of <m>p</m>.
+          (a)(ii) The point <m>(1, 5)</m> is on <m>p</m>. Find the equation of <m>p</m> in the form <m>ax + by + c = 0</m>.
+          (b) Line <m>q</m> is perpendicular to <m>p</m> and passes through <m>O(0, 0)</m>. Find the equation of <m>q</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Appreciate:</em> "Equal intercepts" means the line cuts both axes at the same distance from the origin.
+          Since the intercepts are equal and on opposite sides, the slope must be <m>-1</m>
+          (the line goes from <m>(a, 0)</m> to <m>(0, a)</m>).
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          (a)(i) Slope <m>= -1</m>.
+          (a)(ii) Use point–slope with <m>m = -1</m> and <m>(1, 5)</m>.
+          (b) Perpendicular slope <m>= 1</m>, through origin.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>\text{(a)(i)} \quad m_p \amp= -1</mrow>
+          </md>
+          <md>
+            <mrow>\text{(a)(ii)} \quad y - 5 \amp= -1(x - 1)</mrow>
+            <mrow>y - 5 \amp= -x + 1</mrow>
+            <mrow>x + y - 6 \amp= 0</mrow>
+          </md>
+          <md>
+            <mrow>\text{(b)} \quad m_q = 1, \quad y = x \quad \text{(or } x - y = 0\text{)}</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> <m>(1, 5)</m> on <m>p</m>: <m>1 + 5 - 6 = 0</m>. <m>\checkmark</m>
+          Slopes: <m>(-1)(1) = -1</m>, confirming perpendicularity. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <exercises xml:id="exercises-parperp">
+      <title>Parallel and Perpendicular — Guided Practice</title>
+
+      <introduction>
+        <p>
+          Complete the interactive <em>∥ or ⊥ ?</em> drill and <em>⊥ Slope Drill</em>
+          in the companion <c>line-drills</c> tool first.
+        </p>
+      </introduction>
+
+      <exercise xml:id="ex-gp-perp-slope-1">
+        <statement>
+          <p>A line has slope <m>\tfrac{3}{4}</m>. Write down the slope of any line perpendicular to it.</p>
+        </statement>
+        <hint><p>Flip the fraction and change the sign: <m>\tfrac{3}{4} \to -\tfrac{4}{3}</m>.</p></hint>
+        <answer><p><m>-\dfrac{4}{3}</m></p></answer>
+      </exercise>
+
+      <exercise xml:id="ex-gp-perp-slope-2">
+        <statement>
+          <p>A line has slope <m>-2</m>. Write the slope as a fraction first, then find the perpendicular slope.</p>
+        </statement>
+        <hint><p>Write <m>-2</m> as <m>\dfrac{-2}{1}</m>. Flip and change sign.</p></hint>
+        <answer><p><m>\dfrac{-2}{1} \to \dfrac{1}{2}</m>. The perpendicular slope is <m>\tfrac{1}{2}</m>.</p></answer>
+      </exercise>
+
+      <exercise xml:id="ex-gp-par-eq">
+        <statement>
+          <p>Find the equation of a line through <m>(1, 3)</m> parallel to <m>2x + y - 5 = 0</m>.</p>
+        </statement>
+        <hint><p>Parallel means same slope. The slope of <m>2x + y - 5 = 0</m> is <m>-2</m>. Use point–slope form.</p></hint>
+        <answer><p><m>y - 3 = -2(x - 1) \implies 2x + y - 5 = 0</m>. Interesting — it is the same line! Check: does <m>(1, 3)</m> satisfy <m>2(1) + 3 - 5 = 0</m>? Yes.</p></answer>
+      </exercise>
+
+      <exercise xml:id="ex-gp-perp-eq">
+        <statement>
+          <p>Find the equation of the line through <m>(4, -2)</m> perpendicular to a line with slope <m>\tfrac{5}{3}</m>.
+          Give your answer in the form <m>ax + by + c = 0</m>.</p>
+        </statement>
+        <hint><p>Perpendicular slope is <m>-\tfrac{3}{5}</m>. Then use point–slope and clear fractions.</p></hint>
+        <answer><p><m>y + 2 = -\tfrac{3}{5}(x - 4) \implies 5y + 10 = -3x + 12 \implies 3x + 5y - 2 = 0</m></p></answer>
+      </exercise>
+
+      <exercise xml:id="ex-gp-par-identify">
+        <statement>
+          <p>Are the lines <m>y = 3x + 1</m> and <m>6x - 2y + 7 = 0</m> parallel? Justify your answer.</p>
+        </statement>
+        <hint><p>Find both slopes. Rearrange the second line to <m>y = mx + c</m> form.</p></hint>
+        <answer><p>First line: <m>m = 3</m>. Second line: <m>2y = 6x + 7 \implies y = 3x + \tfrac{7}{2}</m>, so <m>m = 3</m>. Same slope, so yes — parallel.</p></answer>
+      </exercise>
+    </exercises>
+
+    <!-- 2020 Q2(b)(ii) — Parallel via midpoint theorem -->
+    <example xml:id="ex-parallel-midpoint-2020-q2bii">
+      <title>LC 2020 Q2(b)(ii) — Midpoint Theorem</title>
+      <statement>
+        <p>
+          <m>A(4, 6)</m>, <m>B(-2, 2)</m>, <m>C(10, 0)</m>.
+          <m>D</m> is the midpoint of <m>[AB]</m> and <m>E(7, 3)</m> is the midpoint of <m>[AC]</m>.
+          Show that <m>DE</m> is parallel to <m>BC</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> We need to find the midpoint <m>D</m>, then show <m>m_{DE} = m_{BC}</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> Find <m>D</m> using the midpoint formula, then compare slopes.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>D \amp= \left(\frac{4 + (-2)}{2},\; \frac{6 + 2}{2}\right) = (1, 4)</mrow>
+            <mrow>m_{DE} \amp= \frac{3 - 4}{7 - 1} = \frac{-1}{6}</mrow>
+            <mrow>m_{BC} \amp= \frac{0 - 2}{10 - (-2)} = \frac{-2}{12} = \frac{-1}{6}</mrow>
+          </md>
+          Since <m>m_{DE} = m_{BC} = -\tfrac{1}{6}</m>, the lines are parallel.
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Analyse:</em> This is an instance of the Midpoint Theorem — the segment joining the midpoints of two sides is parallel to the third side. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+  </subsection>
+
+  <!-- ======================================================== -->
+  <!-- SECTION 6: POINT OF INTERSECTION                          -->
+  <!-- ======================================================== -->
+  <subsection xml:id="subsec-line-intersection">
+    <title>Point of Intersection</title>
+
+    <introduction>
+      <p>
+        To find where two lines meet, solve their equations simultaneously.
+      </p>
+    </introduction>
+
+    <!-- 2023D Q3(a)(iii) -->
+    <example xml:id="ex-intersect-2023d-q3aiii">
+      <title>LC 2023 Deferred Q3(a)(iii)</title>
+      <statement>
+        <p>
+          <m>t: 2x - 3y + 7 = 0</m> and <m>w: 3x + 2y - 9 = 0</m>.
+          Solve simultaneously to find the point of intersection.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> Two linear equations in <m>x</m> and <m>y</m>. Find where they meet.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> Use elimination — multiply to make the coefficients of <m>y</m> match.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>2x - 3y = -7 \quad \times 2 \implies 4x - 6y = -14</mrow>
+            <mrow>3x + 2y = 9 \quad \times 3 \implies 9x + 6y = 27</mrow>
+          </md>
+          Adding:
+          <md>
+            <mrow>13x \amp= 13</mrow>
+            <mrow>x \amp= 1</mrow>
+          </md>
+          Substitute <m>x = 1</m> into <m>t</m>: <m>2(1) - 3y + 7 = 0 \implies 3y = 9 \implies y = 3</m>.
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify</em> in <m>w</m>: <m>3(1) + 2(3) - 9 = 3 + 6 - 9 = 0</m>. <m>\checkmark</m>
+          Point of intersection: <m>(1, 3)</m>.
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2021 Q3(b)(ii) -->
+    <example xml:id="ex-intersect-2021-q3bii">
+      <title>LC 2021 Q3(b)(ii)</title>
+      <statement>
+        <p>
+          Find the point of intersection of <m>\ell: 3x - 4y = 5</m> and <m>h: 2x - y = 10</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> Two equations, two unknowns.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> Multiply <m>h</m> by <m>-4</m> to eliminate <m>y</m>.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>\ell:\; 3x - 4y \amp= 5</mrow>
+            <mrow>h \times (-4):\; -8x + 4y \amp= -40</mrow>
+          </md>
+          Adding: <m>-5x = -35 \implies x = 7</m>.
+          From <m>h</m>: <m>2(7) - y = 10 \implies y = 4</m>.
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify</em> in <m>\ell</m>: <m>3(7) - 4(4) = 21 - 16 = 5</m>. <m>\checkmark</m>
+          Intersection: <m>(7, 4)</m>.
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2016 Q4(c) -->
+    <example xml:id="ex-intersect-2016-q4c">
+      <title>LC 2016 Q4(c)</title>
+      <statement>
+        <p>
+          <m>\ell: 5x - 2y - 10 = 0</m> and <m>k: x + 2y = 8</m>.
+          Find the coordinates of <m>\ell \cap k</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> Two equations. Note the <m>y</m>-coefficients are <m>-2</m> and <m>+2</m> — ready for elimination.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> Add the equations directly to eliminate <m>y</m>.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>5x - 2y \amp= 10</mrow>
+            <mrow>x + 2y \amp= 8</mrow>
+          </md>
+          Adding: <m>6x = 18 \implies x = 3</m>.
+          From <m>k</m>: <m>3 + 2y = 8 \implies y = \tfrac{5}{2}</m>.
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify</em> in <m>\ell</m>: <m>5(3) - 2(\tfrac{5}{2}) - 10 = 15 - 5 - 10 = 0</m>. <m>\checkmark</m>
+          Intersection: <m>(3, 2\tfrac{1}{2})</m>.
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2013 Q3(c) -->
+    <example xml:id="ex-intersect-2013-q3c">
+      <title>LC 2013 Q3</title>
+      <statement>
+        <p>
+          <m>\ell: 3x + 2y - 18 = 0</m> (slope <m>= -\tfrac{3}{2}</m>).
+          <m>k</m> is perpendicular to <m>\ell</m> and cuts the <m>x</m>-axis at <m>(7, 0)</m>.
+          (b) Find the equation of <m>k</m>.
+          (c) Find the point of intersection of <m>\ell</m> and <m>k</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> Slope of <m>\ell</m> is <m>-\tfrac{3}{2}</m>.
+          <m>k</m> is perpendicular, so <m>m_k = \tfrac{2}{3}</m>, passing through <m>(7, 0)</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          (b) Use point–slope to find <m>k</m>.
+          (c) Solve <m>\ell</m> and <m>k</m> simultaneously.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>\text{(b)} \quad y - 0 \amp= \frac{2}{3}(x - 7)</mrow>
+            <mrow>3y \amp= 2x - 14</mrow>
+            <mrow>2x - 3y - 14 \amp= 0</mrow>
+          </md>
+          <md>
+            <mrow>\text{(c)} \quad 3x + 2y \amp= 18</mrow>
+            <mrow>2x - 3y \amp= 14</mrow>
+          </md>
+          Multiply first by 3 and second by 2:
+          <md>
+            <mrow>9x + 6y \amp= 54</mrow>
+            <mrow>4x - 6y \amp= 28</mrow>
+          </md>
+          Adding: <m>13x = 82 \implies x = \tfrac{82}{13}</m>.
+          Then <m>y = \tfrac{18 - 3(\frac{82}{13})}{2} = \tfrac{234 - 246}{26} = -\tfrac{12}{26} = -\tfrac{6}{13}</m>.
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> Substituting back into both equations confirms the intersection point <m>\left(\tfrac{82}{13}, -\tfrac{6}{13}\right)</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+  </subsection>
+
+  <!-- ======================================================== -->
+  <!-- SECTION 7: APPLIED COORDINATE GEOMETRY PROBLEMS           -->
+  <!-- ======================================================== -->
+  <subsection xml:id="subsec-line-applied">
+    <title>Applied Coordinate Geometry Problems</title>
+
+    <introduction>
+      <p>
+        These longer questions combine multiple skills — slope, distance, area, equations of lines,
+        parallel and perpendicular conditions — in real-world or multi-part settings.
+      </p>
+    </introduction>
+
+    <!-- 2024 Q3(a) — Verify point + draw line -->
+    <example xml:id="ex-applied-2024-q3a">
+      <title>LC 2024 Q3(a) — Verify a point lies on a line</title>
+      <statement>
+        <p>
+          The line <m>\ell</m> has equation <m>y = \tfrac{1}{2}x - 1</m>.
+          (i) Show that the point <m>(4, 1)</m> lies on <m>\ell</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Appreciate:</em> To "show" a point lies on a line, substitute its coordinates into the equation
+          and demonstrate both sides are equal.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> Substitute <m>x = 4</m> into the equation and check if <m>y = 1</m>.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>y = \frac{1}{2}(4) - 1 = 2 - 1 = 1 \quad \checkmark</mrow>
+          </md>
+          Since the left-hand side equals the right-hand side, <m>(4, 1)</m> lies on <m>\ell</m>.
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> The substitution is clean and the result is exact. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2021 Q10 (Treasure Map) — multi-part -->
+    <example xml:id="ex-applied-2021-q10">
+      <title>LC 2021 Q10 — Treasure Map (Selected Parts)</title>
+      <statement>
+        <p>
+          A TY class created a coordinate treasure map.
+          <m>A(3, -5)</m>, <m>B(6, 4)</m>, <m>C(-3, 2)</m>.
+        </p>
+        <p>
+          (a)(ii) Food is at point <m>F</m>, which lies on a line through <m>A(3, -5)</m> with slope <m>-1</m>,
+          and also on a line through <m>B(6, 4)</m> with slope <m>0</m>. Find the coordinates of <m>F</m>.
+        </p>
+        <p>
+          (c)(iii) A spade is hidden on line <m>\ell</m> which is parallel to <m>k: x - y - 3 = 0</m>
+          and contains <m>C(-3, 2)</m>. Find the equation of <m>\ell</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Part (a)(ii):</em></p>
+        <p><em>Step 1 — Understand.</em>
+          <em>Appreciate:</em> <m>F</m> is the intersection of two lines. One has slope <m>-1</m> through <m>A</m>;
+          the other has slope <m>0</m> (horizontal) through <m>B</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          The horizontal line through <m>B(6, 4)</m> is <m>y = 4</m>.
+          The line through <m>A(3, -5)</m> with slope <m>-1</m>: <m>y + 5 = -1(x - 3)</m>, i.e. <m>x + y = -2</m>.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          Substituting <m>y = 4</m> into <m>x + y = -2</m>:
+          <m>x + 4 = -2 \implies x = -6</m>.
+          So <m>F = (-6, 4)</m>.
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> <m>F(-6, 4)</m> on the first line: <m>-6 + 4 = -2</m>. <m>\checkmark</m>
+          On the horizontal: <m>y = 4</m>. <m>\checkmark</m>
+        </p>
+
+        <p><em>Part (c)(iii):</em></p>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> <m>k: x - y - 3 = 0</m> has slope <m>1</m>.
+          <m>\ell</m> is parallel to <m>k</m>, so <m>m_\ell = 1</m>, passing through <m>C(-3, 2)</m>.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall</em> point–slope form.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>y - 2 \amp= 1(x - (-3))</mrow>
+            <mrow>y - 2 \amp= x + 3</mrow>
+            <mrow>x - y + 5 \amp= 0</mrow>
+          </md>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify</em> with <m>C(-3, 2)</m>: <m>-3 - 2 + 5 = 0</m>. <m>\checkmark</m>
+          Slopes match: <m>m_\ell = 1 = m_k</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2023D Q9 — Houses (Selected Parts) -->
+    <example xml:id="ex-applied-2023d-q9">
+      <title>LC 2023 Deferred Q9 — Houses on a Grid (Selected Parts)</title>
+      <statement>
+        <p>
+          <m>A(0, 4)</m>, <m>B(2, 1)</m>, <m>C(4, 4)</m>, <m>D(2, 7)</m> are positions of houses.
+          (b) Show that <m>|CB| = |CD|</m>.
+          (d) Is <m>BC</m> perpendicular to <m>DC</m>?
+        </p>
+      </statement>
+      <solution>
+        <p><em>Part (b):</em></p>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> Compute both distances and compare.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>|CB| \amp= \sqrt{(4 - 2)^2 + (4 - 1)^2} = \sqrt{4 + 9} = \sqrt{13}</mrow>
+            <mrow>|CD| \amp= \sqrt{(4 - 2)^2 + (4 - 7)^2} = \sqrt{4 + 9} = \sqrt{13}</mrow>
+          </md>
+          Since <m>|CB| = |CD| = \sqrt{13}</m>, the claim is verified. <m>\checkmark</m>
+        </p>
+
+        <p><em>Part (d):</em></p>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> Find slopes of <m>BC</m> and <m>DC</m>, then test perpendicularity.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>m_{BC} \amp= \frac{4 - 1}{4 - 2} = \frac{3}{2}</mrow>
+            <mrow>m_{DC} \amp= \frac{4 - 7}{4 - 2} = \frac{-3}{2}</mrow>
+          </md>
+          Test: <m>\tfrac{3}{2} \times \left(-\tfrac{3}{2}\right) = -\tfrac{9}{4} \neq -1</m>.
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Analyse:</em> <m>BC</m> is <em>not</em> perpendicular to <m>DC</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2022 Q1(b) — Symmetry and equation of NM -->
+    <example xml:id="ex-applied-2022-q1b">
+      <title>LC 2022 Q1(b) — Symmetrical Triangle</title>
+      <statement>
+        <p>
+          Triangle <m>LMN</m> is symmetrical about the <m>y</m>-axis.
+          <m>M(9, 1)</m>. Line <m>NM: x + 4y - 13 = 0</m>.
+          (i) Find <m>|LM|</m>.
+          (ii) Write down the equation of the horizontal line <m>LM</m>.
+          (iii) Find the coordinates of <m>N</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Appreciate:</em> Symmetry about the <m>y</m>-axis means <m>L = (-9, 1)</m> (the reflection of <m>M</m>).
+          <m>N</m> is on the <m>y</m>-axis (i.e. <m>x = 0</m>).
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>\text{(i)} \quad |LM| \amp= 2 \times 9 = 18 \text{ units}</mrow>
+            <mrow>\text{(ii)} \quad y \amp= 1</mrow>
+          </md>
+          (iii) <m>N</m> is on <m>NM</m> with <m>x = 0</m>:
+          <md>
+            <mrow>0 + 4y - 13 = 0 \implies y = \frac{13}{4}</mrow>
+          </md>
+          So <m>N = \left(0, \tfrac{13}{4}\right)</m>.
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify</em> <m>N</m> on line <m>NM</m>: <m>0 + 4(\tfrac{13}{4}) - 13 = 13 - 13 = 0</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2017 Q3(a) — Rectangle ABCD |AD| -->
+    <example xml:id="ex-applied-2017-q3a">
+      <title>LC 2017 Q3(a) — Rectangle</title>
+      <statement>
+        <p>
+          <m>A(2, 1)</m>, <m>B(6, 3)</m>, <m>C(5, 5)</m>, <m>D(1, 3)</m> form a rectangle.
+          (i) Show that <m>|AD| = \sqrt{5}</m>.
+          (ii) Find the area of rectangle <m>ABCD</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> We need <m>|AD|</m> and the area.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>|AD| \amp= \sqrt{(1 - 2)^2 + (3 - 1)^2} = \sqrt{1 + 4} = \sqrt{5}</mrow>
+          </md>
+          For the area, we also need <m>|AB|</m>:
+          <md>
+            <mrow>|AB| \amp= \sqrt{(6 - 2)^2 + (3 - 1)^2} = \sqrt{16 + 4} = \sqrt{20}</mrow>
+          </md>
+          <me>\text{Area} = |AD| \times |AB| = \sqrt{5} \times \sqrt{20} = \sqrt{100} = 10 \text{ square units}</me>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> <m>\sqrt{5} \times \sqrt{20} = \sqrt{5 \times 20} = \sqrt{100} = 10</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2018 Q2(b) + (d) — Parallel lines and translation -->
+    <example xml:id="ex-applied-2018-q2bd">
+      <title>LC 2018 Q2(b),(d) — Parallel Lines and Translation</title>
+      <statement>
+        <p>
+          <m>P(7, 10)</m>, <m>Q(1, 2)</m>, <m>R(11, 4)</m>.
+          <m>U(4, 6)</m> is the midpoint of <m>[PQ]</m>; <m>V(9, 7)</m> is the midpoint of <m>[PR]</m>.
+          (b) Show that <m>UV</m> is parallel to <m>QR</m>.
+          (d) <m>S</m> is the image of <m>Q</m> under translation <m>\overrightarrow{UV}</m>. Find <m>S</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Part (b):</em></p>
+        <p><em>Step 3 — Carry Out.</em>
+          <md>
+            <mrow>m_{UV} \amp= \frac{7 - 6}{9 - 4} = \frac{1}{5}</mrow>
+            <mrow>m_{QR} \amp= \frac{4 - 2}{11 - 1} = \frac{2}{10} = \frac{1}{5}</mrow>
+          </md>
+          <m>m_{UV} = m_{QR}</m>, so <m>UV \parallel QR</m>. <m>\checkmark</m>
+        </p>
+        <p><em>Part (d):</em></p>
+        <p><em>Step 1 — Understand.</em>
+          <em>Identify:</em> The translation <m>\overrightarrow{UV} = (9 - 4, 7 - 6) = (5, 1)</m>.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <me>S = Q + \overrightarrow{UV} = (1 + 5, 2 + 1) = (6, 3)</me>
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> Alternatively, <m>S</m> is the midpoint of <m>[QR]</m>:
+          <m>\left(\tfrac{1 + 11}{2}, \tfrac{2 + 4}{2}\right) = (6, 3)</m>. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+  </subsection>
+
+  <!-- ======================================================== -->
+  <!-- SECTION 8: VISUAL SKILLS — IDENTIFYING AND DRAWING LINES -->
+  <!-- ======================================================== -->
+  <subsection xml:id="subsec-line-visual">
+    <title>Identifying and Drawing Lines</title>
+
+    <introduction>
+      <p>
+        Several exam questions ask you to match lines on a diagram to their slopes,
+        or to draw a line given a point and slope. These are visual-reasoning questions
+        that test your understanding of what slope <em>looks like</em>.
+      </p>
+    </introduction>
+
+    <!-- 2025D Q1(c) -->
+    <example xml:id="ex-visual-2025d-q1c">
+      <title>LC 2025 Deferred Q1(c) — Match slopes to lines</title>
+      <statement>
+        <p>
+          Four lines <m>p, q, r, s</m> are shown on a diagram.
+          Match each slope to its line: <m>-\tfrac{1}{5}</m>, <m>2</m>, <m>-1</m>, <m>\tfrac{1}{2}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Appreciate:</em> A positive slope means the line rises left to right;
+          a negative slope falls. Steeper lines have slopes with larger absolute value.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> Rank by steepness: <m>|2| > |-1| > |\tfrac{1}{2}| > |-\tfrac{1}{5}|</m>.
+          Identify the steepest rising line as slope 2, the gentle rising line as <m>\tfrac{1}{2}</m>,
+          the falling line at <m>45°</m> as <m>-1</m>, and the nearly horizontal falling line as <m>-\tfrac{1}{5}</m>.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          From the diagram:
+          slope <m>-\tfrac{1}{5} \to s</m> (nearly horizontal, falling slightly);
+          slope <m>2 \to r</m> (steep, rising);
+          slope <m>-1 \to p</m> (falling at <m>45°</m>);
+          slope <m>\tfrac{1}{2} \to q</m> (gentle rise).
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify</em> each assignment makes visual sense with the diagram. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <!-- 2023 Q1(c) — Draw line segment from point with given slope -->
+    <example xml:id="ex-visual-2023-q1c">
+      <title>LC 2023 Q1(c) — Drawing line segments</title>
+      <statement>
+        <p>
+          (i) Draw the line segment through <m>(4, 2)</m> with slope <m>2</m>,
+          in the range <m>-2 \leq y \leq 6</m>.
+        </p>
+        <p>
+          (ii) Draw the line segment through <m>(4, 2)</m> with slope <m>-\tfrac{2}{3}</m>,
+          on the domain <m>-1 \leq x \leq 7</m>.
+        </p>
+      </statement>
+      <solution>
+        <p><em>Step 1 — Understand.</em>
+          <em>Appreciate:</em> We must plot a line through <m>(4, 2)</m> using the given slope,
+          limited to the specified range or domain.
+        </p>
+        <p><em>Step 2 — Plan.</em>
+          <em>Recall:</em> Slope = rise/run. From the given point, move according to the slope to find additional points, then draw.
+        </p>
+        <p><em>Step 3 — Carry Out.</em>
+          <em>(i)</em> Slope <m>= 2 = \tfrac{2}{1}</m>. From <m>(4, 2)</m>: go right 1, up 2 <m>\to (5, 4)</m>;
+          go right 1 more <m>\to (6, 6)</m>. Going left: <m>(3, 0)</m>, <m>(2, -2)</m>.
+          Draw the segment from <m>(2, -2)</m> to <m>(6, 6)</m>.
+        </p>
+        <p>
+          <em>(ii)</em> Slope <m>= -\tfrac{2}{3}</m>. From <m>(4, 2)</m>: go right 3, down 2 <m>\to (7, 0)</m>.
+          Going left 3, up 2 <m>\to (1, 4)</m>. Left 3 more <m>\to (-2, 6)</m> — but domain starts at <m>x = -1</m>,
+          so interpolate: at <m>x = -1</m>, <m>y = 2 + \tfrac{2}{3}(4 - (-1)) = 2 + \tfrac{10}{3} = \tfrac{16}{3} \approx 5.3</m>.
+          Draw from approximately <m>(-1, 5.3)</m> to <m>(7, 0)</m>.
+        </p>
+        <p><em>Step 4 — Look Back.</em>
+          <em>Verify:</em> Check that the line passes through <m>(4, 2)</m> and visually matches the expected steepness. <m>\checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+  </subsection>
+
+</section>

@@ -10,9 +10,8 @@
     </macros>
   </docinfo>
 
-  <book xml:id="lc-ol-maths">
-    <title>Mathematics: A Structured Journey for Junior and Leaving Certificate</title>
-    <subtitle>Ordinary Level</subtitle>
+  <book xml:id="lc-maths-ol">
+    <title>LC Maths OL</title>
 
     <xi:include href="frontmatter.ptx"/>
 
@@ -99,7 +98,7 @@
         <em>anatomy</em> of each formula is what makes them powerful.</p>
       </introduction>
 
-      <xi:include href="geometry/line.ptx"/>
+      <xi:include href="geometry/ch-line-problem-solving.ptx"/>
 
     </chapter>
 
